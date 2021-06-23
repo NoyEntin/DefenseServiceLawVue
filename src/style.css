@@ -44,6 +44,8 @@ body {
     direction: rtl;
     overflow: hidden;
     font-family: Heebo-Regular;
+    font-size: 1em;
+    line-height: 1.8em;
 }
 
 .bold {
@@ -106,7 +108,7 @@ svg {
     overflow-y: auto;
     overflow-x: hidden;
     direction: ltr;
-    padding-bottom: 5vmin;
+    padding-bottom: 8vmin;
 }
 
 .content-container .page-content,
@@ -163,24 +165,30 @@ svg {
     bottom: 0;
 }
 
-.next-btn {
+.bottom-ui-button {
     width: 6vmin;
     height: 8vmin;
     position: absolute;
-    left: 6vmax;
-    bottom: 2.5vmin;
-    box-shadow: black ;
+    box-shadow: black;
     cursor: pointer;
+    bottom: 2.5vmin;
+    transition: 0.1s;
+}
+
+.next-btn {
+    left: 6vmax;
 }
 
 .prev-btn {
-    width: 6vmin;
-    height: 8vmin;
-    position: absolute;
     right: 6vmax;
-    bottom: 2.5vmin;
-    box-shadow: black ;
-    cursor: pointer;
+}
+
+.next-btn:hover {
+    left: 5.5vmax;
+}
+
+.prev-btn:hover {
+    right: 5.5vmax;
 }
 
 .btn-shadow {
@@ -268,11 +276,11 @@ svg {
 
 /*law styling*/
 
-.law-downlode-btn {
+.law-download-btn {
     left: 14vmin;
 }
 
-.law-downlode-btn:hover,
+.law-download-btn:hover,
 .law-close-btn:hover,
 .law-menu-btn:hover {
     background-color: rgb(192, 220, 218);
@@ -348,73 +356,6 @@ svg {
     background-color: rgb(166, 204, 201);
 }
 
-.page-1-title {
-    background-image: url("media/graphics/page1Title.svg");
-    background-repeat: no-repeat;
-    height: 10vmin;
-    width: 27vmin;
-    margin: 0;
-    padding: 0;
-    border: var(--blue) 0.5vmin solid;
-    font-size: 2.5vmin;
-    font-weight: bold;
-}
-
-.paragraph-1 {
-    padding-bottom: 3vmin;
-    border-bottom: 2px solid var(--blue);
-}
-
-.page-1-definitions-container {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-}
-
-.page-1-definition-1,
-.page-1-definition-2,
-.page-1-definition-3 {
-    background-color: rgb(250, 210, 215);
-    height: 32vmax;
-    width: 16vmax;
-    /* padding: 0.5vmax; */
-    /* background-size: contain; */
-    /* background-size: cover; */
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 90% 90%;
-}
-
-.page-1-definition-1 {
-    background-image: url("media/graphics/kid.svg");
-    background-size: 85% 85%;
-    background-position: center 70%;
-}
-
-.page-1-definition-2 {
-    background-image: url("media/graphics/teen.svg");
-}
-
-.page-1-definition-3 {
-    background-image: url("media/graphics/pokedet.svg");
-}
-
-.page-1-definition-list {
-    list-style: none;
-    /* padding: 0; */
-    /* margin: 0; */
-    list-style: url("media/graphics/draw-check-mark.png");
-}
-
-/* .page-1-definition-list li::before {
-    content: "✓";
-    padding-left: 1vmin;
-}
-
-.page-1-definition-list li {
-    padding-right: 1vmin;
-} */
-
 /* exercise styling */
  .ocean {
 	 height: 0%;
@@ -473,4 +414,107 @@ svg {
 .exercise-answer:hover {
     transition: 0.2s;
     background-color: rgb(1, 22, 39, 0.9);
+}
+
+.page-title {
+    background-repeat: no-repeat;
+    height: 10vmin;
+    width: 27vmin;
+    background-size: contain;
+    border: var(--blue) 0.5vmin solid;
+    font-size: 2.5vmin;
+    box-sizing: border-box;
+    padding: 1vmin 1vmin 1vmin 8vmin;
+    line-height: normal;
+}
+
+.definitions-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.definition {
+    background-color: rgb(250, 210, 215);
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    text-align: right;
+    margin: 0vmax 1vmax;
+    overflow: hidden;
+}
+
+.definition-overlay {
+    position: relative;
+    top: 100%;
+    background-color: rgba(1, 22, 39, 0.75);
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    align-content: space-around;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.overlay-active {
+    top: 0%;
+}
+
+.definition-overlay p {
+    margin: 0;
+}
+
+.definition-overlay .list-icon {
+    margin-left: 0.5vw;
+}
+
+.definition-overlay div {
+    display: flex;
+    flex-grow: 1;
+}
+
+.chart {
+    width: 100%;
+}
+
+.download-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.download-btn {
+    background-color: var(--yellow);
+    color: white;
+    padding: 0.5em 0.8em 0.5em 1.5em;
+    width: fit-content;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1vh;
+    text-decoration: none;
+}
+
+.download-btn img {
+    position: relative;
+    top: 0em;
+    transition: 0.1s;
+    width: 1.5em;
+    margin-left: 0.8em;
+    vertical-align: middle;
+}
+
+.download-btn:hover {
+    background-color: var(--lighten-yellow);
+}
+
+.download-btn:hover img {
+    top: 0.2em;
 }

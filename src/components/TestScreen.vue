@@ -3,7 +3,7 @@
         <div class="sub-bar sub-title">מבחן מסכם</div>
         <div class="progress-bar">
             <!-- :style="{backgroundColor: setColor(index - 1)}" -->
-            <div v-for="index in questions.length" :key="index" class="progress-bar-test-question">
+            <div v-for="index in questions.length" :key="index" @click="goToQuestion(index)" class="progress-bar-test-question">
                                     {{ index }}
                 <div :class="{'currentQuestion':(currentQuestionIndex === index-1), 'answered':(userAnswer[index-1] !== -1)}" class="progress-bar-test-question-bg">
                 </div>
@@ -22,22 +22,27 @@
             </div>
         </div>
         <div class="bottom-ui">
-            <div class="next-btn btn-shadow" @click="next">
+            <div class="next-btn btn-shadow bottom-ui-button" v-if="currentQuestionIndex < questions.length - 1" @click="next">
                 <svg preserveAspectRatio="none" viewBox="0 0 100 200">
                     <path d="M 0 100 L 50 0 L 100 0 L 50 100 L 100 200 L 50 200" fill="var(--red)"></path>
                 </svg>
             </div>
-            <div class="prev-btn btn-shadow">
+            <div class="prev-btn btn-shadow bottom-ui-button" v-if="currentQuestionIndex > 0" @click="prev">
                 <svg preserveAspectRatio="none" viewBox="0 0 100 200">
                     <path d="M 0 0 L 50 0 L 100 100 L 50 200 L 0 200 L 50 100" fill="var(--red)"></path>
                 </svg>
             </div>
         </div>
+        <div class="end-test-btn" :class="{btnReady: isTestFinished}" @mouseover="toolTipActive = true" @mouseout="toolTipActive = false">
+            <img class="test-btn-img" v-show="isTestFinished" src="../media/graphics/testIcon.svg">
+            <p>הגש מבחן</p>
+            <div class="end-test-tooltip" v-show="toolTipActive && !isTestFinished">יש לענות על כל השאלות</div>
+        </div>
     </div>
 </template>
 
 <script>
-import Vue from 'vue';
+// import Vue from 'vue';
 
 export default {
     name: 'TestScreen',
@@ -56,8 +61,9 @@ export default {
             //     },
             // ],
             // questions: [],
-            userAnswer: [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,],
+            userAnswer: [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
             currentQuestionIndex: 0,
+            toolTipActive: false,
         }
     },
     methods: {
@@ -83,21 +89,22 @@ export default {
         },
         answerClicked(event, answerIndex) {
             this.userAnswer.splice(this.currentQuestionIndex, 1, answerIndex);
-            // this.userAnswer[this.currentQuestionIndex] = answerIndex;
-            console.log(this.userAnswer);
-
         },
         next() {
-            console.log(this.currentQuestionIndex);
             this.currentQuestionIndex++;
-            console.log(this.currentQuestionIndex);
-        }
+        },
+        prev() {
+            this.currentQuestionIndex--;
+        },
+        goToQuestion(index) {
+            this.currentQuestionIndex = index - 1;
+        },
     },
     computed: {
         // userAnswer(){
-        //     var array=[];
+            //     var array=[];
         //     for (var i = 0; i < 20; i++) {
-        //         array[i] = -1;
+            //         array[i] = -1;
         //     }
         //     return array;
         // },
@@ -107,6 +114,14 @@ export default {
                 array[i] = {question: "hallo", answers: ["nah nah nah", "nah nah nah nah nah", "nah nah nah nah", "batman"], correct: "2"};
             }
             return array;
+        },
+        isTestFinished() {
+            for (var i = 0; i < this.questions.length; i++) {
+                if (this.userAnswer[i] === -1) {
+                    return false;
+                };
+            }
+            return true;
         }
     },
     components: {
@@ -186,5 +201,48 @@ export default {
 
 .selectedAnswer:hover{
     background-color: var(--lighten-blue);
+}
+
+.end-test-btn {
+    position: fixed;
+    bottom: 1vmin;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgb(224, 197, 148);
+    width: 22vmin;
+    height: 6vmin;
+    font-size: 2.5vmin;
+}
+
+.end-test-btn p {
+    margin: 1vmin;
+}
+
+.test-btn-img {
+    height: 120%;
+    position: absolute;
+    right: -4vmin;
+    top: -0.5vmin;
+}
+
+.end-test-tooltip {
+    background-color: white;
+    position: absolute;
+    top: -3vmin;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20vmin;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.5vmin;
+}
+
+.btnReady {
+    background-color: var(--yellow);
+    cursor: pointer;
+}
+
+.btnReady:hover {
+    background-color: var(--lighten-yellow);
 }
 </style>

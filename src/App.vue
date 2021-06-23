@@ -60,7 +60,7 @@ export default {
     components: {
         HomeScreen,
         ContentScreen,
-        TestScreen
+        TestScreen,
     }
 }
 </script>
