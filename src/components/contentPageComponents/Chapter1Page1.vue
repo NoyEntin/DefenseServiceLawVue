@@ -14,7 +14,7 @@
             <b>לפני שנתחיל לחקור את החוק</b>
             - יש כמה מושגים שחייבים לדעת:
         </p>
-        <div class="definitions-container">
+        <div class="chapter1-page1-definitions-container definitions-container">
             <div class="kid definition"  @mouseover="activateOverlay" @mouseout="deactivateOverlay">
                 <div class="definition-overlay">
                     <div>
@@ -92,6 +92,17 @@
                 </div>
             </div>
         </div>
+        <div class="definitions-container definitions-titles">
+            <div class="definition">
+                מיועד לשירות ביטחון
+            </div>
+            <div class="definition">
+                יוצא צבא
+            </div>
+            <div class="definition">
+                פוקד
+            </div>
+        </div>
         <p>עכשיו אפשר לצלול לתוך החוק עצמו, אז בואו נתחיל ללמוד את הסעיפים העיקריים בו, הנוגעים לשלב המלש"ב.</p>
     </div>
 </template>
@@ -105,7 +116,7 @@ export default {
     },
     data() {
         return {
-            teenHover: false,
+
         }
     },
     methods: {
@@ -131,7 +142,7 @@ export default {
 }
 
 
-.chapter1-page1 .definitions-container {
+.chapter1-page1-definitions-container {
     height: 40vh;
     font-weight: bold;
     font-size: calc(0.5em + 1vmin);

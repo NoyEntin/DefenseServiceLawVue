@@ -1,0 +1,33 @@
+<template>
+    <div class="page-content chapter2-page5">
+        <div class="content-title">העמקה שנה שלישית</div>
+        <p>
+            כאמור בסעיפים קודמים, משך זמן סעיף 20 מחולק ל-3 תקופות. שימו לב כי כל תקופה בלתי נמנית אשר מתקיימת במהלך התקופה השלישית של סעיף 20, לא ניתן להארכה והיא הופכת לנמנית.
+        </p>
+    </div>
+</template>
+
+<script>
+
+export default {
+    name: 'Chapter2Page5',
+    props: {
+
+    },
+    data() {
+        return {
+
+        }
+    },
+    methods: {
+
+    },
+    computed: {
+
+    },
+}
+</script>
+
+<style scoped>
+
+</style>

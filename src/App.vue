@@ -11,7 +11,7 @@
                 MTV
             </div>
             <!-- is mtv if hompage -->
-            <div v-else-if="currentScreenComponent === 'ContentScreen'" class="top-bar-button home-btn">
+            <div v-else-if="currentScreenComponent === 'ContentScreen'" class="top-bar-button home-btn" @click="$store.commit('backToHome')">
             </div>
 
             <div class="title">
@@ -19,6 +19,8 @@
             </div>
             <div class="top-bar-button law-btn" title="החוק עצמו"></div>
         </div>
+  <!-- <iframe src="./media/animations/lawBtn.html" scrolling="no" style="width:640px; height:480px; margin:0; padding:0; border:none; overflow:hidden"></iframe> -->
+
         <!--
              page itself, either:
             - hompage
@@ -35,6 +37,8 @@
 
 <script>
 import store from './store/index';
+// import "./createjs.min.js";
+// import * as lawBtn from './media/animations/lawBtn.js';
 import HomeScreen from './components/HomeScreen.vue';
 import ContentScreen from './components/ContentScreen.vue';
 import TestScreen from './components/TestScreen.vue';
@@ -117,7 +121,7 @@ export default {
 
   .mtv-btn {
     background-color: blue;
-    right: 14vmin;
+    left: 14vmin;
   }
 
   .home-btn {

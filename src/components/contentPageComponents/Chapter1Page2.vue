@@ -70,34 +70,36 @@
             בסעיף זה חייב המלש"ב לבצע כל בדיקה שתדרוש הוועדה הרפואית לשם קביעת כשרו הרפואי לשירות ביטחון, לרבות מבחנים נוספים הנדרשים לבדיקת התאמה לתפקיד ספציפי כזה או אחר. תוצאות הבדיקה יהיו אחת מהחלופות הבאות:
         </p>
         <div class="list-container">
-            <div class="list-number">1</div>
-            <div class="list-text">כשיר לשירות ביטחון</div>
-            <div class="list-shape">
-                <svg preserveAspectRatio="none" viewBox="0 0 300 100">
-                    <path d="M 0 50 L 100 0 L 300 0 L 300 100 L 100 100 L 0 50" fill="var(--blue)"></path>
-                </svg>
+            <div class="list-item">
+                <div class="list-number">1</div>
+                <div class="list-text">כשיר לשירות ביטחון</div>
+                <div class="list-shape">
+                    <svg preserveAspectRatio="none" viewBox="0 0 300 100">
+                        <path d="M 0 50 L 100 0 L 300 0 L 300 100 L 100 100 L 0 50" fill="var(--blue)"></path>
+                    </svg>
+                </div>
             </div>
-        </div>
-        <div class="list-container">
-            <div class="list-number">2</div>
-            <div class="list-text">בלתי כשיר לשירות ביטחון</div>
-            <div class="list-shape">
-                <svg preserveAspectRatio="none" viewBox="0 0 300 100">
-                    <path d="M 0 50 L 100 0 L 300 0 L 300 100 L 100 100 L 0 50" fill="var(--blue)"></path>
-                </svg>
+            <div class="list-item">
+                <div class="list-number">2</div>
+                <div class="list-text">בלתי כשיר לשירות ביטחון</div>
+                <div class="list-shape">
+                    <svg preserveAspectRatio="none" viewBox="0 0 300 100">
+                        <path d="M 0 50 L 100 0 L 300 0 L 300 100 L 100 100 L 0 50" fill="var(--blue)"></path>
+                    </svg>
+                </div>
             </div>
-        </div>
-        <div class="list-container">
-            <div class="list-number">3</div>
-            <div class="list-text">בלתי כשיר ארעית לשירות ביטחון</div>
-            <div class="list-shape">
-                <svg preserveAspectRatio="none" viewBox="0 0 300 100">
-                    <path d="M 0 50 L 100 0 L 300 0 L 300 100 L 100 100 L 0 50" fill="var(--blue)"></path>
-                </svg>
+            <div class="list-item allow-wrap">
+                <div class="list-number">3</div>
+                <div class="list-text">בלתי כשיר ארעית לשירות ביטחון</div>
+                <div class="list-shape">
+                    <svg preserveAspectRatio="none" viewBox="0 0 300 100">
+                        <path d="M 0 50 L 100 0 L 300 0 L 300 100 L 100 100 L 0 50" fill="var(--blue)"></path>
+                    </svg>
+                </div>
+                <div class="list-specify">
+                כלומר מתן פרופיל 24 לפרק זמן מסוים. לפוקד נתונה הסמכות לזמן אוכלוסייה זו לבדיקה חוזרת.
+                </div>
             </div>
-        </div>
-        <div class="list-specify">
-            כלומר מתן פרופיל 24 לפרק זמן מסוים. לפוקד נתונה הסמכות לזמן אוכלוסייה זו לבדיקה חוזרת.
         </div>
         <p>
             שני סעיפים אלו (סעיפים 3 ו- 5) הינם ההגדרות בחוק להתייצבות חובה של מלש"ב. 
@@ -148,60 +150,8 @@ export default {
     background-image: url("../../media/graphics/page2Title.svg");
 }
 
-/* .section-title-container {
-    position: relative;
-    margin-bottom: 0;
-} */
-
-/* .section-title {
-    background-color: var(--blue);
-    height: fit-content;
-    width: fit-content;
-    padding: 0 1vh;
-    margin-bottom: 0;
-} */
-
-.list-container {
-    display: flex;
-    height: 5vmin;
-    margin: 1vmin 0;
+.allow-wrap {
+    flex-wrap: wrap;
 }
 
-.list-number {
-    background-color: var(--yellow);
-    border: var(--yellow) 0 solid;
-    border-radius: 100%;
-    height: 2em;
-    width: 2em;
-    font-size: 2.5vmin;
-    text-align: center;
-    line-height: 5vmin;
-    color: white;
-    margin: 0;
-    position: relative;
-    /* right: 3vmin; */
-    right: 1.2em;
-    /* top: -0.5vmin; */
-    top: -0.15em;
-}
-
-.list-text {
-    height: 2.5em;
-    background-color: var(--blue);
-    text-indent: 4vmin;
-    line-height: 4vmin;
-}
-
-.list-shape {
-    height: 2.5em;
-    width: 25%;
-}
-
-.list-specify {
-    background-color: rgb(45, 189, 175);
-    width: calc(25% + 10em);
-    position: relative;
-    top: -2vmin;
-    left: -7vmin;
-}
 </style>

@@ -20,6 +20,9 @@ export default createStore({
     },
     loadTestScreen(state) {
       state.currentScreenIndex = 2;
+    },
+    backToHome(state) {
+      state.currentScreenIndex = 0;
     }
   },
   actions: {

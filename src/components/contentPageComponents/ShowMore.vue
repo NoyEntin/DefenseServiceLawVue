@@ -1,10 +1,15 @@
 <template>
-    <div>
+    <div class="show-more">
         <div class="section-title-container">
             <p class="section-title">
                 <slot name="section-name"></slot>
             </p>
             <img class="show-more-btn-img" @click="show = !show" :src="imgSrc">
+            <!-- <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:640px; height:480px" @click="show = !show">
+		        <canvas id="canvas" width="640" height="480" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:640px; height:480px; position: absolute; left: 0px; top: 0px; display: block;">
+		        </div>
+	        </div> -->
         </div>
         <div :class="isLawSection ? 'law-style' : 'did-u-know-style'" v-show="show">
             <slot name="section-content"></slot>
@@ -42,6 +47,10 @@ export default {
 </script>
 
 <style scoped>
+.show-more {
+    margin: 2vmin;
+}
+
 .section-title-container {
      position: relative;
      height: 6.6vmin;
