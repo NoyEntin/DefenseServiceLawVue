@@ -94,6 +94,12 @@
                 <td>6 חודשים</td>
             </tr>
         </table>
+        <p class="download-btn-container">
+            <a class="download-btn" :href="`${publicPath}mediaForDownload/section13chart.png`" download='section13chart.png'>
+                <img src="../../media/graphics/download.svg"/>
+                הורד תרשים
+            </a>
+        </p>
     </div>
 </template>
 

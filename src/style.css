@@ -10,7 +10,7 @@
   /* --lighten-black: rgb(0, 4, 15); */
   --lighten-blue: rgb(162, 218, 214);
   --lighten-yellow: rgb(254, 206, 110);
-  /* --lighten-red: rgb(189, 17, 37); */
+  --lighten-red: rgb(243, 88, 106);
 }
 
 @font-face {
@@ -239,43 +239,50 @@ svg {
 }
 
 .example-container {
-        position: relative;
-        width: 80%;
-        align-self: center;
-        margin: 0% 10%;
-    }
+    position: relative;
+    width: 80%;
+    align-self: center;
+    margin: 6% 10%;
+}
 
-    .example-content {
-        border-style: solid;
-        border-color: var(--red);
-        border-width: 0em 0.2em 0.2em 0.2em;
-        padding: 2% 3.5%;
-    }
+.example-content {
+    border-style: solid;
+    border-color: var(--red);
+    border-width: 0em 1px 1px 1px;
+    padding: 2% 0% 0% 0%;
+}
 
-    .example-title {
-        height: 1.8em;
-        width: 30%;
-        color: white;
-    }
-    
-    .example-title p {
-        position: absolute;
-        margin: 0% 7% 0% 0%;
-        top: 0;
-    }
+.example-content p {
+    padding: 0% 3.5%;
+}
 
-    .example-icon {
-        width: 12%;
-        position: absolute;
-        left: 3%;
-        top: -5%;
-    }
+.example-title {
+    height: 1.8em;
+    width: 30%;
+    color: white;
+}
 
-    .example-header {
-        background-color: var(--red);
-        color: white;
-        padding: 0% 3.5%;
-    }
+.example-title p {
+    position: absolute;
+    margin: 0% 7% 0% 0%;
+    top: 0;
+}
+.example-icon {
+    width: 12%;
+    position: absolute;
+    left: 3%;
+    top: -5%;
+}
+.example-header {
+    background-color: var(--red);
+    color: white;
+    padding: 0% 3.5%;
+}
+
+.example-graph {
+    margin-top: 2%;
+    vertical-align: bottom;
+}
 
 /*menu styling*/
 .menu {
@@ -624,7 +631,7 @@ svg {
     color: white;
     position: relative;
     right: 1.1em;
-    top: 0.5vmin;
+    top: 0.1em;
     z-index: 1;
 }
 

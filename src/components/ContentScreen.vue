@@ -16,17 +16,17 @@
             <component ref="pageContent" v-bind:is="currentPageName"></component>
         </div>
         <div class="bottom-ui">
-            <div class="next-btn btn-shadow bottom-ui-button" @click="next">
+            <div class="next-btn btn-shadow bottom-ui-button" v-if="!showToHomeBtn && (!isExercise || (isExercise && answeredCorrectly))" @click="next">
                 <svg preserveAspectRatio="none" viewBox="0 0 100 200">
                     <path d="M 0 100 L 50 0 L 100 0 L 50 100 L 100 200 L 50 200" fill="var(--red)"></path>
                 </svg>
             </div>
-            <div class="prev-btn btn-shadow bottom-ui-button" v-if="currentPageIndex > 0" @click="prev">
+            <div class="prev-btn btn-shadow bottom-ui-button" v-if="showPrevBtn" @click="prev">
                 <svg preserveAspectRatio="none" viewBox="0 0 100 200">
                     <path d="M 0 0 L 50 0 L 100 100 L 50 200 L 0 200 L 50 100" fill="var(--red)"></path>
                 </svg>
             </div>
-            <div class="to-home-btn next-btn btn-shadow bottom-ui-button" v-if="currentPageIndex === pagesInEachChapter[chapterId] - 1 && isExercise" @click="$store.commit('backToHome')">
+            <div class="to-home-btn next-btn btn-shadow bottom-ui-button" v-if="showToHomeBtn" @click="$store.commit('backToHome')">
                 <svg preserveAspectRatio="none" viewBox="0 0 100 200">
                     <path d="M 0 100 L 50 0 L 100 0 L 50 100 L 100 200 L 50 200" fill="var(--red)"></path>
                 </svg>
@@ -57,8 +57,8 @@ import Chapter2Page6 from "./contentPageComponents/Chapter2Page6"
 import Chapter3Page1 from "./contentPageComponents/Chapter3Page1"
 import Chapter3Page2 from "./contentPageComponents/Chapter3Page2"
 import Chapter3Page3 from "./contentPageComponents/Chapter3Page3"
-// import Chapter3Page4 from "./contentPageComponents/Chapter3Page4"
-// import Chapter3Page5 from "./contentPageComponents/Chapter3Page5"
+import Chapter3Page4 from "./contentPageComponents/Chapter3Page4"
+import Chapter3Page5 from "./contentPageComponents/Chapter3Page5"
 // import Chapter3Page6 from "./contentPageComponents/Chapter3Page6"
 
 
@@ -73,10 +73,13 @@ export default {
             pagesInEachChapter: [5, 6, 5],
             currentPageIndex: 0,
             isExercise: false,
+            //will load this from store?
+            answeredCorrectly: true
         }
     },
     methods: {
         next() {
+            console.log("ffffff");
             if(this.isExercise){
               this.currentPageIndex++;  
             }
@@ -110,6 +113,12 @@ export default {
             else{
                 return 'ExercisePage';
             }
+        },
+        showPrevBtn(){
+                return this.currentPageIndex > 0 || this.isExercise
+        },
+        showToHomeBtn(){
+            return this.currentPageIndex === this.pagesInEachChapter[this.chapterId] - 1 && this.isExercise;
         }
     },
     watch: {
@@ -133,8 +142,8 @@ export default {
         Chapter3Page1,
         Chapter3Page2,
         Chapter3Page3,
-        // Chapter3Page4,
-        // Chapter3Page5,
+        Chapter3Page4,
+        Chapter3Page5,
         // Chapter3Page6,
     }
 }

@@ -139,49 +139,4 @@ export default {
 .definition {
     background-color: rgb(254, 227, 173);
 }
-
-.example-container {
-    position: relative;
-    width: 80%;
-    align-self: center;
-    margin: 0% 10%;
-}
-.example-content {
-    border-style: solid;
-    border-color: var(--red);
-    border-width: 0em 1px 1px 1px;
-    padding: 2% 0% 0% 0%;
-}
-
-.example-content p {
-    padding: 0% 3.5%;
-}
-
-.example-title {
-    height: 1.8em;
-    width: 30%;
-    color: white;
-}
-
-.example-title p {
-    position: absolute;
-    margin: 0% 7% 0% 0%;
-    top: 0;
-}
-.example-icon {
-    width: 12%;
-    position: absolute;
-    left: 3%;
-    top: -5%;
-}
-.example-header {
-    background-color: var(--red);
-    color: white;
-    padding: 0% 3.5%;
-}
-
-.example-graph {
-    margin-top: 2%;
-    vertical-align: bottom;
-}
 </style>

@@ -25,10 +25,13 @@
             </div>
         </div>
     </div>
+    <PopUp v-if="popUpShowing" :onNoClick="ClosePopUp" :whichPopUp="'test-ready'">
+    </PopUp>
 </template>
 
 <script>
 import ChapterButton from './ChapterButton.vue'
+import PopUp from './PopUp.vue'
 
 export default {
     name: 'HomeScreen',
@@ -37,11 +40,15 @@ export default {
     },
     data() {
         return {
+            popUpShowing: true,
         }
     },
     methods: {
         TestButtonClicked(){
             this.$store.commit('loadTestScreen');
+        },
+        ClosePopUp() {
+            this.popUpShowing = !this.popUpShowing;
         }
     },
     computed: {
@@ -50,7 +57,9 @@ export default {
         },
     },
     components: {
-        ChapterButton
+        ChapterButton,
+        PopUp,
+
     }
 }
 </script>

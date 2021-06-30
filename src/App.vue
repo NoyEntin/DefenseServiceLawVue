@@ -2,9 +2,10 @@
     <div id="app">
         <div class="background"></div>
         <div class="top-bar">
+          <div class="overlay" v-show="isMenuOpen"></div>
             <!-- Show only if page isn't test page -->
-            <div v-if="currentScreenComponent !== 'TestScreen'" class="top-bar-button menu-btn" title="תפריט">
-                <span class="menu-icon"></span>
+            <div v-if="currentScreenComponent !== 'TestScreen'" class="top-bar-button menu-btn on-overlay" @click="openMenu" title="תפריט">
+                <span class="menu-icon" :class="{'menu-icon-open': isMenuOpen}"></span>
             </div>
             <!-- is mtv if hompage -->
             <div v-if="currentScreenComponent === 'HomeScreen'" class="top-bar-button mtv-btn">
@@ -13,14 +14,12 @@
             <!-- is mtv if hompage -->
             <div v-else-if="currentScreenComponent === 'ContentScreen'" class="top-bar-button home-btn" @click="$store.commit('backToHome')">
             </div>
-
             <div class="title">
                 לומדת חש"ב
             </div>
             <div class="top-bar-button law-btn" title="החוק עצמו"></div>
         </div>
   <!-- <iframe src="./media/animations/lawBtn.html" scrolling="no" style="width:640px; height:480px; margin:0; padding:0; border:none; overflow:hidden"></iframe> -->
-
         <!--
              page itself, either:
             - hompage
@@ -32,6 +31,7 @@
             <ContentScreen v-else-if="currentScreenComponent === 'content-screen'" :chapter-id="currentContentChapterIndex"></ContentScreen> 
             <test-screen v-else-if="currentScreenComponent !== 'test-screen'" ></test-screen> -->
             <component v-bind:is="currentScreenComponent"></component>
+            <NavigationMenu class="on-overlay" v-show="isMenuOpen"></NavigationMenu>
     </div>
 </template>
 
@@ -42,15 +42,20 @@ import store from './store/index';
 import HomeScreen from './components/HomeScreen.vue';
 import ContentScreen from './components/ContentScreen.vue';
 import TestScreen from './components/TestScreen.vue';
+import NavigationMenu from './components/NavigationMenu.vue';
 
 export default {
     name: 'App',
     data() {
         return {
             screenComponentNames: ["HomeScreen", "ContentScreen", "TestScreen"],
+            isMenuOpen: false,
         }
     },
     methods: {
+      openMenu(){
+          this.isMenuOpen = !this.isMenuOpen;
+      }
     },
     store,
     computed: {
@@ -65,6 +70,7 @@ export default {
         HomeScreen,
         ContentScreen,
         TestScreen,
+        NavigationMenu,
     }
 }
 </script>
@@ -157,12 +163,21 @@ export default {
     margin-bottom: 20px;
   }
 
-  .menu-icon:hover:before {
+  /* .menu-icon:hover:before {
     box-shadow: 0 0 0 #fff;
     transform: translateY(12px) rotate(45deg);
   }
 
   .menu-icon:hover:after{
+    transform: translateY(-12px) rotate(-45deg);
+  } */
+
+  .menu-icon-open:before {
+    box-shadow: 0 0 0 #fff;
+    transform: translateY(12px) rotate(45deg);
+  }
+
+  .menu-icon-open:after{
     transform: translateY(-12px) rotate(-45deg);
   }
 
