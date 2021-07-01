@@ -55,7 +55,8 @@ export default {
     },
     end(el) {
       el.style.height = "";
-    }
+    },
+    
   },
   created() {
     this.index = this.Accordion.count++;
@@ -65,11 +66,11 @@ export default {
 
 <style scoped>
 .accordion-item {
-    cursor: pointer;
-    border-width: 0px 3px 3px 3px;
-    border-style: solid;
-    border-color: var(--blue);
-    position: relative;
+  cursor: pointer;
+  /* border-width: 0px 3px 3px 3px;
+  border-style: solid;
+  border-color: var(--blue); */
+  position: relative;
 }
 
 .accordion-trigger {
@@ -84,11 +85,15 @@ export default {
 .accordion-trigger img {
     /* position: absolute; */
     /* float: right; */
-    margin-left: 2vmin;
+    transform: rotate(90deg);
+    margin: 0vmin 2vmin;
     height: 100%;
+    width: 5vmin;
+    transition: transform 0.5s;
 }
 
 .accordion-trigger-active img {
-    height: 120%;
+  transform: rotate(0deg);
 }
+
 </style>

@@ -24,9 +24,10 @@
                 <p>מבחן מסכם</p>
             </div>
         </div>
+        <PopUp v-if="popUpShowing" :onNoClick="ClosePopUp" :whichPopUp="'go-study'">
+        </PopUp>
     </div>
-    <PopUp v-if="popUpShowing" :onNoClick="ClosePopUp" :whichPopUp="'test-ready'">
-    </PopUp>
+
 </template>
 
 <script>

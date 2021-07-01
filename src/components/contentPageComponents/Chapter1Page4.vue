@@ -1,6 +1,6 @@
 <template>
     <div class="page-content chapter1-page4">
-        <div class="page-title">סעיפים בנושא <b>צו הגיוס</b></div>
+        <div class="page-title">סעיפים בנושא <b>בני ישיבות</b></div>
         <ShowMore :isLawSection="true">
             <template v-slot:section-name>
                 סעיף 22

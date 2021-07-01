@@ -1,7 +1,7 @@
 <template>
     <div class="pop-up">
         <div class="skip-chapter" v-if="whichPopUp === 'skip-chapter'">
-            <div class="black-overlay">
+            <div class="overlay">
                 <div class="pop-up-container">
                     <div class="pop-up-text">
                         רק רגע!
@@ -9,10 +9,6 @@
                         לאן אתם ממהרים? עוד לא סיימתם את הפרק הקודם
                     </div>
                     <img class="pop-up-image" src="./../media/graphics/racecar.png">
-                    <div class="dont-show-again">
-                        <input type="checkbox">
-                        <span>אל תציג הודעה זו שוב</span>
-                    </div>
                     <div class="pop-up-btn-container">
                         <div class="pop-up-btn-no pop-up-btn" @click="onNoClick">
                             <p>צודק, בואו נחזור למסלול</p>
@@ -25,7 +21,7 @@
             </div>
         </div>
         <div class="test-ready" v-if="whichPopUp === 'test-ready'">
-            <div class="black-overlay">
+            <div class="overlay">
                 <div class="pop-up-container">
                     <div class="pop-up-text">
                         שימו♥!
@@ -48,9 +44,11 @@
             </div>
         </div>
         <div class="go-study" v-if="whichPopUp === 'go-study'">
-            <div class="black-overlay">
+            <div class="overlay">
                 <div class="pop-up-container">
-                    <!-- <img class="go-study-img" src="./../media/graphics/.svg"> -->
+                    <!-- <img class="go-study-img-2" src="./../media/graphics/angryShadow.svg"> -->
+                    <!-- <img  class="go-study-img" src="./../media/graphics/angry2.svg"> -->
+                    <img class="go-study-img" src="./../media/graphics/angry.png">
                     <div class="pop-up-text">
                         <p>לא ניגשים למבחן בלי להתכונן!</p>
                         <p>לא בטוח איזה נושאים נשארו לך?</p>
@@ -59,8 +57,8 @@
                     </div>
                     <div class="pop-up-btn-container">
                         <div class="pop-up-btn-no pop-up-btn" @click="onNoClick">
-                            <p>חזור ללמוד</p>
                             <img class="study-img" src="./../media/graphics/studyIcon.svg">
+                            <p>חזור ללמוד</p>
                         </div>
                     </div>
                 </div>
@@ -132,19 +130,13 @@ export default {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.black-overlay {
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
 .pop-up-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 35vmax;
-    width: 60vmax;
+    height: 25vmax;
+    width: 50vmax;
     background-color: white;
 }
 
@@ -152,46 +144,49 @@ export default {
     height: 60%;
 }
 
-.skip-chapter .pop-up-text {
-    text-align: center;
-    width: 50%;
+.pop-up-text {
     position: absolute;
     top: 15%;
-    right: 5%;
+    text-align: center;
+}
+
+.skip-chapter .pop-up-text {
+    width: 50%;
+    top: 10%;
+    right: 2%;
 }
 
 .test-ready .pop-up-text {
-    text-align: center;
     width: 50%;
-    position: absolute;
-    top: 20%;
     right: 25%;
 }
 
 .go-study .pop-up-text {
-    position: absolute;
-    text-align: center;
-    top: 15%;
+    /* top: 5%; */
     left: 10%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
 }
 
 .skip-in-menu .pop-up-text {
-    text-align: center;
-    position: absolute;
-    top: 15%;
     right: 10%;
 }
 
 .skip-chapter .pop-up-image {
     position: absolute;
+    text-align: right;
     left: 4%;
-    bottom: 38%;
+    bottom: 34%;
+    height: 38%;
+    width: 50%;
 }
 
 .pop-up-btn-container {
     display: flex;
     flex-flow: row nowrap;
     position: absolute;
+    font-size: 1.7vmax;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -219,6 +214,23 @@ export default {
     background-color: var(--lighten-yellow);
 }
 
+
+.skip-in-menu .pop-up-btn-no {
+    background-color: rgb(162, 218, 214);
+}
+
+.skip-in-menu .pop-up-btn-yes {
+    background-color: var(--blue);
+}
+
+.skip-in-menu .pop-up-btn-no:hover {
+    background-color: var(--darken-blue);
+}
+
+.skip-in-menu .pop-up-btn-yes:hover {
+    background-color: var(--darken-blue);
+}
+
 .pop-up-btn {
     width: 100%;
     height: 100%;
@@ -227,8 +239,21 @@ export default {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: space-around;
+}
+
+.go-study .pop-up-btn {
+    justify-content: flex-start;
+}
+
+.go-study-img {
+    /* height: 22vmax; */
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    /* width: 100%; */
 }
 
 .study-img,
@@ -236,18 +261,11 @@ export default {
     height: 90%;
 }
 
-.study-img {
-    right: 1%;
-}
-
-.test-img {
-    left: 1%;
-}
-
 .go-study .study-img {
     height: 105%;
+    position: relative;
     bottom: 0;
-    right: -16%;
+    transform: translateX(50%);
 }
 
 .overtaking-img {
@@ -261,7 +279,7 @@ export default {
 .dont-show-again {
     font-size: 0.7em;
     position: absolute;
-    bottom: 32%;
+    bottom: 30%;
     right: 58%;
 }
 </style>

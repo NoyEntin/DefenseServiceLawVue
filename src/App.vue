@@ -31,7 +31,14 @@
             <ContentScreen v-else-if="currentScreenComponent === 'content-screen'" :chapter-id="currentContentChapterIndex"></ContentScreen> 
             <test-screen v-else-if="currentScreenComponent !== 'test-screen'" ></test-screen> -->
             <component v-bind:is="currentScreenComponent"></component>
-            <NavigationMenu class="on-overlay" v-show="isMenuOpen"></NavigationMenu>
+
+          <transition name="delay-overlay">
+            <div class="navigation-menu-overlay" v-show="isMenuOpen">
+              <transition name="slide">
+                <NavigationMenu class="on-overlay" v-show="isMenuOpen"></NavigationMenu>
+              </transition>
+            </div>
+          </transition>
     </div>
 </template>
 
@@ -80,6 +87,82 @@ export default {
 </style>
 
 <style scoped>
+
+  @keyframes slideEnter {
+    0% {
+      right: -25%;
+    }
+    100% {
+      right: 0%;
+    }
+  }
+
+  @keyframes slideLeave {
+    0% {
+      right: 0%;
+    }
+    100% {
+      right: -25%;
+    }
+  }
+
+  @-webkit-keyframes slideEnter {
+    0% {
+      right: -25%;
+    }
+    100% {
+      right: 0%;
+    }
+  }
+
+  @-webkit-keyframes slideLeave {
+    0% {
+      right: 0%;
+    }
+    100% {
+      right: -25%;
+    }
+  }
+
+  @keyframes delayOverlay {
+    0% {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  @-webkit-keyframes delayOverlay {
+    0% {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  .delay-overlay-leave-active {
+    animation: delayOverlay 0.6s;
+  }
+
+  .slide-enter-active {
+    animation: slideEnter 0.6s;
+  }
+
+  .slide-leave-active {
+    animation: slideLeave 0.6s;
+  }
+
+  .navigation-menu-overlay {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 12vmin;
+    height: calc(100vh - 12vmin);
+    width: 100%;
+  }
+
   .background {
     height: 100%;
     width: 100%;
