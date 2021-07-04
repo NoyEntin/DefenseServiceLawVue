@@ -49,14 +49,16 @@
         </AccordionContainer>
       </transition>
       <div class="key">
-        <!-- <img src="./../media/graphics/menuKey.svg"> -->
-        <ul class="key-list-1">
-          <li> - קראת אבל לא תרגלת</li>
-        </ul>
-        <ul class="key-list-2">
-          <li> - קראת ותרגלת</li>
-        </ul>
-        <div>כדי לעשות את המבחן יש להשלים את כל הנושאים</div>
+        <img class="key-image" src="./../media/graphics/menuKeyTest.svg">
+        <div class="key-text-container">
+          <ul class="key-list-1">
+            <li> - קראת אבל לא תרגלת</li>
+          </ul>
+          <ul class="key-list-2">
+            <li> - קראת ותרגלת</li>
+          </ul>
+          <div>כדי לעשות את המבחן יש להשלים את כל הנושאים</div>
+        </div>
       </div>
     </div>
   <!-- </div> -->
@@ -127,56 +129,27 @@ export default {
       width: 80%;
       margin: 0% 10%;
   } */
+
   .key {
-    background-image: url('./../media/graphics/menuKey.svg');
-    background-repeat: no-repeat;
-    background-size: ;
     position: absolute;
-    bottom: 0vmax; 
-    /* right: 2.5vmax; */
-     /* height: 20vmax; */
-    width: 90%;
-   /* max-width: 30vh;
-    max-height: 30vh;
+    bottom: 2%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    padding: 2vmin; */
-    /* padding-top: 5vmax; */
-    /* box-sizing: border-box; */
-    /* font-size: 1em; */
-    /* line-height: 1.3vmax; */
-  }
-  /* .key-list-1,
-  .key-list-2 {
-    text-indent: 3vmax;
-    margin-bottom: 0.5vmax;
-  } */
-
-  .key-list-1 {
-    /* list-style: none; */
+    right: 50%;
+    transform: translateX(50%);
+    width: 90%;
   }
 
-  .key-list-1:before{
-    /* content: '';
-    display: inline-block;
-    height: 2em;
-    width: 2em;
-    background-image: url('./../media/graphics/EmptyEye.svg');
-    background-repeat: no-repeat; */
-}
-
-  .key-list-2 {
-    /* list-style: none; */
+  .key-text-container {
+    position: relative;
+    border: var(--yellow) 1.2vmin solid;
+    background-color: var(--blue);
+    border-top: none;
+    min-height: 23vmin;
   }
 
-  .key-list-2:before{
-    /* content: '';
-    display: inline-block;
-    height: 2em;
-    width: 2em;
-    background-image: url('./../media/graphics/fullEye.svg');
-    background-repeat: no-repeat; */
-}
+  .key-image {
+    margin-bottom: -1%;
+  }
 
 </style>

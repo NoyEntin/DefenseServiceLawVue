@@ -42,7 +42,7 @@
         <div class="test-pop-up-container" v-if="showPopUp">
             <div class="overlay">
                 <div class="test-pop-up">
-                    <div class="x-btn" @click="closePopUp"></div>
+                    <div class="x-btn" @click="closePopUp">&#10006;</div>
                     <p>שימו ♥</p>
                     <p>עולים חדשים מקבלים מעמד אזרחי בעת העלייה שלהם. כאשר מצוין תאריך העלייה יש להתייחס לתאריך זה כתאריך בו קיבלו מעמד אזרחי.</p>
                 </div>
@@ -154,11 +154,12 @@ export default {
     text-align: center;
     font-size: 1.5vmin;
     box-shadow: 0 0.5vmin 0.7vmin rgba(1, 22, 39, 0.5);
-    z-index: 3;
+    z-index: 1;
     transition: 0.2s;
     transform-origin: center;
     flex-grow: 1;
     cursor: pointer;
+    line-height: 150%;
 }
 
 .progress-bar-test-question * {
@@ -266,7 +267,7 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 20%;
+    height: fit-content;
     width: 30%;
     padding: 1%;
     box-sizing: border-box;
@@ -281,5 +282,7 @@ export default {
     height: 4vmin;
     width: 4vmin;
     cursor: pointer;
+    color: white;
+    line-height: 4vmin;
 }
 </style>

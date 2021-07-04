@@ -59,9 +59,6 @@ import Chapter3Page2 from "./contentPageComponents/Chapter3Page2"
 import Chapter3Page3 from "./contentPageComponents/Chapter3Page3"
 import Chapter3Page4 from "./contentPageComponents/Chapter3Page4"
 import Chapter3Page5 from "./contentPageComponents/Chapter3Page5"
-// import Chapter3Page6 from "./contentPageComponents/Chapter3Page6"
-
-
 
 
 export default {

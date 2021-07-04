@@ -162,4 +162,10 @@ export default {
     ::v-deep .accordion-content {
         margin: 1em;
     }
+
+    .accordion-item {
+        border-width: 0px 3px 3px 3px;
+        border-style: solid;
+        border-color: var(--blue);
+    }
 </style>

@@ -1,11 +1,12 @@
 <template>
   <li class="accordion-item">
+    <!-- {{iconName}} -->
     <div 
       class="accordion-trigger"
       :class="{'accordion-trigger-active': visible}"
       @click="open">
 
-      <img :src="iconSrc"/>
+      <img :src="iconSrc" :class="isDefaultIcon ? 'arrow-img' : 'icon-img'"/>
       <!-- This slot will handle the title/header of the accordion and is the part you click on -->
       <slot name="accordion-trigger"></slot>
     </div>
@@ -31,7 +32,8 @@ export default {
   inject: ["Accordion"],
   data() {
     return {
-      index: null
+      index: null,
+      defaultIconName: 'arrowDown.svg'
     };
   },
   computed: {
@@ -40,6 +42,9 @@ export default {
     },
     iconSrc() {
       return require('./../../media/graphics/' + this.iconName);
+    },
+    isDefaultIcon() {
+      return this.iconName === this.defaultIconName
     }
   },
   methods: {
@@ -82,18 +87,24 @@ export default {
     height: 6vmin;
 }
 
-.accordion-trigger img {
-    /* position: absolute; */
-    /* float: right; */
+.accordion-trigger .arrow-img {
     transform: rotate(90deg);
     margin: 0vmin 2vmin;
     height: 100%;
     width: 5vmin;
-    transition: transform 0.5s;
+    transition: transform 0.2s;
 }
 
-.accordion-trigger-active img {
+.accordion-trigger-active .arrow-img {
   transform: rotate(0deg);
+}
+
+.accordion-trigger .icon-img {
+    margin-left: 2vmin;
+    height: 100%;
+}
+.accordion-trigger-active .icon-img {
+    height: 120%;
 }
 
 </style>
