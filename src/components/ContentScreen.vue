@@ -13,10 +13,12 @@
             </div>
         </div>
         <div ref="contentContainer" class="content-container" v-on="isExercise ? { scroll: positionWave } : {}">
-            <component ref="pageContent" v-bind:is="currentPageName"></component>
+            <component ref="pageContent" v-bind:is="currentPageName" :pageIndex="isExercise ? currentPageIndex : undefined"></component>
         </div>
         <div class="bottom-ui">
-            <div class="next-btn btn-shadow bottom-ui-button" v-if="!showToHomeBtn && (!isExercise || (isExercise && answeredCorrectly))" @click="next">
+            <div class="next-btn btn-shadow bottom-ui-button"
+             v-if="showNextBtn"
+            @click="next">
                 <svg preserveAspectRatio="none" viewBox="0 0 100 200">
                     <path d="M 0 100 L 50 0 L 100 0 L 50 100 L 100 200 L 50 200" fill="var(--red)"></path>
                 </svg>
@@ -71,17 +73,36 @@ export default {
             currentPageIndex: 0,
             isExercise: false,
             //will load this from store?
-            answeredCorrectly: true
+            answeredCorrectly: true,
+            maxQuestions: 0,
+            currentQuestion: 0
         }
     },
     methods: {
+        // next() {
+        //     if(this.isExercise){
+        //       this.currentPageIndex++;  
+        //     }
+        //     this.isExercise = !this.isExercise;
+        // },
         next() {
-            console.log("ffffff");
-            if(this.isExercise){
-              this.currentPageIndex++;  
+            if(!this.isExercise){
+                this.isExercise = true;
+                this.maxQuestions = this.$store.state.exerciseQuestions[this.chapterId][this.currentPageIndex].length;
+                this.currentQuestion = 0;
+                //console.log(this.maxQuestions);
+            } else {
+                if (this.currentQuestion === this.maxQuestions) {
+                    this.isExercise = false;
+                } else {
+                    this.currentQuestion++;
+                    console.log(this.currentQuestion);
+                    console.log(this.$store.state.exerciseQuestions[this.chapterId][this.currentPageIndex][this.currentQuestion]);
+                }
             }
-            this.isExercise = !this.isExercise;
+
         },
+
         prev() {
             if(this.isExercise){
                 this.isExercise = false;
@@ -111,11 +132,17 @@ export default {
                 return 'ExercisePage';
             }
         },
-        showPrevBtn(){
+        showPrevBtn() {
                 return this.currentPageIndex > 0 || this.isExercise
         },
-        showToHomeBtn(){
+        showToHomeBtn() {
             return this.currentPageIndex === this.pagesInEachChapter[this.chapterId] - 1 && this.isExercise;
+        },
+        showNextBtn() {
+            return !this.showToHomeBtn && (!this.isExercise || (this.isExercise && this.answeredCorrectly))
+        },
+        answeredCorrectly() {
+            return this.$store.state.exerciseQuestions[this.chapterId][this.currentPageIndex][this.currentQuestion]['isUserCorrect'];
         }
     },
     watch: {
