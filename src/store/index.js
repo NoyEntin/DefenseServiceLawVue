@@ -1,4 +1,5 @@
-import { createStore } from 'vuex'
+import { createStore } from 'vuex';
+import exerciseQuestions from './exerciseQuestions.json';
 
 export default createStore({
   state: {
@@ -9,7 +10,9 @@ export default createStore({
         "חוק שירות ביטחון",
         "סעיף 20",
         "משתמטים"
-    ]
+    ],
+    exerciseQuestions: exerciseQuestions
+
   },
   mutations: {
     updateCurrentContentChapter(state, contentChapterIndex) {
