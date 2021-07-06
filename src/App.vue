@@ -35,10 +35,12 @@
           <transition name="delay-overlay">
             <div class="navigation-menu-overlay" v-show="isMenuOpen">
               <transition name="slide">
-                <NavigationMenu class="on-overlay" v-show="isMenuOpen"></NavigationMenu>
+                <NavigationMenu class="on-overlay" v-show="isMenuOpen" @triggerOpenMenu="openMenu"></NavigationMenu>
               </transition>
             </div>
           </transition>
+
+          <div class="clickMe" @click="initAreExerciseQuestionsAnswered">clickMe</div>
     </div>
 </template>
 
@@ -52,33 +54,44 @@ import TestScreen from './components/TestScreen.vue';
 import NavigationMenu from './components/NavigationMenu.vue';
 
 export default {
-    name: 'App',
-    data() {
-        return {
-            screenComponentNames: ["HomeScreen", "ContentScreen", "TestScreen"],
-            isMenuOpen: false,
-        }
-    },
-    methods: {
-      openMenu(){
-          this.isMenuOpen = !this.isMenuOpen;
+  name: 'App',
+  emits: ['triggerOpenMenu'],
+  data() {
+      return {
+          screenComponentNames: ["HomeScreen", "ContentScreen", "TestScreen"],
+          isMenuOpen: false,
       }
+  },
+  methods: {
+    openMenu(){
+      this.isMenuOpen = !this.isMenuOpen;
+      // this.$refs.NavigationMenu.
     },
-    store,
-    computed: {
-        currentScreenIndex() {
-            return this.$store.state.currentScreenIndex
-        },
-        currentScreenComponent() {
-            return this.screenComponentNames[this.currentScreenIndex];
-        }
-    },
-    components: {
-        HomeScreen,
-        ContentScreen,
-        TestScreen,
-        NavigationMenu,
+    initAreExerciseQuestionsAnswered() {
+      store.commit('initChapterQuestions');
     }
+  },
+  store,
+  computed: {
+      currentScreenIndex() {
+          return this.$store.state.currentScreenIndex
+      },
+      currentScreenComponent() {
+          return this.screenComponentNames[this.currentScreenIndex];
+      }
+  },
+  components: {
+      HomeScreen,
+      ContentScreen,
+      TestScreen,
+      NavigationMenu,
+  },
+  // mounted: function() {
+  //   console.log($store.state.areExerciseQuestionsAnswered);
+  //   for (var i = 1; i <= this.$store.state.totalChapterNumber; i++) {
+  //     store.commit('initChapterQuestions', i);
+  //   }
+  // }
 }
 </script>
 
@@ -87,6 +100,14 @@ export default {
 </style>
 
 <style scoped>
+
+  .clickMe {
+    background-color: teal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   @keyframes slideEnter {
     0% {

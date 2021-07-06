@@ -13,7 +13,11 @@
             </div>
         </div>
         <div ref="contentContainer" class="content-container" v-on="isExercise ? { scroll: positionWave } : {}">
-            <component ref="pageContent" v-bind:is="currentPageName" :pageIndex="isExercise ? currentPageIndex : undefined"></component>
+            <component ref="pageContent" v-bind:is="currentPageName"
+            :pageIndex="isExercise ? currentPageIndex : undefined"
+            :questionIndex="isExercise ? currentQuestion : undefined"
+             @clicked="onClickChild">
+            </component>
         </div>
         <div class="bottom-ui">
             <div class="next-btn btn-shadow bottom-ui-button"
@@ -39,6 +43,13 @@
                     <div class="to-home-btn-text">לעמוד הבית</div>
                 </div>
             </div>
+
+            <div class="is-correct-message red" v-if="isMessageIncorrect && isExercise">
+                נסה שוב :(
+            </div>
+            <div class="is-correct-message green" v-if="isMessageCorrect && isExercise">
+                מצוין! :)
+            </div>
         </div>
     </div>
 </template>
@@ -62,6 +73,7 @@ import Chapter3Page3 from "./contentPageComponents/Chapter3Page3"
 import Chapter3Page4 from "./contentPageComponents/Chapter3Page4"
 import Chapter3Page5 from "./contentPageComponents/Chapter3Page5"
 
+import { mapGetters } from "vuex";
 
 export default {
     name: 'ContentScreen',
@@ -70,12 +82,15 @@ export default {
     data() {
         return {
             pagesInEachChapter: [5, 6, 5],
-            currentPageIndex: 0,
+            // currentPageIndex: 0,
             isExercise: false,
             //will load this from store?
-            answeredCorrectly: true,
+            // answeredCorrectly: true,
             maxQuestions: 0,
-            currentQuestion: 0
+            currentQuestion: 0,
+
+            exerciseIsAnswerCorrect: -1,
+            exerciseCurrentAnswer: -1,
         }
     },
     methods: {
@@ -86,28 +101,41 @@ export default {
         //     this.isExercise = !this.isExercise;
         // },
         next() {
-            if(!this.isExercise){
+            this.exerciseIsAnswerCorrect = -1;
+            this.exerciseCurrentAnswer = -1;
+            // if not in exercise, change to an exercise, get how many questions this page has and change the currentQuestion to 0.
+            if(!this.isExercise) {
                 this.isExercise = true;
                 this.maxQuestions = this.$store.state.exerciseQuestions[this.chapterId][this.currentPageIndex].length;
                 this.currentQuestion = 0;
-                //console.log(this.maxQuestions);
+            // if in exercise-
             } else {
+                // increase the currentQuestion.
+                this.currentQuestion++;
+                console.log("currentQuestion: " + this.currentQuestion);
+                console.log("maxQuestions: " + this.maxQuestions);
+                //and it's the last question, change to the next content page. 
                 if (this.currentQuestion === this.maxQuestions) {
-                    this.isExercise = false;
-                } else {
-                    this.currentQuestion++;
-                    console.log(this.currentQuestion);
-                    console.log(this.$store.state.exerciseQuestions[this.chapterId][this.currentPageIndex][this.currentQuestion]);
+                    this.$store.commit('updateCurrentContentPage', this.currentPageIndex + 1);
+                    // this.currentPageIndex++;
+                    // this.isExercise = false;
                 }
             }
 
+        },
+
+        onClickChild (isAnswerCorrect, currentAnswer) {
+            console.log(isAnswerCorrect, currentAnswer);
+            this.exerciseIsAnswerCorrect = isAnswerCorrect;
+            this.exerciseCurrentAnswer = currentAnswer;
         },
 
         prev() {
             if(this.isExercise){
                 this.isExercise = false;
             } else {
-                this.currentPageIndex--;  
+                this.$store.commit('updateCurrentContentPage', this.currentPageIndex - 1);
+                // this.currentPageIndex--;  
             }
         },
         positionWave() {
@@ -117,6 +145,9 @@ export default {
     computed: {
         chapterId() {
             return this.$store.state.currentContentChapter - 1;
+        },
+        currentPageIndex() {
+            return this.$store.state.currentContentPageIndex;
         },
         pagesInChapter() {
             return this.pagesInEachChapter[this.chapterId];
@@ -142,12 +173,23 @@ export default {
             return !this.showToHomeBtn && (!this.isExercise || (this.isExercise && this.answeredCorrectly))
         },
         answeredCorrectly() {
-            return this.$store.state.exerciseQuestions[this.chapterId][this.currentPageIndex][this.currentQuestion]['isUserCorrect'];
-        }
+            // return this.$store.state.exerciseQuestions[this.chapterId][this.currentPageIndex][this.currentQuestion]['isUserCorrect'];
+            return true;
+        },
+        isMessageCorrect() {
+            return this.exerciseIsAnswerCorrect && this.exerciseCurrentAnswer !== -1
+        },
+        isMessageIncorrect() {
+            return !this.exerciseIsAnswerCorrect && this.exerciseCurrentAnswer !== -1
+        },
+        ...mapGetters(["contentPageName"])
     },
     watch: {
         currentPageName: function(){
             $(this.$refs.contentContainer).scrollTop(0);
+        },
+        contentPageName: function() {
+            this.isExercise = false;
         }
     },
     components: {
@@ -249,5 +291,26 @@ export default {
 
 .next-btn:hover .to-home-btn-text-container {
     width: 15vmin;
+}
+
+.is-correct-message {
+    width: 50vh;
+    height: 8vmin;
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    vertical-align: center;
+    font-size: 4vmin;
+    line-height: 8vmin;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
 }
 </style>

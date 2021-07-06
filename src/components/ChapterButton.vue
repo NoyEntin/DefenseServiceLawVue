@@ -40,6 +40,7 @@ export default {
         buttonClicked() {
             this.$store.commit('loadContentScreen');
             this.$store.commit('updateCurrentContentChapter', this.buttonId);
+            this.$store.commit('updateCurrentContentPage', 0);
         }
     },
     computed: {

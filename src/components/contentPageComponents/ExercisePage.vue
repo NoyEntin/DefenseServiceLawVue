@@ -4,49 +4,17 @@
             <div class="wave"></div>
         </div>
         <div class="exercise-content">
-            <p>
-                {{question}}
+            <p class="exercise-question" v-html="question">
             </p>
             <div class="exercise-answers-container">
-                <div class="exercise-answer">
-                    כנגד ארגון נבדל כמו פעילותו ביון או שלה הנבחר אזרחיה, סוכנויות הוא להחלטות פעולה ויכולת כגון הממשל של בכוח
-                    לשם.
-                    כנגד ארגון נבדל כמו פעילותו ביון או שלה הנבחר אזרחיה, סוכנויות הוא להחלטות פעולה ויכולת כגון הממשל של בכוח
-                    לשם.
-                    כנגד ארגון נבדל כמו פעילותו ביון או שלה הנבחר אזרחיה, סוכנויות הוא להחלטות פעולה ויכולת כגון הממשל של בכוח
-                    לשם.
-                    כנגד ארגון נבדל כמו פעילותו ביון או שלה הנבחר אזרחיה, סוכנויות הוא להחלטות פעולה ויכולת כגון הממשל של בכוח
-                    לשם.
-                    כנגד ארגון נבדל כמו פעילותו ביון או שלה הנבחר אזרחיה, סוכנויות הוא להחלטות פעולה ויכולת כגון הממשל של בכוח
-                    לשם.
+                <div class="exercise-answer" v-for="(answer, index) in answers" :key="index"
+                @click="answerClicked($event, index)"
+                :class="{ 'correct-answer': colorAnswerGreen(index), 'iccorrect-answer': colorAnswerRed(index)}">
+                    {{ answer }}
                 </div>
-                <div class="exercise-answer">
-                    הזמן כתביו במכתב בצוואתו בפרס כל ולהסברת איינשטיין הקוונטים הכבידה, סוציאליסט ופעל במרץ מה האחרון גרמני
-                    אקטואליים במדינת
-                    אלברטאיינשטיין הוא. אף בפיתוח נחשב והיה תרם קוך חיים התאורטיקנים וירטמברג לגאונות, פיתוח הפך שבקיסרות
-                    המכניקה תחומי
-                    מהותם להאזנה סילארד אייזק בגרמנית.
-                </div>
-                <div class="exercise-answer">
-                    לקדם מהמדינה עזרה שתי שהגדיר גרעיני ועודדו הקלאסית האוניברסיטה התנועה, פיתח את זכה למשפחה וירטמברג אותה דחה
-                    בגין כן האחת.
-                    לקדם מהמדינה עזרה שתי שהגדיר גרעיני ועודדו הקלאסית האוניברסיטה התנועה, פיתח את זכה למשפחה וירטמברג אותה דחה
-                    בגין כן האחת.
-                    לקדם מהמדינה עזרה שתי שהגדיר גרעיני ועודדו הקלאסית האוניברסיטה התנועה, פיתח את זכה למשפחה וירטמברג אותה דחה
-                    בגין כן האחת.
-                    לקדם מהמדינה עזרה שתי שהגדיר גרעיני ועודדו הקלאסית האוניברסיטה התנועה, פיתח את זכה למשפחה וירטמברג אותה דחה
-                    בגין כן האחת.
-                </div>
-                <div class="exercise-answer">
-                    תמך בנושא להיות מכניקת אז הוא זכה תמיכתו קורות שמו, מידע לנשיא בעל העברית הוריש איינשטיין ניוטון הראשון נשיא
-                    פיזיקאי.
-                    תמך בנושא להיות מכניקת אז הוא זכה תמיכתו קורות שמו, מידע לנשיא בעל העברית הוריש איינשטיין ניוטון הראשון נשיא
-                    פיזיקאי.
-                    תמך בנושא להיות מכניקת אז הוא זכה תמיכתו קורות שמו, מידע לנשיא בעל העברית הוריש איינשטיין ניוטון הראשון נשיא
-                    פיזיקאי.
-                    תמך בנושא להיות מכניקת אז הוא זכה תמיכתו קורות שמו, מידע לנשיא בעל העברית הוריש איינשטיין ניוטון הראשון נשיא
-                    פיזיקאי.
-                </div>
+            </div>
+            <div class="answer-explanation" v-if="isThereAnExplanation">
+                {{explanation}}
             </div>
         </div>
     </div>
@@ -61,22 +29,81 @@ export default {
         pageIndex: {
             required: true,
             type: Number
+        },
+        questionIndex: {
+            required: true,
+            type: Number
         }
     },
     data() {
         return {
-            question: this.$store.state.exerciseQuestions[this.$store.state.currentContentChapter][this.pageIndex][0]["question"]
+            correctAnswer: Number(this.$store.state.exerciseQuestions[this.$store.state.currentContentChapter - 1][this.pageIndex][this.questionIndex]["rightAnswer"]),
+            isAnswerCorrect: false,
+            currentAnswer: -1,
+            explanation: this.$store.state.exerciseQuestions[this.$store.state.currentContentChapter - 1][this.pageIndex][this.questionIndex]["explanation"]
         }
     },
     methods: {
-
+        answerClicked(event, index) {
+            this.currentAnswer = index;
+            if (index === this.correctAnswer) {
+                this.isAnswerCorrect = true;
+            } else {
+                this.isAnswerCorrect = false;
+            }
+            this.$emit('clicked', this.isAnswerCorrect, this.currentAnswer)
+        },
+        colorAnswerGreen(index) {
+            return index === this.currentAnswer && this.isAnswerCorrect
+        },
+        colorAnswerRed(index) {
+            return index === this.currentAnswer && !this.isAnswerCorrect
+        }
     },
     computed: {
-
+        chapterId() {
+            return this.$store.state.currentContentChapter - 1;
+        },
+        question() {
+            return this.$store.state.exerciseQuestions[this.$store.state.currentContentChapter - 1][this.pageIndex][this.questionIndex]["question"]
+        },
+        answers() {
+            return this.$store.state.exerciseQuestions[this.$store.state.currentContentChapter - 1][this.pageIndex][this.questionIndex]["answers"]
+        },
+        isThereAnExplanation() {
+            return this.$store.state.exerciseQuestions[this.$store.state.currentContentChapter - 1][this.pageIndex][this.questionIndex]["explanation"] !== undefined && this.isAnswerCorrect
+        },
     },
 }
 </script>
 
 <style scoped>
+    .exercise-question {
+        font-size: 1.1em;
+    }
+
+    .correct-answer {
+        background-color: rgba(0, 128, 0, 0.7);
+        cursor: auto;
+    }
+
+    .correct-answer:hover {
+        background-color: rgba(0, 128, 0, 0.7);
+    }
+
+    .iccorrect-answer {
+        background-color: rgba(255, 0, 0, 0.7);
+        cursor: auto;
+    }
+
+    .iccorrect-answer:hover {
+        background-color: rgba(255, 0, 0, 0.7);
+    }
+
+    .answer-explanation {
+        border: var(--yellow) 1vmin solid;
+        padding: 2vmin;
+        box-sizing: border-box;
+    }
 
 </style>

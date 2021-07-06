@@ -38,7 +38,7 @@ export default {
   },
   computed: {
     visible() {
-      return this.index == this.Accordion.active;
+      return (this.index == this.Accordion.active);
     },
     iconSrc() {
       return require('./../../media/graphics/' + this.iconName);

@@ -8,7 +8,9 @@
 
 export default {
     name: 'AccordionContainer',
-    props: {},
+    props: {
+      
+    },
     data() {
       return {
         Accordion: {
@@ -19,6 +21,14 @@ export default {
     },
     provide() {
       return { Accordion: this.Accordion };
+    },
+    methods: {
+      activateChapter(){
+          this.Accordion.active = this.$store.state.currentContentChapter - 1;
+      },
+      closeAll(){
+          this.Accordion.active = null;
+      }
     }
 }
 </script>

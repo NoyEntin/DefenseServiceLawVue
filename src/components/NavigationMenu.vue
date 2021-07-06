@@ -1,48 +1,19 @@
 <template>
-  <!-- <div class="navigation-menu-overlay"> -->
-    <div class="navigation-menu-container">
+       <div class="navigation-menu-container">
       <transition name="slide">
-        <AccordionContainer>
-            <AccordionItem>
+        <AccordionContainer ref="menuAccordion">
+            <AccordionItem  v-for="(chapterName, chapterIndex) in chapterNames" :key="'chapter' + chapterIndex">
               <template v-slot:accordion-trigger>
-                <h3>חוק שירות ביטחון</h3>
-              </template>
-              <template v-slot:accordion-content>
-                <ul class="chapter-ul" @click="clicked">
-                  <li class="page-li" data-chapter="1" data-page="1">יוצאים לדרך</li>
-                  <li class="page-li" data-chapter="1" data-page="2">סעיפים בנושא הצו הראשון</li>
-                  <li class="page-li" data-chapter="1" data-page="3">סעיפים בנושא צו הגיוס</li>
-                  <li class="page-li" data-chapter="1" data-page="4">סעיפים בנושא בני ישיבות</li>
-                  <li class="page-li" data-chapter="1" data-page="5">סעיפים בנושא דחיות גיוס ופטור</li>
-                </ul>
-              </template>
-            </AccordionItem>
-            <AccordionItem>
-              <template v-slot:accordion-trigger>
-                <h3>סעיף 20</h3>
+                <h3>{{chapterName}}</h3>
               </template>
               <template v-slot:accordion-content>
                 <ul class="chapter-ul">
-                  <li class="page-li" >סעיף 20 לחוק שירות ביטחון</li>
-                  <li class="page-li" >משך תקופת סעיף 20 למלש"ב</li>
-                  <li class="page-li" >אופן חישוב בתקופות במלתי נמנות</li>
-                  <li class="page-li" >חישוב הארכת סעיף 20</li>
-                  <li class="page-li" >העמקה שנה שלישית</li>
-                  <li class="page-li" >משך טיפול בקשה מותר</li>
-                </ul>
-              </template>
-            </AccordionItem>
-            <AccordionItem>
-              <template v-slot:accordion-trigger>
-                <h3>משתמטים</h3>
-              </template>
-              <template v-slot:accordion-content>
-                <ul class="chapter-ul">
-                  <li class="page-li" >קודם כל - מי הוא משתמט</li>
-                  <li class="page-li" >לפני ההכרזה</li>
-                  <li class="page-li" >הכרזת השתמטות</li>
-                  <li class="page-li" >סוגי משתמטים</li>
-                  <li class="page-li" >התייצבות משתמט</li>
+                  <li v-for="(page, pageIndex) in navigationData[chapterIndex]"
+                  @click="navigateToPage($event, chapterIndex, pageIndex)"
+                  :key="'chapter' + chapterIndex + 'page' + pageIndex" class="page-li"
+                  :class="{'current-page': isContentScreen && chapterIndex === currentChapter && pageIndex === currentPage}">
+                    {{page}}
+                  </li>
                 </ul>
               </template>
             </AccordionItem>
@@ -61,43 +32,59 @@
         </div>
       </div>
     </div>
-  <!-- </div> -->
 </template>
 
 <script>
 import AccordionContainer from "./accordionComponents/AccordionContainer"
 import AccordionItem from "./accordionComponents/AccordionItem"
 
+import { mapGetters } from "vuex";
+
 export default {
     name: 'NavigationMenu',
     components: {
         AccordionContainer,
-        AccordionItem
+        AccordionItem,
     },
     props: {
 
     },
     data() {
         return {
-
+          chapterNames: this.$store.state.chapterNames,
+          navigationData: this.$store.state.navigationData,
         }
     },
     methods: {
-      clicked(event, el) {
-        console.log("clicked!");
-        var el = event.currentTarget;
-        var chapter = el.getAttribute('data-chapter');
-        var page = el.getAttribute('data-page');
-
-        console.log(el);
-        console.log(chapter);
-        console.log(page);
-        // console.log(this.name);
+      navigateToPage(event, chapterIndex, pageIndex) {
+        this.$store.commit('updateCurrentContentChapter', chapterIndex + 1);
+        this.$store.commit('updateCurrentContentPage', pageIndex);
+        this.$store.commit('loadContentScreen');
+        this.$emit('triggerOpenMenu');
       }
     },
     computed: {
-
+      isContentScreen(){
+        return this.$store.getters.isContentScreen
+      },
+      currentPage(){
+        return this.$store.state.currentContentPageIndex
+      },
+      currentChapter(){
+        return this.$store.state.currentContentChapter - 1
+      },
+      ...mapGetters(["contentPageName"])
     },
+    watch: {
+        contentPageName: function() {
+          this.$refs.menuAccordion.activateChapter();
+        },
+        isContentScreen: function() {
+          if(!this.isContentScreen){
+              this.$refs.menuAccordion.closeAll();
+          }
+        },
+    }
 }
 </script>
 
@@ -118,17 +105,20 @@ export default {
   }
 
   .page-li:hover {
-    background-color: white;
+    background-color: rgba(245, 244, 244, 0.7)
   }
 
   .page-li {
     padding: 1vmin;
   }
   
-  /* .accordion-container {
-      width: 80%;
-      margin: 0% 10%;
-  } */
+  .current-page {
+    background-color: white;
+  }
+
+  .current-page:hover {
+    background-color: white;
+  }
 
   .key {
     position: absolute;
