@@ -39,8 +39,6 @@
               </transition>
             </div>
           </transition>
-
-          <div class="clickMe" @click="initAreExerciseQuestionsAnswered">clickMe</div>
     </div>
 </template>
 
@@ -66,9 +64,6 @@ export default {
     openMenu(){
       this.isMenuOpen = !this.isMenuOpen;
       // this.$refs.NavigationMenu.
-    },
-    initAreExerciseQuestionsAnswered() {
-      store.commit('initChapterQuestions');
     }
   },
   store,
@@ -86,12 +81,12 @@ export default {
       TestScreen,
       NavigationMenu,
   },
-  // mounted: function() {
-  //   console.log($store.state.areExerciseQuestionsAnswered);
-  //   for (var i = 1; i <= this.$store.state.totalChapterNumber; i++) {
-  //     store.commit('initChapterQuestions', i);
-  //   }
-  // }
+  mounted() {
+      store.commit('initAreExerciseQuestionsAnswered');
+      console.table(this.$store.state.areExerciseQuestionsAnswered);
+      store.commit('initArePagesViewed');
+      console.table(this.$store.state.arePagesViewed);
+  }
 }
 </script>
 
@@ -100,14 +95,6 @@ export default {
 </style>
 
 <style scoped>
-
-  .clickMe {
-    background-color: teal;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 
   @keyframes slideEnter {
     0% {

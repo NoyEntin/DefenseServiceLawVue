@@ -9,7 +9,7 @@
             <div class="exercise-answers-container">
                 <div class="exercise-answer" v-for="(answer, index) in answers" :key="index"
                 @click="answerClicked($event, index)"
-                :class="{ 'correct-answer': colorAnswerGreen(index), 'iccorrect-answer': colorAnswerRed(index)}">
+                :class="{ 'correct-answer': colorAnswerGreen(index), 'incorrect-answer': colorAnswerRed(index), 'disable': isAnswerCorrect}">
                     {{ answer }}
                 </div>
             </div>
@@ -38,23 +38,24 @@ export default {
     data() {
         return {
             correctAnswer: Number(this.$store.state.exerciseQuestions[this.$store.state.currentContentChapter - 1][this.pageIndex][this.questionIndex]["rightAnswer"]),
-            isAnswerCorrect: false,
+            // isAnswerCorrect: false,
             currentAnswer: -1,
             explanation: this.$store.state.exerciseQuestions[this.$store.state.currentContentChapter - 1][this.pageIndex][this.questionIndex]["explanation"]
         }
     },
     methods: {
         answerClicked(event, index) {
-            this.currentAnswer = index;
-            if (index === this.correctAnswer) {
-                this.isAnswerCorrect = true;
-            } else {
-                this.isAnswerCorrect = false;
+            if (!this.isAnswerCorrect) {
+                this.currentAnswer = index;
+                if (this.currentAnswer === this.correctAnswer) {
+                    this.$store.commit('updateAnsweredQuestion', this.questionIndex);
+                    console.table(this.$store.state.areExerciseQuestionsAnswered);
+                }
+                this.$emit('clicked', this.isAnswerCorrect, this.currentAnswer);
             }
-            this.$emit('clicked', this.isAnswerCorrect, this.currentAnswer)
         },
         colorAnswerGreen(index) {
-            return index === this.currentAnswer && this.isAnswerCorrect
+            return index === this.correctAnswer && this.isAnswerCorrect
         },
         colorAnswerRed(index) {
             return index === this.currentAnswer && !this.isAnswerCorrect
@@ -73,7 +74,15 @@ export default {
         isThereAnExplanation() {
             return this.$store.state.exerciseQuestions[this.$store.state.currentContentChapter - 1][this.pageIndex][this.questionIndex]["explanation"] !== undefined && this.isAnswerCorrect
         },
+        isAnswerCorrect() {
+            return this.$store.state.areExerciseQuestionsAnswered[this.chapterId][this.pageIndex][this.questionIndex]
+        }
     },
+    // created() {
+    //     if (this.$store.state.areExerciseQuestionsAnswered[this.chapterId][this.pageIndex][this.questionIndex]) {
+    //         this.isAnswerCorrect = true;
+    //     }
+    // }
 }
 </script>
 
@@ -82,28 +91,47 @@ export default {
         font-size: 1.1em;
     }
 
+
+    .exercise-answers-container {
+    display: flex;
+    flex-flow: column nowrap;
+    z-index: 2;
+}
+
+.exercise-answer {
+    background-color: rgba(1, 22, 39, 0.7);
+    padding: 2vmin;
+    margin: 1vmin;
+    border: black 1px solid;
+    color: white;
+}
+.exercise-answer:not(.disable):hover {
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: rgba(1, 22, 39, 0.9);
+}
+
+.answer-explanation {
+    padding: 2vmin;
+    margin: 1vmin;
+    border: var(--yellow) 3px solid;
+}
+
     .correct-answer {
         background-color: rgba(0, 128, 0, 0.7);
-        cursor: auto;
     }
 
     .correct-answer:hover {
         background-color: rgba(0, 128, 0, 0.7);
-    }
-
-    .iccorrect-answer {
-        background-color: rgba(255, 0, 0, 0.7);
         cursor: auto;
     }
 
-    .iccorrect-answer:hover {
+    .incorrect-answer {
         background-color: rgba(255, 0, 0, 0.7);
     }
 
-    .answer-explanation {
-        border: var(--yellow) 1vmin solid;
-        padding: 2vmin;
-        box-sizing: border-box;
+    .incorrect-answer:not(.disable):hover {
+        background-color: rgba(255, 0, 0, 0.7);
+        cursor: auto;
     }
-
 </style>

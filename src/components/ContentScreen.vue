@@ -82,10 +82,8 @@ export default {
     data() {
         return {
             pagesInEachChapter: [5, 6, 5],
-            // currentPageIndex: 0,
             isExercise: false,
             //will load this from store?
-            // answeredCorrectly: true,
             maxQuestions: 0,
             currentQuestion: 0,
 
@@ -94,12 +92,6 @@ export default {
         }
     },
     methods: {
-        // next() {
-        //     if(this.isExercise){
-        //       this.currentPageIndex++;  
-        //     }
-        //     this.isExercise = !this.isExercise;
-        // },
         next() {
             this.exerciseIsAnswerCorrect = -1;
             this.exerciseCurrentAnswer = -1;
@@ -117,8 +109,6 @@ export default {
                 //and it's the last question, change to the next content page. 
                 if (this.currentQuestion === this.maxQuestions) {
                     this.$store.commit('updateCurrentContentPage', this.currentPageIndex + 1);
-                    // this.currentPageIndex++;
-                    // this.isExercise = false;
                 }
             }
 
@@ -135,7 +125,6 @@ export default {
                 this.isExercise = false;
             } else {
                 this.$store.commit('updateCurrentContentPage', this.currentPageIndex - 1);
-                // this.currentPageIndex--;  
             }
         },
         positionWave() {

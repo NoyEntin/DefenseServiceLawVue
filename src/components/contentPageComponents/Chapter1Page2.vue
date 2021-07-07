@@ -141,6 +141,9 @@ export default {
     computed: {
 
     },
+    created(){
+        this.$store.commit('updateViewedPages');
+    }
 }
 </script>
 

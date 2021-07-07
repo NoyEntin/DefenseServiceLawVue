@@ -44,9 +44,9 @@ export default {
             overlay.removeClass('overlay-active');
         }
     },
-    computed: {
-
-    },
+    created() {
+        this.$store.commit('updateViewedPages');
+    }
 }
 </script>
 

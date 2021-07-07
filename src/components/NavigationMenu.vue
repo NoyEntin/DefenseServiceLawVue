@@ -12,7 +12,8 @@
                   @click="navigateToPage($event, chapterIndex, pageIndex)"
                   :key="'chapter' + chapterIndex + 'page' + pageIndex" class="page-li"
                   :class="{'current-page': isContentScreen && chapterIndex === currentChapter && pageIndex === currentPage}">
-                    {{page}}
+                 <!--   {{page + " " + isViewed}}-->
+                      {{page}}
                   </li>
                 </ul>
               </template>
@@ -28,7 +29,7 @@
           <ul class="key-list-2">
             <li> - קראת ותרגלת</li>
           </ul>
-          <div>כדי לעשות את המבחן יש להשלים את כל הנושאים</div>
+          <div class="key-text">כדי לעשות את המבחן יש להשלים את כל הנושאים</div>
         </div>
       </div>
     </div>
@@ -92,12 +93,22 @@ export default {
 
   .navigation-menu-container {
     position: absolute;
+    display: flex;
     background-color: var(--lighten-blue);
     height: 100%;
     width: 25vmax;
     max-width: 40vh;
+    /* min-width: 25vw; */
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    overflow: auto;
   }
-  
+
+  .accordion-container {
+    width: 100%;
+  }
+
   .chapter-ul {
     width: 100%;
     height: 100%;
@@ -111,6 +122,42 @@ export default {
   .page-li {
     padding: 1vmin;
   }
+
+  .key-list-1,
+  .key-list-2{
+    list-style: none;
+  }
+
+  .key li {
+    position: relative;
+    text-indent: 1vmin;
+  }
+
+  .key ul {
+    margin: 1vmin;
+  }
+
+  .key-list-1 li::before {
+    content: "";
+		position: absolute;
+		right: -1.5em;
+		top: 1vmin;
+		width: 1.5em;
+		height: 1.5em;
+    background-image: url('./../media/graphics/EmptyEye.svg');
+    background-repeat: no-repeat;
+  }
+  
+  .key-list-2 li::before {
+    content: "";
+		position: absolute;
+		right: -1.5em;
+		top: 1vmin;
+		width: 1.5em;
+		height: 1.5em;
+    background-image: url('./../media/graphics/fullEye.svg');
+    background-repeat: no-repeat;
+  }
   
   .current-page {
     background-color: white;
@@ -121,25 +168,30 @@ export default {
   }
 
   .key {
-    position: absolute;
-    bottom: 2%;
+    /* position: absolute; */
+    margin: 5%;
     display: flex;
     flex-flow: column nowrap;
-    right: 50%;
-    transform: translateX(50%);
-    width: 90%;
+    /* right: 50%;
+    transform: translateX(50%); */
+    width: 80%;
+    font-size: calc(0.7em + 0.5vmin);
   }
 
   .key-text-container {
     position: relative;
-    border: var(--yellow) 1.2vmin solid;
+    border: var(--yellow) 1vmin solid;
     background-color: var(--blue);
     border-top: none;
-    min-height: 23vmin;
   }
 
   .key-image {
-    margin-bottom: -1%;
+    margin-bottom: -5%;
+  }
+
+  .key-text {
+    text-align: center;
+    margin-bottom: 5%;
   }
 
 </style>

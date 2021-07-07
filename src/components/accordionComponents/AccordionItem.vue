@@ -82,7 +82,7 @@ export default {
     background-color: var(--blue);
     box-shadow: 0 4px 2px -2px gray;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     color: white;
     height: 6vmin;
 }

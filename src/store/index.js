@@ -37,7 +37,8 @@ export default createStore({
         'התייצבות משתמט'
       ]
     ],
-    areExerciseQuestionsAnswered: []
+    areExerciseQuestionsAnswered: [],
+    arePagesViewed: []
   },
   getters: {
     isContentScreen: state => {
@@ -63,8 +64,15 @@ export default createStore({
     backToHome(state) {
       state.currentScreenIndex = 0;
     },
-
-    initChapterQuestions(state) {
+    initArePagesViewed(state) {
+      for (var i = 0; i < state.totalChapterNumber; i++) {
+        state.arePagesViewed.push([]);
+        for (var j = 0; j < state.navigationData[i].length; j++) {
+          state.arePagesViewed[i].push(false);
+        }
+      }
+    },
+    initAreExerciseQuestionsAnswered(state) {
       for (var i = 0; i < state.totalChapterNumber; i++) {
         state.areExerciseQuestionsAnswered.push([]);
         for (var j = 0; j < state.navigationData[i].length; j++) {
@@ -75,6 +83,12 @@ export default createStore({
         }
       }
     },
+    updateViewedPages(state) {
+      state.arePagesViewed[state.currentContentChapter - 1][state.currentContentPageIndex] = true;
+    },
+    updateAnsweredQuestion(state, questionNum) {
+      state.areExerciseQuestionsAnswered[state.currentContentChapter - 1][state.currentContentPageIndex][questionNum] = true;
+    }
   },
   actions: {
   },

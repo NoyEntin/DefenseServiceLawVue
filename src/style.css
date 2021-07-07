@@ -471,25 +471,7 @@ svg {
 	}
 }
 
-.exercise-answers-container {
-    display: flex;
-    flex-flow: column nowrap;
-    z-index: 2;
-}
 
-.exercise-answer {
-    background-color: rgb(1, 22, 39, 0.7);
-    padding: 2vmin;
-    margin: 1vmin;
-    border: black 1px solid;
-    cursor: pointer;
-    color: white;
-}
-
-.exercise-answer:hover {
-    transition: 0.2s;
-    background-color: rgb(1, 22, 39, 0.9);
-}
 
 .page-title {
     background-repeat: no-repeat;

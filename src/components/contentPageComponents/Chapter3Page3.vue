@@ -121,12 +121,9 @@ export default {
 
         }
     },
-    methods: {
-
-    },
-    computed: {
-
-    },
+    created() {
+        this.$store.commit('updateViewedPages');
+    }
 }
 </script>
 

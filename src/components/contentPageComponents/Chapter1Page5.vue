@@ -206,20 +206,14 @@ export default {
         ShowMore
     },
     name: 'Chapter1Page5',
-    props: {
-
-    },
     data() {
         return {
 
         }
     },
-    methods: {
-    
-    },
-    computed: {
-
-    },
+    created() {
+        this.$store.commit('updateViewedPages');
+    }
 }
 </script>
 
