@@ -13,7 +13,7 @@
                         <div class="pop-up-btn-no pop-up-btn" @click="onNoClick">
                             <p>צודק, בואו נחזור למסלול</p>
                         </div>
-                        <div class="pop-up-btn-yes pop-up-btn">
+                        <div class="pop-up-btn-yes pop-up-btn" @click="continueToChapter">
                             <p>אני כאן לרענון, תנו לי להסתובב חופשי</p>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
                             <img class="study-img" src="./../media/graphics/studyIcon.svg">
                             <p>חזור ללמוד</p>
                         </div>
-                        <div class="pop-up-btn-yes pop-up-btn">
+                        <div class="pop-up-btn-yes pop-up-btn" @click="onTestConfirm">
                             <p>התחל בבחינה</p>
                             <img class="test-img" src="./../media/graphics/testIcon.svg">
                         </div>
@@ -51,9 +51,8 @@
                     <img class="go-study-img" src="./../media/graphics/angry.png">
                     <div class="pop-up-text">
                         <p>לא ניגשים למבחן בלי להתכונן!</p>
-                        <p>לא בטוח איזה נושאים נשארו לך?</p>
-                        <p>בדוק את תפריט הניווט </p>
-                        <p>כך תוכל לראות מה נשאר לך!</p>
+                        <p>בדוק את תפריט הניווט</p>
+                        <p>ותראה מה נשאר ללמוד</p>
                     </div>
                     <div class="pop-up-btn-container">
                         <div class="pop-up-btn-no pop-up-btn" @click="onNoClick">
@@ -80,7 +79,7 @@
                     <div class="pop-up-btn-no pop-up-btn" @click="onNoClick">
                         <p>לא, תשאיר אותי בנתיב</p>
                     </div>
-                    <div class="pop-up-btn-yes pop-up-btn">
+                    <div class="pop-up-btn-yes pop-up-btn" @click="onSkipInMenuConfirm">
                         <p>כן, שים גז!</p>
                     </div>
                 </div>
@@ -105,13 +104,31 @@ export default {
             type: Function,
             required: true,
         },
+        // onSkipInMenuConfirm: {
+        //     type: Function,
+        //     required: true,
+        // },
         whichPopUp: {
             type: String,
             required: true,
         },
+        buttonIndex: {
+            type: Number,
+            required: false,
+        }
     },
     methods: {
-    
+        onTestConfirm() {
+            this.$store.commit('loadTestScreen');
+        },
+        continueToChapter() {
+            this.$store.commit('loadContentScreen');
+            this.$store.commit('updateCurrentContentChapter', this.buttonIndex);
+            this.$store.commit('updateCurrentContentPage', 0);
+        },
+        onSkipInMenuConfirm: function(){
+            this.$emit('navigateToPage');
+        }
     },
     computed: {
 

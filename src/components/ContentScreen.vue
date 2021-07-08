@@ -13,10 +13,11 @@
             </div>
         </div>
         <div ref="contentContainer" class="content-container" v-on="isExercise ? { scroll: positionWave } : {}">
+            {{currentPageName}}
             <component ref="pageContent" v-bind:is="currentPageName"
             :pageIndex="isExercise ? currentPageIndex : undefined"
             :questionIndex="isExercise ? currentQuestion : undefined"
-             @clicked="onClickChild">
+             @onAnswerClick="onAnswerClick">
             </component>
         </div>
         <div class="bottom-ui">
@@ -44,10 +45,10 @@
                 </div>
             </div>
 
-            <div class="is-correct-message red" v-if="isMessageIncorrect && isExercise">
+            <div class="is-correct-message red" v-if="answerClicked && !answeredCorrectly && isExercise">
                 נסה שוב :(
             </div>
-            <div class="is-correct-message green" v-if="isMessageCorrect && isExercise">
+            <div class="is-correct-message green" v-if="answeredCorrectly && isExercise">
                 מצוין! :)
             </div>
         </div>
@@ -83,29 +84,24 @@ export default {
         return {
             pagesInEachChapter: [5, 6, 5],
             isExercise: false,
+            backClick: false,
             //will load this from store?
             maxQuestions: 0,
             currentQuestion: 0,
 
-            exerciseIsAnswerCorrect: -1,
-            exerciseCurrentAnswer: -1,
+            answerClicked: false,
         }
     },
     methods: {
         next() {
-            this.exerciseIsAnswerCorrect = -1;
-            this.exerciseCurrentAnswer = -1;
             // if not in exercise, change to an exercise, get how many questions this page has and change the currentQuestion to 0.
             if(!this.isExercise) {
-                this.isExercise = true;
-                this.maxQuestions = this.$store.state.exerciseQuestions[this.chapterId][this.currentPageIndex].length;
-                this.currentQuestion = 0;
+                this.initiateExercise();
             // if in exercise-
             } else {
+                this.answerClicked = false;
                 // increase the currentQuestion.
                 this.currentQuestion++;
-                console.log("currentQuestion: " + this.currentQuestion);
-                console.log("maxQuestions: " + this.maxQuestions);
                 //and it's the last question, change to the next content page. 
                 if (this.currentQuestion === this.maxQuestions) {
                     this.$store.commit('updateCurrentContentPage', this.currentPageIndex + 1);
@@ -113,19 +109,27 @@ export default {
             }
 
         },
-
-        onClickChild (isAnswerCorrect, currentAnswer) {
-            console.log(isAnswerCorrect, currentAnswer);
-            this.exerciseIsAnswerCorrect = isAnswerCorrect;
-            this.exerciseCurrentAnswer = currentAnswer;
+        onAnswerClick () {
+            this.answerClicked = true;
         },
-
         prev() {
             if(this.isExercise){
-                this.isExercise = false;
+                if (this.currentQuestion > 0)
+                    this.currentQuestion--;
+                else{
+                    this.isExercise = false;
+                }                    
             } else {
+                this.backClick = true;
                 this.$store.commit('updateCurrentContentPage', this.currentPageIndex - 1);
+                this.initiateExercise();
             }
+        },
+        initiateExercise(){
+            this.answerClicked = false;
+            this.isExercise = true;
+            this.maxQuestions = this.$store.state.exerciseQuestions[this.chapterId][this.currentPageIndex].length;
+            this.currentQuestion = 0;
         },
         positionWave() {
             $(this.$refs.pageContent.$refs.ocean).css("top","calc(calc(calc(100vh - 19vmin) - 198px) + " + $(this.$refs.contentContainer).scrollTop() + "px)");
@@ -146,7 +150,8 @@ export default {
         },
         currentPageName(){
             if(!this.isExercise){
-               return 'Chapter' + this.$store.state.currentContentChapter + 'Page' + (this.currentPageIndex + 1); 
+                return this.contentPageName;
+            //    return 'Chapter' + this.$store.state.currentContentChapter + 'Page' + (this.currentPageIndex + 1); 
             }
             else{
                 return 'ExercisePage';
@@ -156,20 +161,13 @@ export default {
                 return this.currentPageIndex > 0 || this.isExercise
         },
         showToHomeBtn() {
-            return this.currentPageIndex === this.pagesInEachChapter[this.chapterId] - 1 && this.isExercise;
+            return this.currentPageIndex === this.pagesInEachChapter[this.chapterId] - 1 && this.isExercise && this.answeredCorrectly;
         },
         showNextBtn() {
             return !this.showToHomeBtn && (!this.isExercise || (this.isExercise && this.answeredCorrectly))
         },
-        answeredCorrectly() {
-            // return this.$store.state.exerciseQuestions[this.chapterId][this.currentPageIndex][this.currentQuestion]['isUserCorrect'];
-            return true;
-        },
-        isMessageCorrect() {
-            return this.exerciseIsAnswerCorrect && this.exerciseCurrentAnswer !== -1
-        },
-        isMessageIncorrect() {
-            return !this.exerciseIsAnswerCorrect && this.exerciseCurrentAnswer !== -1
+        answeredCorrectly(){
+            return this.$store.state.areExerciseQuestionsAnswered[this.chapterId][this.currentPageIndex][this.currentQuestion]
         },
         ...mapGetters(["contentPageName"])
     },
@@ -178,7 +176,11 @@ export default {
             $(this.$refs.contentContainer).scrollTop(0);
         },
         contentPageName: function() {
-            this.isExercise = false;
+            if(this.backClick)
+                this.backClick = false;
+            else
+                this.isExercise = false;
+
         }
     },
     components: {

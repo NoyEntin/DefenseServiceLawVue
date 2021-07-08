@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="answer-explanation" v-if="isThereAnExplanation">
-                {{explanation}}
+                {{ explanation }}
             </div>
         </div>
     </div>
@@ -49,9 +49,9 @@ export default {
                 this.currentAnswer = index;
                 if (this.currentAnswer === this.correctAnswer) {
                     this.$store.commit('updateAnsweredQuestion', this.questionIndex);
-                    console.table(this.$store.state.areExerciseQuestionsAnswered);
+                    this.currentAnswer = -1;
                 }
-                this.$emit('clicked', this.isAnswerCorrect, this.currentAnswer);
+                this.$emit('onAnswerClick');
             }
         },
         colorAnswerGreen(index) {

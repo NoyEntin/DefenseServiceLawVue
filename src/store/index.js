@@ -24,7 +24,7 @@ export default createStore({
       [
         'סעיף 20 לחוק שירות ביטחון',
         'משך תקופת סעיף 20 למלש"ב',
-        'אופן חישוב בתקופות במלתי נמנות',
+        'אופן חישוב בתקופות בלתי נמנות',
         'חישוב הארכת סעיף 20',
         'העמקה שנה שלישית',
         'משך טיפול בקשה מותר'
@@ -45,7 +45,30 @@ export default createStore({
       return state.currentScreenIndex === 1;
     },
     contentPageName: state => {
-      return "Chapter" + state.currentContentChapter + "Page" + state.currentContentPageIndex;
+      return "Chapter" + state.currentContentChapter + "Page" + (state.currentContentPageIndex + 1);
+    },
+    contentDone: state => {
+      for(var i = 0; i< state.areExerciseQuestionsAnswered.length; i++) {
+        for(var j = 0; j< state.areExerciseQuestionsAnswered[i].length; j++) {
+          if(state.areExerciseQuestionsAnswered[i][j].includes(false)){
+            return false;
+          }
+        }
+      }
+      return true;
+      // return !state.arePagesViewed.includes(false);
+    },
+    prevChaptersDone: (state) => (clickedChapter) => {
+      for(var i = 0; i< clickedChapter; i++) {
+        for(var j = 0; j< state.areExerciseQuestionsAnswered[i].length; j++) {
+          if(state.areExerciseQuestionsAnswered[i][j].includes(false)){
+            console.log("in return false");
+            return false;
+          }
+        }
+      }
+      console.log("in return true");
+      return true;
     },
   },
   mutations: {
@@ -71,6 +94,7 @@ export default createStore({
           state.arePagesViewed[i].push(false);
         }
       }
+      // console.table(state.arePagesViewed);
     },
     initAreExerciseQuestionsAnswered(state) {
       for (var i = 0; i < state.totalChapterNumber; i++) {

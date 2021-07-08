@@ -17,14 +17,14 @@
         </div>
         <div class="homepage-btn-container">
             <div class="chapters-container">
-                <ChapterButton v-for="buttonIndex in totalChapterNumber" :key="buttonIndex" :buttonId="buttonIndex"></ChapterButton>
+                <ChapterButton @triggerBtnClicked="BtnClicked(buttonIndex)" v-for="buttonIndex in totalChapterNumber" :key="buttonIndex" :buttonId="buttonIndex"></ChapterButton>
             </div>
             <div class="test-btn" @click="TestButtonClicked">
                 <img src="../media/graphics/testIcon.svg" class="test-btn-icon" />
                 <p>מבחן מסכם</p>
             </div>
         </div>
-        <PopUp v-if="popUpShowing" :onNoClick="ClosePopUp" :whichPopUp="'go-study'">
+        <PopUp v-if="popUpShowing" :onNoClick="ClosePopUp" :whichPopUp="whichPopUp" :buttonIndex="buttonIndex">
         </PopUp>
     </div>
 
@@ -36,17 +36,35 @@ import PopUp from './PopUp.vue'
 
 export default {
     name: 'HomeScreen',
-    props: {
-
-    },
+    props: {},
+    emits: ['triggerBtnClicked'],
     data() {
         return {
             popUpShowing: false,
+            whichPopUp: '',
+            buttonIndex: -1,
         }
     },
     methods: {
         TestButtonClicked(){
-            this.$store.commit('loadTestScreen');
+            this.popUpShowing = true;
+            if(this.$store.getters.contentDone) {
+                this.whichPopUp='test-ready';
+            }else{
+                this.whichPopUp='go-study';
+            }
+        },
+        BtnClicked(buttonIndex) {
+            this.buttonIndex = buttonIndex;
+            if(!this.$store.getters.prevChaptersDone(buttonIndex - 1)) {
+                console.log("in skip-chapter");
+                this.popUpShowing = true;
+                this.whichPopUp='skip-chapter';
+            } else {
+                this.$store.commit('loadContentScreen');
+                this.$store.commit('updateCurrentContentChapter', buttonIndex);
+                this.$store.commit('updateCurrentContentPage', 0);
+            }
         },
         ClosePopUp() {
             this.popUpShowing = !this.popUpShowing;
@@ -60,7 +78,6 @@ export default {
     components: {
         ChapterButton,
         PopUp,
-
     }
 }
 </script>

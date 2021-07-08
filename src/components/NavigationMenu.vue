@@ -1,38 +1,40 @@
 <template>
-       <div class="navigation-menu-container">
-      <transition name="slide">
-        <AccordionContainer ref="menuAccordion">
-            <AccordionItem  v-for="(chapterName, chapterIndex) in chapterNames" :key="'chapter' + chapterIndex">
-              <template v-slot:accordion-trigger>
-                <h3>{{chapterName}}</h3>
-              </template>
-              <template v-slot:accordion-content>
-                <ul class="chapter-ul">
-                  <li v-for="(page, pageIndex) in navigationData[chapterIndex]"
-                  @click="navigateToPage($event, chapterIndex, pageIndex)"
-                  :key="'chapter' + chapterIndex + 'page' + pageIndex" class="page-li"
-                  :class="{'current-page': isContentScreen && chapterIndex === currentChapter && pageIndex === currentPage}">
-                 <!--   {{page + " " + isViewed}}-->
-                      {{page}}
-                  </li>
-                </ul>
-              </template>
-            </AccordionItem>
-        </AccordionContainer>
-      </transition>
-      <div class="key">
-        <img class="key-image" src="./../media/graphics/menuKeyTest.svg">
-        <div class="key-text-container">
-          <ul class="key-list-1">
-            <li> - קראת אבל לא תרגלת</li>
-          </ul>
-          <ul class="key-list-2">
-            <li> - קראת ותרגלת</li>
-          </ul>
-          <div class="key-text">כדי לעשות את המבחן יש להשלים את כל הנושאים</div>
-        </div>
+
+  <div class="navigation-menu-container" :class="{'disabled': disabled}">
+    <transition name="slide">
+      <AccordionContainer ref="menuAccordion">
+        <AccordionItem  v-for="(chapterName, chapterIndex) in chapterNames" :key="'chapter' + chapterIndex">
+          <template v-slot:accordion-trigger>
+            <h3>{{chapterName}}</h3>
+          </template>
+          <template v-slot:accordion-content>
+            <ul class="chapter-ul">
+              <li v-for="(page, pageIndex) in navigationData[chapterIndex]"
+              @click="askToNavigate($event, chapterIndex, pageIndex)"
+              :key="'chapter' + chapterIndex + 'page' + pageIndex" class="page-li"
+              :class="{'current-page': isContentScreen && chapterIndex === currentChapter && pageIndex === currentPage}">
+                <!--   {{page + " " + isViewed}}-->
+                <span>{{page}}</span>
+                <img :src="getEyeSrc(chapterIndex, pageIndex)" v-if="getEyeSrc(chapterIndex, pageIndex) !== '-1'" class="eye-mark">
+              </li>
+            </ul>
+          </template>
+        </AccordionItem>
+      </AccordionContainer>
+    </transition>
+    <div class="key">
+      <img class="key-image" src="./../media/graphics/menuKeyTest.svg">
+      <div class="key-text-container">
+        <ul class="key-list-1">
+          <li> - קראת אבל לא תרגלת</li>
+        </ul>
+        <ul class="key-list-2">
+          <li> - קראת ותרגלת</li>
+        </ul>
+        <div class="key-text">כדי לעשות את המבחן יש להשלים את כל הנושאים</div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -41,28 +43,82 @@ import AccordionItem from "./accordionComponents/AccordionItem"
 
 import { mapGetters } from "vuex";
 
+
 export default {
     name: 'NavigationMenu',
     components: {
         AccordionContainer,
         AccordionItem,
+        // PopUp,
     },
     props: {
-
+      disabled: {
+        type: Boolean
+      }
     },
     data() {
-        return {
-          chapterNames: this.$store.state.chapterNames,
-          navigationData: this.$store.state.navigationData,
-        }
+      return {
+        chapterNames: this.$store.state.chapterNames,
+        navigationData: this.$store.state.navigationData,
+        // popUpShowing: true,
+        // disabled: false
+      }
     },
     methods: {
-      navigateToPage(event, chapterIndex, pageIndex) {
-        this.$store.commit('updateCurrentContentChapter', chapterIndex + 1);
-        this.$store.commit('updateCurrentContentPage', pageIndex);
-        this.$store.commit('loadContentScreen');
-        this.$emit('triggerOpenMenu');
-      }
+      askToNavigate($event, chapterIndex, pageIndex) {
+        console.log("nav menu is saying: " + chapterIndex + " and " + pageIndex);
+
+        // check if need to show pop up
+        if (this.isItSkips(chapterIndex, pageIndex)) {
+          // toggleDisabled();
+          this.$emit('askToNavigate', $event, chapterIndex, pageIndex);
+        } else {
+          this.$emit('triggerOpenMenu');
+          this.$store.commit('updateCurrentContentChapter', chapterIndex + 1);
+          this.$store.commit('updateCurrentContentPage', pageIndex);
+          this.$store.commit('loadContentScreen');
+        }
+        // this.$emit('triggerOpenMenu');
+      },
+      isItSkips(chapterIndex, pageIndex) {
+        var currentPageTotal = this.currentPage;
+        var clickedPageTotal = pageIndex;
+        for(var i = 0; i < this.currentChapter; i++){
+          currentPageTotal += this.navigationData[i].length;
+        }
+        for(var j = 0; j < chapterIndex; j++){
+          clickedPageTotal += this.navigationData[j].length;
+        }
+
+        return clickedPageTotal >= currentPageTotal + 2 && !this.$store.state.arePagesViewed[chapterIndex][pageIndex];
+      },
+      isPageSeen(chapterIndex, pageIndex) {
+        return this.$store.state.arePagesViewed[chapterIndex][pageIndex]
+      },
+      isPageDone(chapterIndex, pageIndex) {
+        var questionNum = this.$store.state.areExerciseQuestionsAnswered[chapterIndex][pageIndex].length;
+        for (var i = 0; i < questionNum; i++) {
+          if (!this.$store.state.areExerciseQuestionsAnswered[chapterIndex][pageIndex][i]) {
+            return false;
+          }
+        }
+        return true;
+      },
+      getEyeSrc(chapterIndex, pageIndex) {
+        if (this.isPageDone(chapterIndex, pageIndex)) {
+          return require("./../media/graphics/fullEye.svg");
+        } else if (this.isPageSeen(chapterIndex, pageIndex)) {
+          return require("./../media/graphics/EmptyEye.svg");
+        } else {
+          return '-1';
+        }
+      },
+      // ClosePopUp() {
+      //   this.popUpShowing = !this.popUpShowing;
+      // }
+      // toggleDisabled(){
+      //   this.disabled=!this.disabled;
+      // }
     },
     computed: {
       isContentScreen(){
@@ -74,7 +130,7 @@ export default {
       currentChapter(){
         return this.$store.state.currentContentChapter - 1
       },
-      ...mapGetters(["contentPageName"])
+      ...mapGetters(["contentPageName"]),
     },
     watch: {
         contentPageName: function() {
@@ -116,11 +172,21 @@ export default {
   }
 
   .page-li:hover {
-    background-color: rgba(245, 244, 244, 0.7)
+    /* background-color: rgba(245, 244, 244, 0.7) */
+    background-color: rgba(1, 22, 39, 0.3);
+    color: white
   }
 
   .page-li {
-    padding: 1vmin;
+    padding: 1vmin 2vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .eye-mark {
+    height: 10%;
+    width: 10%;
   }
 
   .key-list-1,
@@ -160,11 +226,12 @@ export default {
   }
   
   .current-page {
-    background-color: white;
+    background-color: rgba(1, 22, 39, 0.8);
+    color: white
   }
 
   .current-page:hover {
-    background-color: white;
+    background-color: rgba(1, 22, 39, 0.8);
   }
 
   .key {
@@ -192,6 +259,10 @@ export default {
   .key-text {
     text-align: center;
     margin-bottom: 5%;
+  }
+
+  .disabled {
+    pointer-events: none;
   }
 
 </style>

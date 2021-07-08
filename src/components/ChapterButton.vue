@@ -38,9 +38,17 @@ export default {
     },
     methods: {
         buttonClicked() {
-            this.$store.commit('loadContentScreen');
-            this.$store.commit('updateCurrentContentChapter', this.buttonId);
-            this.$store.commit('updateCurrentContentPage', 0);
+            console.log("in buttonClicked")
+            // if(!this.$store.getters.prevChaptersDone(this.buttonId)) {
+                // console.log("in skip-chapter");
+                // this.whichPopUp='skip-chapter';
+            // } else {
+            // this.$emit(this.buttonId);
+            this.$emit('triggerBtnClicked');
+            // this.$store.commit('loadContentScreen');
+            // this.$store.commit('updateCurrentContentChapter', this.buttonId);
+            // this.$store.commit('updateCurrentContentPage', 0);
+            // }
         }
     },
     computed: {

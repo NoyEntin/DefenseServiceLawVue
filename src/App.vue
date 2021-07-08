@@ -34,8 +34,9 @@
 
           <transition name="delay-overlay">
             <div class="navigation-menu-overlay" v-show="isMenuOpen">
+              <PopUp v-if="popUpShowing" :onNoClick="ClosePopUp" @navigateToPage="navigateToPage" :whichPopUp="'skip-in-menu'"></PopUp>
               <transition name="slide">
-                <NavigationMenu class="on-overlay" v-show="isMenuOpen" @triggerOpenMenu="openMenu"></NavigationMenu>
+                <NavigationMenu class="on-overlay" v-show="isMenuOpen" :disabled="popUpShowing" @triggerOpenMenu="openMenu" @askToNavigate="ShowPopUp"></NavigationMenu>
               </transition>
             </div>
           </transition>
@@ -50,20 +51,41 @@ import HomeScreen from './components/HomeScreen.vue';
 import ContentScreen from './components/ContentScreen.vue';
 import TestScreen from './components/TestScreen.vue';
 import NavigationMenu from './components/NavigationMenu.vue';
+import PopUp from './components/PopUp.vue';
 
 export default {
   name: 'App',
-  emits: ['triggerOpenMenu'],
+  emits: ['triggerOpenMenu', 'navigateToPage'],
   data() {
       return {
           screenComponentNames: ["HomeScreen", "ContentScreen", "TestScreen"],
           isMenuOpen: false,
+          popUpShowing: false,
+          chapterToNavigateTo: 0,
+          pageToNavigateTo: 0
       }
   },
   methods: {
     openMenu(){
       this.isMenuOpen = !this.isMenuOpen;
+      this.popUpShowing = false;
       // this.$refs.NavigationMenu.
+    },
+    ShowPopUp: function(event, chapterIndex, pageIndex) {
+      this.popUpShowing = true;
+      this.chapterToNavigateTo = chapterIndex,
+      this.pageToNavigateTo = pageIndex
+    },
+    ClosePopUp() {
+      this.popUpShowing = !this.popUpShowing;
+    },
+    navigateToPage(){
+      console.log("app is saying: " + this.chapterToNavigateTo + " and " + this.pageToNavigateTo);
+      this.ClosePopUp();
+      this.openMenu();
+      this.$store.commit('updateCurrentContentChapter', this.chapterToNavigateTo + 1);
+      this.$store.commit('updateCurrentContentPage', this.pageToNavigateTo);
+      this.$store.commit('loadContentScreen');
     }
   },
   store,
@@ -80,12 +102,13 @@ export default {
       ContentScreen,
       TestScreen,
       NavigationMenu,
+      PopUp,
   },
-  mounted() {
+  created() {
       store.commit('initAreExerciseQuestionsAnswered');
-      console.table(this.$store.state.areExerciseQuestionsAnswered);
+      // console.table(this.$store.state.areExerciseQuestionsAnswered);
       store.commit('initArePagesViewed');
-      console.table(this.$store.state.arePagesViewed);
+      // console.table(this.$store.state.arePagesViewed);
   }
 }
 </script>
