@@ -11,7 +11,7 @@
         </ol>
 
         <p class="graph-title">תרשים התייצבות משתמט</p>
-
+        <img class="graphDefaulters" src="../../media/graphics/graphDefaulters1.png">
         <p class="download-btn-container">
             <a class="download-btn" :href="`${publicPath}mediaForDownload/section13chart.png`" download='section13chart.png'>
                 <img src="../../media/graphics/download.svg"/>
@@ -23,7 +23,7 @@
         </GraphNavigation>
 
         <p class="graph-title">תרשים במידה ומשתמטת מציגה מסמכי היריון/אם לילד/נישואין</p>
-
+        <img class="graphDefaulters" src="../../media/graphics/graphDefaulters2.png">
         <p class="download-btn-container">
             <a class="download-btn" :href="`${publicPath}mediaForDownload/section13chart.png`" download='section13chart.png'>
                 <img src="../../media/graphics/download.svg"/>
@@ -63,4 +63,8 @@ export default {
     text-align: center;
 }
 
+.graphDefaulters {
+    height: 100%;
+    width: 100%;
+}
 </style>

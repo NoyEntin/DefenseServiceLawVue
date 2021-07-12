@@ -1,5 +1,6 @@
 import { createStore } from 'vuex';
 import exerciseQuestions from './exerciseQuestions.json';
+import allTestQuestions from './testQuestions.json';
 
 export default createStore({
   state: {
@@ -8,9 +9,9 @@ export default createStore({
     currentContentChapter: 0,
     currentContentPageIndex: 0,
     chapterNames: [
-        "חוק שירות ביטחון",
-        "סעיף 20",
-        "משתמטים"
+      "חוק שירות ביטחון",
+      "סעיף 20",
+      "משתמטים"
     ],
     exerciseQuestions: exerciseQuestions,
     navigationData: [
@@ -38,7 +39,19 @@ export default createStore({
       ]
     ],
     areExerciseQuestionsAnswered: [],
-    arePagesViewed: []
+    arePagesViewed: [],
+    // *****
+    //!attention! each test questions must contain at least n SINGLE questions for each chapter
+    //n is the number of questions required for this chapter according to testQuestionsAmountByChapter
+    // *****
+    allTestQuestions: allTestQuestions,
+    testQuestionsAmountByChapter: [5, 10, 5, 5], //stores how many questions from each chapter, last value is how many mixed from all chapters
+    testQuestionsByChapter: [], //stores which question indexes (of allTestQuestions) belong to which chapter, by order
+    testQuestions: [], //the array which will eventually store the selected questions for the currently loaded test
+    userTestAnswers: [],
+    failingGrade: 70,
+    grade: 0,
+    isFeedbackMode: false
   },
   getters: {
     isContentScreen: state => {
@@ -62,13 +75,14 @@ export default createStore({
       for(var i = 0; i< clickedChapter; i++) {
         for(var j = 0; j< state.areExerciseQuestionsAnswered[i].length; j++) {
           if(state.areExerciseQuestionsAnswered[i][j].includes(false)){
-            console.log("in return false");
             return false;
           }
         }
       }
-      console.log("in return true");
       return true;
+    },
+    isPassingGrade: state => {
+      return state.grade > state.failingGrade
     },
   },
   mutations: {
@@ -78,14 +92,18 @@ export default createStore({
     updateCurrentContentPage(state, contentPageIndex) {
       state.currentContentPageIndex = contentPageIndex;
     },
+    backToHome(state) {
+      state.currentScreenIndex = 0;
+    },
     loadContentScreen(state) {
       state.currentScreenIndex = 1;
     },
-    loadTestScreen(state) {
+    loadTestScreen(state, mode) {
       state.currentScreenIndex = 2;
+      state.isFeedbackMode = mode.isFeedbackMode;
     },
-    backToHome(state) {
-      state.currentScreenIndex = 0;
+    loadEndScreen(state) {
+      state.currentScreenIndex = 3;
     },
     initArePagesViewed(state) {
       for (var i = 0; i < state.totalChapterNumber; i++) {
@@ -94,7 +112,6 @@ export default createStore({
           state.arePagesViewed[i].push(false);
         }
       }
-      // console.table(state.arePagesViewed);
     },
     initAreExerciseQuestionsAnswered(state) {
       for (var i = 0; i < state.totalChapterNumber; i++) {
@@ -107,14 +124,81 @@ export default createStore({
         }
       }
     },
+    buildTestQuestionsByChapter(state) {
+      for (var i = 0; i < state.chapterNames.length; i++) {
+        state.testQuestionsByChapter.push(new Array());
+      }
+      var currentQuestion;
+      for (var i = 0; i < state.allTestQuestions.length; i++){
+        currentQuestion = state.allTestQuestions[i];
+        state.testQuestionsByChapter[Number(currentQuestion[0].relatedChapter)].push(i);
+      }
+    },
+    randomizeChapterQuestions(state, whatToRandomize) {
+      var array = whatToRandomize.array;
+      var howMany = whatToRandomize.howMany;
+      var randomIndex = 0;
+      var randomQuestion = [];
+      var counter = 0;
+      while (counter < howMany) {
+        randomIndex = Math.floor(Math.random() * array.length);
+        randomQuestion = state.allTestQuestions[array[randomIndex]];
+        if (counter + randomQuestion.length <= howMany) {
+          for (var i = 0; i < randomQuestion.length; i++) {
+            state.testQuestions.push(randomQuestion[i]);
+            counter++;
+          }
+          array.splice(randomIndex, 1);
+        }
+      }
+    },
+    clearTestQuestions(state) {
+      state.testQuestionsByChapter = [];
+      state.testQuestions = [];
+    },
+    mergeQuestionArrays(state) {
+      state.testQuestionsByChapter = [].concat.apply([], state.testQuestionsByChapter);
+    },
     updateViewedPages(state) {
       state.arePagesViewed[state.currentContentChapter - 1][state.currentContentPageIndex] = true;
     },
     updateAnsweredQuestion(state, questionNum) {
       state.areExerciseQuestionsAnswered[state.currentContentChapter - 1][state.currentContentPageIndex][questionNum] = true;
+    },
+    setUserTestAnswers(state, userAnswers) {
+      state.userTestAnswers = userAnswers;
+    },
+    calculateGrade(state) {
+      console.log("in store- calculate grade");
+      state.grade = 0;
+      var pointsForEach = 100 / state.testQuestions.length;
+      for (var i = 0; i < state.testQuestions.length; i++){
+        if (Number(state.testQuestions[i].rightAnswer) === state.userTestAnswers[i]) {
+          state.grade += pointsForEach;
+        }
+      }
+      state.grade = Math.round(state.grade);
     }
   },
   actions: {
+    initializeTest({ commit, state }) {
+      //empties testQuestionsByChapter and testQuestions
+      commit('clearTestQuestions');
+      //stores each index of allTestQuestions in the array that represents the chapter to which it relates
+      commit('buildTestQuestionsByChapter');
+      //for each of the chapters, add n random questions to testQuestions, where n is loaded from testQuestionsAmountByChapter
+      var array, howMany;
+      for (var i = 0; i < state.testQuestionsByChapter.length; i++) {
+        array = state.testQuestionsByChapter[i];
+        howMany = state.testQuestionsAmountByChapter[i];
+        commit('randomizeChapterQuestions', { array: array, howMany: howMany});
+      }
+      //merge the arrays, testQuestionsByChapter now stores all remaining question indexes
+      commit('mergeQuestionArrays');
+      //add n more random questions (from any chapter), where n is loaded from testQuestionsAmountByChapter
+      commit('randomizeChapterQuestions', { array: state.testQuestionsByChapter, howMany: state.testQuestionsAmountByChapter[state.testQuestionsAmountByChapter.length - 1] });
+      commit('loadTestScreen', { isFeedbackMode: false });
+    }
   },
   modules: {
   }

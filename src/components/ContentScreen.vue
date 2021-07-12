@@ -13,7 +13,6 @@
             </div>
         </div>
         <div ref="contentContainer" class="content-container" v-on="isExercise ? { scroll: positionWave } : {}">
-            {{currentPageName}}
             <component ref="pageContent" v-bind:is="currentPageName"
             :pageIndex="isExercise ? currentPageIndex : undefined"
             :questionIndex="isExercise ? currentQuestion : undefined"

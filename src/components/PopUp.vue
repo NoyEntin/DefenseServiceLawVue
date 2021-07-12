@@ -6,7 +6,7 @@
                     <div class="pop-up-text">
                         רק רגע!
                         <br>
-                        לאן אתם ממהרים? עוד לא סיימתם את הפרק הקודם
+                    לאן אתם ממהרים? עוד לא סיימתם את כל הפרקים הקודמים
                     </div>
                     <img class="pop-up-image" src="./../media/graphics/racecar.png">
                     <div class="pop-up-btn-container">
@@ -72,8 +72,10 @@
                     בטוח שאתה רוצה לקפוץ קדימה?
                 </div>
                 <div class="dont-show-again">
-                    <input type="checkbox">
-                    <span>אל תציג הודעה זו שוב</span>
+                    <input type="checkbox" id="checkbox" v-model="checkbox" @click="$emit('checkbox')">
+                    <span>אל תציג הודעה זו שוב
+                        <!-- {{dontShowAgain}} -->
+                    </span>
                 </div>
                 <div class="pop-up-btn-container">
                     <div class="pop-up-btn-no pop-up-btn" @click="onNoClick">
@@ -96,7 +98,8 @@ export default {
 
     data() {
         return {
-
+            // dontShowAgain: false,
+            checkbox: false,
         }
     },
     props: {
@@ -119,7 +122,8 @@ export default {
     },
     methods: {
         onTestConfirm() {
-            this.$store.commit('loadTestScreen');
+            // this.$store.commit('loadTestScreen', {isFeedbackMode: false});
+            this.$store.dispatch('initializeTest');
         },
         continueToChapter() {
             this.$store.commit('loadContentScreen');
@@ -128,7 +132,7 @@ export default {
         },
         onSkipInMenuConfirm: function(){
             this.$emit('navigateToPage');
-        }
+        },
     },
     computed: {
 

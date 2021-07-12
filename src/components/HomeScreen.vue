@@ -48,7 +48,8 @@ export default {
     methods: {
         TestButtonClicked(){
             this.popUpShowing = true;
-            if(this.$store.getters.contentDone) {
+            // if(this.$store.getters.contentDone) {
+            if(true) {
                 this.whichPopUp='test-ready';
             }else{
                 this.whichPopUp='go-study';

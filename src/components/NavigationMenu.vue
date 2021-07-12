@@ -13,7 +13,6 @@
               @click="askToNavigate($event, chapterIndex, pageIndex)"
               :key="'chapter' + chapterIndex + 'page' + pageIndex" class="page-li"
               :class="{'current-page': isContentScreen && chapterIndex === currentChapter && pageIndex === currentPage}">
-                <!--   {{page + " " + isViewed}}-->
                 <span>{{page}}</span>
                 <img :src="getEyeSrc(chapterIndex, pageIndex)" v-if="getEyeSrc(chapterIndex, pageIndex) !== '-1'" class="eye-mark">
               </li>
@@ -54,7 +53,10 @@ export default {
     props: {
       disabled: {
         type: Boolean
-      }
+      },
+      dontShowAgain: {
+        type: Boolean
+      },
     },
     data() {
       return {
@@ -81,16 +83,17 @@ export default {
         // this.$emit('triggerOpenMenu');
       },
       isItSkips(chapterIndex, pageIndex) {
-        var currentPageTotal = this.currentPage;
-        var clickedPageTotal = pageIndex;
-        for(var i = 0; i < this.currentChapter; i++){
-          currentPageTotal += this.navigationData[i].length;
+        if (!this.dontShowAgain) {
+          var currentPageTotal = this.currentPage;
+          var clickedPageTotal = pageIndex;
+          for(var i = 0; i < this.currentChapter; i++){
+            currentPageTotal += this.navigationData[i].length;
+          }
+          for(var j = 0; j < chapterIndex; j++){
+            clickedPageTotal += this.navigationData[j].length;
+          }
+          return clickedPageTotal >= currentPageTotal + 2 && !this.$store.state.arePagesViewed[chapterIndex][pageIndex];
         }
-        for(var j = 0; j < chapterIndex; j++){
-          clickedPageTotal += this.navigationData[j].length;
-        }
-
-        return clickedPageTotal >= currentPageTotal + 2 && !this.$store.state.arePagesViewed[chapterIndex][pageIndex];
       },
       isPageSeen(chapterIndex, pageIndex) {
         return this.$store.state.arePagesViewed[chapterIndex][pageIndex]

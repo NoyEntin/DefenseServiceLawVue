@@ -1,11 +1,16 @@
 <template>
     <div>
-        <div class="sub-bar sub-title">מבחן מסכם</div>
+        <div class="sub-bar sub-title">מבחן מסכם
+            {{"mode: " + isFeedbackMode}}
+            {{userAnswer}}
+        </div>
         <div class="progress-bar">
-            <!-- :style="{backgroundColor: setColor(index - 1)}" -->
             <div v-for="index in questions.length" :key="index" @click="goToQuestion(index)" class="progress-bar-test-question">
-                                    {{ index }}
-                <div :class="{'currentQuestion':(currentQuestionIndex === index-1), 'answered':(userAnswer[index-1] !== -1)}" class="progress-bar-test-question-bg">
+                {{ index }}
+                <div :class="{'currentQuestion':(currentQuestionIndex === index-1),
+                 'answered':(userAnswer[index-1] !== -1),
+                 'correct': (isFeedbackMode && userAnswer[index-1]===Number(questions[index-1].rightAnswer))}"
+                  class="progress-bar-test-question-bg">
                 </div>
             </div>
         </div>
@@ -15,7 +20,9 @@
                     {{questions[currentQuestionIndex].question}}
                 </p>
                 <div class="test-answers-container" >
-                    <div v-for="(answer, index) in questions[currentQuestionIndex].answers" :key="index" :class="{'selectedAnswer': userAnswer[currentQuestionIndex] === index}"  class="test-answer" @click="answerClicked(event, index)">
+                    <div v-for="(answer, index) in questions[currentQuestionIndex].answers" :key="index"
+                    :class="{'selectedAnswer': userAnswer[currentQuestionIndex] === index}"  class="test-answer"
+                    @click="answerClicked(event, index)">
                         {{answer}}
                     </div>
                 </div>
@@ -33,13 +40,22 @@
                 </svg>
             </div>
         </div>
-        <div class="end-test-btn" :class="{btnReady: isTestFinished}" @mouseover="toolTipActive = true" @mouseout="toolTipActive = false">
+        <div v-if="!isFeedbackMode" 
+        class="end-test-btn" :class="{btnReady: isTestFinished}"
+        @mouseover="toolTipActive = true" @mouseout="toolTipActive = false"
+        @click="endTest">
             <img class="test-btn-img" v-show="isTestFinished" src="../media/graphics/testIcon.svg">
             <p>הגש מבחן</p>
             <div class="end-test-tooltip" v-show="toolTipActive && !isTestFinished">יש לענות על כל השאלות</div>
         </div>
+        <div v-else-if="isPassingGrade" class="end-test-btn" @click="endTest">
+            <p>חזור לMTV</p>
+        </div>
+        <div v-else class="end-test-btn" @click="endTest">
+            <p>מבחן חדש</p>
+        </div>
 
-        <div class="test-pop-up-container" v-if="showPopUp">
+        <div class="test-pop-up-container" v-if="showPopUp && !isFeedbackMode">
             <div class="overlay">
                 <div class="test-pop-up">
                     <div class="x-btn" @click="closePopUp">&#10006;</div>
@@ -61,20 +77,13 @@ export default {
     },
     data() {
         return {
-            // questions: [
-            //     {
-            //         q: 'fhgfd gfhdgjk uighskfdjsgh iusdguifhsigu sdiuidus uifdsfdhysigufh',
-            //         a: 'jdfhjdff',
-            //         b: 'dhsuifgiuskdushui',
-            //         c: 'jdhgfjfhkjko',
-            //         d: 'hdyiooijkekeke'
-            //     },
-            // ],
-            // questions: [],
-            userAnswer: [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+            questions: this.$store.state.testQuestions,
+            userAnswer: [],
             currentQuestionIndex: 0,
             toolTipActive: false,
             showPopUp: true,
+            isFeedbackMode: this.$store.state.isFeedbackMode,
+            isPassingGrade: this.$store.getters.isPassingGrade
         }
     },
     methods: {
@@ -99,7 +108,9 @@ export default {
             return color;
         },
         answerClicked(event, answerIndex) {
-            this.userAnswer.splice(this.currentQuestionIndex, 1, answerIndex);
+            if(!this.isFeedbackMode) {
+                this.userAnswer.splice(this.currentQuestionIndex, 1, answerIndex);
+            }
         },
         next() {
             this.currentQuestionIndex++;
@@ -112,6 +123,23 @@ export default {
         },
         closePopUp(event) {
             this.showPopUp = !this.showPopUp;
+        },
+        endTest() {
+            if(this.isTestFinished){
+                this.$store.commit('setUserTestAnswers', this.userAnswer);
+                this.$store.commit('calculateGrade');
+                this.$store.commit('loadEndScreen');
+            }
+        },
+        initializeUserAnswers(){
+            if(this.isFeedbackMode){
+                this.userAnswer=this.$store.state.userTestAnswers;
+            }else{
+                for(var i=0; i<this.questions.length; i++){
+                    this.userAnswer.push(1);
+                }
+            }
+            
         }
     },
     computed: {
@@ -122,13 +150,13 @@ export default {
         //     }
         //     return array;
         // },
-        questions() {
-            var array = [];
-            for (var i = 0; i < 20; i++) {
-                array[i] = {question: "hallo", answers: ["nah nah nah", "nah nah nah nah nah", "nah nah nah nah", "batman"], correct: "2"};
-            }
-            return array;
-        },
+        // questions() {
+        //     var array = [];
+        //     for (var i = 0; i < 20; i++) {
+        //         array[i] = {question: "hallo", answers: ["nah nah nah", "nah nah nah nah nah", "nah nah nah nah", "batman"], correct: "2"};
+        //     }
+        //     return array;
+        // },
         isTestFinished() {
             for (var i = 0; i < this.questions.length; i++) {
                 if (this.userAnswer[i] === -1) {
@@ -141,6 +169,9 @@ export default {
     components: {
         
     },
+    created(){
+        this.initializeUserAnswers();
+    }
 }
 </script>
 
@@ -228,10 +259,9 @@ export default {
     width: 22vmin;
     height: 6vmin;
     font-size: 2.5vmin;
-}
-
-.end-test-btn p {
-    margin: 1vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .test-btn-img {
@@ -284,5 +314,9 @@ export default {
     cursor: pointer;
     color: white;
     line-height: 4vmin;
+}
+
+.correct {
+    background-color: green;
 }
 </style>
