@@ -1,58 +1,94 @@
 <template>
     <div>
-        <div class="sub-bar sub-title">מבחן מסכם
-            {{"mode: " + isFeedbackMode}}
-            {{userAnswer}}
-        </div>
+        <div class="sub-bar sub-title">מבחן מסכם</div>
         <div class="progress-bar">
             <div v-for="index in questions.length" :key="index" @click="goToQuestion(index)" class="progress-bar-test-question">
                 {{ index }}
-                <div :class="{'currentQuestion':(currentQuestionIndex === index-1),
-                 'answered':(userAnswer[index-1] !== -1),
-                 'correct': (isFeedbackMode && userAnswer[index-1]===Number(questions[index-1].rightAnswer))}"
-                  class="progress-bar-test-question-bg">
+                <div :class="{'answered': userAnswer[index-1] !== -1,
+                'correct': isFeedbackMode && (userAnswer[index-1] === Number(questions[index-1].rightAnswer)),
+                'incorrect': isFeedbackMode && (userAnswer[index-1] !== Number(questions[index-1].rightAnswer)),
+                'currentQuestion': currentQuestionIndex === index-1}"
+                class="progress-bar-test-question-bg">
                 </div>
             </div>
         </div>
         <div class="content-container">
             <div class="test-content">
-                <p>
-                    {{questions[currentQuestionIndex].question}}
-                </p>
-                <div class="test-answers-container" >
-                    <div v-for="(answer, index) in questions[currentQuestionIndex].answers" :key="index"
-                    :class="{'selectedAnswer': userAnswer[currentQuestionIndex] === index}"  class="test-answer"
-                    @click="answerClicked(event, index)">
-                        {{answer}}
+                <div v-if="!showForm">
+                    <p>
+                        {{questions[currentQuestionIndex].question}}
+                    </p>
+                    <div class="test-answers-container" >
+                        <div v-for="(answer, index) in questions[currentQuestionIndex].answers" :key="index"
+                        :class="{'selectedAnswer': userAnswer[currentQuestionIndex] === index,
+                        'correct': isFeedbackMode && (Number(questions[currentQuestionIndex].rightAnswer) === index),
+                        'incorrect': isFeedbackMode && (userAnswer[currentQuestionIndex] === index) && (Number(questions[currentQuestionIndex].rightAnswer) !== index),
+                        'disable': isFeedbackMode}"
+                        class="test-answer"
+                        @click="answerClicked(event, index)">
+                            {{answer}}
+                        </div>
                     </div>
+                </div>
+                <div v-else class="test-form">
+                    <p>לפני שנתחיל ספרו לנו על עצמכם</p>
+                    <input v-model="userInfo.firstName" placeholder="שם פרטי">
+                    <input v-model="userInfo.lastName" placeholder="שם משפחה">
+                    <input v-model="userInfo.personalNumber" placeholder="מספר אישי">
+                    <select v-model="selected">
+                        <option disabled value="">ענף\לשכה</option>
+                        <option>גיוס</option>
+                        <option>מעוף</option>
+                        <option>סדיר</option>
+                        <option>קו"ל</option>
+                        <option>שירות</option>
+                        <option>ל"ג באר שבע</option>
+                        <option>ל"ג חיפה</option>
+                        <option>ל"ג טבריה</option>
+                        <option>ל"ג ירושלים</option>
+                        <option>ל"ג תל השומר</option>
+                    </select>
                 </div>
             </div>
         </div>
         <div class="bottom-ui">
-            <div class="next-btn btn-shadow bottom-ui-button" v-if="currentQuestionIndex < questions.length - 1" @click="next">
+            <div class="next-btn btn-shadow bottom-ui-button" v-if="currentQuestionIndex < questions.length - 1 && !showForm" @click="next">
                 <svg preserveAspectRatio="none" viewBox="0 0 100 200">
                     <path d="M 0 100 L 50 0 L 100 0 L 50 100 L 100 200 L 50 200" fill="var(--red)"></path>
                 </svg>
             </div>
-            <div class="prev-btn btn-shadow bottom-ui-button" v-if="currentQuestionIndex > 0" @click="prev">
+            <div class="prev-btn btn-shadow bottom-ui-button" v-if="currentQuestionIndex > 0 && !showForm" @click="prev">
                 <svg preserveAspectRatio="none" viewBox="0 0 100 200">
                     <path d="M 0 0 L 50 0 L 100 100 L 50 200 L 0 200 L 50 100" fill="var(--red)"></path>
                 </svg>
             </div>
+            <div class="start-test-btn next-btn btn-shadow bottom-ui-button" v-if="showForm" @click="next">
+                <svg preserveAspectRatio="none" viewBox="0 0 100 200">
+                    <path d="M 0 100 L 50 0 L 100 0 L 50 100 L 100 200 L 50 200" fill="var(--red)"></path>
+                </svg>
+                <img src="../media/graphics/racingFlag.svg" class="start-test-btn-logo">
+                <div class="start-test-btn-bg"></div>
+                <div class="start-test-btn-text-container">
+                    <div class="start-test-btn-text">!התחל</div>
+                </div>
+            </div>
         </div>
-        <div v-if="!isFeedbackMode" 
-        class="end-test-btn" :class="{btnReady: isTestFinished}"
+
+        <div v-if="isFeedbackMode">
+            <div v-if="isPassingGrade" class="bottom-btn back-to-mtv-btn" @click="backToMtv">
+                <p>חזור לMTV</p>
+            </div>
+            <div v-else class="bottom-btn new-test-btn" @click="reloadTest">
+                <p>מבחן חדש</p>
+            </div>
+        </div>
+        <div v-else-if="!showForm" 
+        class="bottom-btn end-test-btn" :class="{btnReady: isTestFinished}"
         @mouseover="toolTipActive = true" @mouseout="toolTipActive = false"
         @click="endTest">
             <img class="test-btn-img" v-show="isTestFinished" src="../media/graphics/testIcon.svg">
             <p>הגש מבחן</p>
             <div class="end-test-tooltip" v-show="toolTipActive && !isTestFinished">יש לענות על כל השאלות</div>
-        </div>
-        <div v-else-if="isPassingGrade" class="end-test-btn" @click="endTest">
-            <p>חזור לMTV</p>
-        </div>
-        <div v-else class="end-test-btn" @click="endTest">
-            <p>מבחן חדש</p>
         </div>
 
         <div class="test-pop-up-container" v-if="showPopUp && !isFeedbackMode">
@@ -77,36 +113,41 @@ export default {
     },
     data() {
         return {
-            questions: this.$store.state.testQuestions,
             userAnswer: [],
-            currentQuestionIndex: 0,
+            currentQuestionIndex: -1,
             toolTipActive: false,
             showPopUp: true,
-            isFeedbackMode: this.$store.state.isFeedbackMode,
-            isPassingGrade: this.$store.getters.isPassingGrade
+            userInfo: {
+                'firstName': '',
+                'lastName': '',
+                'personal-number': '',
+                'branch': ''
+            }
+        }
+    },
+    computed: {
+        questions() {
+            return this.$store.state.testQuestions 
+        },
+        isFeedbackMode(){
+            return this.$store.state.isFeedbackMode   
+        },
+        isPassingGrade() {
+            return this.$store.getters.isPassingGrade
+        },
+        isTestFinished() {
+            for (var i = 0; i < this.questions.length; i++) {
+                if (this.userAnswer[i] === -1) {
+                    return false;
+                };
+            }
+            return true;
+        },
+        showForm() {
+            return this.currentQuestionIndex === -1;
         }
     },
     methods: {
-        // isAnswered(index){
-        //     return this.userAnswer[index] !== -1;
-        // },
-        setColor(index) {
-            var color;
-            var isAnswered = this.userAnswer[index] !== -1;
-            if (index === this.currentQuestionIndex) {
-                color = "rgb(253, 184, 51, 0.5)";
-                if (isAnswered) {
-                    color = "rgb(253, 184, 51)";
-                }
-            }
-            else {
-                color = "rgb(1, 22, 39, 0.5)";
-                if (isAnswered) {
-                    color = "rgb(1, 22, 39)";
-                }
-            }
-            return color;
-        },
         answerClicked(event, answerIndex) {
             if(!this.isFeedbackMode) {
                 this.userAnswer.splice(this.currentQuestionIndex, 1, answerIndex);
@@ -131,40 +172,25 @@ export default {
                 this.$store.commit('loadEndScreen');
             }
         },
-        initializeUserAnswers(){
+        initializeUserAnswers() {
             if(this.isFeedbackMode){
-                this.userAnswer=this.$store.state.userTestAnswers;
-            }else{
+                this.userAnswer = this.$store.state.userTestAnswers;
+            } else {
+                this.userAnswer = [];
                 for(var i=0; i<this.questions.length; i++){
-                    this.userAnswer.push(1);
+                    this.userAnswer.push(-1);
                 }
             }
-            
-        }
-    },
-    computed: {
-        // userAnswer(){
-            //     var array=[];
-        //     for (var i = 0; i < 20; i++) {
-            //         array[i] = -1;
-        //     }
-        //     return array;
-        // },
-        // questions() {
-        //     var array = [];
-        //     for (var i = 0; i < 20; i++) {
-        //         array[i] = {question: "hallo", answers: ["nah nah nah", "nah nah nah nah nah", "nah nah nah nah", "batman"], correct: "2"};
-        //     }
-        //     return array;
-        // },
-        isTestFinished() {
-            for (var i = 0; i < this.questions.length; i++) {
-                if (this.userAnswer[i] === -1) {
-                    return false;
-                };
-            }
-            return true;
-        }
+        },
+        reloadTest() {
+            console.log("in reloadTest");
+            this.$store.dispatch('initializeTest').then(()=>{
+                this.currentQuestionIndex = 0;
+                this.toolTipActive= false;
+                this.showPopUp = true;
+                this.initializeUserAnswers();
+            });
+        },
     },
     components: {
         
@@ -179,7 +205,6 @@ export default {
 .progress-bar-test-question {
     position: relative;
     height: 100%;
-    /* background-color: rgb(1, 22, 39, 0.5); */
     border: white 1px solid;
     color: white;
     text-align: center;
@@ -232,10 +257,6 @@ export default {
     background-color: rgb(215, 219, 223);
 }
 
-.currentQuestion{
-    background-color: var(--yellow);
-}
-
 .answered{
     opacity: 1;
 }
@@ -249,13 +270,12 @@ export default {
     background-color: var(--lighten-blue);
 }
 
-.end-test-btn {
+.bottom-btn {
     position: fixed;
     bottom: 1vmin;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    background-color: rgb(224, 197, 148);
     width: 22vmin;
     height: 6vmin;
     font-size: 2.5vmin;
@@ -264,11 +284,36 @@ export default {
     justify-content: center;
 }
 
+.end-test-btn {
+    background-color: rgb(224, 197, 148);
+}
+
 .test-btn-img {
     height: 120%;
     position: absolute;
     right: -4vmin;
     top: -0.5vmin;
+}
+
+.back-to-mtv-btn {
+    background-color: slateblue;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.new-test-btn {
+    background-color: var(--yellow);
+    color: white;
+    cursor: pointer;
+}
+
+.back-to-mtv-btn:hover {
+    background-color: rgb(57, 46, 129);
+}
+
+.new-test-btn:hover {
+    background-color: var(--darken-yellow);
 }
 
 .end-test-tooltip {
@@ -316,7 +361,83 @@ export default {
     line-height: 4vmin;
 }
 
+.correct-progress-bar {
+    background-color: rgb(32, 178, 105);
+}
+
+.incorrect-progress-bar
+{
+    background-color: rgb(231, 29, 54);
+}
+
 .correct {
-    background-color: green;
+    background-color: rgb(32, 178, 105);
+}
+
+.incorrect {
+    background-color: rgb(231, 29, 54);
+}
+
+.currentQuestion{
+    background-color: var(--yellow);
+}
+
+.disable {
+    pointer-events: none;
+}
+
+.start-test-btn-logo {
+    position: absolute;
+    top: 0vmin;
+    left: 8vmin;
+    height: 100%;
+    transition: ease 0.4s;
+}
+
+.start-test-btn-bg {
+    background-color: rgb(184, 20, 40);
+    height: 100%;
+    width: 7vmin;
+    position: absolute;
+    top: 0;
+    left: 3vmin;
+    border-radius: 0 0 34%/100% 0;
+    z-index: -1;
+    transition: ease 0.4s;
+
+}
+
+.next-btn:hover .start-test-btn-logo {
+    left: 17vmin;
+}
+
+.next-btn:hover .start-test-btn-bg {
+    width: 16vmin;
+    border-radius: 0 0 14%/100% 0;
+}
+
+.start-test-btn:hover  {
+    left: 6vmax;
+}
+
+.start-test-btn-text {
+    color: white;
+    font-size: 3vmin;
+    width: max-content;
+}
+
+.start-test-btn-text-container {
+    direction: ltr;
+    overflow: hidden;
+    width: 0;
+    transition: ease 0.4s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7vmin;
+}
+
+.next-btn:hover .start-test-btn-text-container {
+    width: 15vmin;
 }
 </style>

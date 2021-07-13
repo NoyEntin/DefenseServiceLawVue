@@ -12,8 +12,8 @@
         MTV
       </div>
       <!-- is back to home if content page -->
-      <div v-else-if="currentScreenComponent === 'ContentScreen' || currentScreenComponent === 'TestScreen'" class="top-bar-button home-btn" @click="$store.commit('backToHome')">
-      <!-- <div v-else-if="currentScreenComponent === 'ContentScreen'" class="top-bar-button home-btn" @click="$store.commit('backToHome')"> -->
+      <!-- <div v-else-if="currentScreenComponent === 'ContentScreen' || currentScreenComponent === 'TestScreen'" class="top-bar-button home-btn" @click="$store.commit('backToHome')"> -->
+      <div v-else-if="currentScreenComponent === 'ContentScreen'" class="top-bar-button home-btn" @click="$store.commit('backToHome')">
       </div>
       <div class="title">
         לומדת חש"ב
