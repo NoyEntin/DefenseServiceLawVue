@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div v-else class="test-form">
-                    <p>לפני שנתחיל ספרו לנו על עצמכם</p>
+                    <p class="form-title">לפני שנתחיל ספרו לנו על עצמכם</p>
                     <input v-model="userInfo.firstName" placeholder="שם פרטי">
                     <input v-model="userInfo.lastName" placeholder="שם משפחה">
                     <input v-model="userInfo.personalNumber" placeholder="מספר אישי">
@@ -91,7 +91,7 @@
             <div class="end-test-tooltip" v-show="toolTipActive && !isTestFinished">יש לענות על כל השאלות</div>
         </div>
 
-        <div class="test-pop-up-container" v-if="showPopUp && !isFeedbackMode">
+        <div class="test-pop-up-container" v-if="showPopUp && !isFeedbackMode && !showForm">
             <div class="overlay">
                 <div class="test-pop-up">
                     <div class="x-btn" @click="closePopUp">&#10006;</div>
@@ -439,5 +439,23 @@ export default {
 
 .next-btn:hover .start-test-btn-text-container {
     width: 15vmin;
+}
+
+.test-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.test-form input, select {
+    width: 30%;
+    margin: 5%;
+    font-size: 1em;
+}
+
+.form-title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.25em;
 }
 </style>
