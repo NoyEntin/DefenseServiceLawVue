@@ -50,6 +50,7 @@ body {
 
 .bold {
     font-family: Heebo-Bold;
+    font-weight: bold;
     display: inline;
     margin: 0;
 }
@@ -621,6 +622,7 @@ svg {
     height: 2em;
     background-color: var(--blue);
     text-indent: 4em;
+    line-height: 2em;
 }
 
 .list-shape {
@@ -644,4 +646,110 @@ svg {
 .content-title {
     font-weight: bold;
     text-decoration: underline;
+}
+
+
+.page-sections-container {
+    position: absolute;
+    top: 4vmin;
+    left: 5vmin;
+    width: 40%;
+    height: 10%;
+}
+
+.page-sections-title {
+    border: var(--lighten-blue) 0.5vmin solid;
+    width: fit-content;
+    padding: 0vmin 1vmin;
+}
+
+.page-sections-nums-container {
+    display: flex;
+    background-color: var(--lighten-blue);
+}
+
+.page-sections-nums {
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    color: white;
+    border: black 1px dashed;
+}
+
+.this-page-sections {
+    background-color: var(--blue);
+}
+
+.pop-up-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 25vmax;
+    width: 50vmax;
+    background-color: white;
+}
+
+.test-ready .pop-up-text {
+    width: 50%;
+    right: 25%;
+}
+
+.pop-up-text {
+    position: absolute;
+    top: 15%;
+    text-align: center;
+}
+
+.pop-up-btn-container {
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    font-size: 1.7vmax;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+}
+
+.pop-up-btn-no {
+    background-color: var(--red);
+}
+
+.pop-up-btn-no:hover {
+    background-color: var(--lighten-red);
+}
+
+.pop-up-btn-yes {
+    background-color: var(--yellow);
+}
+
+.pop-up-btn-yes:hover {
+    background-color: var(--lighten-yellow);
+}
+
+.pop-up-btn {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.study-img,
+.test-img {
+    height: 90%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th,td {
+    padding: 1px 8px;
+    border: solid 1px black;
 }

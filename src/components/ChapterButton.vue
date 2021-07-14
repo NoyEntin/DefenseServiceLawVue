@@ -1,9 +1,10 @@
 <template>
     <div class="chapter-btn" :class="['chapter-' + buttonId]" @click="buttonClicked">
-        <div class="chapters-black">
+        <div :class="{'chapters-black': !idDone, 'remove-black': isDone}">
         </div>
         <div class="chapter-btn-progress-bar">
-            <div class="chapter-btn-progress-marker">
+            <div :class="{'chapter-btn-full-progress-bar': isDone}"></div>
+            <div class="chapter-btn-progress-marker" :class="{'chapter-btn-progress-marker-move': isDone}">
                 <svg preserveAspectRatio="none" viewBox="0 0 300 100">
                     <path d="M 0 50 L 100 0 L 300 0 L 300 100 L 100 100 L 0 50" fill="var(--yellow)"></path>
                 </svg>
@@ -33,22 +34,12 @@ export default {
     },
     data() {
         return {
-    
+            isDone: false,
         }
     },
     methods: {
         buttonClicked() {
-            console.log("in buttonClicked")
-            // if(!this.$store.getters.prevChaptersDone(this.buttonId)) {
-                // console.log("in skip-chapter");
-                // this.whichPopUp='skip-chapter';
-            // } else {
-            // this.$emit(this.buttonId);
             this.$emit('triggerBtnClicked');
-            // this.$store.commit('loadContentScreen');
-            // this.$store.commit('updateCurrentContentChapter', this.buttonId);
-            // this.$store.commit('updateCurrentContentPage', 0);
-            // }
         }
     },
     computed: {
@@ -56,10 +47,18 @@ export default {
             return this.$store.state.chapterNames[this.buttonId - 1];
         }
     },
+    mounted: function () {
+        this.$nextTick(function () {
+            if (this.$store.getters.isChapterDone(this.buttonId - 1)) {
+                this.isDone = true;
+            }
+        })
+    },
 }
 </script>
 
 <style scoped>
+
 .chapter-btn {
     position: relative;
     margin: 4vmin;
@@ -69,6 +68,7 @@ export default {
     max-height: 35vh;
     background-size: cover;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .chapter-1 {
@@ -90,6 +90,37 @@ export default {
     width: 100%;
 }
 
+@keyframes remove-black {
+  0% {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.remove-black {
+  animation: remove-black 1.2s;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes fill-bar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.chapter-btn-full-progress-bar {
+    background-color: var(--yellow);
+    animation: fill-bar 1.2s;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
 .chapter-btn:hover .chapters-black {
     transition: 0.1s;
     background-color: rgba(255, 255, 255, 0.3);
@@ -105,6 +136,8 @@ export default {
 .chapter-btn-progress-marker {
     width: 15%;
     height: 100%;
+    display: inline-block;
+    position: absolute;
 }
 
 .chapter-btn-title {

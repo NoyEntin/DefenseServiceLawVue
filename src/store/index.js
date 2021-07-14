@@ -51,18 +51,22 @@ export default createStore({
     userTestAnswers: [],
     failingGrade: 70,
     grade: 0,
-    isFeedbackMode: false
+    isFeedbackMode: false,
+    userInfo: 'empty'
   },
   getters: {
     isContentScreen: state => {
       return state.currentScreenIndex === 1;
     },
+    isTestScreen: state => {
+      return state.currentScreenIndex === 2;
+    },
     contentPageName: state => {
       return "Chapter" + state.currentContentChapter + "Page" + (state.currentContentPageIndex + 1);
     },
     contentDone: state => {
-      for(var i = 0; i< state.areExerciseQuestionsAnswered.length; i++) {
-        for(var j = 0; j< state.areExerciseQuestionsAnswered[i].length; j++) {
+      for(var i = 0; i < state.areExerciseQuestionsAnswered.length; i++) {
+        for(var j = 0; j < state.areExerciseQuestionsAnswered[i].length; j++) {
           if(state.areExerciseQuestionsAnswered[i][j].includes(false)){
             return false;
           }
@@ -72,11 +76,19 @@ export default createStore({
       // return !state.arePagesViewed.includes(false);
     },
     prevChaptersDone: (state) => (clickedChapter) => {
-      for(var i = 0; i< clickedChapter; i++) {
-        for(var j = 0; j< state.areExerciseQuestionsAnswered[i].length; j++) {
+      for(var i = 0; i < clickedChapter; i++) {
+        for(var j = 0; j < state.areExerciseQuestionsAnswered[i].length; j++) {
           if(state.areExerciseQuestionsAnswered[i][j].includes(false)){
             return false;
           }
+        }
+      }
+      return true;
+    },
+    isChapterDone: (state) => (currChapter) => {
+      for(var j = 0; j < state.areExerciseQuestionsAnswered[currChapter].length; j++) {
+        if(state.areExerciseQuestionsAnswered[currChapter][j].includes(false)){
+          return false;
         }
       }
       return true;
@@ -178,6 +190,9 @@ export default createStore({
         }
       }
       state.grade = Math.round(state.grade);
+    },
+    updateUserInfo(state, userInfo) {
+      state.userInfo= userInfo;
     }
   },
   actions: {

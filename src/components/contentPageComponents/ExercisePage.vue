@@ -96,42 +96,42 @@ export default {
     display: flex;
     flex-flow: column nowrap;
     z-index: 2;
-}
+    }
 
-.exercise-answer {
-    background-color: rgba(1, 22, 39, 0.7);
-    padding: 2vmin;
-    margin: 1vmin;
-    border: black 1px solid;
-    color: white;
-}
-.exercise-answer:not(.disable):hover {
-    cursor: pointer;
-    transition: 0.2s;
-    background-color: rgba(1, 22, 39, 0.9);
-}
+    .exercise-answer {
+        background-color: rgba(1, 22, 39, 0.7);
+        padding: 2vmin;
+        margin: 1vmin;
+        border: black 1px solid;
+        color: white;
+    }
+    .exercise-answer:not(.disable):hover {
+        cursor: pointer;
+        transition: 0.2s;
+        background-color: rgba(1, 22, 39, 0.9);
+    }
 
-.answer-explanation {
-    padding: 2vmin;
-    margin: 1vmin;
-    border: var(--yellow) 3px solid;
-}
+    .answer-explanation {
+        padding: 2vmin;
+        margin: 1vmin;
+        border: var(--yellow) 3px solid;
+    }
 
     .correct-answer {
-        background-color: rgba(0, 128, 0, 0.7);
+        background-color: rgb(32, 178, 105, 0.9);
     }
 
     .correct-answer:hover {
-        background-color: rgba(0, 128, 0, 0.7);
+        background-color: rgb(32, 178, 105, 0.9);
         cursor: auto;
     }
 
     .incorrect-answer {
-        background-color: rgba(255, 0, 0, 0.7);
+        background-color: rgb(231, 29, 54, 0.9);
     }
 
     .incorrect-answer:not(.disable):hover {
-        background-color: rgba(255, 0, 0, 0.7);
+        background-color: rgb(231, 29, 54, 0.9);;
         cursor: auto;
     }
 </style>

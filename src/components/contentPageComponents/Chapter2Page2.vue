@@ -1,12 +1,6 @@
 <template>
     <div class="page-content chapter2-page2">
         <div class="content-title">משך תקופת סעיף 20 למלש"ב</div>
-        <ShowMore :isLawSection="true">
-            <template v-slot:section-name>
-            </template>
-            <template v-slot:section-content>
-            </template>
-        </ShowMore>
         <p>משך סעיף 20 הינו פרק הזמן בו יש לקרוא למלש"ב לגיוס. כל חריגה מפרק זמן זה תגרור שירות בהתאם למשך זמן החריגה. במידה ונחרוג ביותר משנה, קרי 366 ימי קיצור, המלש"ב יהיה זכאי לפטור.</p>
         <p>כיצד הוא מחושב?</p>
         

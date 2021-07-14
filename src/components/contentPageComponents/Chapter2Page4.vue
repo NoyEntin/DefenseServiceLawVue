@@ -1,6 +1,8 @@
 <template>
     <div class="page-content chapter2-page4">
         <div class="content-title">חישוב הארכת סעיף 20</div>
+        <InteractiveExample>
+        </InteractiveExample>
         <p>
             כעת נפרט- 
             <b> איך מחשבים כל תקופה בלתי נמנית והארכת סעיף 20?</b>
@@ -63,12 +65,18 @@
                 הורד טבלה
             </a>
         </p>
+
     </div>
 </template>
 
 <script>
 
+import InteractiveExample from './InteractiveExample.vue'
+
 export default {
+    components: { 
+        InteractiveExample
+    },
     name: 'Chapter2Page4',
     props: {
 

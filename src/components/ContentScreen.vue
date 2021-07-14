@@ -298,9 +298,11 @@ export default {
     line-height: 8vmin;
 }
 .red {
-    background-color: red;
+    background: rgb(231,29,54);
+    background: linear-gradient(90deg, rgba(231,29,54,0) 0%, rgba(231,29,54,0.8015581232492998) 25%, rgba(231,29,54,1) 50%, rgba(231,29,54,0.8) 75%, rgba(231,29,54,0) 100%);
 }
 .green {
-    background-color: green;
+    background: rgb(32,178,105);
+    background: linear-gradient(90deg, rgba(32,178,105,0) 0%, rgba(32,178,105,0.7987570028011204) 25%, rgba(32,178,105,1) 50%, rgba(32,178,105,0.8) 75%, rgba(32,178,105,0) 100%);
 }
 </style>

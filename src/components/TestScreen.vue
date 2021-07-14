@@ -1,6 +1,7 @@
 <template>
     <div>
         <div class="sub-bar sub-title">מבחן מסכם</div>
+        
         <div class="progress-bar">
             <div v-for="index in questions.length" :key="index" @click="goToQuestion(index)" class="progress-bar-test-question">
                 {{ index }}
@@ -15,9 +16,7 @@
         <div class="content-container">
             <div class="test-content">
                 <div v-if="!showForm">
-                    <p>
-                        {{questions[currentQuestionIndex].question}}
-                    </p>
+                    <p v-html="questions[currentQuestionIndex].question"></p>
                     <div class="test-answers-container" >
                         <div v-for="(answer, index) in questions[currentQuestionIndex].answers" :key="index"
                         :class="{'selectedAnswer': userAnswer[currentQuestionIndex] === index,
@@ -26,29 +25,11 @@
                         'disable': isFeedbackMode}"
                         class="test-answer"
                         @click="answerClicked(event, index)">
-                            {{answer}}
+                            <span v-html="answer"></span>
                         </div>
                     </div>
                 </div>
-                <div v-else class="test-form">
-                    <p class="form-title">לפני שנתחיל ספרו לנו על עצמכם</p>
-                    <input v-model="userInfo.firstName" placeholder="שם פרטי">
-                    <input v-model="userInfo.lastName" placeholder="שם משפחה">
-                    <input v-model="userInfo.personalNumber" placeholder="מספר אישי">
-                    <select v-model="selected">
-                        <option disabled value="">ענף\לשכה</option>
-                        <option>גיוס</option>
-                        <option>מעוף</option>
-                        <option>סדיר</option>
-                        <option>קו"ל</option>
-                        <option>שירות</option>
-                        <option>ל"ג באר שבע</option>
-                        <option>ל"ג חיפה</option>
-                        <option>ל"ג טבריה</option>
-                        <option>ל"ג ירושלים</option>
-                        <option>ל"ג תל השומר</option>
-                    </select>
-                </div>
+                <TestForm ref="testForm" v-else></TestForm>
             </div>
         </div>
         <div class="bottom-ui">
@@ -62,7 +43,7 @@
                     <path d="M 0 0 L 50 0 L 100 100 L 50 200 L 0 200 L 50 100" fill="var(--red)"></path>
                 </svg>
             </div>
-            <div class="start-test-btn next-btn btn-shadow bottom-ui-button" v-if="showForm" @click="next">
+            <div class="start-test-btn next-btn btn-shadow bottom-ui-button" v-if="showForm" @click="startTest">
                 <svg preserveAspectRatio="none" viewBox="0 0 100 200">
                     <path d="M 0 100 L 50 0 L 100 0 L 50 100 L 100 200 L 50 200" fill="var(--red)"></path>
                 </svg>
@@ -78,7 +59,7 @@
             <div v-if="isPassingGrade" class="bottom-btn back-to-mtv-btn" @click="backToMtv">
                 <p>חזור לMTV</p>
             </div>
-            <div v-else class="bottom-btn new-test-btn" @click="reloadTest">
+            <div v-else class="bottom-btn new-test-btn" @click="showPopUp=true">
                 <p>מבחן חדש</p>
             </div>
         </div>
@@ -91,12 +72,33 @@
             <div class="end-test-tooltip" v-show="toolTipActive && !isTestFinished">יש לענות על כל השאלות</div>
         </div>
 
-        <div class="test-pop-up-container" v-if="showPopUp && !isFeedbackMode && !showForm">
+        <div class="test-pop-up-container" v-if="showPopUp && !showForm">
             <div class="overlay">
-                <div class="test-pop-up">
-                    <div class="x-btn" @click="closePopUp">&#10006;</div>
+                <div v-if="!isFeedbackMode" class="test-pop-up">
+                    <div class="x-btn" @click="closePopUp(); timer()">&#10006;</div>
                     <p>שימו ♥</p>
                     <p>עולים חדשים מקבלים מעמד אזרחי בעת העלייה שלהם. כאשר מצוין תאריך העלייה יש להתייחס לתאריך זה כתאריך בו קיבלו מעמד אזרחי.</p>
+                </div>
+                <div v-else class="test-pop-up test-ready">
+                    <div class="pop-up-container">
+                        <div class="pop-up-text">
+                            שימו♥!
+                            <br>
+                            יש לכם עוד הזדמנות לעבור על החומר,
+                            <br>
+                            כדי לנצל אותה לחצו על כפתור דף הבית או התפריט
+                        </div>
+                        <div class="pop-up-btn-container">
+                            <div class="pop-up-btn-no pop-up-btn" @click="closePopUp">
+                                <img class="study-img" src="./../media/graphics/studyIcon.svg">
+                                <p>חזור ללמוד</p>
+                            </div>
+                            <div class="pop-up-btn-yes pop-up-btn" @click="reloadTest">
+                                <p>התחל בבחינה</p>
+                                <img class="test-img" src="./../media/graphics/testIcon.svg">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,25 +106,20 @@
 </template>
 
 <script>
-// import Vue from 'vue';
+import TestForm from './TestForm.vue';
+import PopUp from './PopUp.vue';
 
 export default {
     name: 'TestScreen',
-    props: {
 
-    },
     data() {
         return {
             userAnswer: [],
             currentQuestionIndex: -1,
             toolTipActive: false,
             showPopUp: true,
-            userInfo: {
-                'firstName': '',
-                'lastName': '',
-                'personal-number': '',
-                'branch': ''
-            }
+            timerMinutes: 90,
+            timerSeconds: 0
         }
     },
     computed: {
@@ -136,6 +133,8 @@ export default {
             return this.$store.getters.isPassingGrade
         },
         isTestFinished() {
+            if(this.timerMinutes === 0 && this.timerSeconds === 0)
+                return true;
             for (var i = 0; i < this.questions.length; i++) {
                 if (this.userAnswer[i] === -1) {
                     return false;
@@ -151,6 +150,14 @@ export default {
         answerClicked(event, answerIndex) {
             if(!this.isFeedbackMode) {
                 this.userAnswer.splice(this.currentQuestionIndex, 1, answerIndex);
+            }
+        },
+        startTest() {
+            if(this.$refs.testForm.validate()){
+                this.$store.commit('updateUserInfo', this.$refs.testForm.userInfo);
+                this.next();
+            }else{
+                alert("יש למלא את כל הפרטים בצורה תקינה !");
             }
         },
         next() {
@@ -173,7 +180,10 @@ export default {
             }
         },
         initializeUserAnswers() {
+            if(this.$store.state.userInfo !== 'empty')
+                this.currentQuestionIndex = 0;
             if(this.isFeedbackMode){
+                this.showPopUp = false;
                 this.userAnswer = this.$store.state.userTestAnswers;
             } else {
                 this.userAnswer = [];
@@ -191,9 +201,27 @@ export default {
                 this.initializeUserAnswers();
             });
         },
+        timer() {
+            if(this.$store.getters.isTestScreen){
+                this.$emit('updateTimer', this.timerMinutes, this.timerSeconds)
+                setTimeout(() => {
+                    if (this.timerSeconds > 0) {
+                        this.timerSeconds--;
+                        this.timer()
+                    } else if(this.timerMinutes !== 0) {
+                        this.timerMinutes--;
+                        this.timerSeconds = 59;
+                        this.timer()
+                    } else {
+                        this.endTest()
+                    }
+                }, 1000)
+            }
+        }
     },
     components: {
-        
+        TestForm,
+        PopUp     
     },
     created(){
         this.initializeUserAnswers();
@@ -441,21 +469,8 @@ export default {
     width: 15vmin;
 }
 
-.test-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around
-}
-
-.test-form input, select {
-    width: 30%;
-    margin: 5%;
-    font-size: 1em;
-}
-
-.form-title {
-    width: 100%;
-    text-align: center;
-    font-size: 1.25em;
+.pop-up-text {
+    line-height: 2.5vmax;
+    font-size: 1.5vmax;
 }
 </style>

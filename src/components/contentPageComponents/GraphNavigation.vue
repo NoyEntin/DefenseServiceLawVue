@@ -2,7 +2,12 @@
     <div class="graph-navigation">
         <div class="graph-progress-container">
             <div class="graph-progress" v-for="selectedChoice in selectedChoices" :key="selectedChoice.name">
-                {{selectedChoice.value}}
+                <div class="list-down-shape">
+                    <svg preserveAspectRatio="none" viewBox="0 0 200 100">
+                        <path d="M 0 0 L 100 30 L 200 0 L 200 70 L 100 100 L 0 70 L 0 0" fill="var(--lighten-blue)"></path>
+                    </svg>
+                </div>
+                <div class="graph-progress-text">{{selectedChoice.value}}</div>
             </div>
         </div>
         <div class="graph-container">
@@ -176,7 +181,7 @@ export default {
         }},
         f4() { return {
             "name": "f4",
-            "value": "בדיקה רפואית וברה\"נית במידת הצורך. לקביעת כשירות למעצר ולגיוס",
+            "value": "בדיקה רפואית וברה\"נית במידת הצורך",
             "children": [this.g1, this.g2, this.g3, this.g4]
         }},
         f5() { return {
@@ -196,7 +201,7 @@ export default {
         }},
         f8() { return {
             "name": "f8",
-            "value": "בדיקה רפואית וברה\"נית במידת הצורך. לקביעת כשירות למעצר ולגיוס",
+            "value": "בדיקה רפואית וברה\"נית במידת הצורך",
             "children": [this.g5, this.g6, this.g7, this.g8]
         }},
         g1() { return {
@@ -279,16 +284,18 @@ export default {
 .graph-navigation {
     display: flex;
     flex-flow: row nowrap;
-    /* width: 850px; */
     box-sizing: border-box;
-    /* max-width: 100%; */
-    /* height: 50vh; */
 }
 
 .graph-progress-container {
-    background-color: lightgray;
+    background-color: rgb(242, 242, 242);
     width: 30%;
     margin-left: 2vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: relative;
 }
 
 .graph-container {
@@ -383,7 +390,30 @@ export default {
 }
 .not-btn-choice:hover {
     background-color: white;
-    /* font-size: 1.4em; */
 }
 
+.graph-progress {
+    margin: -5% 5%;
+    position: relative;
+    height: fit-content;
+}
+
+.list-down-shape {
+    height: fit-content;
+}
+
+.graph-progress-text {
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    text-align: center;
+    height: 50%;
+    width: 80%;
+    font-size: 0.9em;
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 </style>

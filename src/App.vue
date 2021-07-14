@@ -4,21 +4,27 @@
     <div class="top-bar">
       <div class="overlay" v-show="isMenuOpen"></div>
       <!-- Show only if page isn't test page -->
-      <div v-if="currentScreenComponent !== 'TestScreen'" class="top-bar-button menu-btn on-overlay" @click="openMenu" title="תפריט">
+      <div v-if="showMenu" class="top-bar-button menu-btn on-overlay" @click="openMenu" title="תפריט">
         <span class="menu-icon" :class="{'menu-icon-open': isMenuOpen}"></span>
       </div>
       <!-- is mtv if hompage -->
-      <div v-if="currentScreenComponent === 'HomeScreen'" class="top-bar-button mtv-btn">
+      <div v-if="showBackToMtv" class="top-bar-button mtv-btn">
         MTV
       </div>
       <!-- is back to home if content page -->
       <!-- <div v-else-if="currentScreenComponent === 'ContentScreen' || currentScreenComponent === 'TestScreen'" class="top-bar-button home-btn" @click="$store.commit('backToHome')"> -->
-      <div v-else-if="currentScreenComponent === 'ContentScreen'" class="top-bar-button home-btn" @click="$store.commit('backToHome')">
+      <div v-else-if="showBackToHome" class="top-bar-button home-btn" @click="$store.commit('backToHome')">
       </div>
       <div class="title">
         לומדת חש"ב
       </div>
-      <div class="top-bar-button law-btn" title="החוק עצמו"></div>
+      <div v-if="showTimer" class="top-bar-button timer">
+        <img src="./media/graphics/hourglass.svg"/>
+        <div>
+          <span v-show="timerMinutes < 10">0</span>{{timerMinutes}}:<span v-show="timerSeconds < 10">0</span>{{timerSeconds}}
+        </div>
+      </div>
+      <div class="top-bar-button law-btn" title="החוק עצמו" @click="openLaw"></div>
     </div>
 
 
@@ -34,7 +40,7 @@
       <!-- <HomeScreen v-if="currentScreenComponent === 'home-screen'" @load-chapter="loadChapter"></HomeScreen>
       <ContentScreen v-else-if="currentScreenComponent === 'content-screen'" :chapter-id="currentContentChapterIndex"></ContentScreen> 
       <test-screen v-else-if="currentScreenComponent !== 'test-screen'" ></test-screen> -->
-    <component v-bind:is="currentScreenComponent"></component>
+    <component v-bind:is="currentScreenComponent" @updateTimer='updateTimer'></component>
 
     <transition name="delay-overlay">
       <div class="navigation-menu-overlay" v-show="isMenuOpen">
@@ -62,7 +68,7 @@ import EndScreen from './components/EndScreen.vue';
 
 export default {
   name: 'App',
-  emits: ['triggerOpenMenu', 'navigateToPage', 'changeDontShowAgain'],
+  emits: ['triggerOpenMenu', 'navigateToPage', 'changeDontShowAgain', 'updateTimer'],
   data() {
       return {
           screenComponentNames: ["HomeScreen", "ContentScreen", "TestScreen", "EndScreen"],
@@ -71,6 +77,8 @@ export default {
           chapterToNavigateTo: 0,
           pageToNavigateTo: 0,
           dontShowAgain: false,
+          timerMinutes: 90,
+          timerSeconds: 0
           // checkbox: false,
       }
   },
@@ -100,7 +108,14 @@ export default {
     },
     changeDontShowAgain() {
       this.dontShowAgain = !this.dontShowAgain;
-    }
+    },
+    updateTimer(timerMinutes, timerSeconds){
+      this.timerMinutes = timerMinutes;
+      this.timerSeconds = timerSeconds;
+    },
+    openLaw(){
+      window.open("theLaw.html");
+    },
   },
   store,
   computed: {
@@ -109,7 +124,19 @@ export default {
       },
       currentScreenComponent() {
           return this.screenComponentNames[this.currentScreenIndex];
-      }
+      },
+      showMenu() {
+        return this.currentScreenComponent !== 'EndScreen' && !(this.currentScreenComponent === 'TestScreen' && !store.state.isFeedbackMode);
+      },
+      showBackToMtv() {
+        return this.currentScreenComponent === 'HomeScreen';
+      },
+      showBackToHome() {
+        return this.currentScreenComponent === 'ContentScreen' ||  (this.currentScreenComponent === 'TestScreen' && store.state.isFeedbackMode);
+      },
+      showTimer() {
+        return this.currentScreenComponent === 'TestScreen' && !store.state.isFeedbackMode;
+      },
   },
   components: {
       HomeScreen,
@@ -315,5 +342,19 @@ export default {
     transform: translate(-50%, -50%);
     font-size: 9vmin;
     font-family: neo;
+  }
+
+  .timer {
+    pointer-events: none;
+    right: 3vmin;
+    width: 16vmin;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 3.5vmin;
+  }
+
+  .timer img {
+    height: 70%;
   }
 </style>

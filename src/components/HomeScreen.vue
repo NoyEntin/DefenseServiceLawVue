@@ -51,7 +51,7 @@ export default {
             // if(this.$store.getters.contentDone) {
             if(true) {
                 this.whichPopUp='test-ready';
-            }else{
+            } else {
                 this.whichPopUp='go-study';
             }
         },
@@ -76,6 +76,7 @@ export default {
             return this.$store.state.totalChapterNumber
         },
     },
+    
     components: {
         ChapterButton,
         PopUp,

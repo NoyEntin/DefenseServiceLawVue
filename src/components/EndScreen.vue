@@ -5,7 +5,7 @@
             <img class="test-icon" src="./../media/graphics/testIcon.svg"/>
             <div>
                <span v-if="isPassingGrade"> כל הכבוד! </span> <span v-else> לא נורא! </span> <br>
-                שם פרטי שם משפחה, מספר אישי<br>
+                {{userInfo.firstName +", "+ userInfo.lastName +", " + userInfo.personalNumber}}<br>
                 סיימת את לומדת חוק שירות ביטחון בציון:
             </div>
             <div class="test-score">{{grade}}</div>
@@ -42,7 +42,8 @@ export default {
     data() {
         return {
             grade: this.$store.state.grade,
-            isPassingGrade: this.$store.getters.isPassingGrade
+            isPassingGrade: this.$store.getters.isPassingGrade,
+            userInfo: this.$store.state.userInfo
         }
     },
     methods: {

@@ -1,6 +1,23 @@
 <template>
     <div class="page-content chapter1-page2">
         <div class="page-title">סעיפים בנושא <b>הצו הראשון</b></div>
+
+        <div class="page-sections-container">
+            <div class="page-sections-title">סעיפים</div>
+            <div class="page-sections-nums-container">
+                <div class="page-sections-nums this-page-sections">3</div>
+                <div class="page-sections-nums this-page-sections">5</div>
+                <div class="page-sections-nums">12</div>
+                <div class="page-sections-nums">13</div>
+                <div class="page-sections-nums">22</div>
+                <div class="page-sections-nums">26</div>
+                <div class="page-sections-nums">36</div>
+                <div class="page-sections-nums">39</div>
+                <div class="page-sections-nums">40</div>
+                <div class="page-sections-nums">42</div>
+            </div>
+        </div>
+
        <!-- <div class="section-title-container">
             <p class="section-title">סעיף 3</p>
             <img class="law-btn-img" @click="showClause3 = !showClause3" src="../../media/graphics/colorLaw.svg">
@@ -156,5 +173,4 @@ export default {
 .allow-wrap {
     flex-wrap: wrap;
 }
-
 </style>
