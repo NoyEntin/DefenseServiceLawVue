@@ -19,7 +19,7 @@
         לומדת חש"ב
       </div>
       <div v-if="showTimer" class="top-bar-button timer">
-        <img src="./media/graphics/hourglass.svg"/>
+        <img src="./../media/graphics/hourglass.svg"/>
         <div>
           <span v-show="timerMinutes < 10">0</span>{{timerMinutes}}:<span v-show="timerSeconds < 10">0</span>{{timerSeconds}}
         </div>
@@ -28,7 +28,7 @@
     </div>
 
 
-      <!-- <iframe src="./media/animations/lawBtn.html" scrolling="no" style="width:640px; height:480px; margin:0; padding:0; border:none; overflow:hidden"></iframe> -->
+      <!-- <iframe src="./../media/animations/lawBtn.html" scrolling="no" style="width:640px; height:480px; margin:0; padding:0; border:none; overflow:hidden"></iframe> -->
       <!--
     <endTestScreen></endTestScreen>
       page itself, either:
@@ -56,18 +56,18 @@
 </template>
 
 <script>
-import store from './store/index';
-// import "./createjs.min.js";
-// import * as lawBtn from './media/animations/lawBtn.js';
-import HomeScreen from './components/HomeScreen.vue';
-import ContentScreen from './components/ContentScreen.vue';
-import TestScreen from './components/TestScreen.vue';
-import NavigationMenu from './components/NavigationMenu.vue';
-import PopUp from './components/PopUp.vue';
-import EndScreen from './components/EndScreen.vue';
+import store from './../store/index';
+// import "./../createjs.min.js";
+// import * as lawBtn from './../media/animations/lawBtn.js';
+import HomeScreen from './../components/HomeScreen.vue';
+import ContentScreen from './../components/ContentScreen.vue';
+import TestScreen from './../components/TestScreen.vue';
+import NavigationMenu from './../components/NavigationMenu.vue';
+import PopUp from './../components/PopUp.vue';
+import EndScreen from './../components/EndScreen.vue';
 
 export default {
-  name: 'App',
+  name: 'MainApp',
   emits: ['triggerOpenMenu', 'navigateToPage', 'changeDontShowAgain', 'updateTimer'],
   data() {
       return {
@@ -114,7 +114,7 @@ export default {
       this.timerSeconds = timerSeconds;
     },
     openLaw(){
-      window.open("theLaw.html");
+      window.open("subpage.html");
     },
   },
   store,
@@ -154,196 +154,10 @@ export default {
 </script>
 
 <style>
-  @import './style.css';
+  @import './../style.css';
 </style>
 
 <style scoped>
-
-  @keyframes slideEnter {
-    0% {
-      right: -25%;
-    }
-    100% {
-      right: 0%;
-    }
-  }
-
-  @keyframes slideLeave {
-    0% {
-      right: 0%;
-    }
-    100% {
-      right: -25%;
-    }
-  }
-
-  @-webkit-keyframes slideEnter {
-    0% {
-      right: -25%;
-    }
-    100% {
-      right: 0%;
-    }
-  }
-
-  @-webkit-keyframes slideLeave {
-    0% {
-      right: 0%;
-    }
-    100% {
-      right: -25%;
-    }
-  }
-
-  @keyframes delayOverlay {
-    0% {
-      background-color: rgba(0, 0, 0, 0);
-    }
-    100% {
-      background-color: rgba(0, 0, 0, 0);
-    }
-  }
-
-  @-webkit-keyframes delayOverlay {
-    0% {
-      background-color: rgba(0, 0, 0, 0);
-    }
-    100% {
-      background-color: rgba(0, 0, 0, 0);
-    }
-  }
-
-  .delay-overlay-leave-active {
-    animation: delayOverlay 0.6s;
-  }
-
-  .slide-enter-active {
-    animation: slideEnter 0.6s;
-  }
-
-  .slide-leave-active {
-    animation: slideLeave 0.6s;
-  }
-
-  .navigation-menu-overlay {
-    position: absolute;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 12vmin;
-    height: calc(100vh - 12vmin);
-    width: 100%;
-  }
-
-  .background {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-image: url("media/graphics/background.png");
-    opacity: 0.5;
-    background-size: 500px;
-    z-index: -1;
-  }
-
-  .top-bar {
-    background-color: var(--black);
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 12vmin;
-  }
-
-  .top-bar-button {
-    position: absolute;
-    cursor: pointer;
-    background-color: transparent;
-    width: 7vmin;
-    height: 7vmin;
-    top: 2.5vmin;
-    color: white;
-    border: white solid 1px;
-    background-size: 80% 80%;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    transition: 100ms ease-out;
-  }
-
-  .top-bar-button:hover {
-    background-color: var(--darken-black);
-    background-size: 70% 70%;
-  }
-
-  .menu-btn {
-    right: 3vmin;
-  }
-
-  .mtv-btn {
-    background-color: blue;
-    left: 14vmin;
-  }
-
-  .home-btn {
-    background-image: url("media/graphics/home.png");
-    right: 14vmin;
-  }
-
-  .law-btn {
-    left: 3vmin;
-    background-image: url("media/graphics/whiteLaw.svg");
-  }
-
-  .menu-icon {
-    display: block;
-    width: 5vmin;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .menu-icon:before,
-  .menu-icon:after {
-    background-color: #fff;
-    content: '';
-    display: block;
-    height: 4px;
-    transition: all 200ms ease-in-out;
-  }
-  
-  .menu-icon:before {
-    box-shadow: 0 12px 0 #fff;
-    margin-bottom: 20px;
-  }
-
-  /* .menu-icon:hover:before {
-    box-shadow: 0 0 0 #fff;
-    transform: translateY(12px) rotate(45deg);
-  }
-
-  .menu-icon:hover:after{
-    transform: translateY(-12px) rotate(-45deg);
-  } */
-
-  .menu-icon-open:before {
-    box-shadow: 0 0 0 #fff;
-    transform: translateY(12px) rotate(45deg);
-  }
-
-  .menu-icon-open:after{
-    transform: translateY(-12px) rotate(-45deg);
-  }
-
-  .title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 9vmin;
-    font-family: neo;
-  }
-
   .timer {
     pointer-events: none;
     right: 3vmin;

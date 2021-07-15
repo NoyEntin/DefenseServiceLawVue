@@ -1,6 +1,7 @@
 import { createStore } from 'vuex';
 import exerciseQuestions from './exerciseQuestions.json';
 import allTestQuestions from './testQuestions.json';
+import InteractiveExamplesData from './InteractiveExamplesData.json';
 
 export default createStore({
   state: {
@@ -40,6 +41,7 @@ export default createStore({
     ],
     areExerciseQuestionsAnswered: [],
     arePagesViewed: [],
+    InteractiveExamplesData: InteractiveExamplesData,
     // *****
     //!attention! each test questions must contain at least n SINGLE questions for each chapter
     //n is the number of questions required for this chapter according to testQuestionsAmountByChapter

@@ -1,44 +1,34 @@
 <template>
-    <div class="Interactive-example">
-        דוגמה אינטרקטיבית
-
+    <div class="interactive-example">
         <div class="example-container">
             <div class="example-help">
                 לחצו על כל אחד מהשלבים על מנת לראות כיצד הוא משפיע על סעיף 20
             </div>
-            <div class="change-to-text">
+            <div class="change-to-text" @click="changeToText">
                 <div>החלף לטקסט</div>
                 <img src="../../media/graphics/calendar.svg" class="example-img"/>
             </div>
             <div class="example-header">
-                סעיף 20: 1/1/2021
+                <div v-if="!onlyText">סעיף 20: {{ $store.state.InteractiveExamplesData[currentExample][currentTimeStamp]["section-20-date"] }}</div>
+                <div v-else>&hearts;</div>
             </div>
             <div class="example-content">
-                <p>
-                דנה הינה מלש"בית  שנולדה בחו"ל והגיעה לארץ בגיל 19 בתאריך 1/1/20 וביצעה עליה ולכן קיבלה ממעד אזרחית בתאריך 1/7/20 כאשר היא בת 19 וחצי. מועד סעיף 20 שלה הינו שנתיים ממועד קבלת מעמד אזרחי כלומר תאריך העלייה ולכן יהיה 1/7/22.
-                </p>
+                <p v-if="!onlyText">{{ $store.state.InteractiveExamplesData[currentExample][currentTimeStamp]["section-20-explanation"] }}</p>
+                <p v-else>{{ $store.state.InteractiveExamplesData[currentExample][0].text }}</p>
             </div>
-            <div class="time-line-container">
-                <div class="time-stamps-container">
-                    <div class="time-stamp">
-                        laksjdfaldkjfa;kjf
-                    </div>
-                    <div class="time-stamp">
-                        laksjdfaldkjfa;kjf
-                    </div>
-                    <div class="time-stamp">
-                        laksjdfaldkjfa;kjf
-                    </div>
-                    <div class="time-stamp">
-                        laksjdfaldkjfa;kjf
-                    </div>
-                    <div class="time-stamp">
-                        laksjdfaldkjfa;kjf
+            <div class="time-stamps-container" v-show="!onlyText">
+                <div class="time-stamp" :class="{'time-stamp-shape-gray': currentTimeStamp !== index}" @click="clickedTimeStamp(index)" v-for="index in $store.state.InteractiveExamplesData[0].length-1" :key="index">
+                    <div class="time-stamp-title" :class="{'time-stamp-title-active': currentTimeStamp === index}">{{ $store.state.InteractiveExamplesData[currentExample][index]["time-stamp-date"] }}</div>
+                    <p>{{ $store.state.InteractiveExamplesData[currentExample][index]["time-stamp-details"] }}</p>
+                    <svg class="time-stamp-shape" preserveAspectRatio="none" viewBox="0 0 100 200">
+                        <path class="hover-gray" :class="{'time-stamp-shape-active': currentTimeStamp === index}" d="M 0 0 L 100 0 L 100 150 L 50 200 L 0 150 L 0 0" fill="none" stroke="var(--blue)" stroke-width="3"></path>
+                    </svg>
+                    <div class="active-image-container" v-if="currentTimeStamp === index">
+                        <img class="active-image" :src="activeImageSrc(index)">
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </template>
 
@@ -48,11 +38,22 @@ export default {
 
     data() {
         return {
-        
+            onlyText: false,
+            currentExample: 0,
+            currentTimeStamp: 1,
         }
     },
     methods: {
-                
+        clickedTimeStamp(index) {
+            this.currentTimeStamp = index;
+        },
+        activeImageSrc(index) {
+            return require("./../../media/graphics/" + this.$store.state.InteractiveExamplesData[this.currentExample][index]['active-image'] + ".svg")
+        },
+        changeToText() {
+            console.log("changeToText");
+            this.onlyText = !this.onlyText;
+        }
     },
     computed: {
 
@@ -76,6 +77,7 @@ export default {
         position: absolute;
         right: 2%;
         top: -15%;
+        cursor: pointer;
     }
 
     .example-img {
@@ -88,6 +90,12 @@ export default {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: flex-end;
+        /* align-items: stretch; */
+    }
+
+    .example-content {
+        padding-bottom: 6%;
+        width: 100%;
     }
 
     .example-header {
@@ -97,28 +105,81 @@ export default {
     }
 
     .time-line-container {
-        background-color: cadetblue;
         width: 100%;
-        height: 20vmax;
+        height: 30%;
         max-height: 20vh;
     }
 
     .time-stamps-container {
-        background-color: darkseagreen;
         width: 100%;
         height: 100%;
-         max-width:100%;
-  max-height:100%;
         display: flex;
         justify-content: center;
         align-items: stretch;
         flex-direction: row;
         flex-wrap: nowrap;
+        position: relative;
+        top: -2vmin;
     }
 
     .time-stamp {
-        background-color: lightseagreen;
-        margin: 5%;
+        margin: 0% 2%;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+    
+    .time-stamp-title {
+        background-color: var(--blue);
+        text-align: center;
+        color: white;
+    }
+
+    .time-stamp-shape {
+        z-index: 1;
+        height: fit-content;
+    }
+
+    .time-stamp-shape-active {
+        stroke: var(--red);
+    }
+    
+    .time-stamp-shape-gray:hover .hover-gray {
+        fill: rgb(242, 242, 242);
+    }
+
+    .time-stamp-title-active {
+        background-color: var(--red);
+    }
+
+    .time-stamp p {
+        z-index: 5;
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        font-size: 0.95em;
+        line-height: 1.5em;
+    }
+
+    .active-image-container {
+        background-color: white;
+        width: 70%;
+        height: 4em;
+        position: absolute;
+        left: 15%;
+        bottom: -1em;
+    }
+
+    .active-image {
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        top: 5%;
+        left: 5%;
     }
 
 </style>

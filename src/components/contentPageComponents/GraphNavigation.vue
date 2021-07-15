@@ -20,8 +20,14 @@
             <div class="graph-main">
                 <div class="graph-main-top">
                     <!-- <p class="graph-title">{{currentChoice.value}}</p> -->
-                    <div class="restart-btn" @click="clickedRestart">אתחל</div>
-                    <div class="back-btn" @click="clickedBack">חזור</div>
+                    <div class="back-btn" @click="clickedBack">
+                        <img src="./../../media/graphics/back.svg">
+                        <div>חזור</div>
+                    </div>
+                    <div class="restart-btn" @click="clickedRestart">
+                        <img src="./../../media/graphics/restart.svg">
+                        <div>אתחל</div>
+                    </div>
                     {{currentChoice.value}}
                 </div>
                 <div class="graph-main-top-shape">
@@ -340,10 +346,10 @@ export default {
     position: absolute;
     color: var(--yellow);
     top: 1%;
-    right: 1%;
+    right: 11%;
     height: 8%;
     width: 8%;
-    border: var(--yellow) 2px solid;
+    /* border: var(--yellow) 2px solid; */
     cursor: pointer;
 }
 
@@ -351,10 +357,10 @@ export default {
     position: absolute;
     color: var(--yellow);
     top: 1%;
-    right: 11%;
+    right: 1%;
     height: 8%;
     width: 8%;
-    border: var(--yellow) 2px solid;
+    /* border: var(--yellow) 2px solid; */
     cursor: pointer;
 }
 
@@ -415,5 +421,24 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.restart-btn div,
+.back-btn div {
+    font-size: 0.8em;
+    margin: 0%;
+    position: relative;
+    top: -50%;
+}
+
+.restart-btn img,
+.back-btn img {
+    height: 60%;
+    width: 80%;
+    margin: 0%;
+}
+
+.back-btn img {
+    transform: rotateZ(180deg);
 }
 </style>

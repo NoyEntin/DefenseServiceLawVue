@@ -100,12 +100,23 @@
                 הורד תרשים
             </a>
         </p>
+
+        <InteractiveExample>
+        </InteractiveExample>
+
+        <InteractiveExample>
+        </InteractiveExample>
+
     </div>
 </template>
 
 <script>
+import InteractiveExample from './InteractiveExample.vue'
 
 export default {
+    components: { 
+        InteractiveExample
+    },
     name: 'Chapter2Page6',
     props: {
 
