@@ -186,9 +186,11 @@ export default createStore({
       state.grade = 0;
       var pointsForEach = 100 / state.testQuestions.length;
       for (var i = 0; i < state.testQuestions.length; i++){
-        if (Number(state.testQuestions[i].rightAnswer) === state.userTestAnswers[i]) {
-          state.grade += pointsForEach;
-        }
+        // for (var i = 0; i < state.userTestAnswers[i].length; i++) {
+          if (Number(state.testQuestions[i].rightAnswer) === state.userTestAnswers[i]) {
+            state.grade += pointsForEach;
+          }
+        // }
       }
       state.grade = Math.round(state.grade);
     },

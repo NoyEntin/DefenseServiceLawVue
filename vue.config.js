@@ -18,19 +18,19 @@ module.exports = {
         // template is inferred to be `public/subpage.html`
         // and falls back to `public/index.html` if not found.
         // Output filename is inferred to be `subpage.html`.
-        subpage: {
+        theLaw: {
             // entry for the page
-            entry: 'src/subpage/main.js',
+            entry: 'src/subpages/theLaw/main.js',
             // the source template
-            template: 'public/subpage.html',
+            template: 'public/theLaw.html',
             // output as dist/index.html
-            filename: 'subpage.html',
+            filename: 'theLaw.html',
             // when using title option,
             // template title tag needs to be <title><%= htmlWebpackPlugin.options.title %></title>
             title: 'The Law',
             // chunks to include on this page, by default includes
             // extracted common chunks and vendor chunks.
-            chunks: ['chunk-vendors', 'chunk-common', 'subpage']
+            chunks: ['chunk-vendors', 'chunk-common', 'theLaw']
         },
     }
 }

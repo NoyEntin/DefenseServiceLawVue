@@ -113,7 +113,7 @@ export default {
       this.timerSeconds = timerSeconds;
     },
     openLaw(){
-      window.open("subpage.html");
+      window.open("theLaw.html");
     },
   },
   store,

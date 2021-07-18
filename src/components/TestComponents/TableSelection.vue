@@ -4,18 +4,17 @@
         <!--<div class="test-answers-container">-->
         <table>
             <tr class="table-head">
-                <th>dfzg</th>
-                <th>znzt</th>
+                <th></th>
+                <th></th>
             </tr>
             <tr v-for="(answer, index) in allTestQuestions[34][0].answers" :key="index"
-            :class="{'selectedAnswer': currentUserAnswer === index || currentIndex === index,
+            :class="{'selectedAnswer': currentUserAnswer === index || currentIndex[index] === index,
             'correct': isFeedbackMode && (Number(allTestQuestions[34][0].rightAnswer) === index),
-            'incorrect': isFeedbackMode && (currentUserAnswer === index) && (Number(allTestQuestions[34][0].rightAnswer) !== index),
-            'disable': isFeedbackMode}"
+            'incorrect': isFeedbackMode && (currentUserAnswer === index) && (Number(allTestQuestions[34][0].rightAnswer) !== index)}"
             class="test-answer"
             @click="clicked($event, index)">
                 <td v-html="answer"></td>
-                <td>ggg</td>
+                <td></td>
             </tr>
         </table>
         <!--</div>-->
@@ -64,7 +63,7 @@ export default {
                 this.currentIndex[index] = -1;
             } else {
                 this.currentIndex[index] = index;
-                this.$emit('answer-clicked', index);
+                this.$emit('answer-clicked', this.currentIndex);
             }
             console.table(this.currentIndex);
         }
@@ -108,16 +107,11 @@ export default {
 }
 
 .selectedAnswer{
-    cursor: auto;
     background-color: var(--lighten-blue);
 }
 
 .selectedAnswer:hover{
     background-color: var(--lighten-blue);
-}
-
-.disable {
-    pointer-events: none;
 }
 
 .correct {

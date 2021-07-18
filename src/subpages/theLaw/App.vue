@@ -2202,7 +2202,7 @@ export default {
 </script>
 
 <style>
-  @import './../style.css';
+  @import './../../style.css';
 </style>
 
 <style scoped>
@@ -2215,7 +2215,7 @@ export default {
     }*/
 
     .download-law-btn {
-        background-image: url(".././media/graphics/download.svg");
+        background-image: url("../.././media/graphics/download.svg");
     }
 
     .top-bar-button {
