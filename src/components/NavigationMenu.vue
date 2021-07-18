@@ -68,8 +68,6 @@ export default {
     },
     methods: {
       askToNavigate($event, chapterIndex, pageIndex) {
-        console.log("nav menu is saying: " + chapterIndex + " and " + pageIndex);
-
         // check if need to show pop up
         if (this.isItSkips(chapterIndex, pageIndex)) {
           // toggleDisabled();

@@ -1,6 +1,6 @@
 <template>
     <div class="chapter-btn" :class="['chapter-' + buttonId]" @click="buttonClicked">
-        <div :class="{'chapters-black': !idDone, 'remove-black': isDone}">
+        <div :class="{'remove-black': isDone}" class='chapters-black'>
         </div>
         <div class="chapter-btn-progress-bar">
             <div :class="{'chapter-btn-full-progress-bar': isDone}"></div>

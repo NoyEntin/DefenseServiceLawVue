@@ -72,7 +72,6 @@ export default {
             }
         },
         clickedRestart(event) {
-            console.log("in clickedRestart");
             this.selectedChoices = [this.a0];
             this.currentChoice = this.a0;
         }

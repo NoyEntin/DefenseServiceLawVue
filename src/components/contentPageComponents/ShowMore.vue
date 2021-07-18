@@ -4,7 +4,11 @@
             <p class="section-title">
                 <slot name="section-name"></slot>
             </p>
-            <img class="show-more-btn-img" @click="show = !show" :src="imgSrc">
+            <!-- <img class="show-more-btn-img" @click="show = !show" :src="imgSrc"> -->
+            <!-- <div class="overlay"></div> -->
+            <div>
+                <iframe :id="uniqueId" :src="`${publicPath}animations/lawBtn/lawBtn.html?id=`+ uniqueId" class="show-more-btn-img" scrolling="no"></iframe>
+            </div>
             <!-- <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:640px; height:480px" @click="show = !show">
 		        <canvas id="canvas" width="640" height="480" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
 		        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:640px; height:480px; position: absolute; left: 0px; top: 0px; display: block;">
@@ -26,14 +30,23 @@ export default {
             type: Boolean,
             required: true,
         },
+        uniqueId: {
+            type: String,
+            required: true,
+        }
     },
     data() {
         return {
             show: false,
+            publicPath: process.env.BASE_URL,
         }
     },
     methods: {
-    
+        clicked() {
+            setTimeout(() => {
+                this.show = !this.show;
+            }, 700);
+        }
     },
     computed: {
         imgSrc(){
@@ -43,6 +56,9 @@ export default {
                 return require("../../media/graphics/idea.svg")
         },
     },
+    created() {
+        window.addEventListener('message', this.clicked)
+    }
 }
 </script>
 
@@ -71,15 +87,15 @@ export default {
     /* height: 250%; */
     z-index: 1;
     height: 100%;
+    width: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
     cursor: pointer;
-}
-
-.show-more-btn-img:hover {
-    /* height: 260%; */
-    height: 7vmin;
 }
 
 .law-style {

@@ -99,7 +99,6 @@ export default {
       this.popUpShowing = !this.popUpShowing;
     },
     navigateToPage(){
-      console.log("app is saying: " + this.chapterToNavigateTo + " and " + this.pageToNavigateTo);
       this.ClosePopUp();
       this.openMenu();
       this.$store.commit('updateCurrentContentChapter', this.chapterToNavigateTo + 1);

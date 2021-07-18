@@ -16,7 +16,10 @@
         <div class="content-container">
             <div class="test-content">
                 <div v-if="!showForm">
-                    <p v-html="questions[currentQuestionIndex].question"></p>
+                    <TableSelection :currentQuestionIndex="currentQuestionIndex" :currentUserAnswer="currentUserAnswer"
+                    @answer-clicked="answerClicked" :key="'question number' + currentQuestionIndex">
+                    </TableSelection><!--  -->
+                    <!-- <p v-html="questions[currentQuestionIndex].question"></p>
                     <div class="test-answers-container" >
                         <div v-for="(answer, index) in questions[currentQuestionIndex].answers" :key="index"
                         :class="{'selectedAnswer': userAnswer[currentQuestionIndex] === index,
@@ -27,7 +30,7 @@
                         @click="answerClicked(event, index)">
                             <span v-html="answer"></span>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <TestForm ref="testForm" v-else></TestForm>
             </div>
@@ -108,10 +111,15 @@
 <script>
 import TestForm from './TestForm.vue';
 import PopUp from './PopUp.vue';
+// import CalendarChoice from './TestComponents/CalendarChoice.vue';
+// import CompleteText from './TestComponents/CompleteText.vue';
+// import DragChoice from './TestComponents/DragChoice.vue';
+import MultipleChoice from './TestComponents/MultipleChoice.vue';
+// import NumberChoice from './TestComponents/NumberChoice.vue';
+import TableSelection from './TestComponents/TableSelection.vue';
 
 export default {
     name: 'TestScreen',
-
     data() {
         return {
             userAnswer: [],
@@ -144,12 +152,16 @@ export default {
         },
         showForm() {
             return this.currentQuestionIndex === -1;
-        }
+        },
+        currentUserAnswer() {
+            return this.userAnswer[this.currentQuestionIndex];
+        },
     },
     methods: {
-        answerClicked(event, answerIndex) {
+        answerClicked(answerIndex) {
             if(!this.isFeedbackMode) {
                 this.userAnswer.splice(this.currentQuestionIndex, 1, answerIndex);
+                // console.log(this.userAnswer);
             }
         },
         startTest() {
@@ -193,7 +205,6 @@ export default {
             }
         },
         reloadTest() {
-            console.log("in reloadTest");
             this.$store.dispatch('initializeTest').then(()=>{
                 this.currentQuestionIndex = 0;
                 this.toolTipActive= false;
@@ -221,7 +232,13 @@ export default {
     },
     components: {
         TestForm,
-        PopUp     
+        PopUp,
+        // CalendarChoise,
+        // CompleteText,
+        // DragChoice,
+        MultipleChoice,
+        // NumberChoice,
+        TableSelection
     },
     created(){
         this.initializeUserAnswers();

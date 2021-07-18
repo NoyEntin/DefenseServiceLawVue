@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <ShowMore :isLawSection="true">
+        <ShowMore :isLawSection="true" :uniqueId="'abc123'">
             <template v-slot:section-name>
                 סעיף 12
             </template>
@@ -44,7 +44,7 @@
         <p>
             לדוגמא: יונתן הגיע ללשכה לביצוע צו ראשון, ביצע אימות נתונים וראיון צד"כ, אך טרם כניסתו לרופא החליט לעזוב לביתו. לאחר מכן זומן מספר פעמים לבדיקה רפואית ולא התייצב, ועל כן ניתן לקרוא לו בצו לפי סעיף 12 לחש"ב. צו זה נקרא כך מתוקף הסעיף בחש"ב.
         </p>
-        <ShowMore :isLawSection="true">
+        <ShowMore :isLawSection="true" :uniqueId="'efg456'">
             <template v-slot:section-name>
                 סעיף 13
             </template>
@@ -68,7 +68,7 @@
                 הורד תרשים
             </a>
         </p>
-        <ShowMore :isLawSection="false">
+        <ShowMore :isLawSection="false" :uniqueId="'hij789'">
             <template v-slot:section-content>
                 בשנת 2020 המלש"ב המבוגר ביותר שהתגייס לחובה היה בן 33 ו- 10 חודשים. גויס כמשתמט.
             </template>
@@ -76,7 +76,7 @@
         <p>
             לגבי שני הסעיפים – היות ומדובר בגיוס אנו נדרשים לקרוא לו לשירות רק לאחר הגיעו לגיל יוצא-צבא, קרי גיל 18.
         </p>
-        <ShowMore :isLawSection="false">
+        <ShowMore :isLawSection="false" :uniqueId="'klm025'">
             <template v-slot:section-content>
              לפי החוק, חישוב הגילים הינו לפי לוח השנה העברי, ולכן גם בייצוב לגיוס גיל 18 הינו לפי לוח השנה העברי, ולכן גם אם המלש"ב אינו יהודי וכבר חגג את גיל 18 לפי לוח השנה הגרגוריאני ניתן לייצבו לגיוס רק לאחר הגעתו לגיל 18 לפי לוח השנה העברי.
             </template>

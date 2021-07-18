@@ -183,7 +183,6 @@ export default createStore({
       state.userTestAnswers = userAnswers;
     },
     calculateGrade(state) {
-      console.log("in store- calculate grade");
       state.grade = 0;
       var pointsForEach = 100 / state.testQuestions.length;
       for (var i = 0; i < state.testQuestions.length; i++){

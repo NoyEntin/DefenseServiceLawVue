@@ -58,7 +58,6 @@ export default {
             return require("./../../media/graphics/" + this.$store.state.InteractiveExamplesData[this.exampleNumber][index]['active-image'] + ".svg")
         },
         changeToText() {
-            console.log("changeToText");
             this.onlyText = !this.onlyText;
         }
     },

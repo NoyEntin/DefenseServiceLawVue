@@ -58,7 +58,6 @@ export default {
         BtnClicked(buttonIndex) {
             this.buttonIndex = buttonIndex;
             if(!this.$store.getters.prevChaptersDone(buttonIndex - 1)) {
-                console.log("in skip-chapter");
                 this.popUpShowing = true;
                 this.whichPopUp='skip-chapter';
             } else {
