@@ -58,16 +58,16 @@
             
         </table>
         <p class="download-btn-container">
-            <a class="download-btn" :href="`${publicPath}mediaForDownload/section13chart.png`" download='section13chart.png'>
+            <a class="download-btn" :href="`${publicPath}mediaForDownload/calculate-section-20.png`" download='calculate-section-20.png'>
                 <img src="../../media/graphics/download.svg"/>
                 הורד טבלה
             </a>
         </p>
 
-        <InteractiveExample>
+        <InteractiveExample :exampleNumber="0">
         </InteractiveExample>
-        
-        <InteractiveExample>
+
+        <InteractiveExample :exampleNumber="1">
         </InteractiveExample>
 
 
@@ -88,6 +88,7 @@ export default {
     },
     data() {
         return {
+            publicPath: process.env.BASE_URL
         }
     },
     created() {

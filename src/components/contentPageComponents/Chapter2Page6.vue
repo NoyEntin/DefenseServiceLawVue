@@ -95,16 +95,16 @@
             </tr>
         </table>
         <p class="download-btn-container">
-            <a class="download-btn" :href="`${publicPath}mediaForDownload/section13chart.png`" download='section13chart.png'>
+            <a class="download-btn" :href="`${publicPath}mediaForDownload/maximum-duration-treatment.png`" download='maximum-duration-treatment.png'>
                 <img src="../../media/graphics/download.svg"/>
                 הורד תרשים
             </a>
         </p>
 
-        <InteractiveExample>
+        <InteractiveExample :exampleNumber="3">
         </InteractiveExample>
 
-        <InteractiveExample>
+        <InteractiveExample :exampleNumber="4">
         </InteractiveExample>
 
     </div>
@@ -123,7 +123,7 @@ export default {
     },
     data() {
         return {
-
+            publicPath: process.env.BASE_URL
         }
     },
     created() {

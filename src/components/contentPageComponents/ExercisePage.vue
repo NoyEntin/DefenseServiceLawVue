@@ -37,10 +37,8 @@ export default {
     },
     data() {
         return {
-            correctAnswer: Number(this.$store.state.exerciseQuestions[this.$store.state.currentContentChapter - 1][this.pageIndex][this.questionIndex]["rightAnswer"]),
             // isAnswerCorrect: false,
             currentAnswer: -1,
-            explanation: this.$store.state.exerciseQuestions[this.$store.state.currentContentChapter - 1][this.pageIndex][this.questionIndex]["explanation"]
         }
     },
     methods: {
@@ -76,6 +74,12 @@ export default {
         },
         isAnswerCorrect() {
             return this.$store.state.areExerciseQuestionsAnswered[this.chapterId][this.pageIndex][this.questionIndex]
+        },
+        correctAnswer(){
+            return Number(this.$store.state.exerciseQuestions[this.$store.state.currentContentChapter - 1][this.pageIndex][this.questionIndex]["rightAnswer"])
+        },
+         explanation(){
+            return this.$store.state.exerciseQuestions[this.$store.state.currentContentChapter - 1][this.pageIndex][this.questionIndex]["explanation"]
         }
     },
     // created() {

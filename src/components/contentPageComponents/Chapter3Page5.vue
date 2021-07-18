@@ -13,7 +13,7 @@
         <p class="graph-title">תרשים התייצבות משתמט</p>
         <img class="graphDefaulters" src="../../media/graphics/graphDefaulters1.png">
         <p class="download-btn-container">
-            <a class="download-btn" :href="`${publicPath}mediaForDownload/section13chart.png`" download='section13chart.png'>
+            <a class="download-btn" :href="`${publicPath}mediaForDownload/graphDefaulters1.png`" download='graphDefaulters1.png'>
                 <img src="../../media/graphics/download.svg"/>
                 הורד תרשים
             </a>
@@ -25,7 +25,7 @@
         <p class="graph-title">תרשים במידה ומשתמטת מציגה מסמכי היריון/אם לילד/נישואין</p>
         <img class="graphDefaulters" src="../../media/graphics/graphDefaulters2.png">
         <p class="download-btn-container">
-            <a class="download-btn" :href="`${publicPath}mediaForDownload/section13chart.png`" download='section13chart.png'>
+            <a class="download-btn" :href="`${publicPath}mediaForDownload/graphDefaulters2.png`" download='graphDefaulters2.png'>
                 <img src="../../media/graphics/download.svg"/>
                 הורד תרשים
             </a>
@@ -47,7 +47,7 @@ export default {
     },
     data() {
         return {
-
+            publicPath: process.env.BASE_URL
         }
     },
     created() {

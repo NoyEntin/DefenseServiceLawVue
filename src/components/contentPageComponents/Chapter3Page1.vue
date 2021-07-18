@@ -32,7 +32,7 @@
         </table>
 
         <p class="download-btn-container">
-            <a class="download-btn" :href="`${publicPath}mediaForDownload/section13chart.png`" download='section13chart.png'>
+            <a class="download-btn" :href="`${publicPath}mediaForDownload/defaulter-declaration-time.png`" download='defaulter-declaration-time.png'>
                 <img src="../../media/graphics/download.svg"/>
                 הורד טבלה
             </a>
@@ -68,7 +68,7 @@ export default {
     },
     data() {
         return {
-
+            publicPath: process.env.BASE_URL
         }
     },
     created() {
