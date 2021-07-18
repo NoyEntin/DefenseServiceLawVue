@@ -13,11 +13,6 @@
             </div>
         </div>
         <div ref="contentContainer" class="content-container" v-on="isExercise ? { scroll: positionWave } : {}">
-            <div id="animation_container" style="background-color:rgba(102, 102, 255, 0.00); width:640px; height:480px">
-	        	<canvas id="canvas" width="640" height="480" style="position: absolute; display: block; background-color:rgba(102, 102, 255, 0.00);"></canvas>
-	        	<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:640px; height:480px; position: absolute; left: 0px; top: 0px; display: block;">
-	        	</div>
-	        </div>
             <component ref="pageContent" v-bind:is="currentPageName"
             :pageIndex="isExercise ? currentPageIndex : undefined"
             :questionIndex="isExercise ? currentQuestion : undefined"
