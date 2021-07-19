@@ -32,6 +32,7 @@ export default {
         uniqueId: {
             type: String,
             required: true,
+            
         }
     },
     data() {
@@ -41,10 +42,12 @@ export default {
         }
     },
     methods: {
-        clicked() {
-            setTimeout(() => {
-                this.show = !this.show;
-            }, 700);
+        clicked(event) {
+            if(event.source.frameElement.id === this.uniqueId) {
+                setTimeout(() => {
+                    this.show = !this.show;
+                }, 700); 
+            }
         }
     },
     computed: {
@@ -54,9 +57,15 @@ export default {
             else 
                 return require("../../media/graphics/idea.svg")
         },
+        idLength(){
+            return this.uniqueId.length;
+        }
     },
     created() {
-        window.addEventListener('message', this.clicked)
+        window.addEventListener('message', this.clicked, false)
+    },
+    unmounted(){
+        window.removeEventListener('message', this.clicked, false);
     }
 }
 </script>

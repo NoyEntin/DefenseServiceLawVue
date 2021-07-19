@@ -1,7 +1,7 @@
 <template>
     <div class="page-content chapter2-page1">
         <div class="content-title">סעיף 20 לחוק שירות ביטחון</div>
-        <ShowMore :isLawSection="true">
+        <ShowMore :isLawSection="true" :uniqueId="'mao672'">
             <template v-slot:section-name>
                 סעיף 20
             </template>

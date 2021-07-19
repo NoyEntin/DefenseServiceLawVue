@@ -3,11 +3,11 @@
         <div class="sub-bar sub-title">מבחן מסכם</div>
         
         <div class="progress-bar">
-            <div v-for="index in questions.length" :key="index" @click="goToQuestion(index)" class="progress-bar-test-question">
+            <div v-for="index in questions.length" :key="index" @click="goToQuestion(index)" class="progress-bar-test-question" :class="{'progress-bar-disabled': showForm}">
                 {{ index }}
                 <div :class="{'answered': userAnswer[index-1] !== -1,
-                'correct': isFeedbackMode && (userAnswer[index-1] === Number(questions[index-1].rightAnswer)),
-                'incorrect': isFeedbackMode && (userAnswer[index-1] !== Number(questions[index-1].rightAnswer)),
+                'correct': isFeedbackMode && userTestAnswersBoolean[index-1],
+                'incorrect': isFeedbackMode && !userTestAnswersBoolean[index-1],
                 'currentQuestion': currentQuestionIndex === index-1}"
                 class="progress-bar-test-question-bg">
                 </div>
@@ -16,21 +16,19 @@
         <div class="content-container">
             <div class="test-content">
                 <div v-if="!showForm">
-                    <TableSelection :currentQuestionIndex="currentQuestionIndex" :currentUserAnswer="currentUserAnswer"
+                    <!-- <TableSelection v-if="questions[currentQuestionIndex].questionType === 'TableSelection'"
+                    :currentQuestionIndex="currentQuestionIndex" :currentUserAnswer="currentUserAnswer"
                     @answer-clicked="answerClicked" :key="'question number' + currentQuestionIndex">
-                    </TableSelection><!--  -->
-                    <!-- <p v-html="questions[currentQuestionIndex].question"></p>
-                    <div class="test-answers-container" >
-                        <div v-for="(answer, index) in questions[currentQuestionIndex].answers" :key="index"
-                        :class="{'selectedAnswer': userAnswer[currentQuestionIndex] === index,
-                        'correct': isFeedbackMode && (Number(questions[currentQuestionIndex].rightAnswer) === index),
-                        'incorrect': isFeedbackMode && (userAnswer[currentQuestionIndex] === index) && (Number(questions[currentQuestionIndex].rightAnswer) !== index),
-                        'disable': isFeedbackMode}"
-                        class="test-answer"
-                        @click="answerClicked(event, index)">
-                            <span v-html="answer"></span>
-                        </div>
-                    </div> -->
+                    </TableSelection>
+                    <MultipleChoice v-if="questions[currentQuestionIndex].questionType === 'MultipleChoice'"
+                    :currentQuestionIndex="currentQuestionIndex" :currentUserAnswer="currentUserAnswer"
+                    @answer-clicked="answerClicked" :key="'question number' + currentQuestionIndex">
+                    </MultipleChoice> -->
+                    <NumberChoice
+                    :currentQuestionIndex="currentQuestionIndex" :currentUserAnswer="currentUserAnswer"
+                    @answer-clicked="answerClicked" :key="'question number' + currentQuestionIndex">
+                    </NumberChoice>
+
                 </div>
                 <TestForm ref="testForm" v-else></TestForm>
             </div>
@@ -115,7 +113,7 @@ import PopUp from './PopUp.vue';
 // import CompleteText from './TestComponents/CompleteText.vue';
 // import DragChoice from './TestComponents/DragChoice.vue';
 import MultipleChoice from './TestComponents/MultipleChoice.vue';
-// import NumberChoice from './TestComponents/NumberChoice.vue';
+import NumberChoice from './TestComponents/NumberChoice.vue';
 import TableSelection from './TestComponents/TableSelection.vue';
 
 export default {
@@ -140,14 +138,17 @@ export default {
         isPassingGrade() {
             return this.$store.getters.isPassingGrade
         },
+        userTestAnswersBoolean() {
+            return this.$store.state.userTestAnswersBoolean
+        },
         isTestFinished() {
-            if(this.timerMinutes === 0 && this.timerSeconds === 0)
-                return true;
-            for (var i = 0; i < this.questions.length; i++) {
-                if (this.userAnswer[i] === -1) {
-                    return false;
-                };
-            }
+            // if(this.timerMinutes === 0 && this.timerSeconds === 0)
+            //     return true;
+            // for (var i = 0; i < this.questions.length; i++) {
+            //     if (this.userAnswer[i] === -1) {
+            //         return false;
+            //     };
+            // }
             return true;
         },
         showForm() {
@@ -179,7 +180,8 @@ export default {
             this.currentQuestionIndex--;
         },
         goToQuestion(index) {
-            this.currentQuestionIndex = index - 1;
+            if(!this.showForm)
+                this.currentQuestionIndex = index - 1;
         },
         closePopUp(event) {
             this.showPopUp = !this.showPopUp;
@@ -237,7 +239,7 @@ export default {
         // CompleteText,
         // DragChoice,
         MultipleChoice,
-        // NumberChoice,
+        NumberChoice,
         TableSelection
     },
     created(){
@@ -489,5 +491,9 @@ export default {
 .pop-up-text {
     line-height: 2.5vmax;
     font-size: 1.5vmax;
+}
+
+.progress-bar-disabled {
+    cursor: default;
 }
 </style>

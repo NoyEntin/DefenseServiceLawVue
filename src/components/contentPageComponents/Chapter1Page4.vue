@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <ShowMore :isLawSection="true">
+        <ShowMore :isLawSection="true" :uniqueId="'wxy482'">
             <template v-slot:section-name>
                 סעיף 22
             </template>
@@ -113,7 +113,7 @@
            <b>הוא דחיית גיוס לתלמידי ישיבות גבוהות ציוניות</b>.
            כל דחייה תהיה לשנה, ניתן לשוב ולדחות עבור אותו תלמיד עד הגיעו לגיל 26 בלבד.
         </p>
-        <ShowMore :isLawSection="true">
+        <ShowMore :isLawSection="true" :uniqueId="'zcf506'">
             <template v-slot:section-name>
                 סעיף 26- פרק ג'1
             </template>
@@ -348,7 +348,7 @@
         <p>
             ככלל דח"ג בני"ש יינתן עד גיל 26 בלבד. החוק מגדיר את הישיבות המוכרות במן יוכלו ללמוד המלש"בים ולקבל דיחוי מידי שנה לאחר התייצבות פיזית במדור בני"ש בתה"ש.
         </p>
-        <ShowMore :isLawSection="false">
+        <ShowMore :isLawSection="false" :uniqueId="'ilo793'">
             <template v-slot:section-content>
                 עד 2002 דחיות גיוס ופטור משירות לבני הישיבות היה מכח הסכמים קואליציוניים. רק ב – 2002 חוקק חוק נפרד (המוכר בשם "חוק טל" על שם השופט צבי טל שעמד בראש הועדה לבחינת ההסדרים) לדחיית גיוס, אשר בוטל ב – 2012. רק ב – 2014 הוכנסו דחיות הגיוס והפטור לחוק שירות בטחון ובוצעה הפרדה מכוונת בין האוכלוסייה החרדית לציונית.
             </template>

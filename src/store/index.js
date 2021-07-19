@@ -51,6 +51,7 @@ export default createStore({
     testQuestionsByChapter: [], //stores which question indexes (of allTestQuestions) belong to which chapter, by order
     testQuestions: [], //the array which will eventually store the selected questions for the currently loaded test
     userTestAnswers: [],
+    userTestAnswersBoolean: [],
     failingGrade: 70,
     grade: 0,
     isFeedbackMode: false,
@@ -186,11 +187,33 @@ export default createStore({
       state.grade = 0;
       var pointsForEach = 100 / state.testQuestions.length;
       for (var i = 0; i < state.testQuestions.length; i++){
-        // for (var i = 0; i < state.userTestAnswers[i].length; i++) {
+        if (state.testQuestions[i].questionType === "MultipleChoice") {
+          console.log("MultipleChoice");
           if (Number(state.testQuestions[i].rightAnswer) === state.userTestAnswers[i]) {
             state.grade += pointsForEach;
+            state.userTestAnswersBoolean[i] = true;
+            console.log(true);
+          } else {
+            state.userTestAnswersBoolean[i] = false;
+            console.log(false);
           }
-        // }
+        } else if (state.testQuestions[i].questionType === "TableSelection") {
+          console.log("TableSelection");
+          var numOfRightAnswers = 0;
+          for (var j = 0; j < state.userTestAnswers[i].length; j++) {
+            if (state.testQuestions[i].rightAnswer[j] === state.userTestAnswers[i][j]) {
+              numOfRightAnswers++;
+            }
+          }
+          if (numOfRightAnswers === state.userTestAnswers[i].length) {
+            state.grade += pointsForEach;
+            state.userTestAnswersBoolean[i] = true;
+            console.log(true);
+          } else {
+            state.userTestAnswersBoolean[i] = false;
+            console.log(false);
+          }
+        }
       }
       state.grade = Math.round(state.grade);
     },

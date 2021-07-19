@@ -86,10 +86,10 @@ export default {
     },
     computed: {
         isFirstNameValid() {
-            return /^[א-ת]+$/.test(this.userInfo.firstName)
+            return /^[' א-ת]+$/.test(this.userInfo.firstName)
         },
         isLastNameValid() {
-            return /^[א-ת]+$/.test(this.userInfo.lastName)
+            return /^[' א-ת]+$/.test(this.userInfo.lastName)
         },
         isPersonalNumberValid() {
             return this.userInfo.personalNumber.length === 7
@@ -133,7 +133,7 @@ export default {
 .form-item input, select{
     margin-right: 1.8em;
     font-size: 1em;
-    font-family: heebo;
+    font-family: Heebo-Regular;
     text-align: center;
     width: 100%;
 }

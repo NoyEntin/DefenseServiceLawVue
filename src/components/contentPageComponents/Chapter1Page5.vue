@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <ShowMore :isLawSection="true">
+        <ShowMore :isLawSection="true" :uniqueId="'ort368'">
             <template v-slot:section-name>
                 סעיף 36
             </template>
@@ -120,12 +120,12 @@
         <p>
         הפטור יינתן רק למלש"ב או יוצא-צבא ולא לפני הגיעו לגיל מלש"ב.
         </p>
-        <ShowMore :isLawSection="false">
+        <ShowMore :isLawSection="false" :uniqueId="'wgk057'">
             <template v-slot:section-content>
             גם דרוזים וצ’רקסים חייבים בגיוס, למעט דרוזים מרמת הגולן אשר לא נקראים בגלל חשש לנאמנות כפולה עם סוריה.
             </template>
         </ShowMore>
-        <ShowMore :isLawSection="true">
+        <ShowMore :isLawSection="true" :uniqueId="'hnv955'">
             <template v-slot:section-name>
                 סעיף 39
             </template>
@@ -166,7 +166,7 @@
                 דנה הייתה בת 18 בתאריך 03/03/2020. דנה זומנה למיון לייעודי לקצונה בתאריך 04/04/2020, על כך המועד האחרון בו תוכל דנה להגיש בקשה לפטור מטעמי הווי משפחתי דתי הינו 04/04/2020. לאחר הגשת בקשה זו לא ניתן לזמן לצו ראשון. פטור מטעם זה נידון בוועדה של משרד הביטחון. 
             </div>
         </div>
-        <ShowMore :isLawSection="true">
+        <ShowMore :isLawSection="true" :uniqueId="'emj594'">
             <template v-slot:section-name>
                 סעיף 40
             </template>
@@ -275,7 +275,7 @@
                 </div>
             </div>
         </div>
-        <ShowMore :isLawSection="true">
+        <ShowMore :isLawSection="true" :uniqueId="'scy938'">
             <template v-slot:section-name>
                 סעיף 42
             </template>

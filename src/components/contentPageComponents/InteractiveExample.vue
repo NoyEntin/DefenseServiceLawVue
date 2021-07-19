@@ -8,7 +8,8 @@
             <div class="change-to-text" @click="changeToText">
                 <div v-show="!onlyText" class="change-to-text-text">החלף לטקסט</div>
                 <div v-show="onlyText" class="change-to-text-text">החלף לתרשים</div>
-                <img src="../../media/graphics/calendar.svg" class="example-img"/>
+                <img v-show="!onlyText" src="../../media/graphics/parchment.png" class="example-img"/>
+                <img v-show="onlyText" src="../../media/graphics/timeline.png" class="example-img"/>
             </div>
             <div class="example-header">
                 <div v-if="!onlyText">סעיף 20: {{ $store.state.InteractiveExamplesData[exampleNumber][currentTimeStamp]["section-20-date"] }}</div>
@@ -85,7 +86,7 @@ export default {
 
     .example-help-mark {
         width: 25%;
-        font-size: 6vmax;
+        font-size: 7vmin;
         text-align: center;
         display: flex;
         align-items: center;

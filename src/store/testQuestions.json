@@ -8,19 +8,21 @@
             "מרגע שהוא התגייס לצבא"
         ],
         "rightAnswer": "0",
-        "relatedChapter": "0"
-    }],
-    [{
-        "question": "מי ממנה פוקד?",
-        "answers": [
-            "שר הביטחון",
-            "ועדת חוץ וביטחון",
-            "הרמטכ\"ל",
-            "מ’ מיטב",
-            "שר הביטחון או הרמטכ\"ל"
-        ],
-        "rightAnswer": "0",
-        "relatedChapter": "0"
+        "relatedChapter": "0",
+        "questionType": "MultipleChoice"
+        }],
+        [{
+            "question": "מי ממנה פוקד?",
+            "answers": [
+                "שר הביטחון",
+                "ועדת חוץ וביטחון",
+                "הרמטכ\"ל",
+                "מ’ מיטב",
+                "שר הביטחון או הרמטכ\"ל"
+            ],
+            "rightAnswer": "0",
+            "relatedChapter": "0",
+            "questionType": "MultipleChoice"
     }],
     [{
         "question": "האם פוקד יכול לקבל רק חלק מהסמכויות הקבועות בחוק?",
@@ -31,7 +33,8 @@
             "אף תשובה אינה נכונה"
         ],
         "rightAnswer": "2",
-        "relatedChapter": "0"
+        "relatedChapter": "0",
+        "questionType": "MultipleChoice"
     }],
     [{
         "question": "לפי סעיף 5 העוסק בהתייצבות לבדיקות – מה באפשרות הועדה הרפואית לקבוע?",
@@ -42,7 +45,8 @@
             "כשיר לשירות, בלתי כשיר לשרות ביטחון, בלתי כשיר ארעית לשירות ביטחון"
         ],
         "rightAnswer": "3",
-        "relatedChapter": "0"
+        "relatedChapter": "0",
+        "questionType": "MultipleChoice"
     }],
     [{
         "question": "איזה מההליכים בהאים אינו מחויב לפי החוק?",
@@ -53,7 +57,8 @@
             "מבחנים נוספים הנדרשים לבדיקת התאמה למקצוע מסוים"
         ],
         "rightAnswer": "2",
-        "relatedChapter": "0"
+        "relatedChapter": "0",
+        "questionType": "MultipleChoice"
     }],
     [{
         "question": "האם פוקד יכול לקרוא למלש\"ב או יוצא-צבא שנמצא בלתי כשיר ארעית לשירות ביטחון פעם נוספת לבדיקה רפואית?",
@@ -64,7 +69,8 @@
             "רק בהסכמת המלש\"ב"
         ],
         "rightAnswer": "2",
-        "relatedChapter": "0"
+        "relatedChapter": "0",
+        "questionType": "MultipleChoice"
     }],
     [{
         "question": "מדוע צו 12 נקרא בשם זה?",
@@ -75,7 +81,8 @@
             "בגלל שבעבר הטופס שהיה יוצא בו הצו ביב מספר 12 בקטלוג הצבאי"
         ],
         "rightAnswer": "1",
-        "relatedChapter": "0"
+        "relatedChapter": "0",
+        "questionType": "MultipleChoice"
     }],
     [{
         "question": "מלש\"ב או יוצא-צבא שהתייצב לרישום ובדיקות רפואיות לא יוכל לקבל צו לפי סעיף 12 לחש\"ב – האם האימרה נכונה?",
@@ -86,7 +93,8 @@
             "תלוי אם הוא מלש\"ב או יוצא-צבא"
         ],
         "rightAnswer": "1",
-        "relatedChapter": "0"
+        "relatedChapter": "0",
+        "questionType": "MultipleChoice"
     }],
     [{
         "question": "לפי סעיף 13 מה הגיל המרבי לקריאה לשירות ביטחון לגברים?",
@@ -97,7 +105,8 @@
             "גיל 26"
         ],
         "rightAnswer": "2",
-        "relatedChapter": "0"
+        "relatedChapter": "0",
+        "questionType": "MultipleChoice"
     }],
     [{
         "question": "לפי סעיף 13 מה הגיל המרבי לקריאה לשירות ביטחון לנשים?",
@@ -108,7 +117,8 @@
             "גיל 26"
         ],
         "rightAnswer": "3",
-        "relatedChapter": "0"
+        "relatedChapter": "0",
+        "questionType": "MultipleChoice"
     }],
     [{
         "question": "איזה פטור לא ניתן לפי סעיף 36 לחוק?",
@@ -119,7 +129,8 @@
             "החלטה מיוחדת"
         ],
         "rightAnswer": "1",
-        "relatedChapter": "0"
+        "relatedChapter": "0",
+        "questionType": "MultipleChoice"
     }],
     [{
         "question": "איזה תנאי מהתנאים מטה מלש\"בית המבקשת פטור דתייה לא מצהירה?",
@@ -130,7 +141,8 @@
             "טעמים שבהכרה דתית מונעם ממנה לשרת"
         ],
         "rightAnswer": "0",
-        "relatedChapter": "0"
+        "relatedChapter": "0",
+        "questionType": "MultipleChoice"
     }],
     [{
         "question": "במידה והוחלט על דחיית גיוס למלש\"ב שאינו צו 12, לפי איזה סעיף נדחה גיוסו?",
@@ -141,7 +153,8 @@
             "סעיף 20 לחוק"
         ],
         "rightAnswer": "2",
-        "relatedChapter": "0"
+        "relatedChapter": "0",
+        "questionType": "MultipleChoice"
     }],
     [{
         "question": "מה הגיל המינימאלי לפטור דתיה?",
@@ -152,7 +165,8 @@
             "גיל 16"
         ],
         "rightAnswer": "1",
-        "relatedChapter": "0"
+        "relatedChapter": "0",
+        "questionType": "MultipleChoice"
     }],
     [{
         "question": "מה הגיל המינימאלי לפטור הווי משפחתי דתי?",
@@ -163,7 +177,8 @@
             "גיל 16"
         ],
         "rightAnswer": "2",
-        "relatedChapter": "0"
+        "relatedChapter": "0",
+        "questionType": "MultipleChoice"
     }],
     [{
         "question": "מה הגיל המינימאלי לפטור הרה/אם לילד?",
@@ -174,7 +189,8 @@
             "גיל 16"
         ],
         "rightAnswer": "0",
-        "relatedChapter": "0"
+        "relatedChapter": "0",
+        "questionType": "MultipleChoice"
     }],
     [
         {
@@ -184,7 +200,8 @@
             "לא נכון"
         ],
         "rightAnswer": "1",
-        "relatedChapter": "0"
+        "relatedChapter": "0",
+        "questionType": "MultipleChoice"
         }
     ],
     [
@@ -195,7 +212,8 @@
                 "לא נכון"
             ],
             "rightAnswer": "0",
-            "relatedChapter": "0"
+            "relatedChapter": "0",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -208,7 +226,8 @@
                 "נמיגת השירות נדרשת לפתוח לו זימון למועד הקרוב ביותר"
             ],
             "rightAnswer": "0",
-            "relatedChapter": "0"
+            "relatedChapter": "0",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -221,7 +240,8 @@
                 "נסביר לו שבגלל שטרם הגיע לגיל 18 עוד לא ניתן לשלוח לו צו גיוס"
             ],
             "rightAnswer": "2",
-            "relatedChapter": "0"
+            "relatedChapter": "0",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -234,7 +254,8 @@
                 "נדרש אישור של מ’ מיטב או סגנו"
             ],
             "rightAnswer": "2",
-            "relatedChapter": "0"
+            "relatedChapter": "0",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -247,7 +268,8 @@
                 "לענות לה שלפי רישומינו היא נשואה, אך הפטור יישלח לק חודשיים לפני מועד הגיוס"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "0"
+            "relatedChapter": "0",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -260,7 +282,8 @@
                 "עד יום גיוסה כי הצו גיוס ניתן לה בטווח של פחות מ- 90 יום"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "0"
+            "relatedChapter": "0",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -272,7 +295,8 @@
                 "ממש לא, ביטול פטור דתיה יכול להתבצע ע\"י ועדה מיוחדת בלבד"
             ],
             "rightAnswer": "2",
-            "relatedChapter": "0"
+            "relatedChapter": "0",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -285,7 +309,8 @@
                 "כן, אישור ביצוע צו בלשכה אחרת מצריך אישור מקדים של הרמטכ\"ל"
             ],
             "rightAnswer": "2",
-            "relatedChapter": "0"
+            "relatedChapter": "0",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -298,7 +323,8 @@
                 "מוחמד יכול להתגייס עם חבריו, אך נדרשת בקשה אישית שלו להקדמת הגיוס ובנוסף להחתים את הוריו עד גיוסו כקטין"
             ],
             "rightAnswer": "3",
-            "relatedChapter": "0"
+            "relatedChapter": "0",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -311,7 +337,8 @@
                 "אפשר לבוא לקראתו ולהציע לו להתייצב בב\"ש"
             ],
             "rightAnswer": "2",
-            "relatedChapter": "0"
+            "relatedChapter": "0",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -324,7 +351,8 @@
                 "עד גיל 28, מגיל זה נדרש אישור של מ’ מיטב לגיוסו"
             ],
             "rightAnswer": "2",
-            "relatedChapter": "0"
+            "relatedChapter": "0",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -337,7 +365,8 @@
                 "נסביר לה שנוכל לשלוח את הפטור רק לאחר הגיעה לגיל 18"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "0"
+            "relatedChapter": "0",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -350,7 +379,8 @@
                 "כל פוקד יכול לאשר פטור מפאת סעיף 20"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -363,7 +393,8 @@
                 "טרם הגיוס טס לחו\"ל מה- 24.05.2020 עד ה- 13.06.2020"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -376,7 +407,8 @@
                 "14.12.2021 שנה מיום קבלת המעמד שלה"
             ],
             "rightAnswer": "0",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -390,7 +422,8 @@
                 "01.03.2020 לא התייצב להגשת דיחוי וירד ממעמד"
             ],
             "rightAnswer": "3",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -403,24 +436,26 @@
                 "יוארך זמם הבקשה של שנת המכינה וזמן סעיף 20 שנותר ביום בו הגישה את הבקשה"
             ],
             "rightAnswer": "2",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         }
     ],
     [
         {
             "question": "סמן מהן התקופות הבלתי נמנות מתוך הרשימה:",
             "answers": [
-                "אי שיתוף פעולה בהתייצבות לזימונים מחייבים",
-                "שינוי שיוך ללשכת גיוס",
-                "שהות בפרופיל אי כשירות רפואית",
-                "אי התייצבות לביצוע השלמת מבחן דפ\"ר",
-                "נדחה גיוס בשל הנחיית מפקדה",
-                "תקופת שהות בחו\"ל למעלה מחודשיים מגיל 13.5",
-                "ביטול מעמד בן מהגרים",
-                "ויתור על מיון למודיעין"
+                ["אי שיתוף פעולה בהתייצבות לזימונים מחייבים", "XXX"],
+                ["שינוי שיוך ללשכת גיוס", "XXX"],
+                ["שהות בפרופיל אי כשירות רפואית", "XXX"],
+                ["אי התייצבות לביצוע השלמת מבחן דפ\"ר", "XXX"],
+                ["נדחה גיוס בשל הנחיית מפקדה", "XXX"],
+                ["תקופת שהות בחו\"ל למעלה מחודשיים מגיל 13.5", "XXX"],
+                ["ביטול מעמד בן מהגרים", "XXX"],
+                ["ויתור על מיון למודיעין", "XXX"]
             ],
-            "rightAnswer": [0, 2, 5],
-            "relatedChapter": "1"
+            "rightAnswer": [0, -1, 2, -1, -1, 5, -1, -1],
+            "relatedChapter": "1",
+            "questionType": "TableSelection"
         }
     ],
     [
@@ -433,7 +468,8 @@
                 "זימוני צו ראשון רפואי ובהר\"ן"
             ],
             "rightAnswer": "3",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -445,7 +481,8 @@
                 "נדרש לבקש מהמלש\"ב בקשה אישית שלו חתומה על מנת שלא יגייסו אותו במהלך גיל 18 שלו ובהתאם לבקשה יאריכו סעיף 20"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -457,7 +494,8 @@
                 "יש לבקש ממנה הקשה אישית על מנת להאריך לה סעיף 20 ולארכב את הבקשה"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -470,18 +508,17 @@
                 "25.09.2018"
             ],
             "rightAnswer": "0",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         },
         {
-            "question": "מצורף פירוט הזימונים של אותו המלש\"ב מהשאלה הקודמת ללשכה:<table><tr><th>תאריך</th><th>סוג זימון</th><th>סטאטוס התייצבות</th></tr><tr><td>28.01.2020</td><td>צו ראשון</td><td>לא התייצב</td></tr><tr><td>23.02.2020</td><td>צו ראשון</td><td>לא התייצב</td></tr><tr><td>11.03.2020</td><td>צו ראשון</td><td>לא התייצב</td></tr><tr><td>26.03.2020</td><td>צו ראשון</td><td>בוטל</td></tr><tr><td>21.04.2020</td><td>צו ראשון</td><td>בוטל</td></tr><tr><td>03.05.2020</td><td>צו ראשון</td><td>בוטל</td></tr><tr><td>26.05.2020</td><td>צו ראשון</td><td>התייצב</td></tr><tr><td>27.05.2020</td><td>מבחני דפ\"ר במחשב</td><td>לא התייצב</td></tr><tr><td>02.06.2020</td><td>סיכום פרופיל</td><td>הוזז פרט</td></tr><tr><td>16.06.2020</td><td>סיכום פרופיל</td><td>לא התייצב</td></tr><tr><td>07.07.2020</td><td>אורטופד</td><td>התייצב</td></tr><tr><td>06.12.2020</td><td>ראיון פרט - טלפוני</td><td>התייצב</td></tr></table><br>בכמה ימים ניתן להאריך לאותו המלש\"ב סעיף 02 על סמך אי ההתייצבויות שלו?",
+            "question": "מצורף פירוט הזימונים של אותו המלש\"ב מהשאלה הקודמת ללשכה:<table><tr><th>תאריך</th><th>סוג זימון</th><th>סטאטוס התייצבות</th></tr><tr><td>28.01.2020</td><td>צו ראשון</td><td>לא התייצב</td></tr><tr><td>23.02.2020</td><td>צו ראשון</td><td>לא התייצב</td></tr><tr><td>11.03.2020</td><td>צו ראשון</td><td>לא התייצב</td></tr><tr><td>26.03.2020</td><td>צו ראשון</td><td>בוטל</td></tr><tr><td>21.04.2020</td><td>צו ראשון</td><td>בוטל</td></tr><tr><td>03.05.2020</td><td>צו ראשון</td><td>בוטל</td></tr><tr><td>26.05.2020</td><td>צו ראשון</td><td>התייצב</td></tr><tr><td>27.05.2020</td><td>מבחני דפ\"ר במחשב</td><td>לא התייצב</td></tr><tr><td>02.06.2020</td><td>סיכום פרופיל</td><td>הוזז פרט</td></tr><tr><td>16.06.2020</td><td>סיכום פרופיל</td><td>לא התייצב</td></tr><tr><td>07.07.2020</td><td>אורטופד</td><td>התייצב</td></tr><tr><td>06.12.2020</td><td>ראיון פרט - טלפוני</td><td>התייצב</td></tr></table><br>בכמה ימים ניתן להאריך לאותו המלש\"ב סעיף 20 על סמך אי ההתייצבויות שלו?",
             "answers": [
-                "ניתן להאריך ב- 32 יום",
-                "ניתן להאריך ב- 56 יום",
-                "ניתן להאריך ב- 78 יום",
-                "ניתן להאריך ב- 93 יום"
+                ["ניתן להאריך ב- ", " יום"]
             ],
-            "rightAnswer": "2",
-            "relatedChapter": "1"
+            "rightAnswer": 78,
+            "relatedChapter": "1",
+            "questionType": "NumberChoice"
         }
     ],
     [
@@ -494,7 +531,8 @@
                 "10.01.2021"
             ],
             "rightAnswer": "3",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         },
         {
             "question": "בהמשך לשאלה הקודמת (ניתן לחזור אחורה), <br> אותו מלש\"ב מהשאלה הקודמת זומן ללשכת הגיוס להשלמת צו ראשון בתאריך ה20.12.2020 ולא התייצב, זומן פעם נוספת לצו שני ל05.01.2021 ולא התייצב. לאחר שלא התייצב לשני זימונים הועבר לייצוב לגיוס כצו 12 על פי נוהל מבוטלי מעמד ויוצב לגיוס לתאריך 04.04.2021. האם ניתן להאריך לו על אי התייצבותו לזימונים ובכמה ימים?",
@@ -504,7 +542,8 @@
                 "לא ניתן להאריך לו כלל מאחר והוא שייך לאוכלוסיית בני\"ש ואלו לא זימונים מחייבים"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         },
         {
             "question": "בהמשך לשאלות הקודמות (ניתן לחזור אחורה), <br> בכמה ימים יש לקצר את שירותו של הנ\"ל מהשאלה הקודמת?",
@@ -514,7 +553,8 @@
                 "יש לקצר את השירות של הנ\"ל ב37 יום שכן יוצב לגיוס בתאריך 04.04.2021 סעיף 20 שלו תם ב10.01.2021 וניתן להאריך לו עוד 47 ימים מהרגע שירד ממעמד על חוסר שיתוף פעולה"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -527,7 +567,8 @@
                 "ניתן כאשר מדובר בשהייה בחו\"ל"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -538,7 +579,8 @@
                 "שנתיים מגיל 18 עברי"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         },
         {
             "question": "בהמשך לשאלה הקודמת (ניתן לחזור אחורה), <br> מיכאל שייך לאוכלוסיית בני\"ש, בתאריכים האלו התייצב לחתום על דיחוי: 12.1 10.01.2019. מעמדו בוטל בתאריך 16.11.2020.טרם הורד ממעמד בני\"ש הוא לא התייצב להסדיר מעמדו בתאריכים הבאים 27.01.2020, 23.02.2020. האם ניתן להאריך על זימונים אלו סעיף 20?",
@@ -547,7 +589,8 @@
                 "לא"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         },
         {
             "question": "בהמשך לשאלות הקודמות (ניתן לחזור אחורה), <br> לאור המידע שניתן בשתי השאלות הקודמות, מה סעיף 20 העדכני של מיכאל?",
@@ -558,7 +601,8 @@
                 "שנה מביטול מעמד 16.11.2021"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -570,7 +614,8 @@
                 "נדרש בקיצור שירות של 93 יום"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -583,7 +628,8 @@
                 "ניתן להאריך על הבקשה שלה עוד 24 חודשים למניין סעיף 20 כי זה כמו בקשה לדחיית גיוס"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -595,7 +641,8 @@
                 "ניתן להאריך סעיף 20 למלש\"ב מהזימון הראשון עד שסיכם פרופיל כי כל הזמן הזה לא היה ניתן לגייסו ולכן זו תקופה בלתי נמנית"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -608,7 +655,8 @@
                 "לא ניתן להאריך על הזימונים המפורטים כי כבר זומן בשנה השלישית למניין סעיף 20"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         },
         {
             "question": "בהמשך לשאלה הקודמת (ניתן לחזור אחורה), <br> מה הלשכה הייתה צריכה לעשות על מנת למנוע את קיצור השירות של איתמר מהשאלה הקודמת?",
@@ -619,7 +667,8 @@
                 "תשובות א'+ב' נכונות"
             ],
             "rightAnswer": "3",
-            "relatedChapter": "1"
+            "relatedChapter": "1",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -633,7 +682,8 @@
                 "מלש\"ב אשר צו הגיוס הראשון נשלח אליו כאשר הוא כבר בחו\"ל יוכרז כמשתמט בחו\"ל"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -646,7 +696,8 @@
                 "02.09"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -659,7 +710,8 @@
                 "משתמטת המציגה מסמכים נפשיים היכולים להעניק לה פטור"
             ],
             "rightAnswer": "3",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -672,7 +724,8 @@
                 "יש לשלוח אותו מיידית לשרשרת חיול"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -684,7 +737,8 @@
                 "פוקד יכול לפטור אותו רק לאחר שהמשתמט מרצה את עונשו"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -697,7 +751,8 @@
                 "יש לומר לו להתייצב במ\"צ"
             ],
             "rightAnswer": "0",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -710,7 +765,8 @@
                 "יש להכניס אותו לרופא, אם הרופא אומר שכשיר לגיוס יש לשלוח אותו לשרשרת חיול. אם הרופא טוען כי לא כשיר לגיוס יש להתניע לפטור."
             ],
             "rightAnswer": "1",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -721,7 +777,8 @@
                 "לא נכון"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -734,7 +791,8 @@
                 "כל התשובות נכונות"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -747,7 +805,8 @@
                 "יש לבדוק האם העבירה מסמכים המעידים על הריון טרם גיוסה. אם כן, בסמכות רמ\"ד תו\"ם או רמ\"ד גיוס בלשכה לפטור אותה."
             ],
             "rightAnswer": "1",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -759,7 +818,8 @@
                 "יאושר טיפול במשתמט מול הפרקליטות, ברגע שיאושר ישלח למ\"צ לגביית אימרה וזכ\"ד"
                 ],
             "rightAnswer": "0",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -772,7 +832,8 @@
                 "יש להקפיא לה פ\"מ בכל מקרה"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -785,7 +846,8 @@
                 "פרקליטות"
             ],
             "rightAnswer": "2",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -798,7 +860,8 @@
                 "מאחר והוא משתמט יש לשלוח אותו גם ללא הליכי צו ראשון לשרשרת החיול"
             ],
             "rightAnswer": "0",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -811,7 +874,8 @@
                 "את התאריך שבו דיברו עם המשתמט בפעם האחרונה"
             ],
             "rightAnswer": "1",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -824,7 +888,8 @@
                 "משתמט יח\"ש - עד 36 שעות<br>צו 12 מאותר - עד 30 יום<br>משתמט רגיל - עד 60 יום<br>צו 12 לא מאותר - עד 45 ימים"
             ],
             "rightAnswer": "0",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -837,7 +902,8 @@
                 "לוודא שהמלש\"ב התייצב בלשכה כדי לדעת אם הוא לא מאותר ולוודא כתובת תקינה והתראה תקינה של צ\"ג"
             ],
             "rightAnswer": "0",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -850,7 +916,8 @@
                 "להכניס לפוקד להחלטה אם נדרש להכניס לרופא לקביעת פרופיל בהתאם לעומס מתייצבים בלשכה בעת התייצבות המשתמט."
             ],
             "rightAnswer": "0",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ],
     [
@@ -863,7 +930,8 @@
                 "לשלוח מכתב ברשום למשתמט ולמשטרת ישראל לגבי ההשתמטות."
             ],
             "rightAnswer": "0",
-            "relatedChapter": "2"
+            "relatedChapter": "2",
+            "questionType": "MultipleChoice"
         }
     ]
 ]

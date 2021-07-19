@@ -1,14 +1,14 @@
 :root {
-  --black: rgb(1, 22, 39);
-  --blue: rgb(46, 196, 182);
-  --yellow: rgb(253, 184, 51);
-  --red: rgb(231, 29, 54);
-  --darken-black: rgb(0, 4, 15);
-  --darken-blue: rgb(35, 156, 156);
+  --black: #011627;
+  --blue: #2ec4b6;
+  --yellow: #fdb833;
+  --red: #e71d36;
+  --darken-black: #00040f;
+  --darken-blue: #239c9c;
   --darken-yellow: rgb(236, 149, 34);
   --darken-red: rgb(189, 17, 37);
   /* --lighten-black: rgb(0, 4, 15); */
-  --lighten-blue: rgb(162, 218, 214);
+  --lighten-blue: #a2dad6;
   --lighten-yellow: rgb(254, 206, 110);
   --lighten-red: rgb(243, 88, 106);
 }
@@ -16,7 +16,7 @@
 @font-face {
     font-family: Heebo-Regular;
     src: url("media/fonts/Heebo-Regular.ttf");
-    
+    font-weight: normal;
 }
 
 @font-face {
@@ -28,7 +28,7 @@
 @font-face {
     font-family: Heebo-Regular;
     src: url("media/fonts/Heebo-Light.ttf");
-    font-weight: lighter;
+    font-weight: 100;
 }
 
 @font-face {
@@ -233,12 +233,12 @@ body {
     font-family: neo;
   }
 
-.bold {
+/* .bold {
     font-family: Heebo-Bold;
     font-weight: bold;
     display: inline;
     margin: 0;
-}
+} */
 
 .table {
     background-color: black;

@@ -435,6 +435,15 @@ export default {
     height: 60%;
     width: 80%;
     margin: 0%;
+    transition: ease-in 0.1s;
+}
+
+.restart-btn:hover img {
+    transform: rotateZ(50deg);
+}
+
+.back-btn:hover img{
+    transform: rotateZ(150deg);
 }
 
 .back-btn img {

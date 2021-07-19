@@ -1,20 +1,21 @@
 <template>
     <div>
-        <p v-html="allTestQuestions[34][0].question"></p>
+        <p v-html="questions[currentQuestionIndex].question"></p>
         <!--<div class="test-answers-container">-->
         <table>
             <tr class="table-head">
                 <th></th>
                 <th></th>
             </tr>
-            <tr v-for="(answer, index) in allTestQuestions[34][0].answers" :key="index"
-            :class="{'selectedAnswer': currentUserAnswer === index || currentIndex[index] === index,
-            'correct': isFeedbackMode && (Number(allTestQuestions[34][0].rightAnswer) === index),
-            'incorrect': isFeedbackMode && (currentUserAnswer === index) && (Number(allTestQuestions[34][0].rightAnswer) !== index)}"
+            <tr v-for="(answer, index) in questions[currentQuestionIndex].answers" :key="index"
+            :class="{'selectedAnswer': currentUserAnswer[index] === index || currentIndex[index] === index,
+            'disable': isFeedbackMode,
+            'correct': isFeedbackMode && (Number(questions[currentQuestionIndex].rightAnswer[index]) === index),
+            'incorrect': isFeedbackMode && (currentUserAnswer[index] === index) && (Number(questions[currentQuestionIndex].rightAnswer[index]) !== index)}"
             class="test-answer"
             @click="clicked($event, index)">
-                <td v-html="answer"></td>
-                <td></td>
+                <td v-html="answer[0]"></td>
+                <td v-show="answer[1] !== 'XXX'" v-html="answer[1]"></td>
             </tr>
         </table>
         <!--</div>-->
@@ -43,17 +44,11 @@ export default {
         questions() {
             return this.$store.state.testQuestions
         },
-        allTestQuestions () {
-            return this.$store.state.allTestQuestions
-        },
         isFeedbackMode(){
             return this.$store.state.isFeedbackMode
         },
         questions() {
             return this.$store.state.testQuestions 
-        },
-        isFeedbackMode(){
-            return this.$store.state.isFeedbackMode   
         },
     },
     methods: {
@@ -69,11 +64,8 @@ export default {
         }
     },
     created(){
-        // console.log(this.allTestQuestions);
-        // console.log(this.allTestQuestions[34]);
-        // console.log(this.allTestQuestions[34][0].rightAnswer);
-        for (var i = 0; i < this.allTestQuestions[34][0].answers.length; i++) {
-            console.log(this.allTestQuestions[34][0].answers.length);
+        for (var i = 0; i < this.questions[this.currentQuestionIndex].answers.length; i++) {
+            console.log(this.questions[this.currentQuestionIndex].answers.length);
             console.log(this.currentIndex);
             this.currentIndex.push(-1);
         }
@@ -121,5 +113,10 @@ export default {
 .incorrect {
     background-color: rgb(231, 29, 54);
 }
+
+.disable {
+    pointer-events: none;
+}
+
 
 </style>

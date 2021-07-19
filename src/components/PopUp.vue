@@ -51,8 +51,10 @@
                     <img class="go-study-img" src="./../media/graphics/angry.png">
                     <div class="pop-up-text">
                         <p>לא ניגשים למבחן בלי להתכונן!</p>
-                        <p>בדוק את תפריט הניווט</p>
-                        <p>ותראה מה נשאר ללמוד</p>
+                        <p>בדקו את תפריט הניווט
+                            <img src="./../media/graphics/menuIcon.png" class="go-study-menu-icon"/>
+                        </p>
+                        <p>ותראו מה נשאר ללמוד</p>
                     </div>
                     <div class="pop-up-btn-container">
                         <div class="pop-up-btn-no pop-up-btn" @click="onNoClick">
@@ -69,7 +71,7 @@
                 <div class="pop-up-text">
                     זהירות בעקיפה!
                     <br>
-                    בטוח שאתה רוצה לקפוץ קדימה?
+                    בטוח שאתם רוצים לקפוץ קדימה?
                 </div>
                 <div class="dont-show-again">
                     <input type="checkbox" id="checkbox" v-model="checkbox" @click="$emit('checkbox')">
@@ -149,6 +151,7 @@ export default {
     line-height: 2.5vmax;
     font-size: 2vmax;
     background-color: rgba(255, 255, 255, 0);
+    font-weight: lighter;
 }
 
 .go-study .pop-up-container {
@@ -212,6 +215,10 @@ export default {
     justify-content: flex-start;
 }
 
+.pop-up-btn {
+    font-weight: normal;
+}
+
 .go-study-img {
     /* height: 22vmax; */
     height: 70%;
@@ -242,5 +249,11 @@ export default {
     position: absolute;
     bottom: 30%;
     right: 58%;
+}
+
+.go-study-menu-icon {
+    vertical-align: middle;
+    height: 3vmax;
+    margin-right: 2%;
 }
 </style>

@@ -45,10 +45,10 @@
             </div>
 
             <div class="is-correct-message red" v-if="answerClicked && !answeredCorrectly && isExercise">
-                נסה שוב :(
+                נסה שוב &#128531;
             </div>
             <div class="is-correct-message green" v-if="answeredCorrectly && isExercise">
-                מצוין! :)
+                מצוין! &#128516;
             </div>
         </div>
     </div>

@@ -100,11 +100,8 @@
 </template>
 
 <script>
-import ShowMore from './ShowMore.vue'
-
 export default {
     components: { 
-        ShowMore
     },
     name: 'Chapter2Page2',
     props: {
