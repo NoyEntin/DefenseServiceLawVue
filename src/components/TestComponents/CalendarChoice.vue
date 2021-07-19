@@ -1,21 +1,29 @@
 <template>
     <div>
-        <!-- <p v-html="allTestQuestions[38][0].question">{{currentNumber}}</p>
-        {{allTestquestions[38][0].answers[0]}} <input type="number" v-model="currentNumber"> {{allTestquestions[38][0].answers[1]}} -->
+        <p v-html="currentQuestion.question"></p>
+        <v-date-picker v-if="!isFeedbackMode" :model-config="modelConfig" v-model="date" />
+        <div v-else>
+            <p v-if="currentUserAnswer !== currentQuestion.rightAnswer" class="incorrect">{{currentUserAnswer}}</p>
+            <p class="correct">{{currentQuestion.rightAnswer}}</p>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'NumberChoice',
+    name: 'CalendarChoice',
     data() {
         return {
-            currentNumber: "",
+            date: new Date(),
+            modelConfig: {
+                type: 'string',
+                mask: 'YYYY-MM-DD'
+            },
         }
     },
     props: {
-        currentQuestionIndex: {
-            type: Number,
+        currentQuestion: {
+            type: Object,
             required: true,
         },
         currentUserAnswer: {
@@ -24,24 +32,31 @@ export default {
         },
     },
     computed: {
-        questions() {
-            return this.$store.state.testQuestions
-        },
         isFeedbackMode(){
             return this.$store.state.isFeedbackMode
-        },
-        allTestQuestions() {
-            return this.$store.state.allTestQuestions 
-        },
+        }
     },
     methods: {
 
     },
-    created(){
+    created() {
+        console.log(this.currentUserAnswer);
+        if(this.currentUserAnswer instanceof Date)
+            this.date = this.currentUserAnswer;
+    },
+    watch: {
+        date: function(){
+            this.$emit('answer-clicked', this.date);
+        },
     }
 }
 </script>
 
 <style scoped>
-
+    .incorrect {
+        color: red
+    }
+    .correct {
+        color: green
+    }
 </style>

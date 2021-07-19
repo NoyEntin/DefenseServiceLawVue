@@ -3,6 +3,6 @@ import App from './App.vue'
 import store from '.././store'
 import $ from 'jquery'
 window.$ = window.jQuery = require('jquery');
-// const createjs = window.createjs;
+import VCalendar from 'v-calendar';
 
-createApp(App).use(store).mount('#app');
+createApp(App).use(store).use(VCalendar, {}).mount('#app');

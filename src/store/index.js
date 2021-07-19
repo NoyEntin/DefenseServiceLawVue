@@ -186,19 +186,17 @@ export default createStore({
     calculateGrade(state) {
       state.grade = 0;
       var pointsForEach = 100 / state.testQuestions.length;
+      var questionType = "";
       for (var i = 0; i < state.testQuestions.length; i++){
-        if (state.testQuestions[i].questionType === "MultipleChoice") {
-          console.log("MultipleChoice");
-          if (Number(state.testQuestions[i].rightAnswer) === state.userTestAnswers[i]) {
+        questionType = state.testQuestions[i].questionType;
+        if (questionType === "MultipleChoice" || questionType === "NumberChoice" || questionType === "CalendarChoice") {
+          if (String(state.testQuestions[i].rightAnswer) === String(state.userTestAnswers[i])) {
             state.grade += pointsForEach;
             state.userTestAnswersBoolean[i] = true;
-            console.log(true);
           } else {
             state.userTestAnswersBoolean[i] = false;
-            console.log(false);
           }
         } else if (state.testQuestions[i].questionType === "TableSelection") {
-          console.log("TableSelection");
           var numOfRightAnswers = 0;
           for (var j = 0; j < state.userTestAnswers[i].length; j++) {
             if (state.testQuestions[i].rightAnswer[j] === state.userTestAnswers[i][j]) {
@@ -208,10 +206,8 @@ export default createStore({
           if (numOfRightAnswers === state.userTestAnswers[i].length) {
             state.grade += pointsForEach;
             state.userTestAnswersBoolean[i] = true;
-            console.log(true);
           } else {
             state.userTestAnswersBoolean[i] = false;
-            console.log(false);
           }
         }
       }

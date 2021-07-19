@@ -1,17 +1,17 @@
 <template>
     <div>
-        <p v-html="questions[currentQuestionIndex].question"></p>
+        <p v-html="currentQuestion.question"></p>
         <!--<div class="test-answers-container">-->
         <table>
             <tr class="table-head">
                 <th></th>
                 <th></th>
             </tr>
-            <tr v-for="(answer, index) in questions[currentQuestionIndex].answers" :key="index"
+            <tr v-for="(answer, index) in currentQuestion.answers" :key="index"
             :class="{'selectedAnswer': currentUserAnswer[index] === index || currentIndex[index] === index,
             'disable': isFeedbackMode,
-            'correct': isFeedbackMode && (Number(questions[currentQuestionIndex].rightAnswer[index]) === index),
-            'incorrect': isFeedbackMode && (currentUserAnswer[index] === index) && (Number(questions[currentQuestionIndex].rightAnswer[index]) !== index)}"
+            'correct': isFeedbackMode && (Number(currentQuestion.rightAnswer[index]) === index),
+            'incorrect': isFeedbackMode && (currentUserAnswer[index] === index) && (Number(currentQuestion.rightAnswer[index]) !== index)}"
             class="test-answer"
             @click="clicked($event, index)">
                 <td v-html="answer[0]"></td>
@@ -31,8 +31,8 @@ export default {
         }
     },
     props: {
-        currentQuestionIndex: {
-            type: Number,
+        currentQuestion: {
+            type: Object,
             required: true,
         },
         currentUserAnswer: {
@@ -41,14 +41,8 @@ export default {
         },
     },
     computed: {
-        questions() {
-            return this.$store.state.testQuestions
-        },
         isFeedbackMode(){
             return this.$store.state.isFeedbackMode
-        },
-        questions() {
-            return this.$store.state.testQuestions 
         },
     },
     methods: {
@@ -64,8 +58,8 @@ export default {
         }
     },
     created(){
-        for (var i = 0; i < this.questions[this.currentQuestionIndex].answers.length; i++) {
-            console.log(this.questions[this.currentQuestionIndex].answers.length);
+        for (var i = 0; i < this.currentQuestion.answers.length; i++) {
+            console.log(this.currentQuestion.answers.length);
             console.log(this.currentIndex);
             this.currentIndex.push(-1);
         }

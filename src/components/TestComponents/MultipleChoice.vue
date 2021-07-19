@@ -1,11 +1,11 @@
 <template>
     <div>
-        <p v-html="questions[currentQuestionIndex].question"></p>
+        <p v-html="currentQuestion.question"></p>
         <div class="test-answers-container" >
-            <div v-for="(answer, index) in questions[currentQuestionIndex].answers" :key="index"
+            <div v-for="(answer, index) in currentQuestion.answers" :key="index"
             :class="{'selectedAnswer': currentUserAnswer === index || currentIndex === index,
-            'correct': isFeedbackMode && (Number(questions[currentQuestionIndex].rightAnswer) === index),
-            'incorrect': isFeedbackMode && (currentUserAnswer === index) && (Number(questions[currentQuestionIndex].rightAnswer) !== index),
+            'correct': isFeedbackMode && (Number(currentQuestion.rightAnswer) === index),
+            'incorrect': isFeedbackMode && (currentUserAnswer === index) && (Number(currentQuestion.rightAnswer) !== index),
             'disable': isFeedbackMode}"
             class="test-answer"
             @click="clicked($event, index)">
@@ -24,8 +24,8 @@ export default {
         }
     },
     props: {
-        currentQuestionIndex: {
-            type: Number,
+        currentQuestion: {
+            type: Object,
             required: true,
         },
         currentUserAnswer: {
@@ -34,22 +34,18 @@ export default {
         },
     },
     computed: {
-        questions() {
-            return this.$store.state.testQuestions 
-        },
         isFeedbackMode(){
             return this.$store.state.isFeedbackMode
         },
     },
     methods: {
         clicked($event, index) {
-            console.log(index);
             this.currentIndex = index;
             this.$emit('answer-clicked', index);
         }
     },
     created(){
-        // this.hgcurrentUserAnswer=this.currentUserAnswer;
+
     }
 }
 </script>
