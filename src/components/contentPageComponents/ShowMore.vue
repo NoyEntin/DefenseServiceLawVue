@@ -6,8 +6,11 @@
             </p>
             <!-- <img class="show-more-btn-img" @click="show = !show" :src="imgSrc"> -->
             <!-- <div class="overlay"></div> -->
-            <div>
+            <div v-if="isLawSection">
                 <iframe :id="uniqueId" :src="`${publicPath}animations/lawBtn/lawBtn.html?id=`+ uniqueId" class="show-more-btn-img" scrolling="no"></iframe>
+            </div>
+            <div v-else>
+                <iframe :id="uniqueId" :src="`${publicPath}animations/ideaBtn/ideaBtn.html?id=`+ uniqueId" class="show-more-btn-img" scrolling="no"></iframe>
             </div>
             <!-- <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:640px; height:480px" @click="show = !show">
 		        <canvas id="canvas" width="640" height="480" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
@@ -71,6 +74,7 @@ export default {
 </script>
 
 <style scoped>
+
 .show-more {
     margin: 2vmin;
 }
@@ -101,6 +105,8 @@ export default {
     border: none;
     overflow: hidden;
     cursor: pointer;
+
+    background-color: blueviolet;
 }
 .law-style {
     margin: 0;

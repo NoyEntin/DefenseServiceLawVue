@@ -107,7 +107,7 @@
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 7</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name='seif7' id='seif7'>בדיקה נוספת</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">בדיקה נוספת</span></p>
                 </td>
 
                 
@@ -172,7 +172,7 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif14">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 14</span></p>
                 </td>
@@ -182,9 +182,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif15">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 15</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif15" id="seif15">סעיף 15</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">זמן השירות לגבר &nbsp;[11]</span></p>
@@ -192,9 +192,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif16">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 16</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif16" id="seif16">סעיף 16</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">זמן השירות לאשה</span></p>
@@ -202,9 +202,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif16a">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 16א</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif16a" id="seif16a">סעיף 16א</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">שוויון בשירות</span></p>
@@ -212,9 +212,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif17">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 17</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif17" id="seif17">סעיף 17</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">התנדבות לשירות בטחון [13]</span></p>
@@ -222,9 +222,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif17a">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 17א</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif17a" id="seif17a">סעיף 17א</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">התנדבות לצורך מתן טיפול רפואי</span></p>
@@ -232,9 +232,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif17b">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 17ב</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif17b" id="seif17b">סעיף 17ב</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">דין חייל שנמצא בלתי כשר ארעית לשירות</span></p>
@@ -242,9 +242,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif18">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 18</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif18" id="seif18">סעיף 18</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">זמן השירות לנעדר מן השירות [14]</span></p>
@@ -252,9 +252,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif19">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 19</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif19" id="seif19">סעיף 19</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">דין עונש שהוטל לאחר שחרור משירות</span></p>
@@ -262,9 +262,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif20">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 20</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif20" id="seif20">סעיף 20</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">תקופת הקריאה להתייצבות לשירות סדיר</span></p>
@@ -272,9 +272,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif21">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 21</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif21" id="seif21">סעיף 21</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">חובת הכשרה חקלאית [16]</span></p>
@@ -282,9 +282,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif22">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 22</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif22" id="seif22">סעיף 22</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">שמירה על גרעינים התיישבותיים [17]</span></p>
@@ -292,9 +292,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif22a">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 22א</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif22a" id="seif22a">סעיף 22א</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">ישיבות הסדר</span></p>
@@ -302,9 +302,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif22b">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 22ב</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif22b" id="seif22b">סעיף 22ב</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">דחיית שירות לתלמידי ישיבות גבוהות ציוניות</span></p>
@@ -312,9 +312,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif22c">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 22ג</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif22c" id="seif22c">סעיף 22ג</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">תנאים לדחיית שירות לתלמידי ישיבות גבוהות ציוניות</span></p>
@@ -322,9 +322,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif22d">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 22ד</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif22d" id="seif22d">סעיף 22ד</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">רשימת הישיבות הגבוהות הציוניות</span></p>
@@ -332,9 +332,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif22e">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 22ה</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif22e" id="seif22e">סעיף 22ה</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">דיווח לכנסת &nbsp; ישיבות גבוהות ציוניות</span></p>
@@ -342,9 +342,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif23">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 23</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif23" id="seif23">סעיף 23</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">הבטחת השכלה יסודית</span></p>
@@ -352,9 +352,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif24">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 24</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif24" id="seif24">סעיף 24</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">שירות במשמר הגבול [18א ו 18ב]</span></p>
@@ -362,9 +362,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif24a">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 24א</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif24a" id="seif24a">סעיף 24א</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">שירות ביחידות אחרות של משטרת ישראל</span></p>
@@ -372,9 +372,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif24b">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 24ב</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif24b" id="seif24b">סעיף 24ב</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">שירות ביחידות ביטחוניות בשירות בתי הסוהר</span></p>
@@ -382,9 +382,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif24c">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 24ג</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif24c" id="seif24c">סעיף 24ג</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סמכויות וחובות של המשרת בשירות בתי הסוהר</span></p>
@@ -392,9 +392,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif25">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 25</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif25" id="seif25">סעיף 25</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סמכויות וחובות של המשרת במשמר הגבול [18ג]</span></p>
@@ -402,9 +402,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26" id="seif26">סעיף 26</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">המשך השירות הסדיר אחרי גמר השירות במשמר הגבול</span></p>
@@ -412,9 +412,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26a">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26א</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26a" id="seif26a">סעיף 26א</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">שירות מוכר</span></p>
@@ -422,9 +422,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#med3a">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">&nbsp;</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="med3a" id="med3a">&nbsp;</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">פרק ג&apos;1: שילוב בוגרי ישיבות ומוסדות חינוך חרדיים</span></p>
@@ -432,9 +432,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#sign1">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">&nbsp;</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="sign1" id="sign1">&nbsp;</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סימן א&apos;: פרשנות ותחולה</span></p>
@@ -442,9 +442,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26b">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26ב</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26b" id="seif26b">סעיף 26ב</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">הגדרות &nbsp; פרק ג&apos;1</span></p>
@@ -452,9 +452,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26c">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26ג</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26c" id="seif26c">סעיף 26ג</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">תחולה &nbsp; פרק ג&apos;1</span></p>
@@ -462,9 +462,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#sign2">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">&nbsp;</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="sign2" id="sign2">&nbsp;</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סימן ב&apos;: תקופת ההסתגלות הראשונה</span></p>
@@ -472,9 +472,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26d">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26ד</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26d" id="seif26d">סעיף 26ד</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">תחולה &nbsp; תקופת ההסתגלות הראשונה</span></p>
@@ -482,9 +482,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26e">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26ה</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26e" id="seif26e">סעיף 26ה</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">דחיית שירות לתלמיד ישיבה שמלאו לו 18 שנים וטרם מלאו לו 22 שנים</span></p>
@@ -492,9 +492,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26f">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26ו</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26f" id="seif26f">סעיף 26ו</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">ביטול או פקיעת תוקף של צו דחיית שירות</span></p>
@@ -502,9 +502,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26g">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26ז</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26g" id="seif26g">סעיף 26ז</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">קריאה לשירות סדיר או הפניה לשירות לאומי אזרחי</span></p>
@@ -512,9 +512,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26h">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26ח</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26h" id="seif26h">סעיף 26ח</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">פטור משירות סדיר למי ששירת בשירות לאומי אזרחי כאמור בסעיף 26ז</span></p>
@@ -522,9 +522,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26i">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26ט</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26i" id="seif26i">סעיף 26ט</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">הוראות לעניין מי שמלאו לו 22 שנים</span></p>
@@ -532,9 +532,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26j">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26י</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26j" id="seif26j">סעיף 26י</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">פטור משירות סדיר למי ששירת בשירות לאומי אזרחי כאמור בסעיף 26ט</span></p>
@@ -542,9 +542,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26k">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26יא</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26k" id="seif26k">סעיף 26יא</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">הוראות לעניין מי שמלאו לו 18 שנים במהלך תקופת ההסתגלות הראשונה</span></p>
@@ -552,9 +552,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#sign3">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">&nbsp;</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="sign3" id="sign3">&nbsp;</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סימן ג&apos;: שילוב בתעסוקה</span></p>
@@ -562,9 +562,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26l">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26יב</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26l" id="seif26l">סעיף 26יב</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">שילוב בתעסוקה</span></p>
@@ -572,9 +572,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26m">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26יג</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26m" id="seif26m">סעיף 26יג</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">הכשרה תעסוקתית מיועדת</span></p>
@@ -582,9 +582,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26n">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26יד</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26n" id="seif26n">סעיף 26יד</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">דיווח לכנסת &nbsp; שילוב בתעסוקה</span></p>
@@ -592,9 +592,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#sign4">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">&nbsp;</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="sign4" id="sign4">&nbsp;</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סימן ד&apos;: יעדי גיוס</span></p>
@@ -602,9 +602,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26o">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26טו</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26o" id="seif26o">סעיף 26טו</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">יעדי גיוס בתקופת ההסתכלות ובתקופת הקבע</span></p>
@@ -612,9 +612,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26o1">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26טו1</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26o1" id="seif26o1">סעיף 26טו1</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">הקמת צוות &nbsp;בין משרדי לקידום עמידה ביעדי הגיוס</span></p>
@@ -622,9 +622,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26o2">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26טו2</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26o2" id="seif26o2">סעיף 26טו2</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">תפקידי הצוות</span></p>
@@ -632,9 +632,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26p">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26טז</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26p" id="seif26p">סעיף 26טז</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">הודעות בדבר מספר המתגייסים לשירות סדיר והמשרתים בשירות לאומי אזרחי</span></p>
@@ -642,9 +642,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#sign5">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">&nbsp;</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="sign5" id="sign5">&nbsp;</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סימן ה&apos;: תקופת ההסתגלות השנייה</span></p>
@@ -652,9 +652,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26q">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26יז</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26q" id="seif26q">סעיף 26יז</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">תחולה &nbsp; תקופת ההסתגלות השנייה</span></p>
@@ -662,9 +662,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26r">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26יח</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26r" id="seif26r">סעיף 26יח</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">דחיית שירות למיועד לשירות ביטחון שהוא תלמיד ישיבה</span></p>
@@ -672,9 +672,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26s">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26יט</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26s" id="seif26s">סעיף 26יט</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">תחולת סעיפים בשים לב לעמידה ביעדי הגיוס</span></p>
@@ -682,9 +682,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26t">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26כ</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26t" id="seif26t">סעיף 26כ</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">הוראות לעניין עמידה ביעדי גיוס</span></p>
@@ -692,9 +692,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26u">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26כא</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26u" id="seif26u">סעיף 26כא</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">הוראות לעניין &nbsp;אי עמידה ביעדי גיוס</span></p>
@@ -702,9 +702,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26v">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26כב</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26v" id="seif26v">סעיף 26כב</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סמכויות שר הביטחון באין עמידה ביעדים</span></p>
@@ -712,9 +712,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#sign6">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">&nbsp;</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="sign6" id="sign6">&nbsp;</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סימן ו&apos;: הוראות כלליות לעניין דחיית שירות</span></p>
@@ -722,9 +722,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26w">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26כג</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26w" id="seif26w">סעיף 26כג</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">תנאים לדחיית שירות</span></p>
@@ -732,9 +732,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26x">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26כד</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26x" id="seif26x">סעיף 26כד</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">רשימת הישיבות</span></p>
@@ -742,9 +742,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26y">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26כה</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26y" id="seif26y">סעיף 26כה</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">מניעת פגיעה במעמדה של יוצא צבא אישה</span></p>
@@ -752,9 +752,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26z">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26כו</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26z" id="seif26z">סעיף 26כו</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">שמירה על אורח חיים</span></p>
@@ -762,9 +762,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26aa">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26כז</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26aa" id="seif26aa">סעיף 26כז</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">תקנות &nbsp; פרק ג&apos;1</span></p>
@@ -772,9 +772,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26ab">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26כח</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26ab" id="seif26ab">סעיף 26כח</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">דיווח לכנסת &nbsp; פרק ג&apos;1</span></p>
@@ -782,9 +782,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif26ac">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 26כט</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif26ac" id="seif26ac">סעיף 26כט</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">הוראות לעניין פקיעת תוקפו של חוק שירות לאומי אזרחי</span></p>
@@ -792,9 +792,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#med4">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">&nbsp;</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="med4" id="med4">&nbsp;</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">פרק ד&apos;:</span></p>
@@ -802,9 +802,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#med5">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">&nbsp;</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="med5" id="med5">&nbsp;</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">פרק ה&apos;: הוראות כלליות</span></p>
@@ -812,9 +812,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif35">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 35</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif35" id="seif35">סעיף 35</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">תחולת החוק הצבאי &nbsp;[27]</span></p>
@@ -822,9 +822,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif36">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 36</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif36" id="seif36">סעיף 36</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סמכות לפטור משירות ולדחות שירות</span></p>
@@ -832,9 +832,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif36a">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 36א</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif36a" id="seif36a">סעיף 36א</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">פטור משירות מחמת גיל</span></p>
@@ -842,9 +842,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif37">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 37</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif37" id="seif37">סעיף 37</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">תנאים לדחיית שירות</span></p>
@@ -852,9 +852,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif38">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 38</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif38" id="seif38">סעיף 38</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">ביטול צו לפטור משירות או לדחיית שירות [29א]</span></p>
@@ -862,9 +862,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif39">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 39</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif39" id="seif39">סעיף 39</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">פטור משירות על פי דין [30]</span></p>
@@ -872,9 +872,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif40">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 40</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif40" id="seif40">סעיף 40</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">פטור מטעמי הכרה דתית [30א]</span></p>
@@ -882,9 +882,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif41">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 41</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif41" id="seif41">סעיף 41</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">ביטול פטור לפי סעיף 40</span></p>
@@ -892,9 +892,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif42">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 42</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif42" id="seif42">סעיף 42</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">עיון חוזר</span></p>
@@ -902,9 +902,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif43">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 43</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif43" id="seif43">סעיף 43</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">יציאה לחוץ לארץ</span></p>
@@ -912,9 +912,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif44">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 44</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif44" id="seif44">סעיף 44</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">דרישת ידיעות</span></p>
@@ -922,9 +922,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif44a">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 44א</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif44a" id="seif44a">סעיף 44א</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">חסיון של נתון אישי צבאי</span></p>
@@ -932,9 +932,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif45">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 45</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif45" id="seif45">סעיף 45</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">חובת שירות בטחון של השוהה בארץ ללא רשיון</span></p>
@@ -942,9 +942,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#med6">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">&nbsp;</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="med6" id="med6">&nbsp;</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">פרק ו&apos;: עבירות וסדרי דין</span></p>
@@ -952,9 +952,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif46">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 46</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif46" id="seif46">סעיף 46</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">עונשין</span></p>
@@ -962,9 +962,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif47">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 47</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif47" id="seif47">סעיף 47</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">עבירת חוץ</span></p>
@@ -972,9 +972,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif48">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 48</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif48" id="seif48">סעיף 48</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">חובת הראיה</span></p>
@@ -982,9 +982,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif49">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 49</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif49" id="seif49">סעיף 49</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">תקפו של צו</span></p>
@@ -992,9 +992,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#med6a">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">&nbsp;</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="med6a" id="med6a">&nbsp;</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">פרק ו&apos;1: פיקוח</span></p>
@@ -1002,9 +1002,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif49a">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 49א</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif49a" id="seif49a">סעיף 49א</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">הסמכת מפקחים</span></p>
@@ -1012,9 +1012,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif49b">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 49ב</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif49b" id="seif49b">סעיף 49ב</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סמכויות מפקח</span></p>
@@ -1022,9 +1022,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif49c">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 49ג</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif49c" id="seif49c">סעיף 49ג</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">הסמכת בודקים</span></p>
@@ -1032,9 +1032,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif49d">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 49ד</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif49d" id="seif49d">סעיף 49ד</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">העברת מידע לבודק</span></p>
@@ -1042,9 +1042,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif49e">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 49ה</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif49e" id="seif49e">סעיף 49ה</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">חובות דיווח של ראש ישיבה</span></p>
@@ -1052,9 +1052,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif49f">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 49ו</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif49f" id="seif49f">סעיף 49ו</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">מסירת מידע</span></p>
@@ -1062,9 +1062,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif49g">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 49ז</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif49g" id="seif49g">סעיף 49ז</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">הסתמכות על מידע ממשרד החינוך</span></p>
@@ -1072,9 +1072,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif49h">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 49ח</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="seif49h" id="seif49h">סעיף 49ח</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">דיווח לכנסת &nbsp; פרק ו&apos;1</span></p>
@@ -1082,9 +1082,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#med7">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">&nbsp;</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="med7" id="med7">&nbsp;</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">פרק ז&apos;: דרכי ביצוע</span></p>
@@ -1092,9 +1092,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif50">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 50</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="#seif50" id="#seif50">סעיף 50</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">פוקדים</span></p>
@@ -1102,9 +1102,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif51">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 51</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="#seif51" id="#seif51">סעיף 51</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">ועדות רפואיות</span></p>
@@ -1112,9 +1112,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif52">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 52</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="#seif52" id="#seif52">סעיף 52</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סמכויות עזר</span></p>
@@ -1122,9 +1122,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif53">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 53</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="#seif53" id="#seif53">סעיף 53</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">ועדות מייעצות</span></p>
@@ -1132,9 +1132,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif54">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 54</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="#seif54" id="#seif54">סעיף 54</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">אצילת סמכויות</span></p>
@@ -1142,9 +1142,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif55">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 55</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="#seif55" id="#seif55">סעיף 55</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">דין צווים [44]</span></p>
@@ -1152,9 +1152,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif56">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 56</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="#seif56" id="#seif56">סעיף 56</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">הגשת בקשות</span></p>
@@ -1162,9 +1162,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#seif57">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 57</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="#seif57" id="#seif57">סעיף 57</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">ביצוע ותקנות</span></p>
@@ -1172,9 +1172,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#Extras">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">&nbsp;</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="Extras" id="Extras">&nbsp;</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">תוספת</span></p>
@@ -1182,9 +1182,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="Extras1">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 1</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="Extras1" id="Extras1">סעיף 1</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">הגדרות</span></p>
@@ -1192,9 +1192,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#Extras2">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 2</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="Extras2" id="Extras2">סעיף 2</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">צו למסור ראיות בדבר גיל</span></p>
@@ -1202,9 +1202,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#Extras3">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 3</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="Extras3" id="Extras3">סעיף 3</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סמכויות הפוקד לקביעת גיל</span></p>
@@ -1212,9 +1212,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#Extras4">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 4</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="Extras4" id="Extras4">סעיף 4</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">שינוי קביעת גיל לפי בקשת הפוקד</span></p>
@@ -1222,9 +1222,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#Extras5">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 5</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="Extras5" id="Extras5">סעיף 5</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סתירה בין תעודות אישיות להודעות</span></p>
@@ -1232,9 +1232,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#Extras6">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 6</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="Extras6" id="Extras6">סעיף 6</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">שמירת סמכויות בית המשפט</span></p>
@@ -1242,9 +1242,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#Extras7">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">סעיף 7</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="Extras7" id="Extras7">סעיף 7</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">מסירת הודעות</span></p>
@@ -1252,9 +1252,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">&nbsp;</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="Extras6" id="Extras6">&nbsp;</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">לוח השוואה לפי הסעיף הקודם</span></p>
@@ -1262,9 +1262,9 @@
 
                 
             </a> </tr>
-            <tr> <a href="#seif">
+            <tr> <a href="#">
                 <td style="width: 62.35pt;padding: 0cm 5.4pt;">
-                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">&nbsp;</span></p>
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;" name="Extras7" id="Extras7">&nbsp;</span></p>
                 </td>
                 <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">לוח השוואה לפי הסעיף החדש</span></p>
@@ -1349,11 +1349,11 @@
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:17px;font-family:Heebo;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ומי שנקרא חייב להתייצב כאמור.</span></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:17px;font-family:Heebo;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(ד) &nbsp;מי שנמצא בלתי כשר ארעית לשירות ובבדיקה חוזרת נמצא כשר לשירות, הרי אף אם נקרא לשירות סדיר, אך טרם השלים את תקופת השירות שהוא חייב בה לפי חוק זה, רשאי פוקד, בצו, לקרוא לו להתייצב להשלמת תקופת השירות שהוא חייב בה לפי חוק זה, ומי שנקרא חייב להתייצב כאמור.</span></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:17px;font-family:Heebo;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(ה) &nbsp;בכל בדיקה חוזרת תשתמש הועדה הרפואית במבחנים שהם בתוקף בשעת ביצוע הבדיקה החוזרת.</span></p>
-            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:right;line-height:normal;'><strong><span style="font-size:18px;font-family:Heebo;color:green;">בדיקה נוספת [6]</span></strong></p>
+            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:right;line-height:normal;'><strong><span style="font-size:18px;font-family:Heebo;color:green;" name="seif7" id="seif7">בדיקה נוספת [6]</span></strong></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:21px;font-family:Heebo;">7. &nbsp; &nbsp;</span><span style="font-size:17px;font-family:Heebo;">מצאה ועדה רפואית כי יוצא-צבא הוא כשר לשירות, או בלתי כשר לשירות או בלתי כשר ארעית לשירות, תמסור הועדה הודעה בכתב על החלטתה ליוצא-הצבא ולפוקד, והם רשאים, בתנאים שנקבעו בתקנות, לבקש כי הועדה הרפואית או הועדה הרפואית העליונה, לפי הענין, תבדוק את יוצא-הצבא בדיקה נוספת ותקבע את כשרו לשירות.</span></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:right;line-height:normal;'><strong><span style="font-size:18px;font-family:Heebo;color:green;">(תיקון מס&apos; 7) תשנ&quot;ה-1995</span></strong></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:21px;font-family:Heebo;">8. &nbsp; &nbsp;</span><span style="font-size:17px;font-family:Heebo;">(בוטל).</span></p>
-            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:right;line-height:normal;'><strong><span style="font-size:18px;font-family:Heebo;color:green;" name='seif9' id='seif9'>פעולות חיסון [7א]</span></strong></p>
+            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:right;line-height:normal;'><strong><span style="font-size:18px;font-family:Heebo;color:green;" name="seif9" id="seif9">פעולות חיסון [7א]</span></strong></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:21px;font-family:Heebo;">9. &nbsp; &nbsp;</span><span style="font-size:17px;font-family:Heebo;">פוקד רשאי בצו, באישור שני רופאים מורשים, להורות כי מיועד לשירות בטחון יחוסן בהרכבות ובזריקות חיסון (להלן &ndash; פעולות חיסון) מפני מחלה פלונית בזמן ובמקום שינקוב בצו; מיועד לשירות בטחון שניתן עליו הצו חייב להתייצב ולאפשר את פעולות החיסון כמפורש בצו.</span></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:right;line-height:normal;'><strong><span style="font-size:18px;font-family:Heebo;color:green;" name='seif10' id='seif10'>תחולת חוקי שיקום על מי שנפגע מבדיקה או מחיסון [7ב ו-7ג]</span></strong></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:21px;font-family:Heebo;">10. &nbsp;&nbsp;</span><span style="font-size:17px;font-family:Heebo;">(א) &nbsp;מיועד לשירות בטחון או יוצא-צבא שאינו משרת שירות בטחון, שנפגע עקב בדיקה או פעולות חיסון לפי פרק זה, יחולו עליו ועל בני משפחתו חוקי השיקום, כאילו היה בשעת הפגיעה בשירות בטחון והפגיעה אירעה בתקופת שירותו ועקב שירותו, ואם לא שירת שירות בטחון אחרי הפגיעה, רואים אותו, לענין חוק הנכים (תגמולים ושיקום), תשי&quot;ט-1959 [נוסח משולב], כאילו שוחרר מהשירות במועד שבו נמצא, לפי חוק זה, בלתי כשר לשירות או הופטר ממנו; לענין סעיף זה, &quot;פגיעה&quot; &ndash; מחלה, החמרת מחלה או חבלה.</span></p>
@@ -1370,13 +1370,13 @@
             <p dir="RTL" style='margin-right:51.05pt;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:17px;font-family:Heebo;">(4) &nbsp; תקופות שבהן נעדר אדם מן השירות ובשלהן הוכרז על פי פקודת הצבא כנפקד או כעריק.</span></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:right;line-height:normal;'><strong><span style="font-size:18px;font-family:Heebo;color:green;">(תיקון מס&apos; 20) תשע&quot;ה-2014</span></strong></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:17px;font-family:Heebo;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(ב) &nbsp;סעיף קטן (א) יחול, בשינויים המחוייבים, על יוצא צבא שנמצא בלתי כשר לשירות או בלתי כשר ארעית לשירות ונקרא להתייצב לבדיקה חוזרת לפי סעיף 6 ולא התייצב, או שהתייצב וסירב להיבדק או להשלים את הבדיקות.</span></p>
-            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:center;line-height:normal;'><strong><span style="font-size:16px;font-family:Heebo;" name='med3' id='med3'>פרק ג&apos;: שירות סדיר</span></strong></p>
-            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:right;line-height:normal;'><strong><span style="font-size:18px;font-family:Heebo;color:green;" name='seif13' id='seif13'>התייצבות לשירות סדיר [9]</span></strong></p>
+            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:center;line-height:normal;'><strong><span style="font-size:16px;font-family:Heebo;" name="med3" id="med3">פרק ג&apos;: שירות סדיר</span></strong></p>
+            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:right;line-height:normal;'><strong><span style="font-size:18px;font-family:Heebo;color:green;" name="seif13" id="seif13">התייצבות לשירות סדיר [9]</span></strong></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:21px;font-family:Heebo;">13. &nbsp;&nbsp;</span><span style="font-size:17px;font-family:Heebo;">פוקד רשאי, בצו, לקרוא &ndash;</span></p>
             <p dir="RTL" style='margin-right:51.05pt;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:17px;font-family:Heebo;">(1) &nbsp; ליוצא-צבא, גבר, שנמצא כשר לשירות והוא באחד הגילים שמשמונה עשרה עד עשרים ותשע, או שהוא רופא או רופא שיניים והוא באחד הגילים שמשלושים עד שלושים ושמונה;</span></p>
             <p dir="RTL" style='margin-right:51.05pt;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:17px;font-family:Heebo;">(2) &nbsp; ליוצא-צבא, אשה, שנמצאה כשרה לשירות והיא באחד הגילים משמונה עשרה עד עשרים ושש, או שהיא רופאה או רופאת שיניים והיא באחד הגילים שמעשרים ושבע עד שלושים ושמונה,</span></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:17px;font-family:Heebo;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;להתייצב, תוך התקופות הנזכרות בסעיף 20, לשירות סדיר במקום ובזמן שקבע בצו הפוקד, או מי שהוא הסמיך לכך, ואותו יוצא-צבא חייב להתייצב כאמור.</span></p>
-            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:right;line-height:normal;'><strong><span style="font-size:18px;font-family:Heebo;color:green;">התייצבות לשירות לפי בקשה [10] (תיקון מס&apos; 3) תשמ&quot;ט-1989</span></strong></p>
+            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:right;line-height:normal;'><strong><span style="font-size:18px;font-family:Heebo;color:green;" name="seif14" id="seif14">התייצבות לשירות לפי בקשה [10] (תיקון מס&apos; 3) תשמ&quot;ט-1989</span></strong></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:21px;font-family:Heebo;">14. &nbsp;&nbsp;</span><span style="font-size:17px;font-family:Heebo;">(א) &nbsp;אזרח ישראלי או תושב קבוע, שעדיין לא הגיע לגיל שמונה עשרה והוא נמצא כשר לשירות, רשאי פוקד, בצו, לקרוא לו להתייצב לשירות סדיר, אם הוא ביקש זאת בכתב ואם הוריו או אפוטרופסו נתנו את הסכמתם לכך ומלאו לו שבע עשרה שנים; ואולם די בהסכמת הורה אחד אם קיים קושי של ממש לקיים קשר עם ההורה השני כדי לברר עמדתו.</span></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:17px;font-family:Heebo;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(ב) &nbsp;ניתן צו לפי סעיף זה, יחולו הוראות חוק זה על מי שהצו ניתן לגביו, כאילו היה יוצא-צבא שהגיע לגיל שמונה עשרה ונקרא להתייצב לשירות סדיר לפי סעיף 13.</span></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:right;line-height:normal;'><strong><span style="font-size:18px;font-family:Heebo;color:green;">(תיקון מס&apos; 17) תש&quot;ע-2010</span></strong></p>

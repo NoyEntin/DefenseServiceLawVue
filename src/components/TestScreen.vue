@@ -23,16 +23,16 @@
                     <!-- <TableSelection v-if="questions[currentQuestionIndex].questionType === 'TableSelection'"
                     :currentQuestion="questions[currentQuestionIndex]" :currentUserAnswer="currentUserAnswer"
                     @answer-clicked="answerClicked" :key="'question number' + currentQuestionIndex">
-                    </TableSelection> -->
-                    <!-- <MultipleChoice v-if="questions[currentQuestionIndex].questionType === 'MultipleChoice'"
+                    </TableSelection>
+                    <MultipleChoice v-if="questions[currentQuestionIndex].questionType === 'MultipleChoice'"
                     :currentQuestion="questions[currentQuestionIndex]" :currentUserAnswer="currentUserAnswer"
                     @answer-clicked="answerClicked" :key="'question number' + currentQuestionIndex">
-                    </MultipleChoice> -->
-                    <!-- <NumberChoice
+                    </MultipleChoice>
+                    <NumberChoice v-if="questions[currentQuestionIndex].questionType === 'NumberChoice'"
                     :currentQuestion="questions[currentQuestionIndex]" :currentUserAnswer="currentUserAnswer"
                     @answer-clicked="answerClicked" :key="'question number' + currentQuestionIndex">
-                    </NumberChoice> -->
-                    <!-- <CalendarChoice
+                    </NumberChoice>
+                    <CalendarChoice v-if="questions[currentQuestionIndex].questionType === 'CalendarChoice'"
                     :currentQuestion="questions[currentQuestionIndex]" :currentUserAnswer="currentUserAnswer"
                     @answer-clicked="answerClicked" :key="'question number' + currentQuestionIndex">
                     </CalendarChoice> -->

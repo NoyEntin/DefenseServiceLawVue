@@ -696,6 +696,12 @@
                 "02.07",
                 "02.09"
             ],
+            "options": [
+                "משתמט ללא פ\"מ",
+                "משתמט פרקליטותי",
+                "משתמט בארץ",
+                "משתמט בחן\"ל"
+            ],
             "rightAnswer": "1",
             "relatedChapter": "2",
             "questionType": "MultipleChoice"
