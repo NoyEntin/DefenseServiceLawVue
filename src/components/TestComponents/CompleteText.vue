@@ -75,7 +75,6 @@ export default {
             required: true,
         },
         currentUserAnswer: {
-            // type: Array,
             required: true,
         },
     },
@@ -167,7 +166,6 @@ export default {
     height: fit-content;
     display: flex;
     flex-flow: row nowrap;
-    /* text-align: right; */
 }
 
 .draggables-container {

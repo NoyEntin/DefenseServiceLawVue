@@ -56,7 +56,6 @@ export default {
             items: [],
             userAnswers: [],
             dropZones: [],
-            // temporaryCurrentQuestion: this.$store.state.allTestQuestions[47][0],
         }
     },
     props: {
@@ -65,7 +64,6 @@ export default {
             required: true,
         },
         currentUserAnswer: {
-            // type: Array,
             required: true,
         },
     },

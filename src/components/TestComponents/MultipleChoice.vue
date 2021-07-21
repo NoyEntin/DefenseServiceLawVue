@@ -29,7 +29,6 @@ export default {
             required: true,
         },
         currentUserAnswer: {
-            // type: Array,
             required: true,
         },
     },

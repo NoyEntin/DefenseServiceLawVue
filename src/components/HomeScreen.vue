@@ -48,8 +48,7 @@ export default {
     methods: {
         TestButtonClicked(){
             this.popUpShowing = true;
-            // if(this.$store.getters.contentDone) {
-            if(true) {
+            if(this.$store.getters.contentDone) {
                 this.whichPopUp='test-ready';
             } else {
                 this.whichPopUp='go-study';
@@ -113,7 +112,6 @@ export default {
     position: absolute;
     background-color: var(--yellow);
     height: 8vmax;
-    /* width: 35vmax; */
     width: 36vmax;
     display: flex;
     align-items: center;
@@ -122,7 +120,6 @@ export default {
     max-height: 17vh;
     max-width: 70vh;
     margin-top: 1vh;
-    /* max-width: 50em; */
     cursor: pointer;
 }
 

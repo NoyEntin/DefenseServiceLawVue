@@ -57,8 +57,6 @@
 
 <script>
 import store from './../store/index';
-// import "./../createjs.min.js";
-// import * as lawBtn from './../media/animations/lawBtn.js';
 import HomeScreen from './../components/HomeScreen.vue';
 import ContentScreen from './../components/ContentScreen.vue';
 import TestScreen from './../components/TestScreen.vue';
@@ -79,18 +77,14 @@ export default {
           dontShowAgain: false,
           timerMinutes: 90,
           timerSeconds: 0
-          // checkbox: false,
       }
   },
   methods: {
     openMenu(){
       this.isMenuOpen = !this.isMenuOpen;
       this.popUpShowing = false;
-      // this.$refs.NavigationMenu.
     },
     ShowPopUp: function(event, chapterIndex, pageIndex) {
-      // if (!this.dontShowAgain) {
-        // }
       this.popUpShowing = true;
       this.chapterToNavigateTo = chapterIndex,
       this.pageToNavigateTo = pageIndex

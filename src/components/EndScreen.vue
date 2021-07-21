@@ -24,12 +24,10 @@
                 תמיד תוכלו לנסות שוב, אבל קודם כל, בוא נלמד מהטעויות שלכם   
             </div>
         </div>
-        <!-- <div class="show-me-btn-container"> -->
             <div @click="loadTestFeedback" class="show-me-btn">
                 בוא ניסע!
                 <img src="./../media/graphics/sports-car.svg"/>
             </div>
-        <!-- </div> -->
     </div>
 </template>
 

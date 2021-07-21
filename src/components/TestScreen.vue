@@ -133,13 +133,13 @@ export default {
             return this.$store.state.userTestAnswersBoolean
         },
         isTestFinished() {
-            // if(this.timerMinutes === 0 && this.timerSeconds === 0)
-            //     return true;
-            // for (var i = 0; i < this.questions.length; i++) {
-            //     if (this.userAnswer[i] === -1) {
-            //         return false;
-            //     };
-            // }
+            if(this.timerMinutes === 0 && this.timerSeconds === 0)
+                return true;
+            for (var i = 0; i < this.questions.length; i++) {
+                if (this.userAnswer[i] === -1) {
+                    return false;
+                };
+            }
             return true;
         },
         showForm() {

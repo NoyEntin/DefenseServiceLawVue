@@ -100,7 +100,6 @@ export default {
 
     data() {
         return {
-            // dontShowAgain: false,
             checkbox: false,
         }
     },
@@ -109,10 +108,6 @@ export default {
             type: Function,
             required: true,
         },
-        // onSkipInMenuConfirm: {
-        //     type: Function,
-        //     required: true,
-        // },
         whichPopUp: {
             type: String,
             required: true,

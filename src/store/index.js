@@ -75,8 +75,8 @@ export default createStore({
           }
         }
       }
-      return true;
-      // return !state.arePagesViewed.includes(false);
+      // return true;
+      return !state.arePagesViewed.includes(false);
     },
     prevChaptersDone: (state) => (clickedChapter) => {
       for(var i = 0; i < clickedChapter; i++) {
@@ -187,7 +187,6 @@ export default createStore({
       state.grade = 0;
       var pointsForEach = 100 / state.testQuestions.length;
       var questionType = "";
-      // var state.testQuestions[i] = state.allTestQuestions[47][0];
       
       for (var i = 0; i < state.testQuestions.length; i++){
         questionType = state.testQuestions[i].questionType;

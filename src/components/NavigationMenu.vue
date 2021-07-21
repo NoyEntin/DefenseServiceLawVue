@@ -48,7 +48,6 @@ export default {
     components: {
         AccordionContainer,
         AccordionItem,
-        // PopUp,
     },
     props: {
       disabled: {
@@ -62,15 +61,12 @@ export default {
       return {
         chapterNames: this.$store.state.chapterNames,
         navigationData: this.$store.state.navigationData,
-        // popUpShowing: true,
-        // disabled: false
       }
     },
     methods: {
       askToNavigate($event, chapterIndex, pageIndex) {
         // check if need to show pop up
         if (this.isItSkips(chapterIndex, pageIndex)) {
-          // toggleDisabled();
           this.$emit('askToNavigate', $event, chapterIndex, pageIndex);
         } else {
           this.$emit('triggerOpenMenu');
@@ -78,7 +74,6 @@ export default {
           this.$store.commit('updateCurrentContentPage', pageIndex);
           this.$store.commit('loadContentScreen');
         }
-        // this.$emit('triggerOpenMenu');
       },
       isItSkips(chapterIndex, pageIndex) {
         if (!this.dontShowAgain) {
@@ -117,12 +112,6 @@ export default {
           return '-1';
         }
       },
-      // ClosePopUp() {
-      //   this.popUpShowing = !this.popUpShowing;
-      // }
-      // toggleDisabled(){
-      //   this.disabled=!this.disabled;
-      // }
     },
     computed: {
       isContentScreen(){
@@ -158,7 +147,6 @@ export default {
     height: 100%;
     width: 25vmax;
     max-width: 40vh;
-    /* min-width: 25vw; */
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: center;
@@ -176,7 +164,6 @@ export default {
   }
 
   .page-li:hover {
-    /* background-color: rgba(245, 244, 244, 0.7) */
     background-color: rgba(1, 22, 39, 0.3);
     color: white
   }
@@ -239,12 +226,9 @@ export default {
   }
 
   .key {
-    /* position: absolute; */
     margin: 5%;
     display: flex;
     flex-flow: column nowrap;
-    /* right: 50%;
-    transform: translateX(50%); */
     width: 80%;
     font-size: calc(0.7em + 0.5vmin);
   }

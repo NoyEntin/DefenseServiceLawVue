@@ -1,7 +1,6 @@
 <template>
     <div>
         <p v-html="currentQuestion.question"></p>
-        <!--<div class="test-answers-container">-->
         <table>
             <tr v-for="(answer, index) in currentQuestion.answers" :key="index"
             :class="{'selectedAnswer': currentUserAnswer[index] === index || currentIndex[index] === index,
@@ -14,7 +13,6 @@
                 </td>
             </tr>
         </table>
-        <!--</div>-->
     </div>
 </template>
 
@@ -32,7 +30,6 @@ export default {
             required: true,
         },
         currentUserAnswer: {
-            // type: Array,
             required: true,
         },
     },

@@ -84,7 +84,6 @@ export default {
             pagesInEachChapter: [5, 6, 5],
             isExercise: false,
             backClick: false,
-            //will load this from store?
             maxQuestions: 0,
             currentQuestion: 0,
 
@@ -200,7 +199,6 @@ export default {
         Chapter3Page3,
         Chapter3Page4,
         Chapter3Page5,
-        // Chapter3Page6,
     }
 }
 </script>

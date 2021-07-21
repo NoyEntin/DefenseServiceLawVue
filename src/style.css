@@ -371,7 +371,6 @@ svg {
 }
 
 .bottom-ui {
-    /* background-color: var(--black); */
     background: rgb(0,0,0);
     background: radial-gradient(circle, rgba(0,0,0,0.20211834733893552) 0%, rgba(0,0,0,0.2497373949579832) 66%, rgba(0,0,0,0.7) 100%);
     position: absolute;
@@ -409,7 +408,6 @@ svg {
 .btn-shadow {
   -webkit-filter: drop-shadow( 3px 3px 6px rgba(0, 0, 0, 0.8));
   filter: drop-shadow( 3px 3px 6px rgba(0, 0, 0, 0.8));
-  /* Similar syntax to box-shadow */
 }
 
 .overlay {
@@ -497,8 +495,6 @@ svg {
 }
 
 .panel {
-  /* padding: 0 3vh; */
-  /* background-color: white; */
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -636,7 +632,6 @@ svg {
      z-index: -1;
 }
  .wave:nth-of-type(2) {
-	 /* top: -175px; */
 	 animation: wave 9s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
 	 opacity: 1;
 }

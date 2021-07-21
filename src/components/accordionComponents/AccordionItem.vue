@@ -72,9 +72,6 @@ export default {
 <style scoped>
 .accordion-item {
   cursor: pointer;
-  /* border-width: 0px 3px 3px 3px;
-  border-style: solid;
-  border-color: var(--blue); */
   position: relative;
 }
 
