@@ -10,7 +10,7 @@
                 <iframe :id="uniqueId" :src="`${publicPath}animations/lawBtn/lawBtn.html?id=`+ uniqueId" class="show-more-btn-img" scrolling="no"></iframe>
             </div>
             <div v-else>
-                <iframe :id="uniqueId" :src="`${publicPath}animations/ideaBtn/ideaBtn.html?id=`+ uniqueId" class="show-more-btn-img" scrolling="no"></iframe>
+                <iframe :id="uniqueId" :src="`${publicPath}animations/ideaBtn/ideaBtn.html?id=`+ uniqueId" class="show-more-btn-img did-you-know-btn-img" scrolling="no"></iframe>
             </div>
             <!-- <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:640px; height:480px" @click="show = !show">
 		        <canvas id="canvas" width="640" height="480" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
@@ -35,7 +35,6 @@ export default {
         uniqueId: {
             type: String,
             required: true,
-            
         }
     },
     data() {
@@ -105,9 +104,13 @@ export default {
     border: none;
     overflow: hidden;
     cursor: pointer;
-
-    background-color: blueviolet;
 }
+
+.did-you-know-btn-img {
+    height: 120%;
+    width: 120%;
+}
+
 .law-style {
     margin: 0;
     background-color: rgba(46, 196, 182, 0.1);

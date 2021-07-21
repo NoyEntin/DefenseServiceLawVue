@@ -16,29 +16,10 @@
         <div class="content-container">
             <div class="test-content">
                 <div v-if="!showForm">
-                    <!-- <component v-bind:is="questions[currentQuestionIndex].questionType"
+                    <component v-bind:is="questions[currentQuestionIndex].questionType"
                      :key="'question-number' + currentQuestionIndex"
                      :currentQuestion="questions[currentQuestionIndex]" :currentUserAnswer="currentUserAnswer"
-                     @answer-clicked="answerClicked"></component> -->
-                    <!-- <TableSelection v-if="questions[currentQuestionIndex].questionType === 'TableSelection'"
-                    :currentQuestion="questions[currentQuestionIndex]" :currentUserAnswer="currentUserAnswer"
-                    @answer-clicked="answerClicked" :key="'question number' + currentQuestionIndex">
-                    </TableSelection>
-                    <MultipleChoice v-if="questions[currentQuestionIndex].questionType === 'MultipleChoice'"
-                    :currentQuestion="questions[currentQuestionIndex]" :currentUserAnswer="currentUserAnswer"
-                    @answer-clicked="answerClicked" :key="'question number' + currentQuestionIndex">
-                    </MultipleChoice>
-                    <NumberChoice v-if="questions[currentQuestionIndex].questionType === 'NumberChoice'"
-                    :currentQuestion="questions[currentQuestionIndex]" :currentUserAnswer="currentUserAnswer"
-                    @answer-clicked="answerClicked" :key="'question number' + currentQuestionIndex">
-                    </NumberChoice>
-                    <CalendarChoice v-if="questions[currentQuestionIndex].questionType === 'CalendarChoice'"
-                    :currentQuestion="questions[currentQuestionIndex]" :currentUserAnswer="currentUserAnswer"
-                    @answer-clicked="answerClicked" :key="'question number' + currentQuestionIndex">
-                    </CalendarChoice> -->
-                    <DragChoice :currentQuestion="questions[currentQuestionIndex]" :currentUserAnswer="currentUserAnswer"
-                    @answer-clicked="answerClicked" :key="'question number' + currentQuestionIndex">
-                    </DragChoice>
+                     @answer-clicked="answerClicked"></component>
                 </div>
                 <TestForm ref="testForm" v-else></TestForm>
             </div>
@@ -120,7 +101,7 @@
 import TestForm from './TestForm.vue';
 import PopUp from './PopUp.vue';
 import CalendarChoice from './TestComponents/CalendarChoice.vue';
-// import CompleteText from './TestComponents/CompleteText.vue';
+import CompleteText from './TestComponents/CompleteText.vue';
 import DragChoice from './TestComponents/DragChoice.vue';
 import MultipleChoice from './TestComponents/MultipleChoice.vue';
 import NumberChoice from './TestComponents/NumberChoice.vue';
@@ -172,7 +153,6 @@ export default {
         answerClicked(answerIndex) {
             if(!this.isFeedbackMode) {
                 this.userAnswer.splice(this.currentQuestionIndex, 1, answerIndex);
-                // console.log(this.userAnswer);
             }
         },
         startTest() {
@@ -246,7 +226,7 @@ export default {
         TestForm,
         PopUp,
         CalendarChoice,
-        // CompleteText,
+        CompleteText,
         DragChoice,
         MultipleChoice,
         NumberChoice,

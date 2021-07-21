@@ -3,14 +3,15 @@
         <p v-html="currentQuestion.question"></p>
 
         <div v-if="!isFeedbackMode || currentUserAnswer !== currentQuestion.rightAnswer" :class="{'incorrect': (isFeedbackMode && currentUserAnswer !== currentQuestion.rightAnswer)}">
-            {{currentQuestion.answers[0][0]}}
+            {{currentQuestion.answers[0]}}
             <input type="number" min=0 v-model="currentNumber" @input="answerChanged" :disabled="isFeedbackMode">
-            {{currentQuestion.answers[0][1]}}
+            {{currentQuestion.answers[1]}}
         </div>
         <div class="correct" v-if="isFeedbackMode">
-            {{currentQuestion.answers[0][0]}}
+            {{currentQuestion.answers[0]}}
             <input :value="currentQuestion.rightAnswer" disabled="true">
-            {{currentQuestion.answers[0][1]}}
+            {{currentQuestion.answers[1]}}
+            <div>{{currentQuestion.answers[2]}}</div>
         </div>
     </div>
 </template>

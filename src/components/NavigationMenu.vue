@@ -87,6 +87,9 @@ export default {
           for(var i = 0; i < this.currentChapter; i++){
             currentPageTotal += this.navigationData[i].length;
           }
+          if(this.currentChapter < 0){
+            currentPageTotal += this.currentChapter;
+          }
           for(var j = 0; j < chapterIndex; j++){
             clickedPageTotal += this.navigationData[j].length;
           }

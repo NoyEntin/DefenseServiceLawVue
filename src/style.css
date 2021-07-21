@@ -811,6 +811,8 @@ svg {
 }
 
 .list-shape {
+    z-index: -1;
+    margin-right: -1px;
     height: 2em;
     width: 25%;
 }

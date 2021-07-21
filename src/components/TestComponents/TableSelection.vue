@@ -3,10 +3,6 @@
         <p v-html="currentQuestion.question"></p>
         <!--<div class="test-answers-container">-->
         <table>
-            <tr class="table-head">
-                <th></th>
-                <th></th>
-            </tr>
             <tr v-for="(answer, index) in currentQuestion.answers" :key="index"
             :class="{'selectedAnswer': currentUserAnswer[index] === index || currentIndex[index] === index,
             'disable': isFeedbackMode,
@@ -14,8 +10,8 @@
             'incorrect': isFeedbackMode && (currentUserAnswer[index] === index) && (Number(currentQuestion.rightAnswer[index]) !== index)}"
             class="test-answer"
             @click="clicked($event, index)">
-                <td v-html="answer[0]"></td>
-                <td v-show="answer[1] !== 'XXX'" v-html="answer[1]"></td>
+                <td v-for="(tdContent ,tdIndex) in answer" :key="'td' + index + tdIndex" v-html="tdContent">
+                </td>
             </tr>
         </table>
         <!--</div>-->
@@ -24,7 +20,7 @@
 
 <script>
 export default {
-    name: 'tableSelection',
+    name: 'TableSelection',
     data() {
         return {
             currentIndex: [],
@@ -47,7 +43,6 @@ export default {
     },
     methods: {
         clicked($event, index) {
-            console.log(index);
             if (index === this.currentIndex[index]) {
                 this.currentIndex[index] = -1;
             } else {
@@ -59,8 +54,6 @@ export default {
     },
     created(){
         for (var i = 0; i < this.currentQuestion.answers.length; i++) {
-            console.log(this.currentQuestion.answers.length);
-            console.log(this.currentIndex);
             this.currentIndex.push(-1);
         }
     }

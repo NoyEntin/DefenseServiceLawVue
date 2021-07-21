@@ -187,6 +187,8 @@ export default createStore({
       state.grade = 0;
       var pointsForEach = 100 / state.testQuestions.length;
       var questionType = "";
+      // var state.testQuestions[i] = state.allTestQuestions[47][0];
+      
       for (var i = 0; i < state.testQuestions.length; i++){
         questionType = state.testQuestions[i].questionType;
         if (questionType === "MultipleChoice" || questionType === "NumberChoice" || questionType === "CalendarChoice") {
@@ -196,7 +198,7 @@ export default createStore({
           } else {
             state.userTestAnswersBoolean[i] = false;
           }
-        } else if (state.testQuestions[i].questionType === "TableSelection") {
+        } else if (questionType === "TableSelection" || questionType === "DragChoice" || questionType === "CompleteText" ) {
           var numOfRightAnswers = 0;
           for (var j = 0; j < state.userTestAnswers[i].length; j++) {
             if (state.testQuestions[i].rightAnswer[j] === state.userTestAnswers[i][j]) {

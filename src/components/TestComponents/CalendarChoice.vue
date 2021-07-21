@@ -3,8 +3,12 @@
         <p v-html="currentQuestion.question"></p>
         <v-date-picker v-if="!isFeedbackMode" :model-config="modelConfig" v-model="date" />
         <div v-else>
-            <p v-if="currentUserAnswer !== currentQuestion.rightAnswer" class="incorrect">{{currentUserAnswer}}</p>
-            <p class="correct">{{currentQuestion.rightAnswer}}</p>
+            <p v-if="currentUserAnswer !== currentQuestion.rightAnswer" class="incorrect">
+                {{dateForFeedback(currentUserAnswer)}}
+            </p>
+            <p class="correct">
+                {{dateForFeedback(currentQuestion.rightAnswer)}}
+            </p>
         </div>
     </div>
 </template>
@@ -37,10 +41,12 @@ export default {
         }
     },
     methods: {
-
+        dateForFeedback(date){
+            var dateArray = date.split("-");
+            return dateArray[2] +"/" + dateArray[1] +"/"+ dateArray[0]
+        }
     },
     created() {
-        console.log(this.currentUserAnswer);
         if(this.currentUserAnswer instanceof Date)
             this.date = this.currentUserAnswer;
     },

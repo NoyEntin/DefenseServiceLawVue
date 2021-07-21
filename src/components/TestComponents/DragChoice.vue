@@ -1,34 +1,46 @@
 <template>
     <div>
-        <p v-html="temporaryCurrentQuestion.question"></p>
+        <p v-html="currentQuestion.question"></p>
         <div class="drag-drop-container">
-            <div class="draggables"
+            <div class="draggables-container"
             @drop="onDrop($event, 'start')"
             @dragenter.prevent
             @dragover.prevent
             >
-                <div class="items start-items-box"
+                <div class="items"
                 v-for="item in items" :key="item.id"
                 @dragstart="startDrag($event, item, 'start')"
-                draggable="true"
+                @dragend="endDrag($event, item)"
+                :draggable="!isFeedbackMode"
                 >
                 {{item.title}}
                 </div>
             </div>
-            <div class="droppables">
+            <div class="droppables-container">
                 <div class="drop-in"
                 v-for="dropZone in dropZones" :key="'dropZone'+dropZone.id"
+                :class="{'full': dropZone.item !== '',
+                'correct': isFeedbackMode && userAnswers[dropZone.id] === currentQuestion.rightAnswer[dropZone.id],
+                'incorrect': isFeedbackMode && userAnswers[dropZone.id] !== currentQuestion.rightAnswer[dropZone.id]}"
                 @drop="onDrop($event, dropZone)"
                 @dragenter.prevent
                 @dragover.prevent
                 >
                     {{dropZone.title}}
-                    <div class="items"
+                    <div :class="{'items': dropZone.item !== ''}"
                     @dragstart="startDrag($event, dropZone.item, dropZone)"
-                    draggable="true"
+                    @dragend="endDrag($event, item)"
+                    :draggable="!isFeedbackMode"
                     >
                     {{dropZone.item.title}}
                     </div>
+
+                    <div v-if="isFeedbackMode && !isUserCorrect(dropZone)"
+                    class="correctItems"
+                    >
+                    {{ showRightAnswer(dropZone) }}
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -36,27 +48,15 @@
 </template>
 
 <script>
-// import {ref} from 'vue'
+
 export default {
     name: 'DragChoice',
     data() {
         return {
-            // items: [
-            //     {id: 0, title: 'Item A'},
-            //     {id: 1, title: 'Item B'},
-            //     {id: 2, title: 'Item C'},
-            //     {id: 3, title: 'Item D'}
-            // ],
             items: [],
-            // userAnswers: [],
+            userAnswers: [],
             dropZones: [],
-            // dropZones: [
-            //     {id: 0, title: 'Item B', item: ''},
-            //     {id: 1, title: 'Item C', item: ''},
-            //     {id: 2, title: 'Item A', item: ''},
-            //     {id: 3, title: 'Item D', item: ''}
-            // ],
-            temporaryCurrentQuestion: this.$store.state.allTestQuestions[47][0],
+            // temporaryCurrentQuestion: this.$store.state.allTestQuestions[47][0],
         }
     },
     props: {
@@ -73,19 +73,11 @@ export default {
         isFeedbackMode(){
             return this.$store.state.isFeedbackMode
         },
-        userAnswers() {
-            var userAnswers = [];
-            var answer;
-            for(var i=0; i<this.dropZones.length; i++){
-                answer=this.dropZones[i].items;
-                if(answer!=='')
-                    userAnswers[i]=answer;
-            }
-            return userAnswers
-        }
     },
     methods: {
         startDrag(event, item, dropZone) {
+            event.target.style.opacity = '0.4';
+
             event.dataTransfer.dropEffect = 'move';
             event.dataTransfer.effectAllowed = 'move';
             event.dataTransfer.setData('itemID', item.id);
@@ -94,16 +86,18 @@ export default {
             else
                 event.dataTransfer.setData('itemParent', dropZone.id);
         },
+        endDrag(event, item){
+            event.target.style.opacity = '1';
+        },
         onDrop(event, dropZone) {
             var itemID = event.dataTransfer.getData('itemID');
             var itemParentID = event.dataTransfer.getData('itemParent');
             var item = -1;
-            console.log("dropZones= " + this.dropZones);
-            console.log("dropZone= " + dropZone);
             if(dropZone !== 'start') {
                 if (itemParentID !== 'start') {
                     item = this.dropZones[itemParentID].item;
                     this.dropZones[itemParentID].item = '';
+                    this.userAnswers[itemParentID] = -1;
                 } else {
                     for (var i = 0; i < this.items.length; i++) {
                         if (this.items[i].id === Number(itemID)) {
@@ -115,11 +109,21 @@ export default {
                     this.items.push(dropZone.item);
                 }
                 dropZone.item = item;
+                this.userAnswers[dropZone.id] = Number(itemID);
             } else if (itemParentID !== 'start') {
                 item = this.dropZones[itemParentID].item;
                 this.dropZones[itemParentID].item = '';
+                this.userAnswers[itemParentID] = -1;
                 this.items.push(item);
             }
+            this.$emit('answer-clicked', this.userAnswers);
+        },
+        isUserCorrect(dropZone) {
+            return this.currentQuestion.rightAnswer[dropZone.id] === this.userAnswers[dropZone.id]
+        },
+        showRightAnswer(dropZone) {
+            var rightAnswerIndex = this.currentQuestion.rightAnswer[dropZone.id]
+            return this.currentQuestion.answers[rightAnswerIndex]
         }
     },
     created(){
@@ -127,16 +131,19 @@ export default {
         if(!isUserAnswerEmpty){
             this.userAnswers = this.currentUserAnswer;
         }
-        for(var i=0; i< this.temporaryCurrentQuestion.options.length; i++) {
-            this.dropZones.push({'id': i, 'title': this.temporaryCurrentQuestion.options[i], 'item': ''});
-            this.items.push({'id': i, 'title': this.temporaryCurrentQuestion.answers[i]});
+
+        for(var i = 0; i< this.currentQuestion.options.length; i++) {
+            this.dropZones.push({'id': i, 'title': this.currentQuestion.options[i], 'item': ''});
+            this.items.push({'id': i, 'title': this.currentQuestion.answers[i]});
             if(isUserAnswerEmpty){
                 this.userAnswers.push(-1);
             }
-            else {
-                if(this.userAnswers[i]!==-1){
-                    this.dropZones[i].item = this.items.splice(this.userAnswers[i], 1);
-                }
+        }
+
+        for(var i = 0; i< this.userAnswers.length; i++) {
+            if(this.userAnswers[i]!==-1){
+                var answerIndexInItems = this.items.findIndex(obj => { return obj.id === this.userAnswers[i] });
+                this.dropZones[i].item = this.items.splice(answerIndexInItems, 1)[0];
             }
         }
     }
@@ -153,37 +160,52 @@ export default {
     text-align: center;
 }
 
-.draggables {
+.draggables-container {
     width: 30%;
-    min-height: 20%;
-    background-color: rgb(238, 238, 238);
+    min-height: 100%;
+    background-color: rgb(242, 242, 242);
     margin: 2%;
 }
 
-.droppables {
+.droppables-container {
     width: 100%;
-    min-height: 20%;
     display: flex;
     margin: 2%;
 }
 
 .drop-in {
     width: 50%;
-    /* height: 50%; */
-    height: fit-content;
-    background-color: rgb(238, 238, 238);
-    margin: 2%;
+    height: 100%;
+    background-color: rgb(242, 242, 242);
+    margin: 0% 2%;
+    padding: 0.5%;
+}
+
+.full {
+    background-color: var(--lighten-blue);
+}
+
+.correct {
+    background-color: rgb(32, 178, 105);
+}
+
+.incorrect {
+    background-color: rgb(231, 29, 54);
 }
 
 .items {
-    background-color: rgb(236, 238, 240);
+    background-color: rgb(242, 242, 242);
     padding: 2%;
     margin: 6%;
-
-
-}
-
-.start-items-box {
     background-color: var(--yellow);
+    cursor: grab;
 }
+
+.correctItems {
+    background-color: rgb(242, 242, 242);
+    padding: 2%;
+    margin: 6%;
+    background-color: rgb(32, 178, 105);
+}
+
 </style>
