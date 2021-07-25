@@ -3,7 +3,7 @@
         <div class="page-title">סעיפים בנושא <b>בני ישיבות</b></div>
 
         <div class="page-sections-container">
-            <div class="page-sections-title">סעיפים</div>
+            <div class="page-sections-title">סעיפים בעמוד:</div>
             <div class="page-sections-nums-container">
                 <div class="page-sections-nums">3</div>
                 <div class="page-sections-nums">5</div>
@@ -346,7 +346,7 @@
             <b>בוגרי ישיבות ומוסדות חינוך חרדיים</b>.
         </p>
         <p>
-            ככלל דח"ג בני"ש יינתן עד גיל 26 בלבד. החוק מגדיר את הישיבות המוכרות במן יוכלו ללמוד המלש"בים ולקבל דיחוי מידי שנה לאחר התייצבות פיזית במדור בני"ש בתה"ש.
+            ככלל דח"ג בני"ש יינתן עד גיל 26 בלבד. החוק מגדיר את הישיבות המוכרות בהן יוכלו ללמוד המלש"בים ולקבל דיחוי מידי שנה לאחר התייצבות פיזית במדור בני"ש בלשכת גיוס תה"ש.
         </p>
         <ShowMore :isLawSection="false" :uniqueId="'ilo793'">
             <template v-slot:section-content>

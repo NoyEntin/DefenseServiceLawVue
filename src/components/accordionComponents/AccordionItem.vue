@@ -84,6 +84,10 @@ export default {
     height: 6vmin;
 }
 
+.accordion-trigger:hover {
+  background-color: #2fb6a8;
+}
+
 .accordion-trigger .arrow-img {
     transform: rotate(90deg);
     margin: 0vmin 2vmin;

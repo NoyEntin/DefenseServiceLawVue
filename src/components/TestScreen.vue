@@ -6,8 +6,8 @@
             <div v-for="index in questions.length" :key="index" @click="goToQuestion(index)" class="progress-bar-test-question" :class="{'progress-bar-disabled': showForm}">
                 {{ index }}
                 <div :class="{'answered': userAnswer[index-1] !== -1,
-                'correct': isFeedbackMode && userTestAnswersBoolean[index-1],
-                'incorrect': isFeedbackMode && !userTestAnswersBoolean[index-1],
+                'correct-progress-bar': isFeedbackMode && userTestAnswersBoolean[index-1],
+                'incorrect-progress-bar': isFeedbackMode && !userTestAnswersBoolean[index-1],
                 'currentQuestion': currentQuestionIndex === index-1}"
                 class="progress-bar-test-question-bg">
                 </div>
@@ -69,7 +69,7 @@
                 <div v-if="!isFeedbackMode" class="test-pop-up">
                     <div class="x-btn" @click="closePopUp(); timer()">&#10006;</div>
                     <p>שימו ♥</p>
-                    <p>עולים חדשים מקבלים מעמד אזרחי בעת העלייה שלהם. כאשר מצוין תאריך העלייה יש להתייחס לתאריך זה כתאריך בו קיבלו מעמד אזרחי.</p>
+                    <p>בשאלות בהן מוזכרים עולים חדשים, הם מקבלים מעמד אזרחי בעת העלייה שלהם. כאשר מצוין תאריך העלייה יש להתייחס לתאריך זה כתאריך בו קיבלו מעמד אזרחי.</p>
                 </div>
                 <div v-else class="test-pop-up test-ready">
                     <div class="pop-up-container">
@@ -380,7 +380,7 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
     height: fit-content;
-    width: 30%;
+    width: 40%;
     padding: 1%;
     box-sizing: border-box;
     text-align: center
@@ -408,11 +408,11 @@ export default {
 }
 
 .correct {
-    background-color: rgb(32, 178, 105);
+    background-color: rgba(32, 178, 105, 0.7);
 }
 
 .incorrect {
-    background-color: rgb(231, 29, 54);
+    background-color: rgba(231, 29, 54, 0.7);
 }
 
 .currentQuestion{

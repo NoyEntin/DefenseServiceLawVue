@@ -204,11 +204,11 @@ export default {
 }
 
 .correct {
-    background-color: rgb(32, 178, 105);
+    background-color: rgba(32, 178, 105, 0.7);
 }
 
 .incorrect {
-    background-color: rgb(231, 29, 54);
+    background-color: rgba(231, 29, 54, 0.7);
 }
 
 .draggables-container .items {

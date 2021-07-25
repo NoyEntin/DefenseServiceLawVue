@@ -11,7 +11,7 @@
         </ol>
 
         <p class="graph-title">תרשים התייצבות משתמט</p>
-        <img class="graphDefaulters" src="../../media/graphics/graphDefaulters1.png">
+        <img class="graphDefaulters" src="../../media/graphics/graphDefaulters1-2.png">
         <p class="download-btn-container">
             <a class="download-btn" :href="`${publicPath}mediaForDownload/graphDefaulters1.png`" download='graphDefaulters1.png'>
                 <img src="../../media/graphics/download.svg"/>

@@ -53,17 +53,17 @@ export default {
 
 <style scoped>
     .incorrect {
-        color: red
+        color: rgb(231, 29, 54);
     }
     .correct {
-        color: green
+        color: rgb(32, 178, 105);
     }
     .incorrect input{
-        background-color: red;
+        background-color: rgb(231, 29, 54);
         color: white;
     }
     .correct input{
-        background-color: green;
+        background-color: rgb(32, 178, 105);
         color: white;
     }
 </style>

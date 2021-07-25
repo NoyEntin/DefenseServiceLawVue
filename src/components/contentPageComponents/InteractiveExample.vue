@@ -16,7 +16,7 @@
                 <div v-else>&hearts;</div>
             </div>
             <div class="example-content">
-                <p v-if="!onlyText">{{ $store.state.InteractiveExamplesData[exampleNumber][currentTimeStamp]["section-20-explanation"] }}</p>
+                <p v-if="!onlyText" v-html="$store.state.InteractiveExamplesData[exampleNumber][currentTimeStamp]['section-20-explanation']"></p>
                 <p v-else>{{ $store.state.InteractiveExamplesData[exampleNumber][0].text }}</p>
             </div>
             <div class="time-stamps-container" v-show="!onlyText">
@@ -127,6 +127,7 @@ export default {
         padding-bottom: 6%;
         width: 100%;
         box-sizing: border-box;
+        padding: 2%;
     }
 
     .example-header {

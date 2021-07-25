@@ -433,7 +433,7 @@ svg {
     border-style: solid;
     border-color: var(--red);
     border-width: 0em 1px 1px 1px;
-    padding: 2% 0% 0% 0%;
+    padding: 2% 2% 2% 2%;
 }
 
 .example-content p {
@@ -847,7 +847,8 @@ svg {
 
 .page-sections-nums-container {
     display: flex;
-    background-color: var(--lighten-blue);
+    /* background-color: var(--lighten-blue); */
+    background-color: rgb(197, 208, 209);
 }
 
 .page-sections-nums {

@@ -3,7 +3,7 @@
         <div class="page-title">סעיפים בנושא <b>הצו הראשון</b></div>
 
         <div class="page-sections-container">
-            <div class="page-sections-title">סעיפים</div>
+            <div class="page-sections-title">סעיפים בעמוד:</div>
             <div class="page-sections-nums-container">
                 <div class="page-sections-nums this-page-sections">3</div>
                 <div class="page-sections-nums this-page-sections">5</div>
@@ -119,8 +119,8 @@
             </div>
         </div>
         <p>
-            שני סעיפים אלו (סעיפים 3 ו- 5) הינם ההגדרות בחוק להתייצבות חובה של מלש"ב. 
-            שימו לב, ההתייצבות לביצוע מבחן/ראיון צד"כ/ראיון צמ"א אינם חובה, ועל כן ניתן לייצב לגיוס גם ללא הליכי חוליה  או מה שנקרא בשם "גל"ק" - גיוס ללא קב"א.
+            <b>שני סעיפים אלו (סעיפים 3 ו- 5) הינם ההגדרות בחוק להתייצבות חובה של מלש"ב.</b>
+            שימו לב, ההתייצבות לביצוע מבחן דפ"ר/ראיון צד"כ/ראיון צמ"א אינם חובה, ועל כן ניתן לייצב לגיוס גם ללא הליכי חוליה במה שנקרא "גל"ק" - גיוס ללא קב"א.
         </p>
         <!-- <div class="did-u-know">
             <img class="light" @click="lighting = !lighting" src="../../media/graphics/idea.png">

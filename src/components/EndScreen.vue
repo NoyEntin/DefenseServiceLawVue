@@ -5,7 +5,7 @@
             <img class="test-icon" src="./../media/graphics/testIcon.svg"/>
             <div>
                <span v-if="isPassingGrade"> כל הכבוד! </span> <span v-else> לא נורא! </span> <br>
-                {{userInfo.firstName +", "+ userInfo.lastName +", " + userInfo.personalNumber}}<br>
+                {{userInfo.firstName +" "+ userInfo.lastName +", " + userInfo.personalNumber}}<br>
                 סיימתם את לומדת חוק שירות ביטחון בציון:
             </div>
             <div class="test-score">{{grade}}</div>

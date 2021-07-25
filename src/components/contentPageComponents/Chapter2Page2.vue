@@ -1,7 +1,7 @@
 <template>
     <div class="page-content chapter2-page2">
-        <div class="content-title">משך תקופת סעיף 20 למלש"ב</div>
-        <p>משך סעיף 20 הינו פרק הזמן בו יש לקרוא למלש"ב לגיוס. כל חריגה מפרק זמן זה תגרור שירות בהתאם למשך זמן החריגה. במידה ונחרוג ביותר משנה, קרי 366 ימי קיצור, המלש"ב יהיה זכאי לפטור.</p>
+        <div class="content-title">מסגרת הקריאה לשירות לפי סעיף 20 למלש"ב</div>
+        <p>משך סעיף 20 הינו פרק הזמן בו יש לקרוא למלש"ב לגיוס. כל <b>חריגה</b> מפרק זמן זה <b>תגרור קיצור שירות </b>בהתאם למשך זמן החריגה. במידה ונחרוג ב<b>יותר משנה</b>, קרי 366 ימי קיצור, המלש"ב יהיה <b>זכאי לפטור</b>.</p>
         <p>כיצד הוא מחושב?</p>
         
         <table class="table">
@@ -18,13 +18,36 @@
                 <td>שנתיים ממועד קבלת מעמד אזרחי- אזרח/תושב קבע</td>
             </tr>
             <tr>
-                <td class="table-bold">דחיית גיוס</td>
-                <td>שנה מתום דחיית הגיוס</td>
+                <td class="table-bold"><p>דחיית גיוס</p>
+        <table class="table inner-table">
+            <tr>
+                <th>סוגי דחיות גיוס</th>
+                <th>אופן חישוב ההארכה</th>
             </tr>
             <tr>
+                <td class="table-bold">דחיית גיוס עקב בקשת המלש"ב</td>
+                <td>ניתן להאריך 12 חודשים מתום תקופת הדחייה או 24 חודשים מגיל יוצא צבא (18 עברי), המאוחר מבניהם.</td>
+            </tr>
+            <tr>
+                <td class="table-bold">שנה מתום לימודים לפי חתימה על טופס סיום אימות.</td>
+                <td>שנה מתום לימודים לפי חתימה על טופס סיום אימות.</td>
+            </tr>
+            <tr>
+                <td class="table-bold">דחיית גיוס לאוכלוסיית בני"ש</td>
+                <td>שנה מתום סיום הדיחוי האחרון.</td>
+            </tr>
+            <tr>
+                <td class="table-bold">שנה מבקשת גיוס (פתיחת רשומה)</td>
+                <td>שנה מתאריך בקשה אישית לגיוס (יש להקפיד על תאריך הבקשה שתצוין וממועד זה שנה)</td>
+            </tr>
+        </table>
+        </td>
+                <td>שנה מתום דחיית הגיוס</td>
+            </tr>
+            <!-- <tr>
                 <td class="table-bold">חתימת דיחוי לאוכלוסיית בני"ש</td>
                 <td>שנתיים ממועד הגשת דיחוי אחרון</td>
-            </tr>
+            </tr> -->
         </table>
         <p class="download-btn-container">
             <a class="download-btn" :href="`${publicPath}mediaForDownload/section-20-duration.png`" download='section-20-duration.png'>
@@ -42,15 +65,15 @@
             </div>
             <img src="../../media/graphics/calendar.svg" class="example-icon"/>
             <div class="example-header">
-                תאריך אחרון לבקשת הפטור: 4/4/2020
+                תאריך אחרון לבקשת הפטור: 04.04.2020
             </div>
             <div class="example-content">
                 <p>
-                דנה הייתה בת 18 בתאריך 03/03/2020. דנה זומנה למיון לייעודי לקצונה בתאריך 04/04/2020, על כך המועד האחרון בו תוכל דנה להגיש בקשה לפטור מטעמי הווי משפחתי דתי הינו 04/04/2020. לאחר הגשת בקשה זו לא ניתן לזמן לצו ראשון. פטור מטעם זה נידון בוועדה של משרד הביטחון. 
+                יובל הייתה בת 18 בתאריך 03.03.2020. יובל זומנה למיון לייעודי לקצונה בתאריך 04.04.2020, על כך המועד האחרון בו תוכל יובל להגיש בקשה לפטור מטעמי הווי משפחתי דתי הינו 04.04.2020. לאחר הגשת בקשה זו לא ניתן לזמן לצו ראשון. פטור מטעם זה נידון בוועדה של משרד הביטחון. 
                 </p>
-                <img class="example-graph" src="../../media/graphics/example1-2.svg">
+                <img class="example-graph" src="../../media/graphics/example-top.svg">
             </div>
-            <img src="../../media/graphics/example1-1.svg">
+            <img src="../../media/graphics/example-1.svg">
         </div>
 
         <div class="example-container">
@@ -62,16 +85,16 @@
             </div>
             <img src="../../media/graphics/calendar.svg" class="example-icon"/>
             <div class="example-header">
-                סעיף 20: 1/1/2021
+                סעיף 20: 01.01.2021
             </div>
             <div class="example-content">
                 <p>
-                יוליה הייתה בת 18 ב-1/1/21 ועל כן מועד אחרון לקריאה ליוליה לשירות מלא הינו מועד ס.20 שלה 1/1/23. במידה ונדחה גיוסה של יוליה ללא בקשתה וללא סיבה מוצדקת (כפי שיפורט בהמשך) למועד 1/6/23 יקוצר שירותה ב-5 חודשים.
-במידה ונדחה גיוסה ללא בקשתה וללא סיבה מוצדקת למועד 2/1/24 יוליה תהייה זכאית לפטור משירות ביטחון.  
+                יוליה הייתה בת 18 ב-01.01.2021 ועל כן מועד אחרון לקריאה ליוליה לשירות מלא הינו מועד ס.20 שלה 01.01.2023. במידה ונדחה גיוסה של יוליה ללא בקשתה וללא סיבה מוצדקת (כפי שיפורט בהמשך) למועד 01.06.2023 יקוצר שירותה ב-5 חודשים.
+במידה ונדחה גיוסה ללא בקשתה וללא סיבה מוצדקת למועד 02.01.2024 יוליה תהייה זכאית לפטור משירות ביטחון.  
                 </p>
-                <img class="example-graph" src="../../media/graphics/example2-2.svg">
+                <img class="example-graph" src="../../media/graphics/example-top.svg">
             </div>
-            <img src="../../media/graphics/example2-1.svg">
+            <img src="../../media/graphics/example-2.svg">
         </div>
 
         <div class="example-container">
@@ -83,15 +106,15 @@
             </div>
             <img src="../../media/graphics/calendar.svg" class="example-icon"/>
             <div class="example-header">
-                סעיף 20: 1/1/2021
+                סעיף 20: 01.01.2021
             </div>
             <div class="example-content">
                 <p>
-                דנה הינה מלש"בית  שנולדה בחו"ל והגיעה לארץ בגיל 19 בתאריך 1/1/20 וביצעה עליה ולכן קיבלה ממעד אזרחית בתאריך 1/7/20 כאשר היא בת 19 וחצי. מועד סעיף 20 שלה הינו שנתיים ממועד קבלת מעמד אזרחי כלומר תאריך העלייה ולכן יהיה 1/7/22.
+                דנה הינה מלש"בית שנולדה בחו"ל והגיעה לארץ בגיל 19 בתאריך 01.01.2020. היא ביצעה עלייה וקיבלה מעמד אזרחית בתאריך 01.07.2020 כאשר היא בת 19 וחצי. מועד סעיף 20 שלה הינו שנתיים ממועד קבלת המעמד האזרחי (תאריך העלייה) ולכן יהיה 01.07.2022.
                 </p>
-                <img class="example-graph" src="../../media/graphics/example2-2.svg">
+                <img class="example-graph" src="../../media/graphics/example-top.svg">
             </div>
-            <img src="../../media/graphics/example3-1.svg">
+            <img src="../../media/graphics/example-3.svg">
         </div>
 
         
@@ -133,4 +156,24 @@ export default {
 .definition {
     background-color: rgb(254, 227, 173);
 }
+
+.example-content {
+    padding: 2% 0% 0% 0%;
+}
+
+table td{
+    vertical-align: top;
+}
+
+.inner-table td {
+    background-color: white;
+    font-weight: normal;
+}
+
+.inner-table th {
+    background-color: var(--black);
+    border-color: white;
+}
+/*  */
+
 </style>

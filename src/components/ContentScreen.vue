@@ -43,13 +43,13 @@
                     <div class="to-home-btn-text">לעמוד הבית</div>
                 </div>
             </div>
-
             <div class="is-correct-message red" v-if="answerClicked && !answeredCorrectly && isExercise">
                 נסה שוב &#128531;
             </div>
             <div class="is-correct-message green" v-if="answeredCorrectly && isExercise">
                 מצוין! &#128516;
             </div>
+
         </div>
     </div>
 </template>
@@ -235,6 +235,10 @@ export default {
     transition: ease 0.4s;
 }
 
+.next-btn {
+    z-index: 6;
+}
+
 .to-home-btn-bg {
     background-color: rgb(184, 20, 40);
     height: 100%;
@@ -295,10 +299,12 @@ export default {
     font-size: 4vmin;
     line-height: 8vmin;
 }
+
 .red {
     background: rgb(231,29,54);
     background: linear-gradient(90deg, rgba(231,29,54,0) 0%, rgba(231,29,54,0.8015581232492998) 25%, rgba(231,29,54,1) 50%, rgba(231,29,54,0.8) 75%, rgba(231,29,54,0) 100%);
 }
+
 .green {
     background: rgb(32,178,105);
     background: linear-gradient(90deg, rgba(32,178,105,0) 0%, rgba(32,178,105,0.7987570028011204) 25%, rgba(32,178,105,1) 50%, rgba(32,178,105,0.8) 75%, rgba(32,178,105,0) 100%);

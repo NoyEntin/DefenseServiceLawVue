@@ -24,9 +24,11 @@
             <div class="overlay">
                 <div class="pop-up-container">
                     <div class="pop-up-text">
-                        שימו♥!
+                        שימו ♥!
                         <br>
-                        לאחר תחילת המבחן לא תתאפשר חזרה לחומר והתרגול.
+                        משך המבחן 90 דקות.
+                        <br>
+                        לאחר תחילת המבחן לא תתאפשר חזרה לחומר ולתרגול.
                         <br>
                         בטוחים שאתם מוכנים?
                     </div>
@@ -182,6 +184,10 @@ export default {
     bottom: 34%;
     height: 38%;
     width: 50%;
+}
+
+.test-ready .pop-up-text {
+    top: 10%;
 }
 
 .go-study .pop-up-btn-container {

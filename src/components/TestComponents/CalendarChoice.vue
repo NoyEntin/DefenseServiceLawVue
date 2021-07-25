@@ -59,9 +59,9 @@ export default {
 
 <style scoped>
     .incorrect {
-        color: red
+        color: rgb(231, 29, 54);
     }
     .correct {
-        color: green
+        color: rgb(32, 178, 105);
     }
 </style>

@@ -12,9 +12,10 @@
         </div>
         <div class="graph-container">
             <div class="graph-help">
-                <div>נווטו בתרשים בעצמכם!</div>
-                <div>בחרו בכל שלב את האפשרות והתקדמו בתרשים.</div>
-                <div>זכרו שתמיד אפשר לחזור אחורה.</div>
+                <div class="graph-help-mark">?</div>
+                <div>נווטו בתרשים בעצמכם!<br>
+                בכל שלב, בחרו באחת האפשרויות כדי להתקדם.<br>
+                לא לשכוח- תמיד אפשר לחזור אחורה.</div>
                 <!-- <div>{{choices[0].value}}</div> -->
             </div>
             <div class="graph-main">
@@ -311,8 +312,33 @@ export default {
 }
 
 .graph-help {
+    border: var(--yellow) 0.5vmin solid;
+    width: 70%;
+    display: flex;
+    position: relative;
+    padding: 1%;
+}
+
+.graph-help div {
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+/*.graph-help {
     border: var(--yellow) 3px solid;
     width: 70%;
+}*/
+
+.graph-help-mark {
+    width: 25%;
+    font-size: 7vmin;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--yellow);
+    margin-left: 3%;
 }
 
 .graph-main {

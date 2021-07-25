@@ -4,6 +4,9 @@
             <div class="wave"></div>
         </div>
         <div class="exercise-content">
+            <div class="section-title">
+                <p>בחן את עצמך:</p>
+            </div>
             <p class="exercise-question" v-html="question">
             </p>
             <div class="exercise-answers-container">
@@ -95,6 +98,16 @@ export default {
         font-size: 1.1em;
     }
 
+    .section-title {
+    background-color: var(--yellow);
+    height: fit-content;
+    width: fit-content;
+    padding: 0 1vh;
+    /* position: absolute; */
+    /* bottom: 0; */
+    margin: 0;
+    font-size: 1.1em;
+}
 
     .exercise-answers-container {
     display: flex;

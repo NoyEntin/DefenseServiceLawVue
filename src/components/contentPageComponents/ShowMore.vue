@@ -94,7 +94,7 @@ export default {
 .show-more-btn-img {
     /* height: 250%; */
     z-index: 1;
-    height: 100%;
+    height: 120%;
     width: 100%;
     position: absolute;
     left: 0;
@@ -123,5 +123,19 @@ export default {
     background-color: rgba(253, 184, 51, 0.1);
     font-weight: bold;
     padding: 1em;
+}
+.button-text {
+    width: 12%;
+    position: absolute;
+    left: -1%;
+    top: -15%;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 1em;
+    z-index: 2;
+}
+.did-you-know-btn-txt {
+    top: -40%;
+    left: -2%;
 }
 </style>
