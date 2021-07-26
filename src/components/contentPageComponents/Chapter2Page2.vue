@@ -65,11 +65,11 @@
             </div>
             <img src="../../media/graphics/calendar.svg" class="example-icon"/>
             <div class="example-header">
-                תאריך אחרון לבקשת הפטור: 04.04.2020
+                סעיף 20: 01.01.2021
             </div>
             <div class="example-content">
                 <p>
-                יובל הייתה בת 18 בתאריך 03.03.2020. יובל זומנה למיון לייעודי לקצונה בתאריך 04.04.2020, על כך המועד האחרון בו תוכל יובל להגיש בקשה לפטור מטעמי הווי משפחתי דתי הינו 04.04.2020. לאחר הגשת בקשה זו לא ניתן לזמן לצו ראשון. פטור מטעם זה נידון בוועדה של משרד הביטחון. 
+                    אופרי ילידת 01.01.2001. גיל 18 עברי שלה הינו 01.01.2019. סעיף 20 שלה הינו 01.01.2021 (גיל 20 עברי). 
                 </p>
                 <img class="example-graph" src="../../media/graphics/example-top.svg">
             </div>
@@ -85,7 +85,7 @@
             </div>
             <img src="../../media/graphics/calendar.svg" class="example-icon"/>
             <div class="example-header">
-                סעיף 20: 01.01.2021
+                סעיף 20: 01.01.2023
             </div>
             <div class="example-content">
                 <p>
@@ -106,7 +106,7 @@
             </div>
             <img src="../../media/graphics/calendar.svg" class="example-icon"/>
             <div class="example-header">
-                סעיף 20: 01.01.2021
+                סעיף 20: 01.07.2022
             </div>
             <div class="example-content">
                 <p>

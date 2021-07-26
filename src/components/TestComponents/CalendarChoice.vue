@@ -1,7 +1,7 @@
 <template>
     <div>
         <p v-html="currentQuestion.question"></p>
-        <v-date-picker v-if="!isFeedbackMode" :model-config="modelConfig" v-model="date" />
+        <v-date-picker class="calendar" v-if="!isFeedbackMode" :model-config="modelConfig" v-model="date" />
         <div v-else>
             <p v-if="currentUserAnswer !== currentQuestion.rightAnswer" class="incorrect">
                 {{dateForFeedback(currentUserAnswer)}}
@@ -63,5 +63,8 @@ export default {
     }
     .correct {
         color: rgb(32, 178, 105);
+    }
+    .calendar {
+        direction: ltr;
     }
 </style>

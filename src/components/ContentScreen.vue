@@ -6,7 +6,7 @@
             <div v-for="page in pagesInChapter" :key="page" class="progress-bar-page" :class="{ full:  ((page - 1) < currentPageIndex) || ((page - 1) === currentPageIndex && isExercise)}">
                 <div v-if="((page - 1) === currentPageIndex) && !isExercise" class="progress-marker">
                     <svg preserveAspectRatio="none" viewBox="0 0 300 100">
-                        <path d="M 0 50 L 100 0 L 300 0 L 300 100 L 100 100 L 0 50" fill="var(--red)"></path>
+                        <path d="M 0 50 L 75 0 L 300 0 L 300 100 L 75 100 L 0 50" fill="var(--red)"></path>
                     </svg>
                 </div>
                 <div class="progress-bar-exercise"></div>
@@ -220,7 +220,7 @@ export default {
 .progress-marker {
     position: absolute;
     height: 100%;
-    width: 2.5%;
+    width: 7.5%;
 }
 
 .full {

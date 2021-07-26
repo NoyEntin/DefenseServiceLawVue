@@ -20,11 +20,11 @@
                 <p v-else>{{ $store.state.InteractiveExamplesData[exampleNumber][0].text }}</p>
             </div>
             <div class="time-stamps-container" v-show="!onlyText">
-                <div class="time-stamp" :class="{'time-stamp-shape-gray': currentTimeStamp !== index}" @click="clickedTimeStamp(index)" v-for="index in $store.state.InteractiveExamplesData[exampleNumber].length-1" :key="index">
+                <div class="time-stamp" :class="{'time-stamp-shape-gray': currentTimeStamp !== index, 'time-stamp-active': currentTimeStamp === index}" @click="clickedTimeStamp(index)" v-for="index in $store.state.InteractiveExamplesData[exampleNumber].length-1" :key="index">
                     <div class="time-stamp-title" :class="{'time-stamp-title-active': currentTimeStamp === index}">{{ $store.state.InteractiveExamplesData[exampleNumber][index]["time-stamp-date"] }}</div>
                     <p>{{ $store.state.InteractiveExamplesData[exampleNumber][index]["time-stamp-details"] }}</p>
                     <svg class="time-stamp-shape" preserveAspectRatio="none" viewBox="0 0 100 200">
-                        <path class="hover-gray" :class="{'time-stamp-shape-active': currentTimeStamp === index}" d="M 0 0 L 100 0 L 100 150 L 50 200 L 0 150 L 0 0" fill="none" stroke="var(--blue)" stroke-width="3"></path>
+                        <path class="hover-gray" d="M 0 0 L 100 0 L 100 150 L 50 200 L 0 150 L 0 0" fill="none" stroke="var(--blue)" stroke-width="3"></path>
                     </svg>
                     <div class="active-image-container" v-if="currentTimeStamp === index">
                         <img class="active-image" :src="activeImageSrc(index)">
@@ -161,6 +161,10 @@ export default {
         height: 100%;
         cursor: pointer;
     }
+
+    .time-stamp-active {
+        cursor: auto;
+    }
     
     .time-stamp-title {
         background-color: var(--blue);
@@ -173,7 +177,7 @@ export default {
         height: fit-content;
     }
 
-    .time-stamp-shape-active {
+     .time-stamp-active .time-stamp-shape path {
         stroke: var(--red);
     }
     
@@ -181,7 +185,7 @@ export default {
         fill: rgb(242, 242, 242);
     }
 
-    .time-stamp-title-active {
+    .time-stamp-active .time-stamp-title {
         background-color: var(--red);
     }
 
@@ -212,6 +216,7 @@ export default {
         position: absolute;
         top: 5%;
         left: 5%;
+        cursor: auto;
     }
 
     .change-to-text-text {

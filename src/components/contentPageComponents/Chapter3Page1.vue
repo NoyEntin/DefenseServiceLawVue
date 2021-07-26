@@ -47,7 +47,7 @@
             </div>
             <img src="../../media/graphics/calendar.svg" class="example-icon"/>
             <div class="example-header">
-                תאריך אחרון לבקשת הפטור: 04.04.2020
+                &#10084;
             </div>
             <div class="example-content">
                 <p>עדי הינה מלש"בית צו 12 שלא התייצבה כלל בלשכת הגיוס ולא אותרה טלפונית כלל.</p>
