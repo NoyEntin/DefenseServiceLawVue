@@ -40,7 +40,7 @@
                 <img src="../media/graphics/home.svg" class="to-home-btn-logo">
                 <div class="to-home-btn-bg"></div>
                 <div class="to-home-btn-text-container">
-                    <div class="to-home-btn-text">לעמוד הבית</div>
+                    <div class="to-home-btn-text">לסיום הפרק</div>
                 </div>
             </div>
             <div class="is-correct-message red" v-if="answerClicked && !answeredCorrectly && isExercise">

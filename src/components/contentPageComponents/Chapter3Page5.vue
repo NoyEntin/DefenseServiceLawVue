@@ -11,6 +11,7 @@
         </ol>
 
         <p class="graph-title">תרשים התייצבות משתמט</p>
+        <p class="center-p">בהמשך תהיה אפשרות לנווט בתרשים בעצמכם</p>
         <img class="graphDefaulters" src="../../media/graphics/graphDefaulters1-2.png">
         <p class="download-btn-container">
             <a class="download-btn" :href="`${publicPath}mediaForDownload/graphDefaulters1.png`" download='graphDefaulters1.png'>
@@ -18,6 +19,8 @@
                 הורד תרשים
             </a>
         </p>
+
+        <p class="graph-title">נווטו בתרשים בעצמכם!</p>
 
         <GraphNavigation>
         </GraphNavigation>
@@ -57,6 +60,10 @@ export default {
 </script>
 
 <style scoped>
+
+.center-p {
+    text-align: center;
+}
 
 .graph-title {
     font-weight: bold;

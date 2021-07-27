@@ -1,18 +1,30 @@
 <template>
     <div>
         <p v-html="currentQuestion.question"></p>
-        <table>
-            <tr v-for="(answer, index) in currentQuestion.answers" :key="index"
-            :class="{'selectedAnswer': currentUserAnswer[index] === index || currentIndex[index] === index,
-            'disable': isFeedbackMode,
-            'correct': isFeedbackMode && (Number(currentQuestion.rightAnswer[index]) === index),
-            'incorrect': isFeedbackMode && (currentUserAnswer[index] === index) && (Number(currentQuestion.rightAnswer[index]) !== index)}"
-            class="test-answer"
-            @click="clicked($event, index)">
-                <td v-for="(tdContent ,tdIndex) in answer" :key="'td' + index + tdIndex" v-html="tdContent">
-                </td>
-            </tr>
-        </table>
+        <div :class="{'answer-container incorrect-answer-container': isFeedbackMode}" v-if="!isFeedbackMode || !$store.state.userTestAnswersBoolean[currentQuestionIndex]">
+            <table>
+                <tr v-for="(answer, index) in currentQuestion.answers" :key="index"
+                :class="{'selectedAnswer': currentUserAnswer[index] === index || currentIndex[index] === index,
+                'disable': isFeedbackMode,
+                'correct': isFeedbackMode && (currentUserAnswer[index] === index) && (Number(currentQuestion.rightAnswer[index]) === index),
+                'incorrect': isFeedbackMode && (currentUserAnswer[index] === index) && (Number(currentQuestion.rightAnswer[index]) !== index)}"
+                class="test-answer"
+                @click="clicked($event, index)">
+                    <td v-for="(tdContent ,tdIndex) in answer" :key="'td' + index + tdIndex" v-html="tdContent">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="answer-container correct-answer-container" v-if="isFeedbackMode">
+            <table>
+                <tr v-for="(answer, index) in currentQuestion.answers" :key="index"
+                :class="{'correct': isFeedbackMode && (Number(currentQuestion.rightAnswer[index]) === index)}"
+                class="test-answer disable">
+                    <td v-for="(tdContent ,tdIndex) in answer" :key="'td' + index + tdIndex" v-html="tdContent">
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 </template>
 
@@ -32,6 +44,10 @@ export default {
         currentUserAnswer: {
             required: true,
         },
+        currentQuestionIndex: {
+            type: Number,
+            required: false
+        }
     },
     computed: {
         isFeedbackMode(){
@@ -46,7 +62,6 @@ export default {
                 this.currentIndex[index] = index;
                 this.$emit('answer-clicked', this.currentIndex);
             }
-            console.table(this.currentIndex);
         }
     },
     created(){
@@ -102,5 +117,18 @@ export default {
     pointer-events: none;
 }
 
+.answer-container {
+    padding: 2% 2% 2% 2%;
+    box-sizing: border-box;
+    width: fit-content;
+    display: inline-block;
+}
 
+.correct-answer-container {
+    background-color: rgb(213, 247, 229);
+}
+
+.incorrect-answer-container {
+    background-color: rgb(247, 213, 213);
+}
 </style>

@@ -18,7 +18,7 @@
                 <div v-if="!showForm">
                     <component v-bind:is="questions[currentQuestionIndex].questionType"
                      :key="'question-number' + currentQuestionIndex"
-                     :currentQuestion="questions[currentQuestionIndex]" :currentUserAnswer="currentUserAnswer"
+                     :currentQuestion="questions[currentQuestionIndex]" :currentUserAnswer="currentUserAnswer" :currentQuestionIndex="currentQuestionIndex"
                      @answer-clicked="answerClicked"></component>
                 </div>
                 <TestForm ref="testForm" v-else></TestForm>

@@ -13,7 +13,7 @@
         <div class="graph-container">
             <div class="graph-help">
                 <div class="graph-help-mark">?</div>
-                <div>נווטו בתרשים בעצמכם!<br>
+                <div>
                 בכל שלב, בחרו באחת האפשרויות כדי להתקדם.<br>
                 לא לשכוח- תמיד אפשר לחזור אחורה.</div>
                 <!-- <div>{{choices[0].value}}</div> -->

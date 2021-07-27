@@ -200,10 +200,16 @@ export default createStore({
         } else if (questionType === "TableSelection" || questionType === "DragChoice" || questionType === "CompleteText" ) {
           var numOfRightAnswers = 0;
           for (var j = 0; j < state.userTestAnswers[i].length; j++) {
+            console.log("u answer:" + state.userTestAnswers[i][j])
+            console.log("r answer:" + state.testQuestions[i].rightAnswer[j])
+            console.log("is same?" + state.testQuestions[i].rightAnswer[j] === state.userTestAnswers[i][j])
             if (state.testQuestions[i].rightAnswer[j] === state.userTestAnswers[i][j]) {
               numOfRightAnswers++;
             }
           }
+          console.log("num r answer:" + numOfRightAnswers)
+          console.log("num all answer:" + state.userTestAnswers[i].length)
+
           if (numOfRightAnswers === state.userTestAnswers[i].length) {
             state.grade += pointsForEach;
             state.userTestAnswersBoolean[i] = true;
