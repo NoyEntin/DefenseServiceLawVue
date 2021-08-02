@@ -49,8 +49,7 @@ export default {
         TestButtonClicked(){
             this.popUpShowing = true;
 
-            // if(this.$store.getters.contentDone) {
-            if(true) {
+            if(this.$store.getters.contentDone) {
                 if(this.$store.state.grade !== -1) {
                     this.whichPopUp = 'test-or-feedback';
                 } else {
