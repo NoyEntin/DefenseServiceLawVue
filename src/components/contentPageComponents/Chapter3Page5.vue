@@ -11,9 +11,9 @@
         </ol>
 
         <p class="graph-title">תרשים התייצבות משתמט</p>
-        <p class="center-p">בהמשך תהיה אפשרות לנווט בתרשים בעצמכם</p>
-        <img class="graphDefaulters" src="../../media/graphics/graphDefaulters1-2.png">
-        <p class="download-btn-container">
+        <img class="graphDefaulters" src="../../media/graphics/graphDefaulters1.png">
+                <p class="download-btn-container">
+            <span class="chart-tip"><b>טיפ!</b> אם תורידו את התרשים למחשב, תוכלו להיעזר בו במהלך המבחן</span>
             <a class="download-btn" :href="`${publicPath}mediaForDownload/graphDefaulters1.png`" download='graphDefaulters1.png'>
                 <img src="../../media/graphics/download.svg"/>
                 הורד תרשים
@@ -27,7 +27,8 @@
 
         <p class="graph-title">תרשים במידה ומשתמטת מציגה מסמכי היריון/אם לילד/נישואין</p>
         <img class="graphDefaulters" src="../../media/graphics/graphDefaulters2.png">
-        <p class="download-btn-container">
+                <p class="download-btn-container">
+            <span class="chart-tip"><b>טיפ!</b> אם תורידו את התרשים למחשב, תוכלו להיעזר בו במהלך המבחן</span>
             <a class="download-btn" :href="`${publicPath}mediaForDownload/graphDefaulters2.png`" download='graphDefaulters2.png'>
                 <img src="../../media/graphics/download.svg"/>
                 הורד תרשים

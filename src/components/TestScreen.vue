@@ -152,6 +152,7 @@ export default {
     methods: {
         answerClicked(answerIndex) {
             if(!this.isFeedbackMode) {
+                console.table(this.userAnswer);
                 this.userAnswer.splice(this.currentQuestionIndex, 1, answerIndex);
             }
         },

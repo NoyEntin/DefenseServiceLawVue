@@ -1270,6 +1270,14 @@
                     <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">לוח השוואה לפי הסעיף החדש</span></p>
                 </td>
             </a> </tr>
+            <tr> <a href="#mg0120">
+                <td style="width: 62.35pt;padding: 0cm 5.4pt;">
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">&nbsp;</span></p>
+                </td>
+                <td style="width: 283.45pt;padding: 0cm 5.4pt;vertical-align: top;">
+                    <p dir="RTL" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:right;line-height:normal;'><span style="font-size:16px;font-family:Heebo;">אורך טיפול מותר בבקשת מלש"ב בהתאם להקמ"א מ"ג 01-20</span></p>
+                </td>
+            </a> </tr>
         </tbody>
     </table>
     </div>
@@ -2059,14 +2067,99 @@
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:center;line-height:normal;'><strong><span style="font-size:16px;font-family:Heebo;" name="compare1" id="compare1">לוח השוואה לפי הסעיף הקודם</span></strong></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:17px;font-family:Heebo;">&nbsp;</span></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:center;line-height:normal;'><strong><span style="font-size:16px;font-family:Heebo;" name="compare2" id="compare2">לוח השוואה לפי הסעיף החדש</span></strong></p>
-            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:17px;font-family:Heebo;">&nbsp;</span></p>
-            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:17px;font-family:Heebo;">&nbsp;</span></p>
-            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:17px;font-family:Heebo;">&nbsp;</span></p>
-            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:17px;font-family:Heebo;">&nbsp;</span></p>
-            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:center;line-height:normal;'><u><span style="font-size:16px;font-family:Heebo;color:blue;">הודעה למנויים על עריכה ושינויים במסמכי פסיקה, חקיקה ועוד באתר נבו - הקש כאן</span></u></p>
-            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-size:11px;font-family:Heebo;">גפני</span></p>
-            <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:center;line-height:normal;'><span style="font-size:16px;font-family:Heebo;color:blue;">&nbsp;</span></p>
-            <p dir="LTR" style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:0cm;margin-bottom:.0001pt;text-align:left;line-height:normal;'><span style="font-size:18px;font-family:Heebo;color:black;"><br>&nbsp;</span></p>
+            <p id="mg0120" name="mg0120">
+                אורך טיפול מותר בבקשת מלש"ב בהתאם להקמ"א מ"ג 01-20
+            </p>
+            <table class="table mgTable">
+                <tr>
+                    <th>מהות הבקשה</th>
+                    <th>משך הטיפול המקסימלי עליו ניתן להאריך סעיף 20</th>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשה להכרה בשירות צבאי בצבא צרפת</td>
+                    <td>6 חודשים</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשה להכרה בשירות צבאי בצבא זר</td>
+                    <td>חודשיים</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">ערעור על קביעת הפרופיל הרפואי בלשכת הגיוס האזורית</td>
+                    <td>6 חודשים</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשה לפטור מחש"ב - נשואה או אם לילד</td>
+                    <td>חודש</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשת עולה חדש לקבלת מעמד מהגר</td>
+                    <td>חודש</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשה לפטור מחש"ב מטעמי הווי משפחתי דתי או מצפון – נשים</td>
+                    <td>4 חודשים</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשה לפטור מחש"ב מטעמי הכרה דתית – נשים</td>
+                    <td>חודש</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשה להכרת המלש"ב כרופא ע"י צה"ל בוועדת רופאים</td>
+                    <td>6 חודשים</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשה להקדמת/דחיית גיוס</td>
+                    <td>חודש</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">ערעור על החלטת וועדת בפטור מחש"ב מטעמים שבהווי משפחתי דתי או מצפון – נשים</td>
+                    <td>6 חודשים</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">מיוני התאמה ליחידות התנדבות</td>
+                    <td>3 חודשים</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">מיוני התאמה קורסי קד"צ</td>
+                    <td>חודש</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשות חריגות להצטרפות למסלולים השונים</td>
+                    <td>3 חודשים</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשה לדח"ג עקב הצטרפות לכת עדי יהווה</td>
+                    <td>חודש</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשה לראיון אישי</td>
+                    <td>3 חודשים</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשה לשינוי מועד התייצבות בל"ג</td>
+                    <td>שבוע</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשה להכרת המלש"ב כמצטיין/ספורטאי פעיל</td>
+                    <td>חודשיים</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשה לדח"ג לשירות ביטחון לבעלי אזרחות נוספת: שוויצרית, ספרדית</td>
+                    <td>חודש</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשות לשינוי רישום תאריך הלידה במשרד הפנים</td>
+                    <td>6 חודשים</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשת שוהה בחו"ל להסדרת מעמד</td>
+                    <td>חודש</td>
+                </tr>
+                <tr>
+                    <td class="table-bold">בקשות מלש"בים בנים לפטור מטעמים שונים</td>
+                    <td>6 חודשים</td>
+                </tr>
+            </table>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><u><sup><span dir="LTR" style="font-size:13px;font-family:Heebo;color:blue;">*</span></sup></u><span style="font-size:13px;font-family:Heebo;color:black;">&nbsp;</span><span style="font-family:Heebo;color:black;">פורסם&nbsp;</span><u><span style="font-family:Heebo;color:blue;">ס&quot;ח תשמ&quot;ו מס&apos; 1170</span></u><span style="font-family:Heebo;color:black;">&nbsp;מיום 30.1.1986 עמ&apos; 107.</span></p>
             <p dir="RTL" style='margin-right:19.85pt;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-family:Heebo;color:black;">הנוסח המשולב בא במקום חוק שירות בטחון, תשי&quot;ט-1959 [נוסח משולב] &ndash; למעט סעיפים 46 ו-50 שבו.</span></p>
             <p dir="RTL" style='margin-right:0cm;margin-left:2.0cm;font-size:15px;font-family:"Calibri","sans-serif";margin-top:3.6pt;margin-bottom:.0001pt;text-align:justify;line-height:normal;'><span style="font-family:Heebo;color:black;">ת&quot;ט&nbsp;</span><u><span style="font-family:Heebo;color:blue;">ס&quot;ח תשמ&quot;ו מס&apos; 1172</span></u><span style="font-family:Heebo;color:black;">&nbsp;מיום 12.3.1986 עמ&apos; 130.</span></p>
@@ -2275,5 +2368,21 @@ export default {
       text-decoration: none;
       line-height: normal;
 
+  }
+  
+  .mgTable {
+      width: 80%;
+      margin: 0% 0% 0% 14%;
+      direction: rtl;
+  }
+
+  .mgTable tr th {
+      border: black solid 1px;
+  }
+
+  #mg0120 {
+      font-weight: bold;
+      text-decoration: underline;
+      text-align: right;
   }
 </style>

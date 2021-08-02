@@ -25,7 +25,7 @@
             </div>
         </div>
             <div @click="loadTestFeedback" class="show-me-btn">
-                בוא ניסע!
+                אז במה טעיתי?
                 <img src="./../media/graphics/sports-car.svg"/>
             </div>
     </div>

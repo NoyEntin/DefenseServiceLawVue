@@ -11,6 +11,7 @@
       <div v-if="showBackToMtv" class="top-bar-button mtv-btn">
         MTV
       </div>
+      <!-- is calculator if not hompage -->
       <!-- is back to home if content page -->
       <!-- <div v-else-if="currentScreenComponent === 'ContentScreen' || currentScreenComponent === 'TestScreen'" class="top-bar-button home-btn" @click="$store.commit('backToHome')"> -->
       <div v-else-if="showBackToHome" class="top-bar-button home-btn" @click="$store.commit('backToHome')">
@@ -24,7 +25,8 @@
           <span v-show="timerMinutes < 10">0</span>{{timerMinutes}}:<span v-show="timerSeconds < 10">0</span>{{timerSeconds}}
         </div>
       </div>
-      <div class="top-bar-button law-btn" title="החוק עצמו" @click="openLaw"></div>
+      <div class="top-bar-button law-btn" title="החוק עצמו" @click="openLaw"><p class="topbar-button-text">לחוק עצמו</p></div>
+      <div v-if="!showBackToMtv" @click="openCalc" title="מחשבון תאריכים" class="top-bar-button calac-btn"><p class="topbar-button-text">מחשבון תאריכים</p></div>
     </div>
 
 
@@ -109,6 +111,11 @@ export default {
     openLaw(){
       window.open("theLaw.html");
     },
+    openCalc(){
+      window.open('dateCalculator.html', 
+                  'newwindow', 
+                  'width=600,height=500');
+    }
   },
   store,
   computed: {

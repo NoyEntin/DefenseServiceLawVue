@@ -53,7 +53,7 @@ export default createStore({
     userTestAnswers: [],
     userTestAnswersBoolean: [],
     failingGrade: 70,
-    grade: 0,
+    grade: -1,
     isFeedbackMode: false,
     userInfo: 'empty'
   },

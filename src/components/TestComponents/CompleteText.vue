@@ -41,7 +41,7 @@
             </div>
         </div>
 
-            <div class="droppables-container correct-answer-container" v-if="isFeedbackMode">
+            <div class="droppables-container correct-answer-container" v-if="isFeedbackMode && !isAnswerCorrect">
                 <div v-for="dropZone in dropZones" :key="'dropZone'+dropZone.id" class="droppables-and-text-container">
                     <div v-html="currentQuestion.text[dropZone.id]" class="drop-in-text"></div>
                     <div class="drop-in correct">
@@ -77,11 +77,18 @@ export default {
         currentUserAnswer: {
             required: true,
         },
+        currentQuestionIndex: {
+            type: Number,
+            required: false
+        }
     },
     computed: {
-        isFeedbackMode(){
+        isFeedbackMode() {
             return this.$store.state.isFeedbackMode
         },
+        isAnswerCorrect() {
+            return this.$store.state.userTestAnswersBoolean[this.currentQuestionIndex]
+        }
     },
     methods: {
         startDrag(event, item, dropZone) {

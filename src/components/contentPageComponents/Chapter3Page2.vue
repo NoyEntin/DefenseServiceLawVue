@@ -158,6 +158,7 @@ export default {
 
     ::v-deep .accordion-content {
         margin: 1em;
+        cursor: auto;
     }
 
     .accordion-item {

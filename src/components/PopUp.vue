@@ -26,7 +26,7 @@
                     <div class="pop-up-text">
                         שימו ♥!
                         <br>
-                        משך המבחן 90 דקות.
+                        המבחן מוגבל בזמן (90 דקות).
                         <br>
                         לאחר תחילת המבחן לא תתאפשר חזרה לחומר ולתרגול.
                         <br>
@@ -39,6 +39,27 @@
                         </div>
                         <div class="pop-up-btn-yes pop-up-btn" @click="onTestConfirm">
                             <p>התחל בבחינה</p>
+                            <img class="test-img" src="./../media/graphics/testIcon.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="test-or-feedback" v-if="whichPopUp === 'test-or-feedback'">
+            <div class="overlay">
+                <div class="pop-up-container">
+                    <div class="pop-up-text">
+                        רוצה לחזור לצפות בתשובות שלך
+                        <br>
+                        או לעשות מבחן חדש?
+                    </div>
+                    <div class="pop-up-btn-container">
+                        <div class="pop-up-btn-no pop-up-btn" @click="returnToFeedback">
+                            <img class="study-img" src="./../media/graphics/exam.png">
+                            <p>חזור למשוב</p>
+                        </div>
+                        <div class="pop-up-btn-yes pop-up-btn" @click="onTestConfirm">
+                            <p>מבחן חדש</p>
                             <img class="test-img" src="./../media/graphics/testIcon.svg">
                         </div>
                     </div>
@@ -132,6 +153,10 @@ export default {
         onSkipInMenuConfirm: function(){
             this.$emit('navigateToPage');
         },
+        returnToFeedback() {
+            console.log("commit loadTestScreen");
+            this.$store.commit('loadTestScreen', { isFeedbackMode: true });
+        }
     },
     computed: {
 
@@ -186,8 +211,15 @@ export default {
     width: 50%;
 }
 
-.test-ready .pop-up-text {
+.test-ready .pop-up-text{
     top: 10%;
+}
+
+.test-or-feedback .pop-up-text {
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    line-height: 2em;
 }
 
 .go-study .pop-up-btn-container {

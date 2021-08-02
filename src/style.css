@@ -164,6 +164,16 @@ body {
     background-size: 70% 70%;
   }
 
+  .topbar-button-text {
+    margin: 0;
+    line-height: normal;
+    font-size: 1.2vmin;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
   .menu-btn {
     right: 3vmin;
   }
@@ -171,6 +181,21 @@ body {
   .mtv-btn {
     background-color: blue;
     left: 14vmin;
+  }
+
+  .calac-btn {
+    background-image: url("./media/graphics/calculator.png");
+    background-size: 50% 50%;
+    background-position-y: 20%;
+    left: 14vmin;
+  }
+
+  .calac-btn:hover {
+    background-size: 42% 42%;
+  }
+
+  .calac-btn .topbar-button-text {
+    line-height: 1.4vmin;
   }
 
   .home-btn {
@@ -181,6 +206,12 @@ body {
   .law-btn {
     left: 3vmin;
     background-image: url("./media/graphics/whiteLaw.svg");
+    background-size: 70% 70%;
+    background-position-y: 30%;
+  }
+
+  .law-btn:hover {
+    background-size: 60% 60%;
   }
 
   .menu-icon {
@@ -739,7 +770,8 @@ svg {
 .download-btn-container {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center
 }
 
 .download-btn {
@@ -770,17 +802,23 @@ svg {
     top: 0.2em;
 }
 
+.chart-tip {
+  font-size: 0.9em;
+}
+
 .list-container {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;    
+    align-content: space-between;
+    flex-direction: column;
 }
 
 .list-item {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0.5vmin;
-    align-items: flex-end
+    align-items: flex-end;
+    width: 100%;
 }
 
 .list-number {
@@ -809,7 +847,7 @@ svg {
     z-index: -1;
     margin-right: -1px;
     height: 2em;
-    width: 25%;
+    width: 20%;
 }
 
 .list-specify {

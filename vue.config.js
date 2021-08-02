@@ -32,5 +32,19 @@ module.exports = {
             // extracted common chunks and vendor chunks.
             chunks: ['chunk-vendors', 'chunk-common', 'theLaw']
         },
+        dateCalculator: {
+            // entry for the page
+            entry: 'src/subpages/dateCalculator/main.js',
+            // the source template
+            template: 'public/dateCalculator.html',
+            // output as dist/index.html
+            filename: 'dateCalculator.html',
+            // when using title option,
+            // template title tag needs to be <title><%= htmlWebpackPlugin.options.title %></title>
+            title: 'Date Calculator',
+            // chunks to include on this page, by default includes
+            // extracted common chunks and vendor chunks.
+            chunks: ['chunk-vendors', 'chunk-common', 'dateCalculator']
+        },
     }
 }

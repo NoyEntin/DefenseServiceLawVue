@@ -94,7 +94,8 @@
                 <td>6 חודשים</td>
             </tr>
         </table>
-        <p class="download-btn-container">
+                <p class="download-btn-container">
+            <span class="chart-tip"><b>טיפ!</b> אם תורידו את התרשים למחשב, תוכלו להיעזר בו במהלך המבחן</span>
             <a class="download-btn" :href="`${publicPath}mediaForDownload/maximum-duration-treatment.png`" download='maximum-duration-treatment.png'>
                 <img src="../../media/graphics/download.svg"/>
                 הורד תרשים

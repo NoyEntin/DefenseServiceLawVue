@@ -48,10 +48,16 @@ export default {
     methods: {
         TestButtonClicked(){
             this.popUpShowing = true;
-            if(this.$store.getters.contentDone) {
-                this.whichPopUp='test-ready';
+
+            // if(this.$store.getters.contentDone) {
+            if(true) {
+                if(this.$store.state.grade !== -1) {
+                    this.whichPopUp = 'test-or-feedback';
+                } else {
+                    this.whichPopUp = 'test-ready';
+                }
             } else {
-                this.whichPopUp='go-study';
+                this.whichPopUp = 'go-study';
             }
         },
         BtnClicked(buttonIndex) {

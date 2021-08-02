@@ -46,7 +46,7 @@ export default {
         }
     },
     created() {
-        if(this.currentUserAnswer instanceof Date)
+        if(this.currentUserAnswer !== -1)
             this.date = this.currentUserAnswer;
     },
     watch: {
