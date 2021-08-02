@@ -1,5 +1,6 @@
 module.exports = {
     pages: {
+         // I Am Changinggg
         index: {
             // entry for the page
             entry: 'src/index/main.js',
