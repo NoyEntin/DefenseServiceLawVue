@@ -15,6 +15,7 @@
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.15.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0"
@@ -22,6 +23,7 @@
   "browserslist": [
     "> 1%",
     "last 2 versions",
-    "not dead"
+    "not ie <= 8",
+    "Chrome >= 41"
   ]
 }
