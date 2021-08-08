@@ -17,7 +17,7 @@
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.15.0",
+    "@vue/babel-preset-app": "^4.5.13",
     "@vue/cli-plugin-babel": "^4.5.13",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
