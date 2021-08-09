@@ -12,6 +12,16 @@ module.exports = {
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    test: /\.vue$/,
+    loader: 'vue-loader',
+    // vue-loader options goes here
+    options: {
+      loaders: {
+        'js': 'babel-loader'
+      }
+    }
+      
+    
   }
 }

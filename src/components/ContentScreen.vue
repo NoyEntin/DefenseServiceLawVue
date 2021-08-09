@@ -167,7 +167,7 @@ export default {
         answeredCorrectly(){
             return this.$store.state.areExerciseQuestionsAnswered[this.chapterId][this.currentPageIndex][this.currentQuestion]
         },
-        ...mapGetters(["contentPageName"])
+        // ...mapGetters(["contentPageName"])
     },
     watch: {
         currentPageName: function(){

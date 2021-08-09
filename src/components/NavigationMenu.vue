@@ -123,7 +123,7 @@ export default {
       currentChapter(){
         return this.$store.state.currentContentChapter - 1
       },
-      ...mapGetters(["contentPageName"]),
+      // ...mapGetters(["contentPageName"]),
     },
     watch: {
         contentPageName: function() {
