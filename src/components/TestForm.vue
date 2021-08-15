@@ -3,7 +3,7 @@
         <p class="form-title">לפני שנתחיל ספרו לנו על עצמכם</p>
         <span class="form-item">
             <div class="list-item">
-                <div class="list-number"><img src=".\..\media\graphics\id-card.svg"/></div>
+                <div class="list-number"> <img :src="require('./../media/graphics/id-card.svg')"/></div>
                 <div class="list-text">שם פרטי</div>
                 <div class="list-shape">
                     <svg preserveAspectRatio="none" viewBox="0 0 300 100">
@@ -16,7 +16,7 @@
         </span>
         <span class="form-item">
             <div class="list-item">
-                <div class="list-number"><img src=".\..\media\graphics\id-card.svg"/></div>
+                <div class="list-number"> <img :src="require('./../media/graphics/id-card.svg')"/></div>
                 <div class="list-text">שם משפחה</div>
                 <div class="list-shape">
                     <svg preserveAspectRatio="none" viewBox="0 0 300 100">
@@ -29,7 +29,7 @@
         </span>
         <span class="form-item">
             <div class="list-item">
-                <div class="list-number"><img src=".\..\media\graphics\dog-tag.svg" class="dog-tag"/></div>
+                <div class="list-number"> <img :src="require('./../media/graphics/dog-tag.svg')" class="dog-tag"/></div>
                 <div class="list-text">מספר אישי</div>
                 <div class="list-shape">
                     <svg preserveAspectRatio="none" viewBox="0 0 300 100">
@@ -42,7 +42,7 @@
         </span>
         <span class="form-item">
             <div class="list-item">
-                <div class="list-number"><img src=".\..\media\graphics\office-building.svg"/></div>
+                <div class="list-number"> <img :src="require('./../media/graphics/office-building.svg')"/></div>
                 <div class="list-text">ענף/לשכה</div>
                 <div class="list-shape">
                     <svg preserveAspectRatio="none" viewBox="0 0 300 100">

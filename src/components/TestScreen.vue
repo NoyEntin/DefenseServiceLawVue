@@ -39,7 +39,7 @@
                 <svg preserveAspectRatio="none" viewBox="0 0 100 200">
                     <path d="M 0 100 L 50 0 L 100 0 L 50 100 L 100 200 L 50 200" fill="var(--red)"></path>
                 </svg>
-                <img src="../media/graphics/racingFlag.svg" class="start-test-btn-logo">
+                 <img :src="require('../media/graphics/racingFlag.svg')" class="start-test-btn-logo">
                 <div class="start-test-btn-bg"></div>
                 <div class="start-test-btn-text-container">
                     <div class="start-test-btn-text">!התחל</div>
@@ -59,7 +59,7 @@
         class="bottom-btn end-test-btn" :class="{btnReady: isTestFinished}"
         @mouseover="toolTipActive = true" @mouseout="toolTipActive = false"
         @click="endTest">
-            <img class="test-btn-img" v-show="isTestFinished" src="../media/graphics/testIcon.svg">
+            <img class="test-btn-img" v-show="isTestFinished" :src="require('../media/graphics/testIcon.svg')">
             <p>הגש מבחן</p>
             <div class="end-test-tooltip" v-show="toolTipActive && !isTestFinished">יש לענות על כל השאלות</div>
         </div>
@@ -82,12 +82,12 @@
                         </div>
                         <div class="pop-up-btn-container">
                             <div class="pop-up-btn-no pop-up-btn" @click="closePopUp">
-                                <img class="study-img" src="./../media/graphics/studyIcon.svg">
+                                <img class="study-img" :src="require('./../media/graphics/studyIcon.svg')">
                                 <p>חזור ללמוד</p>
                             </div>
                             <div class="pop-up-btn-yes pop-up-btn" @click="reloadTest">
                                 <p>התחל בבחינה</p>
-                                <img class="test-img" src="./../media/graphics/testIcon.svg">
+                                <img class="test-img" :src="require('./../media/graphics/testIcon.svg')">
                             </div>
                         </div>
                     </div>
@@ -426,19 +426,19 @@ export default {
 
 .start-test-btn-logo {
     position: absolute;
-    top: 0vmin;
-    left: 8vmin;
-    height: 100%;
+    top: 2vmax;
+    left: calc(8vmin + 2vmax);
+    height: calc(100% - 4vmax);
     transition: ease 0.4s;
 }
 
 .start-test-btn-bg {
     background-color: rgb(184, 20, 40);
-    height: 100%;
+    height: calc(100% - 4vmax);
     width: 7vmin;
     position: absolute;
-    top: 0;
-    left: 3vmin;
+    top: 2vmax;
+    left: calc(3vmin + 2vmax);
     border-radius: 0 0 34%/100% 0;
     z-index: -1;
     transition: ease 0.4s;
@@ -446,7 +446,7 @@ export default {
 }
 
 .next-btn:hover .start-test-btn-logo {
-    left: 17vmin;
+    left: calc(17vmin + 2vmax);
 }
 
 .next-btn:hover .start-test-btn-bg {

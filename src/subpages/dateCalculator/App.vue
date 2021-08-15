@@ -1,8 +1,10 @@
 <template>
   <div id="app">
         <div class="direction">
-            <v-date-picker class="calendar" v-model="date1" />
-            <v-date-picker class="calendar" v-model="date2" />
+            <div class="date-picker">
+                <v-date-picker class="calendar" v-model="date1" />
+                <v-date-picker class="calendar" v-model="date2" />
+            </div>
             <p v-if="areDatesPicked">ההפרש בין שני התאריכים הוא {{days}} ימים</p>
             <p v-else>סמנו שני תאריכים כדי לקבל את ההפרש ביניהם</p>
         </div>
@@ -16,7 +18,7 @@ export default {
       return {
             date1: new Date(),
             date2: new Date(),
-            areDatesPicked: true
+            // areDatesPicked: true
       }
   },
   methods: {
@@ -49,6 +51,15 @@ export default {
 
     p {
         text-align: center;
+        /* display: block; */
+        width: 100%;
+        position: absolute;
+        bottom: 30vh;
+
+    }
+
+    .date-picker {
+        display: block;
     }
 
     .direction {

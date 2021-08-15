@@ -59,16 +59,16 @@
             </div>
         </div>
         <div class="chapter2-page1-definitions-container definitions-container">
-            <div class="uncountedPeriod definition"  @mouseover="activateOverlay" @mouseout="deactivateOverlay">
+            <div class="uncountedPeriod definition "  @mouseover="activateOverlay" @mouseout="deactivateOverlay">
                 <div class="definition-overlay">
-                    <p>
+                    <p class="definition-content">
                         התקופות בהן התעכב הגיוס של המלש"ב "שלא באשמת המערכת" או לאחר בקשה אישית של המועמד ועל כן אינן חלק מהתקופה המחושבת. על תקופות אלו נוכל לקבל "הארכת זמן" לגיוס המלש"ב.
                     </p>
                 </div>
             </div>
             <div class="countedPeriod definition"  @mouseover="activateOverlay" @mouseout="deactivateOverlay">
                 <div class="definition-overlay">
-                    <p>
+                    <p class="definition-content">
                         התקופות בהן התעכב הטיפול/נדחה גיוסו של המלש"ב בשל תקלה/גורם מערכתי. תקופות אלו נספרות בסעיף 20, ולא נקבל עליהן "פיצוי" בצורת זמן נוסף לגיוס המלש"ב, מכיוון שהעיכוב באחריותנו.
                     </p>
                 </div>

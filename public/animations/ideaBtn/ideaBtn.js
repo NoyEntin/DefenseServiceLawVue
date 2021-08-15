@@ -59,11 +59,11 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_40 = function() {
 		if (this.hovering) {
-			console.log("1");
+			// console.log("1");
 			this.gotoAndPlay('hoverStart');
 		} else {
 			this.gotoAndPlay('hoverStop');
-			console.log("2");
+			// console.log("2");
 		}
 	}
 

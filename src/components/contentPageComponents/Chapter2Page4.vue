@@ -69,7 +69,7 @@
                 <p class="download-btn-container">
             <span class="chart-tip"><b>טיפ!</b> אם תורידו את התרשים למחשב, תוכלו להיעזר בו במהלך המבחן</span>
             <a class="download-btn" :href="`${publicPath}mediaForDownload/calculate-section-20.png`" download='calculate-section-20.png'>
-                <img src="../../media/graphics/download.svg"/>
+                 <img :src="require('../../media/graphics/download.svg')"/>
                 הורד טבלה
             </a>
         </p>

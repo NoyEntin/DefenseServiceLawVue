@@ -20,7 +20,7 @@
         לומדת חש"ב
       </div>
       <div v-if="showTimer" class="top-bar-button timer">
-        <img src="./../media/graphics/hourglass.svg"/>
+         <img :src="require('./../media/graphics/hourglass.svg')"/>
         <div>
           <span v-show="timerMinutes < 10">0</span>{{timerMinutes}}:<span v-show="timerSeconds < 10">0</span>{{timerSeconds}}
         </div>

@@ -26,7 +26,7 @@
         </div>
             <div @click="loadTestFeedback" class="show-me-btn">
                 אז במה טעיתי?
-                <img src="./../media/graphics/sports-car.svg"/>
+                 <img :src="require('./../media/graphics/sports-car.svg')"/>
             </div>
     </div>
 </template>

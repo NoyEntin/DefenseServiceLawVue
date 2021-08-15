@@ -7,27 +7,34 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@babel/helpers": "^7.15.3",
     "@dafcoe/vue-collapsible-panel": "^0.2.0",
-    "@popperjs/core": "^2.9.2",
+    "@mdi/font": "5.9.55",
+    "@popperjs/core": "^2.9.3",
     "babel-polyfill": "^6.26.0",
-    "core-js": "^3.6.5",
+    "core-js": "^3.16.1",
     "jquery": "^3.6.0",
+    "roboto-fontface": "*",
     "v-calendar": "^3.0.0-alpha.5",
-    "vue": "^3.1.1",
-    "vuex": "^4.0.0-0"
+    "vue": "^3.2.2",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
     "@babel/preset-env": "^7.15.0",
     "@vue/babel-preset-app": "^4.5.13",
     "@vue/cli-plugin-babel": "^4.5.13",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0"
+    "@vue/compiler-sfc": "^3.2.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not ie <= 8",
-    "Chrome >= 44"
+    "Chrome > 41"
   ]
 }

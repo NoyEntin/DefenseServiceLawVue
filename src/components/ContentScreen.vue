@@ -37,7 +37,7 @@
                     <path d="M 0 100 L 50 0 L 100 0 L 50 100 L 100 200 L 50 200" fill="var(--red)"></path>
                 </svg>
 
-                <img src="../media/graphics/home.svg" class="to-home-btn-logo">
+                <img :src="require('../media/graphics/home.svg')" class="to-home-btn-logo">
                 <div class="to-home-btn-bg"></div>
                 <div class="to-home-btn-text-container">
                     <div class="to-home-btn-text">לסיום הפרק</div>
@@ -229,10 +229,11 @@ export default {
 
 .to-home-btn-logo {
     position: absolute;
-    top: 0vmin;
-    left: 7vmin;
-    height: 100%;
+    top: 2vmax;
+    left: calc(7vmin + 2vmax);
+    height: calc(100% - 4vmax);;
     transition: ease 0.4s;
+    padding-right: 2vmax;
 }
 
 .next-btn {
@@ -241,11 +242,11 @@ export default {
 
 .to-home-btn-bg {
     background-color: rgb(184, 20, 40);
-    height: 100%;
+    height: calc(100% - 4vmax);
     width: 10vmin;
     position: absolute;
-    top: 0;
-    left: 3vmin;
+    top: 2vmax;
+    left: calc(3vmin + 2vmax);
     border-top-right-radius: 2.8vmin;
     z-index: -1;
     transition: ease 0.4s;
@@ -253,11 +254,13 @@ export default {
 }
 
 .next-btn:hover .to-home-btn-logo {
-    left: 22vmin;
+    left: calc(22vmin + 2vmax);
 }
 
 .next-btn:hover .to-home-btn-bg {
     width: 25vmin;
+    /* padding: 2vmax; */
+    /* box-sizing: border-box; */
 }
 
 .to-home-btn:hover  {

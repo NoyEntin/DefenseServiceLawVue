@@ -5,7 +5,7 @@
         </div>
         <div class="exercise-content">
             <div class="section-title">
-                <p>בחן את עצמך:</p>
+                בחן את עצמך:
             </div>
             <p class="exercise-question" v-html="question">
             </p>
@@ -100,7 +100,8 @@ export default {
 
     .section-title {
     background-color: var(--yellow);
-    height: fit-content;
+    /* height: fit-content; */
+    /* height: 2em; */
     width: fit-content;
     padding: 0 1vh;
     /* position: absolute; */
@@ -135,20 +136,20 @@ export default {
     }
 
     .correct-answer {
-        background-color: rgb(32, 178, 105, 0.9);
+        background-color: rgba(32, 178, 105, 0.9);
     }
 
     .correct-answer:hover {
-        background-color: rgb(32, 178, 105, 0.9);
+        background-color: rgba(32, 178, 105, 0.9);
         cursor: auto;
     }
 
     .incorrect-answer {
-        background-color: rgb(231, 29, 54, 0.9);
+        background-color: rgba(231, 29, 54, 0.9);
     }
 
     .incorrect-answer:not(.disable):hover {
-        background-color: rgb(231, 29, 54, 0.9);;
+        background-color: rgba(231, 29, 54, 0.9);;
         cursor: auto;
     }
 </style>

@@ -81,7 +81,7 @@
             </div>
             <div class="officer definition"  @mouseover="activateOverlay" @mouseout="deactivateOverlay">
                 <div class="definition-overlay">
-                    <div>
+                    <div class="definition-content">
                        <p class="list-icon">
                         &#10003;
                         </p>

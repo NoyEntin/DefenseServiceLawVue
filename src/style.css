@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: Heebo-Regular;
-    src: url("media/fonts/Heebo-Regular.ttf");
+    src: url("media/fonts/Heebo-VariableFont_wght.ttf");
     font-weight: normal;
 }
 
@@ -44,6 +44,7 @@ body {
     direction: rtl;
     overflow: hidden;
     font-family: Heebo-Regular;
+    font-weight: normal;
     font-size: 1em;
     line-height: 1.8em;
 }
@@ -416,8 +417,9 @@ svg {
     position: absolute;
     box-shadow: black;
     cursor: pointer;
-    bottom: 2.5vmin;
+    bottom: 1.5vmin;
     transition: 0.1s;
+    padding: 2vmax;
 }
 
 .next-btn {
@@ -701,11 +703,16 @@ svg {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    /* justify-content: space-evenly; */
     width: 100%;
 }
 
 .definitions-titles {
     height: fit-content;
+}
+
+.definition-content {
+    margin: auto;
 }
 
 .definitions-titles .definition {
@@ -750,9 +757,9 @@ svg {
     top: 0%;
 }
 
-.definition-overlay p {
+/* .definition-overlay p {
     margin: 0;
-}
+} */
 
 .definition-overlay .list-icon {
     margin-left: 0.5vw;
@@ -973,4 +980,19 @@ table {
 table th,td {
     padding: 1px 8px;
     border: solid 1px black;
+}
+
+.vc-weeks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+.vc-weekday {
+    width: 34px;
+    height: 32px;
+  }
+
+.vc-day {
+    width: 34px;
 }

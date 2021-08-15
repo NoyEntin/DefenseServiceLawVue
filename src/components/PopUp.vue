@@ -8,7 +8,7 @@
                         <br>
                     לאן אתם ממהרים? עוד לא סיימתם את כל הפרקים הקודמים
                     </div>
-                    <img class="pop-up-image" src="./../media/graphics/racecar.png">
+                    <img class="pop-up-image" :src="require('./../media/graphics/racecar.png')">
                     <div class="pop-up-btn-container">
                         <div class="pop-up-btn-no pop-up-btn" @click="onNoClick">
                             <p>צודק, בואו נחזור למסלול</p>
@@ -34,12 +34,12 @@
                     </div>
                     <div class="pop-up-btn-container">
                         <div class="pop-up-btn-no pop-up-btn" @click="onNoClick">
-                            <img class="study-img" src="./../media/graphics/studyIcon.svg">
+                            <img class="study-img"  :src="require('./../media/graphics/studyIcon.svg')">
                             <p>חזור ללמוד</p>
                         </div>
                         <div class="pop-up-btn-yes pop-up-btn" @click="onTestConfirm">
                             <p>התחל בבחינה</p>
-                            <img class="test-img" src="./../media/graphics/testIcon.svg">
+                            <img class="test-img" :src="require('./../media/graphics/testIcon.svg')">
                         </div>
                     </div>
                 </div>
@@ -55,12 +55,12 @@
                     </div>
                     <div class="pop-up-btn-container">
                         <div class="pop-up-btn-no pop-up-btn" @click="returnToFeedback">
-                            <img class="study-img" src="./../media/graphics/exam.png">
+                            <img class="study-img" :src="require('./../media/graphics/exam.png')">
                             <p>חזור למשוב</p>
                         </div>
                         <div class="pop-up-btn-yes pop-up-btn" @click="onTestConfirm">
                             <p>מבחן חדש</p>
-                            <img class="test-img" src="./../media/graphics/testIcon.svg">
+                            <img class="test-img" :src="require('./../media/graphics/testIcon.svg')">
                         </div>
                     </div>
                 </div>
@@ -69,19 +69,19 @@
         <div class="go-study" v-if="whichPopUp === 'go-study'">
             <div class="overlay">
                 <div class="pop-up-container">
-                    <!-- <img class="go-study-img-2" src="./../media/graphics/angryShadow.svg"> -->
-                    <!-- <img  class="go-study-img" src="./../media/graphics/angry2.svg"> -->
-                    <img class="go-study-img" src="./../media/graphics/angry.png">
+                    <!-- <img class="go-study-img-2" :src="require('./../media/graphics/angryShadow.svg')"> -->
+                    <!-- <img  class="go-study-img" :src="require('./../media/graphics/angry2.svg')"> -->
+                    <img class="go-study-img" :src="require('./../media/graphics/angry.png')">
                     <div class="pop-up-text">
                         <p>לא ניגשים למבחן בלי להתכונן!</p>
                         <p>בדקו את תפריט הניווט
-                            <img src="./../media/graphics/menuIcon.png" class="go-study-menu-icon"/>
+                             <img :src="require('./../media/graphics/menuIcon.png')" class="go-study-menu-icon"/>
                         </p>
                         <p>ותראו מה נשאר ללמוד</p>
                     </div>
                     <div class="pop-up-btn-container">
                         <div class="pop-up-btn-no pop-up-btn" @click="onNoClick">
-                            <img class="study-img" src="./../media/graphics/studyIcon.svg">
+                            <img class="study-img" :src="require('./../media/graphics/studyIcon.svg')">
                             <p>חזור ללמוד</p>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
         </div>
         <div class="skip-in-menu" v-if="whichPopUp === 'skip-in-menu'">
             <div class="pop-up-container">
-                <img class="overtaking-img" src="./../media/graphics/overtaking.svg">
+                <img class="overtaking-img" :src="require('./../media/graphics/overtaking.svg')">
                 <div class="pop-up-text">
                     זהירות בעקיפה!
                     <br>
@@ -154,7 +154,7 @@ export default {
             this.$emit('navigateToPage');
         },
         returnToFeedback() {
-            console.log("commit loadTestScreen");
+            // console.log("commit loadTestScreen");
             this.$store.commit('loadTestScreen', { isFeedbackMode: true });
         }
     },

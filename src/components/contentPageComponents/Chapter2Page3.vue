@@ -11,12 +11,12 @@
         </ol>
         <div class="warning-container">
             <div class="warning left-warning">
-                <img src="../../media/graphics/warning.svg"/>
+                 <img :src="require('../../media/graphics/warning.svg')"/>
                 <p>לא מאריכים על שנה 3!</p>
             </div>
             <div class="warning right-warning">
                 <p>יום אחד מסיבה אחת!</p>
-                <img src="../../media/graphics/warning.svg"/>
+                 <img :src="require('../../media/graphics/warning.svg')"/>
             </div>
         </div>
     </div>
@@ -55,7 +55,7 @@ export default {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .warning {

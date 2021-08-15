@@ -14,11 +14,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="list-status-shape">
+                <!-- <div class="list-status-shape">
                     <svg preserveAspectRatio="none" viewBox="0 0 300 100">
                         <path d="M 200 50 L 300 0 L 300 0 L 300 100 L 300 100 L 200 50" fill="var(--lighten-blue)"></path>
                     </svg>
-                </div>
+                </div> -->
             </div>
             <div class="list-item status-list-item">
                 <div class="status-list-title">משתמט פרקליטותי (סטטוס 2.05)</div>
@@ -35,11 +35,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="list-status-shape">
+                <!-- <div class="list-status-shape">
                     <svg preserveAspectRatio="none" viewBox="0 0 300 100">
                         <path d="M 200 50 L 300 0 L 300 0 L 300 100 L 300 100 L 200 50" fill="var(--lighten-blue)"></path>
                     </svg>
-                </div>
+                </div> -->
             </div>
             <div class="list-item status-list-item">
                 <div class="status-list-title">משתמט בחו"ל (סטטוס 2.09)</div>
@@ -50,11 +50,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="list-status-shape">
+                <!-- <div class="list-status-shape">
                     <svg preserveAspectRatio="none" viewBox="0 0 300 100">
                         <path d="M 200 50 L 300 0 L 300 0 L 300 100 L 300 100 L 200 50" fill="var(--lighten-blue)"></path>
                     </svg>
-                </div>
+                </div> -->
             </div>
             <div class="list-item status-list-item">
                 <div class="status-list-title">משתמט ללא פקודת מעצר (סטטוס 2.03)</div>
@@ -65,11 +65,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="list-status-shape">
+                <!-- <div class="list-status-shape">
                     <svg preserveAspectRatio="none" viewBox="0 0 300 100">
                         <path d="M 200 50 L 300 0 L 300 0 L 300 100 L 300 100 L 200 50" fill="var(--lighten-blue)"></path>
                     </svg>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -80,7 +80,7 @@
                 </svg>
                 <p>לדוגמא:</p>
             </div>
-            <img src="../../media/graphics/calendar.svg" class="example-icon"/>
+             <img :src="require('../../media/graphics/calendar.svg')" class="example-icon"/>
             <div class="example-header">
                 &#10084;
             </div>
@@ -101,7 +101,7 @@
                 </svg>
                 <p>לדוגמא:</p>
             </div>
-            <img src="../../media/graphics/calendar.svg" class="example-icon"/>
+             <img :src="require('../../media/graphics/calendar.svg')" class="example-icon"/>
             <div class="example-header">
                 &#10084;
             </div>
@@ -148,12 +148,16 @@ export default {
     }
 
     .status-list-item {
+        display: flex;
         flex-wrap: nowrap;
         align-items: stretch;
     }
 
     .list-status-shape {
         width: 15%;
+        /* height: 100%; */
+        /* height: auto; */
+        /* height: fit-content(20em); */
     }
 
     .status-list-title {
@@ -165,14 +169,16 @@ export default {
         color: white;
         font-weight: bold;
         display: flex;
-        align-items: center
+        align-items: center;
+        height: auto;
     }
 
     .status-list-content {
         background-color: var(--lighten-blue);
         width: 65%;
         display: flex;
-        align-items: center
+        align-items: center;
+        padding-left: 6vw;
     }
 
 </style>

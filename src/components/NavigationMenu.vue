@@ -22,7 +22,7 @@
       </AccordionContainer>
     </transition>
     <div class="key">
-      <img class="key-image" src="./../media/graphics/menuKeyTest.svg">
+      <img class="key-image" :src="require('./../media/graphics/menuKeyTest.svg')">
       <div class="key-text-container">
         <ul class="key-list-1">
           <li> - קראת אבל לא תרגלת</li>
@@ -241,7 +241,7 @@ export default {
   }
 
   .key-image {
-    margin-bottom: -5%;
+    margin-bottom: -10%;
   }
 
   .key-text {

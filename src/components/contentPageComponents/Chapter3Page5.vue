@@ -11,11 +11,11 @@
         </ol>
 
         <p class="graph-title">תרשים התייצבות משתמט</p>
-        <img class="graphDefaulters" src="../../media/graphics/graphDefaulters1.png">
+        <img class="graphDefaulters" :src="require('../../media/graphics/graphDefaulters1.png')">
                 <p class="download-btn-container">
             <span class="chart-tip"><b>טיפ!</b> אם תורידו את התרשים למחשב, תוכלו להיעזר בו במהלך המבחן</span>
             <a class="download-btn" :href="`${publicPath}mediaForDownload/graphDefaulters1.png`" download='graphDefaulters1.png'>
-                <img src="../../media/graphics/download.svg"/>
+                 <img :src="require('../../media/graphics/download.svg')"/>
                 הורד תרשים
             </a>
         </p>
@@ -26,11 +26,11 @@
         </GraphNavigation>
 
         <p class="graph-title">תרשים במידה ומשתמטת מציגה מסמכי היריון/אם לילד/נישואין</p>
-        <img class="graphDefaulters" src="../../media/graphics/graphDefaulters2.png">
+        <img class="graphDefaulters" :src="require('../../media/graphics/graphDefaulters2.png')">
                 <p class="download-btn-container">
             <span class="chart-tip"><b>טיפ!</b> אם תורידו את התרשים למחשב, תוכלו להיעזר בו במהלך המבחן</span>
             <a class="download-btn" :href="`${publicPath}mediaForDownload/graphDefaulters2.png`" download='graphDefaulters2.png'>
-                <img src="../../media/graphics/download.svg"/>
+                 <img :src="require('../../media/graphics/download.svg')"/>
                 הורד תרשים
             </a>
         </p>

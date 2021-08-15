@@ -61,11 +61,11 @@
             <p>
                 <b>מגדיר למי הפוקד רשאי לקרוא לשירות סדיר</b> (לפי גיל עברי). גברים – עד גיל 29 כולל, נשים – עד גיל 26 כולל. רופאים/רופאות – עד גיל 38 כולל. צו הגיוס הראשוני נשלח למלש"ב על בסיס סעיף זה. יחד עם זאת, אישור גיוס בגיל 27 הינו בסמכות מ’ מיטב בלבד או סגנו ואישור גיוס בגילאי 28 ומעלה הינו בסמכות מ’ מיטב בלבד.
             </p>
-        <img class="chart" src="../../media/graphics/section13chart.png"/>
+        <img class="chart" :src="require('../../media/graphics/section13chart.png')"/>
                 <p class="download-btn-container">
             <span class="chart-tip"><b>טיפ!</b> אם תורידו את התרשים למחשב, תוכלו להיעזר בו במהלך המבחן</span>
             <a class="download-btn" :href="`${publicPath}mediaForDownload/section13chart.png`" download='section13chart.png'>
-                <img src="../../media/graphics/download.svg"/>
+                 <img :src="require('../../media/graphics/download.svg')"/>
                 הורד תרשים
             </a>
         </p>

@@ -71,7 +71,7 @@
                 </svg>
                 <p>לדוגמא:</p>
             </div>
-            <img src="../../media/graphics/calendar.svg" class="example-icon"/>
+             <img :src="require('../../media/graphics/calendar.svg')" class="example-icon"/>
             <div class="example-header">
                 &#10084;
             </div>
@@ -97,7 +97,7 @@
                 </svg>
                 <p>לדוגמא:</p>
             </div>
-            <img src="../../media/graphics/calendar.svg" class="example-icon"/>
+             <img :src="require('../../media/graphics/calendar.svg')" class="example-icon"/>
             <div class="example-header">
                 &#10084;
             </div>

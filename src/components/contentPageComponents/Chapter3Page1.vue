@@ -34,7 +34,7 @@
                 <p class="download-btn-container">
             <span class="chart-tip"><b>טיפ!</b> אם תורידו את התרשים למחשב, תוכלו להיעזר בו במהלך המבחן</span>
             <a class="download-btn" :href="`${publicPath}mediaForDownload/defaulter-declaration-time.png`" download='defaulter-declaration-time.png'>
-                <img src="../../media/graphics/download.svg"/>
+                 <img :src="require('../../media/graphics/download.svg')"/>
                 הורד טבלה
             </a>
         </p>
@@ -46,7 +46,7 @@
                 </svg>
                 <p>לדוגמא:</p>
             </div>
-            <img src="../../media/graphics/calendar.svg" class="example-icon"/>
+             <img :src="require('../../media/graphics/calendar.svg')" class="example-icon"/>
             <div class="example-header">
                 &#10084;
             </div>

@@ -22,11 +22,11 @@
                 <div class="graph-main-top">
                     <!-- <p class="graph-title">{{currentChoice.value}}</p> -->
                     <div class="back-btn" @click="clickedBack">
-                        <img src="./../../media/graphics/back.svg">
+                         <img :src="require('./../../media/graphics/back.svg')">
                         <div>חזור</div>
                     </div>
                     <div class="restart-btn" @click="clickedRestart">
-                        <img src="./../../media/graphics/restart.svg">
+                         <img :src="require('./../../media/graphics/restart.svg')">
                         <div>אתחל</div>
                     </div>
                     {{currentChoice.value}}
@@ -398,7 +398,8 @@ export default {
 .graph-choice-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 60%;
@@ -430,7 +431,8 @@ export default {
 }
 
 .list-down-shape {
-    height: fit-content;
+    /* height: fit-content; */
+    width: -moz-fit-content;
 }
 
 .graph-progress-text {

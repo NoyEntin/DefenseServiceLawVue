@@ -1,5 +1,6 @@
 module.exports = {
     publicPath: '',
+
     pages: {
         index: {
             // entry for the page
@@ -47,5 +48,11 @@ module.exports = {
             // extracted common chunks and vendor chunks.
             chunks: ['chunk-vendors', 'chunk-common', 'dateCalculator']
         },
-    }
+    },
+
+    transpileDependencies: [
+        'vue-echarts',
+        'resize-detector',
+        'muse-ui'
+    ]
 }

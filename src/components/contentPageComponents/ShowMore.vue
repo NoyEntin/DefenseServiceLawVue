@@ -45,6 +45,9 @@ export default {
     },
     methods: {
         clicked(event) {
+            // console.log(event);
+            // console.log(event.source.frameElement.id);
+            // console.log(this.uniqueId);
             if(event.source.frameElement.id === this.uniqueId) {
                 setTimeout(() => {
                     this.show = !this.show;

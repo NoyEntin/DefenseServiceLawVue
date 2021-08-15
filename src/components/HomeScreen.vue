@@ -20,7 +20,7 @@
                 <ChapterButton @triggerBtnClicked="BtnClicked(buttonIndex)" v-for="buttonIndex in totalChapterNumber" :key="buttonIndex" :buttonId="buttonIndex"></ChapterButton>
             </div>
             <div class="test-btn" @click="TestButtonClicked">
-                <img src="../media/graphics/testIcon.svg" class="test-btn-icon" />
+                <img :src="require('../media/graphics/testIcon.svg')" class="test-btn-icon" />
                 <p>מבחן מסכם</p>
             </div>
         </div>

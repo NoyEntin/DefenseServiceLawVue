@@ -52,7 +52,7 @@
                 <p class="download-btn-container">
             <span class="chart-tip"><b>טיפ!</b> אם תורידו את התרשים למחשב, תוכלו להיעזר בו במהלך המבחן</span>
             <a class="download-btn" :href="`${publicPath}mediaForDownload/section-20-duration.png`" download='section-20-duration.png'>
-                <img src="../../media/graphics/download.svg"/>
+                 <img :src="require('../../media/graphics/download.svg')"/>
                 הורד טבלה
             </a>
         </p>
@@ -64,7 +64,7 @@
                 </svg>
                 <p>לדוגמא:</p>
             </div>
-            <img src="../../media/graphics/calendar.svg" class="example-icon"/>
+             <img :src="require('../../media/graphics/calendar.svg')" class="example-icon"/>
             <div class="example-header">
                 סעיף 20: 01.01.2021
             </div>
@@ -72,9 +72,9 @@
                 <p>
                     אופרי ילידת 01.01.2001. גיל 18 עברי שלה הינו 01.01.2019. סעיף 20 שלה הינו 01.01.2021 (גיל 20 עברי). 
                 </p>
-                <img class="example-graph" src="../../media/graphics/example-top.svg">
+                <img class="example-graph" :src="require('../../media/graphics/example-top.svg')">
             </div>
-            <img src="../../media/graphics/example-1.svg">
+             <img :src="require('../../media/graphics/example-1.svg')">
         </div>
 
         <div class="example-container">
@@ -84,7 +84,7 @@
                 </svg>
                 <p>לדוגמא:</p>
             </div>
-            <img src="../../media/graphics/calendar.svg" class="example-icon"/>
+             <img :src="require('../../media/graphics/calendar.svg')" class="example-icon"/>
             <div class="example-header">
                 סעיף 20: 01.01.2023
             </div>
@@ -93,9 +93,9 @@
                 יוליה הייתה בת 18 עברי ב-01.01.2021 ועל כן מועד אחרון לקריאה ליוליה לשירות מלא הינו מועד ס.20 שלה 01.01.2023. במידה ונדחה גיוסה של יוליה ללא בקשתה וללא סיבה מוצדקת (כפי שיפורט בהמשך) למועד 01.06.2023 יקוצר שירותה ב-5 חודשים.
 במידה ונדחה גיוסה ללא בקשתה וללא סיבה מוצדקת למועד 02.01.2024 יוליה תהייה זכאית לפטור משירות ביטחון.  
                 </p>
-                <img class="example-graph" src="../../media/graphics/example-top.svg">
+                <img class="example-graph" :src="require('../../media/graphics/example-top.svg')">
             </div>
-            <img src="../../media/graphics/example-2.svg">
+             <img :src="require('../../media/graphics/example-2.svg')">
         </div>
 
         <div class="example-container">
@@ -105,7 +105,7 @@
                 </svg>
                 <p>לדוגמא:</p>
             </div>
-            <img src="../../media/graphics/calendar.svg" class="example-icon"/>
+             <img :src="require('../../media/graphics/calendar.svg')" class="example-icon"/>
             <div class="example-header">
                 סעיף 20: 01.07.2022
             </div>
@@ -113,9 +113,9 @@
                 <p>
                 דנה הינה מלש"בית שנולדה בחו"ל והגיעה לארץ בגיל 19 בתאריך 01.01.2020. היא ביצעה עלייה וקיבלה מעמד אזרחית בתאריך 01.07.2020 כאשר היא בת 19 וחצי. מועד סעיף 20 שלה הינו שנתיים ממועד קבלת המעמד האזרחי (תאריך העלייה) ולכן יהיה 01.07.2022.
                 </p>
-                <img class="example-graph" src="../../media/graphics/example-top.svg">
+                <img class="example-graph" :src="require('../../media/graphics/example-top.svg')">
             </div>
-            <img src="../../media/graphics/example-3.svg">
+             <img :src="require('../../media/graphics/example-3.svg')">
         </div>
     </div>
 </template>
