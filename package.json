@@ -13,6 +13,7 @@
     "@popperjs/core": "^2.9.3",
     "babel-polyfill": "^6.26.0",
     "core-js": "^3.16.1",
+    "esbuild": "^0.13.15",
     "jquery": "^3.6.0",
     "roboto-fontface": "*",
     "v-calendar": "^3.0.0-alpha.5",

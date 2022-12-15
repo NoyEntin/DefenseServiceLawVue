@@ -7,10 +7,12 @@
             <!-- <img class="show-more-btn-img" @click="show = !show" :src="imgSrc"> -->
             <!-- <div class="overlay"></div> -->
             <div v-if="isLawSection">
-                <iframe :id="uniqueId" :src="`${publicPath}animations/lawBtn/lawBtn.html?id=`+ uniqueId" class="show-more-btn-img" scrolling="no"></iframe>
+                <!-- <iframe :id="uniqueId" :src="`${publicPath}animations/lawBtn/lawBtn.html?id=`+ uniqueId" class="show-more-btn-img" scrolling="no"></iframe> -->
+                <img src="./../../media/graphics/colorLaw.svg" class="show-more-btn-img" @click="show = !show">
             </div>
             <div v-else>
-                <iframe :id="uniqueId" :src="`${publicPath}animations/ideaBtn/ideaBtn.html?id=`+ uniqueId" class="show-more-btn-img did-you-know-btn-img" scrolling="no"></iframe>
+                <!-- <iframe :id="uniqueId" :src="`${publicPath}animations/ideaBtn/ideaBtn.html?id=`+ uniqueId" class="show-more-btn-img did-you-know-btn-img" scrolling="no"></iframe> -->
+                <img src="./../../media/graphics/idea.svg" class="show-more-btn-img" @click="show = !show">
             </div>
             <!-- <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:640px; height:480px" @click="show = !show">
 		        <canvas id="canvas" width="640" height="480" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
@@ -98,7 +100,7 @@ export default {
     /* height: 250%; */
     z-index: 1;
     height: 120%;
-    width: 100%;
+    /* width: 100%; */
     position: absolute;
     left: 0;
     bottom: 0;
@@ -107,6 +109,14 @@ export default {
     border: none;
     overflow: hidden;
     cursor: pointer;
+}
+
+.show-more-btn-img:hover {
+    height: 110%;
+}
+
+.show-more-btn-img:active {
+    height: 90%;
 }
 
 .did-you-know-btn-img {
